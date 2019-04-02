@@ -14,7 +14,7 @@ Incorporating data standards into the model against widely adopted international
 
 Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions.
 
-The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Leanr more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
+The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Learn more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
 ## Get to know about other Industry Accelerators
 
