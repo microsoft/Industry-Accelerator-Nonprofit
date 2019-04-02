@@ -2,6 +2,16 @@
 Dynamics 365 announced the Microsoft Power Platform, a connected app platform that unifies access to your data to enable ISVs, SIs, Partners and Customers to build intelligent, data driven, task focused business and analytic applications. Microsoft is focused on enabling a data culture where the Microsoft Power Platform acts as the glue across Dynamics 365 (CE, F&O, Talent), Office 365 (SharePoint, Teams), Power BI, Power Apps, Microsoft Flow, Azure and other 3rd party on-premise and cloud based solutions.
 
 ## Overview of the Industry Nonprofit Accelerator
+The Microsoft Common Data Model for Nonprofits came from sitting with, observing, learning from 100's of nonprofits about their unmet technology challenges and the frustration of managing data across many systems of record.  The approach includes:
+Microsoft partnering with leading thought leaders in the nonprofit technology space as well as a Customer Steering Team made up of a diverse group of global nonprofit organizations and foundations to create a nonprofit common data model that reflects the common nonprofit scenarios.
+
+Learning from data model challenges of the past and design a streamlined, open foundation for vendors, partners and nonprofits to rapidly build applications and connectors.
+
+Incorporating data standards into the model against widely adopted international data standards like IATI.
+
+Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions.
+
+The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management.
 
 # Contributing
 
