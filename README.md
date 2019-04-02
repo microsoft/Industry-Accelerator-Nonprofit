@@ -1,5 +1,8 @@
 # Microsoft Dynamics 365 Announces Industry Accelerators
+
 Dynamics 365 announced the Microsoft Power Platform, a connected app platform that unifies access to your data to enable ISVs, SIs, Partners and Customers to build intelligent, data driven, task focused business and analytic applications. Microsoft is focused on enabling a data culture where the Microsoft Power Platform acts as the glue across Dynamics 365 (CE, F&O, Talent), Office 365 (SharePoint, Teams), Power BI, Power Apps, Microsoft Flow, Azure and other 3rd party on-premise and cloud based solutions.
+
+With the Power Platform providing a unified approach to building data driven solutions, the team is taking it one step further by introducing Industry Solution Accelerators. Accelerators are industry focused foundational components that enable ISVs and other solution providers, a way to build solutions that are based on industry standards supported and driven by Microsoft. Along with our Health Accelerator that was released during Inspire 2018, which you can read about here, we are focused on delivering accelerators for the following industries (but not limited too):
 
 ## Overview of the Industry Nonprofit Accelerator
 The Microsoft Common Data Model for Nonprofits came from sitting with, observing, learning from 100's of nonprofits about their unmet technology challenges and the frustration of managing data across many systems of record.  The approach includes:
