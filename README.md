@@ -13,6 +13,14 @@ Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Pow
 
 The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management.
 
+## Get to know about other Industry Accelerators
+
+| Industry Accelerators | Description |
+|------|--------------|
+| [Health Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly develop healthcare solutions using FHIR entities such as patient, condition, and care plan. The Microsoft Health Accelerator enables partners and customers to create new use cases and workflows using a FHIR-based data model. [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
+| [Nonprofit Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly develop nonprofit fundraising, grant/award and program/results management solutions.The Microsoft Nonprofit Accelerator enables partners and customers to create new integrated use cases and workflows across the funding to outcomes cycle. [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
+| [Higher Education Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly build solutions for Higher Education using entities such as student, course, and test scores.  [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
+
 ## Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
