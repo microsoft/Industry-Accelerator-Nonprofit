@@ -1,6 +1,8 @@
 # Microsoft Dynamics 365 Announces Industry Accelerators
 Dynamics 365 announced the Microsoft Power Platform, a connected app platform that unifies access to your data to enable ISVs, SIs, Partners and Customers to build intelligent, data driven, task focused business and analytic applications. Microsoft is focused on enabling a data culture where the Microsoft Power Platform acts as the glue across Dynamics 365 (CE, F&O, Talent), Office 365 (SharePoint, Teams), Power BI, Power Apps, Microsoft Flow, Azure and other 3rd party on-premise and cloud based solutions.
 
+## Overview of the Industry Nonprofit Accelerator
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
