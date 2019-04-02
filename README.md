@@ -11,15 +11,14 @@ Incorporating data standards into the model against widely adopted international
 
 Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions.
 
-The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management.
+The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Leanr more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
 ## Get to know about other Industry Accelerators
 
 | Industry Accelerators | Description |
 |------|--------------|
-| [Health Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly develop healthcare solutions using FHIR entities such as patient, condition, and care plan. The Microsoft Health Accelerator enables partners and customers to create new use cases and workflows using a FHIR-based data model. [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
-| [Nonprofit Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly develop nonprofit fundraising, grant/award and program/results management solutions.The Microsoft Nonprofit Accelerator enables partners and customers to create new integrated use cases and workflows across the funding to outcomes cycle. [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
-| [Higher Education Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly build solutions for Higher Education using entities such as student, course, and test scores.  [To know more from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
+| [Health Accelerator](https://github.com/Microsoft/Industry-Accelerator-Health) |  Rapidly develop healthcare solutions using FHIR entities such as patient, condition, and care plan. The Microsoft Health Accelerator enables partners and customers to create new use cases and workflows using a FHIR-based data model. [Get more details from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
+| [Higher Education Accelerator](https://github.com/Microsoft/Industry-Accelerator-Education) |  Rapidly build solutions for Higher Education using entities such as student, course, and test scores.  [Get more details from ISV community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
 
 ## Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
