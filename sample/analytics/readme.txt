@@ -1,5 +1,5 @@
 Author: Michael Gernaey
-Details: Documentation to help support the accelerator
+Details: These samples are extension of the health accelerator on Dynamics 365 using Power BI and the Intelligence Platform of CDS-Analytics
 
 Copyright 
 This document is provided "as-is". Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. 
