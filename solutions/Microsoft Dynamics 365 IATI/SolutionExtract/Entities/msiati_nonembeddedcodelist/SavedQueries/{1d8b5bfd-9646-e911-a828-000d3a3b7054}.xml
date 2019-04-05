@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1d8b5bfd-9646-e911-a828-000d3a3b7054}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" preview="1" icon="1">
+        <row name="result" id="msiati_nonembeddedcodelistid">
+          <cell name="msiati_name" width="150" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_description" width="100" disableSorting="1" />
+          <cell name="msiati_nonembeddedcodelistvocabularyid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msiati_nonembeddedcodelist">
+          <attribute name="msiati_name" />
+          <order attribute="msiati_name" descending="false" />
+          <filter type="and">
+            <condition attribute="msiati_codelisttype" operator="eq" value="453490010" />
+          </filter>
+          <attribute name="msiati_nonembeddedcodelistvocabularyid" />
+          <attribute name="msiati_description" />
+          <attribute name="msiati_code" />
+          <attribute name="msiati_nonembeddedcodelistid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Disbursement Channel" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View for IATI's Disbursement Channel code list" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

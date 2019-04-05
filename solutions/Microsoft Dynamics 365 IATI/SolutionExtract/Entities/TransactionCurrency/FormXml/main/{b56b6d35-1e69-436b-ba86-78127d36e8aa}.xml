@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{b56b6d35-1e69-436b-ba86-78127d36e8aa}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{02ce48e5-7b32-444f-ba9e-5fbeded7d987}" IsUserDefined="0">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Select Base Currency" showlabel="true" showbar="false" locklevel="0" id="{56710aeb-ad77-168e-0928-bc05dd6b278d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Select Base Currency" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cba10414-3b52-2162-b0a5-cdee42ae93d3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="systemcurrency" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{0509040e-49e1-7ce5-29cb-6395360e90ab}" isunbound="true" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Transaction currency information" showlabel="false" showbar="false" id="{cbbe8c17-a65a-44a5-a12f-8fca6ff5d0fb}" IsUserDefined="0">
+                  <labels>
+                    <label description="Transaction Currency Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7D864CA9-C7AF-4117-AD94-15BB59E5A1E1}" colspan="2">
+                        <labels>
+                          <label description="Currency Type" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="onchange" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.currencytype_onchange" libraryName="TransactionCurrency_main_system_library.js" handlerUniqueId="d24b3f93-1dac-44f7-8c39-7222e23caf5d" enabled="true">
+                                <dependencies>
+                                  <dependency id="isocurrencycode" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="currencytype" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{00aeddc8-57ea-41e1-9485-7b8cac35ce9c}">
+                        <labels>
+                          <label description="Currency Code" languagecode="1033" />
+                        </labels>
+                        <control id="isocurrencycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="isocurrencycode" />
+                      </cell>
+                      <cell id="{6e623bee-ee2b-4e39-8fd3-6789e9fadc90}">
+                        <labels>
+                          <label description="Currency Precision" languagecode="1033" />
+                        </labels>
+                        <control id="currencyprecision" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="currencyprecision" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92935705-7e71-41cb-b6e9-66b013d59532}">
+                        <labels>
+                          <label description="Currency Name" languagecode="1033" />
+                        </labels>
+                        <control id="currencyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="currencyname" />
+                      </cell>
+                      <cell id="{bff9eb77-5ef5-4539-835e-a229b3feb974}">
+                        <labels>
+                          <label description="Currency Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="currencysymbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="currencysymbol" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Currency conversion" showlabel="true" showbar="true" id="{d835ab8d-01f1-43f4-b4f1-331b73554e59}" IsUserDefined="0">
+                  <labels>
+                    <label description="Currency Conversion" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6525fbcc-8e78-48cd-9fb5-9a54a054797b}" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{507a68f4-8fbd-4abb-b9df-36964cf5c96f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f4b26f19-38fc-44cb-9acf-f69d1040cf37}">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" />
+                      </cell>
+                      <cell id="{d35ff9c1-e9da-45ae-b645-ccd1d395f971}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.Form_onload" libraryName="TransactionCurrency_main_system_library.js" handlerUniqueId="1f5b3e5a-3da2-4726-8ed4-13334d61026e" enabled="true">
+              <dependencies>
+                <dependency id="isocurrencycode" />
+                <dependency id="currencyname" />
+                <dependency id="currencysymbol" />
+                <dependency id="exchangerate" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:TransactionCurrency_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <controlDescriptions>
+        <controlDescription forControl="{0509040e-49e1-7ce5-29cb-6395360e90ab}">
+          <customControl formFactor="0" name="MscrmControls.FieldControls.SystemCurrencyControl">
+            <parameters>
+              <nameValue>currencyname</nameValue>
+              <codeValue>isocurrencycode</codeValue>
+              <symbolValue>currencysymbol</symbolValue>
+              <precisionValue>currencyprecision</precisionValue>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.SystemCurrencyControl">
+            <parameters>
+              <nameValue>currencyname</nameValue>
+              <codeValue>isocurrencycode</codeValue>
+              <symbolValue>currencysymbol</symbolValue>
+              <precisionValue>currencyprecision</precisionValue>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.SystemCurrencyControl">
+            <parameters>
+              <nameValue>currencyname</nameValue>
+              <codeValue>isocurrencycode</codeValue>
+              <symbolValue>currencysymbol</symbolValue>
+              <precisionValue>currencyprecision</precisionValue>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

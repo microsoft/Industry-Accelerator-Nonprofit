@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{b028db32-3619-48a5-ac51-cf3f947b0ef3}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form hasmargin="false" shownavigationbar="false">
+      <ancestor id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+      <tabs showlabels="false">
+        <tab name="general" verticallayout="true" id="{dc4254d3-733f-4c33-ae1a-0993c9b547e3}" IsUserDefined="0">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="information" labelwidth="90" id="{bab598b4-2ec6-4224-ac89-007cd686eda4}" IsUserDefined="0" showlabel="true" showbar="false">
+                  <labels>
+                    <label description="CUSTOMER DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{112ae802-2d92-4cac-82bb-0505194e1238}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Account Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9378530-4bf2-40fe-84ee-1d1244fd92f4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ff44fde3-113e-4d69-beb5-b910d2b867b9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="telephone1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="telephone1" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Cases" labelwidth="90" id="{1d81fbd9-b5a7-455a-a7d5-848cc9d06cdb}" IsUserDefined="0" showlabel="true" showbar="false">
+                  <labels>
+                    <label description="RECENT CASES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{575916a2-9955-416a-8c14-7e83d6fc452a}" showlabel="false" colspan="1" auto="true" rowspan="7">
+                        <labels>
+                          <label description="Cases" languagecode="1033" />
+                        </labels>
+                        <control id="accountcasessgrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <TargetEntityType>incident</TargetEntityType>
+                            <ViewId>{00000000-0000-0000-00AA-000010001039}</ViewId>
+                            <RelationshipName>incident_customer_accounts</RelationshipName>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Entitlements" labelwidth="90" id="{9dc56114-15f0-4815-b17d-c406de1723a5}" IsUserDefined="0" showlabel="true" showbar="false">
+                  <labels>
+                    <label description="Entitlement" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{61c6fe44-baac-44d5-96dc-dd1e7a2f54a6}" showlabel="false" colspan="1" auto="true" rowspan="5">
+                        <labels>
+                          <label description="ACTIVE ENTITLEMENTS" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_Entitlement" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{961bf8aa-042f-4f4d-bcca-935bfc9a6994}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>account_entitlement_Customer</RelationshipName>
+                            <TargetEntityType>entitlement</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>3</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="account card" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays the account card." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

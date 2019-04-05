@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{131169fd-3047-e911-a82e-000d3a3b73ac}" Name="Set visibility and requirements to Organization and Delivery Framework" Description="This business rule set the visibility and requirements for the organization and delivery framework fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetvisibilityandrequirementstoOrganizationandDeliv-131169FD-3047-E911-A82E-000D3A3B73AC.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>msiati_expenditure</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Set visibility and requirements to Organization and Delivery Framework" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="This business rule set the visibility and requirements for the organization and delivery framework fields" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{894b0787-3247-e911-a82e-000d3a3b73ac}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_organizationid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8a4b0787-3247-e911-a82e-000d3a3b73ac}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8b4b0787-3247-e911-a82e-000d3a3b73ac}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_deliveryframeworkid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8c4b0787-3247-e911-a82e-000d3a3b73ac}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

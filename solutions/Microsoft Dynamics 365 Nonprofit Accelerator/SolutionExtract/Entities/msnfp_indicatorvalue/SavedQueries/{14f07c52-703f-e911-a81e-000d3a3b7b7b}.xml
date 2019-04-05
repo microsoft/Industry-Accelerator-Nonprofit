@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{14f07c52-703f-e911-a81e-000d3a3b7b7b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row id="msnfp_indicatorvalueid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_valuetype" width="100" />
+          <cell name="msnfp_number" width="100" />
+          <cell name="msnfp_amount" width="100" />
+          <cell name="msnfp_percentage" width="100" />
+          <cell name="msnfp_indicatorid" width="100" />
+          <cell name="msnfp_parentindicatorvalueid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfp_indicatorvalue">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_valuetype" />
+          <attribute name="msnfp_parentindicatorvalueid" />
+          <attribute name="msnfp_indicatorid" />
+          <attribute name="msnfp_percentage" />
+          <attribute name="msnfp_number" />
+          <attribute name="msnfp_amount" />
+          <attribute name="msnfp_indicatorvalueid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Indicator Values Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

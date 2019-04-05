@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cc9aa80f-966f-4b34-a5f4-5fea77846bfa}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_reviewid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_reviewerid" width="100" />
+          <cell name="msnfp_reviewertype" width="100" />
+          <cell name="msnfp_reviewdate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_datesubmitted" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_description" width="200" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_review">
+          <attribute name="msnfp_reviewid" />
+          <attribute name="msnfp_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_reviewertype" />
+          <attribute name="msnfp_reviewerid" />
+          <attribute name="msnfp_reviewdate" />
+          <attribute name="msnfp_description" />
+          <attribute name="msnfp_datesubmitted" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Reviews" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

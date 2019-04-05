@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6d5e3038-203b-4794-9c55-b4eef305c96a}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_education" id="msnfp_educationid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_education_contactid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_institutionid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_classyear" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_fieldofstudy1" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_fieldofstudy2" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_education">
+          <attribute name="msnfp_educationid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_institutionid" />
+          <attribute name="msnfp_fieldofstudy2" />
+          <attribute name="msnfp_fieldofstudy1" />
+          <attribute name="msnfp_classyear" />
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_name" />
+          <attribute name="msnfp_education_contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Education Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

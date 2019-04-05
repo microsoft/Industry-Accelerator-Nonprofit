@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{dd7b1d2a-4840-e911-a826-000d3a3b7b7b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="name">
+        <row id="connectionid" name="result">
+          <cell name="name" width="150" />
+          <cell name="record1objecttypecode" width="100" />
+          <cell name="record1roleid" width="100" />
+          <cell name="record1id" width="100" />
+          <cell name="record2objecttypecode" width="100" />
+          <cell name="record2roleid" width="100" />
+          <cell name="record2id" width="100" />
+          <cell name="description" width="100" disableSorting="1" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="connection">
+          <attribute name="name" />
+          <order descending="false" attribute="name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="record2objecttypecode" />
+          <attribute name="record1objecttypecode" />
+          <attribute name="record2roleid" />
+          <attribute name="record1roleid" />
+          <attribute name="description" />
+          <attribute name="createdon" />
+          <attribute name="record2id" />
+          <attribute name="record1id" />
+          <attribute name="connectionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Connections General Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

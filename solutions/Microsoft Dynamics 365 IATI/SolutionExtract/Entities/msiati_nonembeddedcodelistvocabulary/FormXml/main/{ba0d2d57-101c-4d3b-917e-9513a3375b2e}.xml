@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ba0d2d57-101c-4d3b-917e-9513a3375b2e}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{6e7a72dc-5920-413b-9dea-eee758e2f208}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{80340154-a9e1-4bbc-a22e-85ebff2a5dee}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eb4830b7-7013-dc6c-9b86-72e3e26b4171}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Codelist Type" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_codelisttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msiati_codelisttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c26b2c3a-7c40-d169-e658-1b7344587d97}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Code" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_code" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_code" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{472559ec-1b81-4ff0-a0f7-cff32ccae525}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{679db19c-7b35-8863-147d-d8ecc78a3622}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{315ddab3-718a-434a-6e45-28c9912d7139}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="URI" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_uri" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_uri" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

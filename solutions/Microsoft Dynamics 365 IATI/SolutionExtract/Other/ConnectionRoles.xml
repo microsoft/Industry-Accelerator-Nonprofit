@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{5d220f8a-2e47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Document Link to Delivery Framework</name>
+      <category>5</category>
+      <description>Connection between Document Link and Delivery Framework records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{63220f8a-2e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{68220f8a-2e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_documentlink</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{68fbc0bc-2e47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Document Link to Account</name>
+      <category>5</category>
+      <description>Connection between Document Link and Account records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{6efbc0bc-2e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>account</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{70fbc0bc-2e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_documentlink</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{56401718-2f47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Document Link to Result</name>
+      <category>5</category>
+      <description>Connection between Document Link and Result records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{5b401718-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_result</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{5a401718-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_documentlink</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{11cecd30-2f47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Document Link to Indicator</name>
+      <category>5</category>
+      <description>Connection between Document Link and Indicator records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{17cecd30-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_indicator</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{15cecd30-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_documentlink</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{0eadf442-2f47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Document Link to Indicator Value</name>
+      <category>5</category>
+      <description>Connection between Document Link and Indicator Value records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{15adf442-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_indicatorvalue</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{14adf442-2f47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_documentlink</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{b9d4c983-3a47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Parent Delivery Framework</name>
+      <category>5</category>
+      <description>Connects a Delivery Framework with a Parent Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bdd4c983-3a47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{b8190441-3d47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Aid Type to Delivery Framework</name>
+      <category>5</category>
+      <description>Connection between Non Embedded Codelist (Aid Type) and Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bc190441-3d47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bd190441-3d47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_nonembeddedcodelist</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{da48c094-3d47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Aid Type to Donor Commitment</name>
+      <category>5</category>
+      <description>Connection between Non Embedded Codelist (Aid Type) and Donor Commitment</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{de48c094-3d47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_donorcommitment</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{df48c094-3d47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_nonembeddedcodelist</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{b87a4708-3e47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Aid Type to Disbursement</name>
+      <category>5</category>
+      <description>Connection between Non Embedded Codelist (Aid Type) and Disbursement</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bd7a4708-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{be7a4708-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_disbursement</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{ce2aff1b-3e47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Aid Type to Expenditure</name>
+      <category>5</category>
+      <description>Connection between Non Embedded Codelist (Aid Type) and Expenditure</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d22aff1b-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d32aff1b-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msiati_expenditure</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{cd21f332-3e47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Aid Type to Transaction</name>
+      <category>5</category>
+      <description>Connection between Non Embedded Codelist (Aid Type) and Transaction</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d121f332-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d221f332-3e47-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_transaction</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{414f8fb3-5347-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Child Delivery Framework</name>
+      <category>5</category>
+      <description>Connects a Delivery Framework with a Child Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{9eb06dba-5347-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{9cfbe8e4-5347-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Sibling Delivery Framework</name>
+      <category>5</category>
+      <description>Connects a Delivery Framework with a Sibling Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a0fbe8e4-5347-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{af035ef1-5347-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Co-Funded Delivery Framework</name>
+      <category>5</category>
+      <description>Connects a Delivery Framework with a Co-Funded Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{b3035ef1-5347-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{3a831002-5447-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <name>Third Party Delivery Framework</name>
+      <category>5</category>
+      <description>Connects a Delivery Framework with a Third Party Delivery Framework</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{3e831002-5447-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+  <ConnectionRoleAssociations>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{b9d4c983-3a47-e911-a826-000d3a3b7b7b}</connectionroleid>
+      <associatedconnectionroleid>{414f8fb3-5347-e911-a826-000d3a3b7b7b}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+  </ConnectionRoleAssociations>
+</ConnectionRoles>

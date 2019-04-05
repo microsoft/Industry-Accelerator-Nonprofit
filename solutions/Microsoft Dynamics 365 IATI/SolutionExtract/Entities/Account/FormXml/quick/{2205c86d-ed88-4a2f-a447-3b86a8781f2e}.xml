@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{2205c86d-ed88-4a2f-a447-3b86a8781f2e}</formid>
+    <IntroducedVersion>6.1.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form hasmargin="false" shownavigationbar="false">
+      <tabs showlabels="false">
+        <tab name="general" verticallayout="true" id="{df9aa32c-0e58-48f4-be89-22e5eada78dd}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="SOCIALPROFILES" labelwidth="90" id="{dbb91305-f5bc-4d9b-b163-5495be3b4dcf}" IsUserDefined="0" showlabel="true" showbar="false">
+                  <labels>
+                    <label description="RELATED SOCIAL PROFILES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{86f24a13-ac8e-4465-bc35-21b32d06b671}" showlabel="false" colspan="1" auto="true" rowspan="5">
+                        <labels>
+                          <label description="Social Profiles" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_spaccount" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{7394679c-9224-4e61-b14c-219aaa7dd941}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>Socialprofile_customer_accounts</RelationshipName>
+                            <TargetEntityType>socialprofile</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>3</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Social Profiles" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays social profiles of account." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

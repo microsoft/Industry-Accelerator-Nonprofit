@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{43300add-f478-4cd9-981e-e4dd6de882bd}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{66cade2a-55f5-4c32-9322-b130053cbc4a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{09c2b4f0-c70a-4382-abb4-d094b40ee722}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3cb4dd72-20eb-cd2e-78e6-0eed1ab742da}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msiati_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3094bbd1-cb77-3d8b-3730-23d361e6a4e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Delivery Framework" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_deliveryframeworkid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_deliveryframeworkid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{61c66a48-d76e-bd17-4708-8981b8906cd3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Location" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_parentlocationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_parentlocationid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7aa51d27-c68c-5878-cc0c-bceba1dea518}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Reach" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_reachid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_reachid" disabled="false" uniqueid="{136dd9c3-816d-2e32-12a3-95796b15386b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{AAE4DBB7-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
+                            <AvailableViewIds>{AAE4DBB7-9746-E911-A82D-000D3A3B74CB}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3488e0ad-9414-41c6-95ec-4b953b70c7ec}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7427306-7384-23dc-5ecc-151c56ddd3a7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1978b23-5059-9999-1e28-c0d21d8dabaa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Activity Location Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_activitylocationdescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_activitylocationdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dcc0d292-cc5a-3897-7ed0-8674026eec56}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Position" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_pos" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_pos" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{962ce38a-3351-49dc-e69d-720333233917}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Exactness" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_exactnessid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_exactnessid" disabled="false" uniqueid="{b7a0510a-3109-0e48-0464-8a34553824a2}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A62FD5E1-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
+                            <AvailableViewIds>{A62FD5E1-9746-E911-A82D-000D3A3B74CB}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15b0d247-3001-833a-da15-c558547b035a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Location Class" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_locationclassid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_locationclassid" disabled="false" uniqueid="{4ab3b12a-104c-21ed-ae2a-91bc43a8d9a4}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{B1C1C3C6-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
+                            <AvailableViewIds>{B1C1C3C6-9746-E911-A82D-000D3A3B74CB}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb282dd9-9967-9a92-7c6c-26e3e189a33a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Feature Designation" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_featuredesignationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_featuredesignationid" disabled="false" uniqueid="{d36b524a-ad5c-6860-7179-08292010b092}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{0AD3B44B-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
+                            <AvailableViewIds>{0AD3B44B-9746-E911-A82D-000D3A3B74CB}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b374a8a3-b3c5-bee6-61a1-757a12226290}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Code" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_codeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_codeid" disabled="false" uniqueid="{9c618ac3-e38b-0521-36a2-96da926db07c}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EAD23D4-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
+                            <AvailableViewIds>{2EAD23D4-9746-E911-A82D-000D3A3B74CB}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e37ed379-3c11-247a-0e6a-de1247bdad06}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Level" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_level" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msiati_level" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

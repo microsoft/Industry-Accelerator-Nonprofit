@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a4c2efee-c63e-e911-a826-000d3a3b73ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_designationid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_designationcode" width="100" />
+          <cell name="msnfp_designationgroup" width="100" />
+          <cell name="msnfp_parentdesignationid" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_designation">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_parentdesignationid" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_designationgroup" />
+          <attribute name="msnfp_designationcode" />
+          <attribute name="msnfp_designationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Designations Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

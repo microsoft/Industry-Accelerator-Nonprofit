@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs showlabels="false">
+        <tab name="general" verticallayout="true" id="{53f4fde6-5a45-45ee-93ed-427a325ceaaa}" IsUserDefined="0">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Cases" labelwidth="90" id="{eb0e19a4-e32f-4832-a7a3-91aa8e3d3baf}" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2fc5ac7a-e144-4207-a6c3-661d06e3ce70}" showlabel="true" colspan="1" auto="true" rowspan="7">
+                        <labels>
+                          <label description="RECENT CASES" languagecode="1033" />
+                        </labels>
+                        <control id="contactcasessgrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <TargetEntityType>incident</TargetEntityType>
+                            <ViewId>{00000000-0000-0000-00AA-000010001039}</ViewId>
+                            <RelationshipName>incident_customer_contacts</RelationshipName>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Entitlements" labelwidth="90" id="{cc323bec-1ed6-423f-908a-b22217c920ed}" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4ac5bdca-56f7-45a7-9c32-44715d855362}" showlabel="true" colspan="1" auto="true" rowspan="5">
+                        <labels>
+                          <label description="ENTITLEMENTS" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_Entitlement" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{961bf8aa-042f-4f4d-bcca-935bfc9a6994}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>contact_entitlement_Customer</RelationshipName>
+                            <TargetEntityType>entitlement</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{FDB919BB-C6FC-4FC8-8FA5-67ACE68E41D1}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <ViewIds />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Recent Cases and Entitlements" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays the recent cases and entitlements." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

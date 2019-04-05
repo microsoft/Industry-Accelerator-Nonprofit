@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{a769690f-c29a-4495-8f06-1349f81de627}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <hiddencontrols />
+      <tabs>
+        <tab verticallayout="true" id="{23d2b546-71c3-4245-8fb3-1addbeda5fc6}" name="step_2" locklevel="0" expanded="true">
+          <labels>
+            <label description="Review key information and easily follow up with the opportunity's primary contact" languagecode="1033" />
+          </labels>
+          <tabheader id="{d483585e-0791-4a13-a00e-b71ff7694cca}">
+            <rows />
+          </tabheader>
+          <tabfooter id="{1b4b5b4a-2722-41c0-9961-fa8679e96f48}">
+            <rows>
+              <row>
+                <cell id="{9cdf8a7d-3323-4e22-9d0c-d462e5a66988}">
+                  <labels>
+                    <label description="Done" languagecode="1033" />
+                  </labels>
+                  <control id="23d2b546-71c3-4245-8fb3-1addbeda5fc6_next" datafieldname="23d2b546-71c3-4245-8fb3-1addbeda5fc6_next" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" isunbound="true" />
+                </cell>
+              </row>
+            </rows>
+          </tabfooter>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{2c49e1d0-adff-4a9d-90de-c9f19a129887}" name="step_2_section1">
+                  <labels>
+                    <label description="Opportunity Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0bebccc4-f90b-4a86-b567-f4ae824ca562}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="parentaccountid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentaccountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9b040ba-a780-2eab-7803-20e89a695b82}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="parentcontactid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentcontactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d7b4a0e-e7b0-a27a-50c8-a1bd1bb24bc3}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48104340-a649-1b90-7918-569c75b16980}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{abd01977-585e-bcab-262a-88d1cad00134}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Current Situation" languagecode="1033" />
+                        </labels>
+                        <control id="currentsituation" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="currentsituation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e27a7cb4-1206-9125-ce64-ecdee5743be8}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Customer Need" languagecode="1033" />
+                        </labels>
+                        <control id="customerneed" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="customerneed" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showbar="false" columns="1" id="{6c0abbcc-55c2-4266-ba25-c5ff362699a5}" name="step_2_section2">
+                  <labels>
+                    <label description="Communication" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{02158ebe-a6e3-48cc-9b7f-e6cb0c37d1a6}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Touch a field to email or call" languagecode="1033" />
+                        </labels>
+                        <control id="Section2Label" classid="{39354e4a-5015-4d74-8031-ea9eb73a1322}" isunbound="true">
+                          <parameters>
+                            <IsTitle>false</IsTitle>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{00b2d740-5290-3595-a8d9-d69e47340ccb}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Preferred Method of Contact" languagecode="1033" />
+                        </labels>
+                        <control id="opportunity_parent_contact:preferredcontactmethodcode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="preferredcontactmethodcode" relationship="opportunity_parent_contact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c589e40-c8bc-db17-ae9a-1a0010ac14c2}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="opportunity_parent_contact:emailaddress1" classid="{ada2203e-b4cd-49be-9ddf-234642b43b52}" datafieldname="emailaddress1" relationship="opportunity_parent_contact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c330abe-6d41-ba26-a256-bc6337692dc5}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Business Phone" languagecode="1033" />
+                        </labels>
+                        <control id="opportunity_parent_contact:telephone1" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="telephone1" relationship="opportunity_parent_contact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca567c70-7426-0765-511d-9512d357be82}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Mobile Phone" languagecode="1033" />
+                        </labels>
+                        <control id="opportunity_parent_contact:mobilephone" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="mobilephone" relationship="opportunity_parent_contact" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Follow up with Opportunity" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

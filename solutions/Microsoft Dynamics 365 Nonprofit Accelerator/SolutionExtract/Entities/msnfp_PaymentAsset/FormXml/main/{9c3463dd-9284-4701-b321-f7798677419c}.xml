@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9c3463dd-9284-4701-b321-f7798677419c}</formid>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{778e5306-4190-4b40-a1b6-8a3fc4ced408}" IsUserDefined="1" name="{778e5306-4190-4b40-a1b6-8a3fc4ced408}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{97c5bf5b-5cf5-4691-98a8-3dfa569e4687}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8f217ba6-8f81-4449-91e6-326a46380b95}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{205d456a-86b0-3854-6ace-71688364e20b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Asset Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_assettype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_assettype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7c9141ee-8799-d6b7-cd45-6850d39e9604}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfp_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e66bca29-9525-e573-d86c-7d20e1bcd909}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Book Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_bookdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_bookdate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{778e5306-4190-4b40-a1b6-8a3fc4ced408}_section_2" showlabel="false" showbar="false" locklevel="0" id="{c16a446a-e730-8d0e-a58e-1eb576c2b6da}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{564cbea1-6922-434d-28de-8849c28d3ecc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfp_amount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70e48ead-18e5-4082-5504-76e888938ec4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5716557e-5aa0-3020-ab26-a8c65e750870}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ac01e8d-26e7-5c4a-0ac1-c35620b86ab9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_quantity" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="msnfp_quantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d3616aa-90dc-c77a-1191-5a18b712668d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_symbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_symbol" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{778e5306-4190-4b40-a1b6-8a3fc4ced408}_section_3" showlabel="false" showbar="false" locklevel="0" id="{2d42a859-9011-b5d9-5041-9dcd1c636713}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{31c16344-7881-0257-d431-76dcd46d4716}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pledged Asset" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_paymentasset_pledgedasset" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_paymentasset_pledgedasset" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e46e2e96-8323-6917-5b91-8344b37aae9c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Original Asset Gift Adjusted" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_originalassetadjustedid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_originalassetadjustedid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ee745be-0c1e-d081-4bcd-161a56c8cb3b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Payment Asset Category" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_paymentassetcategory" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_paymentassetcategory" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c94b57be-196d-ed86-891e-eb264088ae32}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Payment Asset Subcategory" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_paymentassetsubcategory" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_paymentassetsubcategory" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{44168c81-4e03-d30b-ed4b-ceea7d4a0084}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pledged On Payment Schedule" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_pledgedonpaymentscheduleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_pledgedonpaymentscheduleid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2d7eb91-0e6d-1184-2a92-d0b72c66e3e1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Transferred On Transaction" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_transferredontransactionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_transferredontransactionid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{d5552d4e-989b-a442-0aa2-b590840c24a3}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Administrative" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{b82214ee-3417-6e95-a3a8-097ac9d1ed9a}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e23aac97-acc0-2c5e-2202-9017bcc19e7e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{aadc10e5-bb18-851d-d552-55678d58129a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{a1eee9be-d46e-5662-8cb5-09e907cc7cba}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{7b815219-a080-8e40-42e4-2bec474b1489}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b2c91979-4d54-472e-b1f5-9b6e030c398c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{5e90adc7-64db-c3b8-364e-7c7e13b2dd25}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{edb0bcc7-4047-21db-a173-e481c1602dc3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{1bede335-4c52-deb8-be40-ac8731e44b8c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Payment Asset" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

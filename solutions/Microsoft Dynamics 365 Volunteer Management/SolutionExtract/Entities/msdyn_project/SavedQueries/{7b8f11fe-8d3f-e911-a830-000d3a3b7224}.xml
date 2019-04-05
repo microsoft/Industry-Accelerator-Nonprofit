@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7b8f11fe-8d3f-e911-a830-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msdyn_subject" select="1" preview="1" icon="1">
+        <row name="result" id="msdyn_projectid">
+          <cell name="msdyn_subject" width="150" />
+          <cell name="msdyn_projectmanager" width="100" />
+          <cell name="msdyn_actualstart" width="100" />
+          <cell name="msdyn_actualend" width="100" />
+          <cell name="msdyn_teamsize" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msdyn_project">
+          <attribute name="msdyn_subject" />
+          <order attribute="msdyn_subject" descending="false" />
+          <attribute name="msdyn_teamsize" />
+          <attribute name="msdyn_projectmanager" />
+          <attribute name="msdyn_actualstart" />
+          <attribute name="msdyn_actualend" />
+          <attribute name="msdyn_projectid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Volunteer Organization Projects" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

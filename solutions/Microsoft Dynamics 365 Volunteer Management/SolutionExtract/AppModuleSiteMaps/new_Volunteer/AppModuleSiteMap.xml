@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>new_Volunteer</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area IntroducedVersion="7.0.0.0" ShowGroups="true" DescriptionResourceId="SitemapDesigner.NewArea" ResourceId="SitemapDesigner.NewArea" Id="New_Area" Icon="/WebResources/msnfp_NonProfitAppLogo" VectorIcon="/WebResources/msnfp_NonProfitAppLogo">
+      <Titles>
+        <Title Title="Nonprofit" LCID="1033" />
+      </Titles>
+      <Group IntroducedVersion="7.0.0.0" DescriptionResourceId="SitemapDesigner.NewGroup" ResourceId="SitemapDesigner.NewGroup" Id="New_Group" ToolTipResourseId="SitemapDesigner.Unknown" IsProfile="false">
+        <Titles>
+          <Title Title="Volunteer Management" LCID="1033" />
+        </Titles>
+        <SubArea IntroducedVersion="7.0.0.0" Id="New_SubArea" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="true" Entity="account" Icon="/_imgs/imagestrips/transparent_spacer.gif">
+          <Titles>
+            <Title Title="Organizations" LCID="1033" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_d06f8a8b" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="true" Entity="msdyn_project" Icon="/_imgs/imagestrips/transparent_spacer.gif" />
+        <SubArea Id="NewSubArea_bcad2bb44" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="true" Entity="bookableresource" Icon="/_imgs/imagestrips/transparent_spacer.gif">
+          <Titles>
+            <Title Title="Volunteers" LCID="1033" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Volunteer" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

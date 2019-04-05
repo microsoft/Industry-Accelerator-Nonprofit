@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{959aa1f6-3a47-e911-a838-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_educationid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_education_contactid" width="100" />
+          <cell name="msnfp_classyear" width="100" />
+          <cell name="msnfp_completionyear" width="100" />
+          <cell name="msnfp_degreeorcertificate" width="100" />
+          <cell name="msnfp_grade" width="100" />
+          <cell name="msnfp_institutionid" width="100" />
+          <cell name="msnfp_departmentorcollegeid" width="100" />
+          <cell name="msnfp_fieldofstudy1" width="100" />
+          <cell name="msnfp_fieldofstudy2" width="100" />
+          <cell name="msnfp_lastyearattended" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_education">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_lastyearattended" />
+          <attribute name="msnfp_institutionid" />
+          <attribute name="msnfp_grade" />
+          <attribute name="msnfp_fieldofstudy2" />
+          <attribute name="msnfp_fieldofstudy1" />
+          <attribute name="msnfp_departmentorcollegeid" />
+          <attribute name="msnfp_degreeorcertificate" />
+          <attribute name="msnfp_education_contactid" />
+          <attribute name="msnfp_completionyear" />
+          <attribute name="msnfp_classyear" />
+          <attribute name="msnfp_educationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Education History Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

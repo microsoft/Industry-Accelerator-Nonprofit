@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b808895c-6d3f-e911-a81e-000d3a3b7b7b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_deliveryframeworkid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_deliveryframeworktype" width="100" />
+          <cell name="msnfp_scope" width="100" />
+          <cell name="msnfp_status" width="100" />
+          <cell name="msnfp_parentdeliveryframeworkid" width="100" />
+          <cell name="msnfp_objectiveid" width="100" />
+          <cell name="msnfp_description" width="100" disableSorting="1" />
+          <cell name="msnfp_account" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_deliveryframework">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_scope" />
+          <attribute name="msnfp_parentdeliveryframeworkid" />
+          <attribute name="msnfp_description" />
+          <attribute name="msnfp_deliveryframeworktype" />
+          <attribute name="msnfp_account" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_objectiveid" />
+          <attribute name="msnfp_deliveryframeworkid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Delivery Frameworks Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

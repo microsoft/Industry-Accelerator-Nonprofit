@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.3056" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>MicrosoftDynamics365VolunteerManagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Microsoft Dynamics 365 Volunteer Management" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>microsoftdynamics365nonprofitaccelerator</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Dynamics 365 Nonprofit Accelerator" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>msnfp</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>84406</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="bookableresource" behavior="1" />
+      <RootComponent type="1" schemaName="bookableresourcecategory" behavior="1" />
+      <RootComponent type="1" schemaName="bookableresourcecharacteristic" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" behavior="0" />
+      <RootComponent type="1" schemaName="msdyn_project" behavior="1" />
+      <RootComponent type="1" schemaName="msdyn_projectteam" behavior="2" />
+      <RootComponent type="29" id="{665e73aa-18c2-47d8-86bf-c50499c73b82}" behavior="0" />
+      <RootComponent type="60" id="{3ecba9af-afc4-4bdf-a951-8a771a9add4a}" behavior="0" />
+      <RootComponent type="60" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      <RootComponent type="60" id="{5f07ead5-c98f-4a37-aca4-89a7aab2f681}" />
+      <RootComponent type="60" id="{96f027ce-fc9b-446c-b4fd-442b44663145}" />
+      <RootComponent type="60" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      <RootComponent type="60" id="{cdacb5a7-493b-4b16-88a6-b576936f0e60}" />
+      <RootComponent type="60" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      <RootComponent type="60" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      <RootComponent type="62" behavior="0" />
+      <RootComponent type="62" schemaName="new_Volunteer" behavior="0" />
+      <RootComponent type="80" schemaName="new_Volunteer" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msdyn_projectteam" displayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="0" type="1" schemaName="msdyn_projectteam" displayName="Project Team Member" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="2" type="1" schemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="3" type="1" schemaName="msdyn_project" displayName="Project" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="bookableresourcecharacteristic" displayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="4" type="1" schemaName="bookableresourcecharacteristic" displayName="Bookable Resource Characteristic" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="1" schemaName="bookableresourcecategory" displayName="Bookable Resource Category" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="5" type="1" schemaName="bookableresourcecategory" displayName="Bookable Resource Category" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="7" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msdyn_project" parentDisplayName="Project" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="9" type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="msdyn_project" parentDisplayName="Project" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="11" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msdyn_project" parentDisplayName="Project" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="13" type="62" schemaName="new_Volunteer" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="14" type="80" schemaName="new_Volunteer" displayName="Volunteer Management" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="13" type="62" schemaName="new_Volunteer" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="14" type="80" schemaName="new_Volunteer" displayName="Volunteer Management" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="bookableresourcecharacteristic" displayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_project" displayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="17" type="2" schemaName="createdby" displayName="Created By" parentSchemaName="msdyn_project" parentDisplayName="Project" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="1" schemaName="bookableresourcecategoryassn" displayName="Bookable Resource Category Assn" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="1" schemaName="msnfp_indicator" displayName="Indicator" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="1" schemaName="msdyn_solutionhistory" displayName="Solution History" solution="SolutionHistoryAPIs (9.1.0.5)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="1" schemaName="msnfp_transaction" displayName="Transaction" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="1" schemaName="msnfp_designation" displayName="Designation" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="1" schemaName="msnfp_result" displayName="Result" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="29" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="1" schemaName="msnfp_docket" displayName="Docket" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="1" schemaName="msnfp_objective" displayName="Objective" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="1" schemaName="msnfp_membership" displayName="Membership" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="1" schemaName="salesliterature" displayName="Sales Literature" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="37" type="1" schemaName="service" displayName="Service" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="1" schemaName="msnfp_membershipcategory" displayName="Membership Category" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="1" schemaName="msdyn_postconfig" displayName="Post Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="1" schemaName="msnfp_donorcommitment" displayName="Donor Commitment" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="1" schemaName="msnfp_plannedgiving" displayName="Planned Giving" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="43" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="44" type="1" schemaName="msnfp_award" displayName="Award" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="46" type="1" schemaName="msnfp_request" displayName="Request" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="47" type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="1" schemaName="msdyn_postruleconfig" displayName="Post Rule Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="52" type="1" schemaName="msnfp_paymentmethod" displayName="Payment Method" solution="Active" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="53" type="1" schemaName="msnfp_preference" displayName="Preference" solution="Active" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="1" schemaName="msnfp_salutation" displayName="Salutation" solution="Active" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="56" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="58" type="2" schemaName="msdyn_projectteamid" displayName="Project Team" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="59" type="2" schemaName="msdyn_from" displayName="From" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="60" type="2" schemaName="msdyn_resourcecategory" displayName="Role" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="61" type="2" schemaName="msdyn_to" displayName="To" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="62" type="2" schemaName="msdyn_project" displayName="Project" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="57" type="26" schemaName="(Bookable Resource) - Project Member" displayName="(Bookable Resource) - Project Member" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" id="{b723de7d-a23a-e911-a821-000d3a3b73e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="63" type="2" schemaName="createdon" displayName="Created On" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="64" type="2" schemaName="msdyn_subject" displayName="Name" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="65" type="2" schemaName="msdyn_projectmanager" displayName="Project Manager" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="66" type="2" schemaName="msdyn_actualstart" displayName="Actual Start" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="67" type="2" schemaName="msdyn_workhourtemplate" displayName="Work hour template" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="68" type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="69" type="2" schemaName="msdyn_istemplate" displayName="Is Template" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="70" type="2" schemaName="msdyn_description" displayName="Description" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="71" type="2" schemaName="msdyn_actualend" displayName="Actual End" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="72" type="2" schemaName="msdyn_projecttemplate" displayName="Project Template" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="73" type="2" schemaName="msdyn_targetutilization" displayName="Target Utilization" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="74" type="2" schemaName="msdyn_organizationalunit" displayName="Organizational Unit" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="75" type="2" schemaName="msdyn_scheduledend" displayName="Estimated Finish Date" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="76" type="2" schemaName="msdyn_scheduleperformance" displayName="Schedule Performance" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="77" type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="78" type="2" schemaName="msdyn_plannedhours" displayName="Estimated Hours" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="79" type="2" schemaName="msdyn_scheduledstart" displayName="Start Date" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="80" type="2" schemaName="msdyn_contractorganizationalunitid" displayName="Contracting Unit" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="81" type="2" schemaName="msdyn_actualhours" displayName="Actual Hours" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="82" type="2" schemaName="bpf_name" displayName="Name" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="83" type="60" displayName="Information" parentDisplayName="Project Stages" id="{77721dd7-48ba-471a-b241-a111c1205f79}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="84" type="2" schemaName="msdyn_projectid" displayName="Project" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="64" type="2" schemaName="msdyn_subject" displayName="Name" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="85" type="2" schemaName="userid" displayName="User" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="86" type="2" schemaName="msdyn_displayonscheduleboard" displayName="Display On Schedule Board" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="87" type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="88" type="2" schemaName="msdyn_generictype" displayName="Generic Type (Deprecated)" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="89" type="2" schemaName="name" displayName="Name" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="90" type="2" schemaName="timezone" displayName="Time Zone" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="91" type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="92" type="2" schemaName="msdyn_endlocation" displayName="End Location" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="93" type="2" schemaName="accountid" displayName="Account" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="94" type="2" schemaName="createdon" displayName="Created On" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="95" type="2" schemaName="msdyn_startlocation" displayName="Start Location" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="96" type="2" schemaName="msdyn_displayonscheduleassistant" displayName="Enable for Availability Search" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="97" type="2" schemaName="createdby" displayName="Created By" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="98" type="2" schemaName="resourcetype" displayName="Resource Type" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="99" type="2" schemaName="contactid" displayName="Contact" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="100" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="101" type="2" schemaName="createdon" displayName="Created On" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="83" type="60" displayName="Information" parentDisplayName="Project Stages" id="{77721dd7-48ba-471a-b241-a111c1205f79}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="64" type="2" schemaName="msdyn_subject" displayName="Name" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="84" type="2" schemaName="msdyn_projectid" displayName="Project" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="102" type="2" schemaName="msdyn_teamsize" displayName="Team Size" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="65" type="2" schemaName="msdyn_projectmanager" displayName="Project Manager" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="66" type="2" schemaName="msdyn_actualstart" displayName="Actual Start" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="71" type="2" schemaName="msdyn_actualend" displayName="Actual End" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="6" type="26" schemaName="Volunteer Organization Projects" displayName="Volunteer Organization Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" id="{7b8f11fe-8d3f-e911-a830-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="103" type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="83" type="60" displayName="Information" parentDisplayName="Project Stages" id="{77721dd7-48ba-471a-b241-a111c1205f79}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="104" type="2" schemaName="bpf_msdyn_projectid" displayName="Msdyn_Project" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="104" type="2" schemaName="bpf_msdyn_projectid" displayName="Msdyn_Project" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="10" schemaName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" displayName="bpf_msdyn_project_msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="105" type="2" schemaName="bpf_msdyn_projectidname" parentSchemaName="msdyn_bpf_665e73aa18c247d886bfc50499c73b82" parentDisplayName="Project Stages" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="106" type="9" schemaName="msnfp_accounttype" displayName="Account Type" solution="Active" />
+        <Dependent key="107" type="2" schemaName="msnfp_accounttype" displayName="Account Type" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="108" type="10" schemaName="msdyn_msdyn_organizationalunit_bookableresource_organizationalunit" displayName="msdyn_msdyn_organizationalunit_bookableresource_organizationalunit" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="109" type="10" schemaName="msdyn_bookableresource_msdyn_resourceterritory_Resource" displayName="msdyn_bookableresource_msdyn_resourceterritory_Resource" parentSchemaName="msdyn_resourceterritory" parentDisplayName="Resource Territory" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="10" schemaName="msdyn_bookableresource_bookableresourcebookingheader_bookableresourceid" displayName="msdyn_bookableresource_bookableresourcebookingheader_bookableresourceid" parentSchemaName="bookableresourcebookingheader" parentDisplayName="Bookable Resource Booking Header" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="111" type="10" schemaName="msdyn_msdyn_project_msdyn_actual_Project" displayName="msdyn_msdyn_project_msdyn_actual_Project" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="112" type="10" schemaName="msdyn_project_resourcerequirement" displayName="msdyn_project_resourcerequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="113" type="10" schemaName="msnfp_txn_receiptOnAccount" displayName="msnfp_txn_receiptOnAccount" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="114" type="10" schemaName="msnfp_account_msnfp_preference_preference_customer" displayName="msnfp_account_msnfp_preference_preference_customer" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="115" type="10" schemaName="msdyn_msdyn_project_msdyn_projectteam_project" displayName="msdyn_msdyn_project_msdyn_projectteam_project" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="116" type="10" schemaName="msnfp_account_msnfp_creditrecipient_Customer" displayName="msnfp_account_msnfp_creditrecipient_Customer" parentSchemaName="msnfp_creditrecipient" parentDisplayName="Credit Plan Recipient" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="117" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="118" type="10" schemaName="msnfp_pmtSched_receiptOnAccount" displayName="msnfp_pmtSched_receiptOnAccount" parentSchemaName="msnfp_paymentschedule" parentDisplayName="Payment Schedule" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="119" type="10" schemaName="msnfp_account_docket_AwardRecipient" displayName="msnfp_account_docket_AwardRecipient" parentSchemaName="msnfp_docket" parentDisplayName="Docket" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="120" type="10" schemaName="msdyn_account_msdyn_project_Customer" displayName="msdyn_account_msdyn_project_Customer" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="121" type="10" schemaName="msnfp_account_deliveryframework_Account" displayName="msnfp_account_deliveryframework_Account" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="122" type="10" schemaName="msnfp_creditPlan_account" displayName="msnfp_creditPlan_account" parentSchemaName="msnfp_creditplan" parentDisplayName="Credit Plan" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="123" type="10" schemaName="msnfp_account_msnfp_docket_docket_fiscalSponsor" displayName="msnfp_account_msnfp_docket_docket_fiscalSponsor" parentSchemaName="msnfp_docket" parentDisplayName="Docket" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="124" type="10" schemaName="msnfp_plannedgiving_account" displayName="msnfp_plannedgiving_account" parentSchemaName="msnfp_plannedgiving" parentDisplayName="Planned Giving" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="125" type="10" schemaName="msnfp_account_msnfp_paymentschedule_DefaultHardCreditToCustomer" displayName="msnfp_account_msnfp_paymentschedule_DefaultHardCreditToCustomer" parentSchemaName="msnfp_paymentschedule" parentDisplayName="Payment Schedule" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="126" type="10" schemaName="msnfp_commitment_pledgedOnAccount" displayName="msnfp_commitment_pledgedOnAccount" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="127" type="10" schemaName="msnfp_account_msnfp_ofacmatch_ofacMatch_customer" displayName="msnfp_account_msnfp_ofacmatch_ofacMatch_customer" parentSchemaName="msnfp_ofacmatch" parentDisplayName="OFAC Match" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="128" type="10" schemaName="msnfp_account_award_Recipient" displayName="msnfp_account_award_Recipient" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="129" type="10" schemaName="msnfp_account_request_CustomerId" displayName="msnfp_account_request_CustomerId" parentSchemaName="msnfp_request" parentDisplayName="Request" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="130" type="10" schemaName="msnfp_account_request_FiscalSponsor" displayName="msnfp_account_request_FiscalSponsor" parentSchemaName="msnfp_request" parentDisplayName="Request" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="131" type="10" schemaName="msnfp_pmtMethod_account" displayName="msnfp_pmtMethod_account" parentSchemaName="msnfp_paymentmethod" parentDisplayName="Payment Method" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="132" type="10" schemaName="msnfp_account_disbursement_RecipientAccount" displayName="msnfp_account_disbursement_RecipientAccount" parentSchemaName="msnfp_disbursement" parentDisplayName="Disbursement" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="133" type="10" schemaName="msnfp_account_msnfp_salutation_salutation_customer" displayName="msnfp_account_msnfp_salutation_salutation_customer" parentSchemaName="msnfp_salutation" parentDisplayName="Salutation" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="134" type="10" schemaName="msnfp_employmentHistory_employer" displayName="msnfp_employmentHistory_employer" parentSchemaName="msnfp_employmenthistory" parentDisplayName="Employment History" solution="Active" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="135" type="10" schemaName="msdyn_bookableresource_msdyn_projectteam_bookableresourceid" displayName="msdyn_bookableresource_msdyn_projectteam_bookableresourceid" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="136" type="10" schemaName="msdyn_organizationalunit_project" displayName="msdyn_organizationalunit_project" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="137" type="10" schemaName="msdyn_systemuser_msdyn_project_projectmanager" displayName="msdyn_systemuser_msdyn_project_projectmanager" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="138" type="10" schemaName="msdyn_msdyn_workhourtemplate_msdyn_project_workhourtemplate" displayName="msdyn_msdyn_workhourtemplate_msdyn_project_workhourtemplate" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="120" type="10" schemaName="msdyn_account_msdyn_project_Customer" displayName="msdyn_account_msdyn_project_Customer" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="139" type="10" schemaName="msnfp_contact_msnfp_preference_preference_customer" displayName="msnfp_contact_msnfp_preference_preference_customer" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="Active" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="140" type="10" schemaName="msdyn_msdyn_project_msdyn_project_ProjectTemplate" displayName="msdyn_msdyn_project_msdyn_project_ProjectTemplate" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="141" type="10" schemaName="msnfp_contact_msnfp_salutation_salutation_customer" displayName="msnfp_contact_msnfp_salutation_salutation_customer" parentSchemaName="msnfp_salutation" parentDisplayName="Salutation" solution="Active" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="142" type="26" schemaName="Contacts for Account Information View" displayName="Contacts for Account Information View" parentSchemaName="contact" parentDisplayName="Contact" solution="Active" id="{7b53de3d-27d2-e811-a960-000d3a37870e}" />
+        <Dependent key="143" type="60" displayName="Account Nonprofit Quick View" parentDisplayName="Account" id="{3ecba9af-afc4-4bdf-a951-8a771a9add4a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="144" type="26" schemaName="Active Resource Category Assns" displayName="Active Resource Category Assns" parentSchemaName="bookableresourcecategoryassn" parentDisplayName="Bookable Resource Category Assn" solution="msdynce_Scheduling (9.0.0.0)" id="{533d1548-1e86-49cb-8c06-bff8ca02591d}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="145" type="26" schemaName="Project Service Resource Skills" displayName="Project Service Resource Skills" parentSchemaName="bookableresourcecharacteristic" parentDisplayName="Bookable Resource Characteristic" solution="ProjectService (3.5.0.40)" id="{19c69c18-aee4-e511-80fb-00155de28207}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="146" type="26" schemaName="Resource Characteristics" displayName="Resource Characteristics" parentSchemaName="bookableresourcecharacteristic" parentDisplayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" id="{ae9e5ee4-02a9-e511-80e8-00155db9c10d}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="147" type="26" schemaName="Project Service Resource Associated With Role" displayName="Project Service Resource Associated With Role" parentSchemaName="bookableresourcecategoryassn" parentDisplayName="Bookable Resource Category Assn" solution="ProjectService (3.5.0.40)" id="{27157b97-aee4-e511-80fb-00155de28207}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="148" type="26" schemaName="Active Project Team Members" displayName="Active Project Team Members" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" id="{d2101476-6904-401e-b18b-bf011c32cf54}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="149" type="26" schemaName="Active Bookable Resource Characteristics" displayName="Active Bookable Resource Characteristics" parentSchemaName="bookableresourcecharacteristic" parentDisplayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" id="{7e7fe0be-277f-4f14-9484-261412680ab4}" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="150" type="26" schemaName="Project Template Lookup View" displayName="Project Template Lookup View" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" id="{416e9f91-2fed-e511-80fc-00155de26605}" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="151" type="26" schemaName="All Team Members" displayName="All Team Members" parentSchemaName="msdyn_projectteam" parentDisplayName="Project Team Member" solution="ProjectService (3.5.0.40)" id="{ff646962-5d5a-e411-814a-6c3be5a8017c}" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="152" type="26" schemaName="Work hour template Lookup View" displayName="Work hour template Lookup View" parentSchemaName="msdyn_workhourtemplate" parentDisplayName="Work template" solution="MicrosoftDynamicsScheduling (3.5.0.107)" id="{6240a128-ac89-4d2b-89f6-ba1cee63a1a3}" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="153" type="26" schemaName="My Active Projects" displayName="My Active Projects" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" id="{a18e3a4a-429d-4a98-9466-f7aa7068b5c3}" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="154" type="26" schemaName="All Accounts" displayName="All Accounts" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="155" type="26" schemaName="Active Salutations" displayName="Active Salutations" parentSchemaName="msnfp_salutation" parentDisplayName="Salutation" solution="Active" id="{4be858f0-5f82-4b79-a925-50c4c6b454f4}" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="156" type="26" schemaName="Organizational Unit Lookup View" displayName="Organizational Unit Lookup View" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.5.0.107)" id="{54ae6f6e-dc9d-4ede-b2d5-54a5b95b48b8}" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="157" type="26" schemaName="Active Preferences" displayName="Active Preferences" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="Active" id="{39e7e428-fc67-480f-811f-b3141dbdd676}" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="158" type="59" schemaName="Project by Estimated Vs Actual cost" displayName="Project by Estimated Vs Actual cost" parentSchemaName="msdyn_project" parentDisplayName="Project" solution="ProjectService (3.5.0.40)" id="{faa93ec1-df84-e511-80ed-00155db88c00}" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="159" type="60" displayName="Information" parentDisplayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" id="{96f027ce-fc9b-446c-b4fd-442b44663145}" />
+        <Dependent key="159" type="60" displayName="Information" parentDisplayName="Bookable Resource Characteristic" id="{96f027ce-fc9b-446c-b4fd-442b44663145}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="160" type="60" displayName="Information" parentDisplayName="Bookable Resource Category" solution="msdynce_Scheduling (9.0.0.0)" id="{5f07ead5-c98f-4a37-aca4-89a7aab2f681}" />
+        <Dependent key="160" type="60" displayName="Information" parentDisplayName="Bookable Resource Category" id="{5f07ead5-c98f-4a37-aca4-89a7aab2f681}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="161" type="60" displayName="Quick Create" parentDisplayName="Bookable Resource Characteristic" solution="MicrosoftDynamicsScheduling (3.5.0.107)" id="{cdacb5a7-493b-4b16-88a6-b576936f0e60}" />
+        <Dependent key="161" type="60" displayName="Quick Create" parentDisplayName="Bookable Resource Characteristic" id="{cdacb5a7-493b-4b16-88a6-b576936f0e60}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="83" type="60" displayName="Information" parentDisplayName="Project Stages" solution="ProjectService (3.5.0.40)" id="{77721dd7-48ba-471a-b241-a111c1205f79}" />
+        <Dependent key="83" type="60" displayName="Information" parentDisplayName="Project Stages" id="{77721dd7-48ba-471a-b241-a111c1205f79}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="162" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="15" type="60" displayName="Volunteer Organization" parentDisplayName="Account" id="{c6e0dca2-11be-48b4-b673-65686db9db2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="163" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="14" type="80" schemaName="new_Volunteer" displayName="Volunteer Management" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="164" type="61" schemaName="msdyn_SI.js" displayName="msdyn_SI.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="165" type="61" schemaName="msdyn_/Project/Scripts/ProjectInitialization.js" displayName="msdyn_/Project/Scripts/ProjectInitialization.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="166" type="61" schemaName="msdyn_/Libraries/jQuery/jquery.js" displayName="msdyn_/Libraries/jQuery/jquery.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="167" type="61" schemaName="msdyn_/Project/ProjectTeam/Scripts/ProjectTeamGridIcon.js" displayName="msdyn_/Project/ProjectTeam/Scripts/ProjectTeamGridIcon.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="168" type="61" schemaName="msdyn_/fps/Utils/FpsUtils.js" displayName="msdyn_/fps/Utils/FpsUtils.js" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="169" type="61" schemaName="Scheduling/BookableResource/BookableResource_main_system_library.js" displayName="Scheduling/BookableResource/BookableResource_main_system_library.js" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="170" type="61" schemaName="msdyn_/fps/BookableResource/BookableResource.Library.js" displayName="msdyn_/fps/BookableResource/BookableResource.Library.js" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="171" type="61" schemaName="msdyn_/fps/Utils/head.js" displayName="msdyn_/fps/Utils/head.js" solution="MicrosoftDynamicsScheduling (3.5.0.107)" />
+        <Dependent key="8" type="60" displayName="Nonprofit" parentDisplayName="Bookable Resource" id="{d68d5294-c0d1-43f0-bea7-251ca6e75413}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="172" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="173" type="61" schemaName="msdyn_/Project/Ribbon/ProjectRibbon.js" displayName="msdyn_/Project/Ribbon/ProjectRibbon.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="174" type="61" schemaName="msdyn_/Libraries/require/require.js" displayName="msdyn_/Libraries/require/require.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="175" type="61" schemaName="msdyn_/Common/Trial/ProjectServiceTrial.js" displayName="msdyn_/Common/Trial/ProjectServiceTrial.js" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="10" type="60" displayName="Nonprofit" parentDisplayName="Project" id="{d72f9768-18b3-4ad2-9c70-8007e610394c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="176" type="61" schemaName="msdyn_/Images/Wall_16.png" displayName="msdyn_/Images/Wall_16.png" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="177" type="61" schemaName="msdyn_/PersonalWall.htm" displayName="msdyn_/PersonalWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="16" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="178" type="61" schemaName="msdyn_talkingpointsloader.js" displayName="msdyn_talkingpointsloader.js" solution="msdynce_Talkingpoints (9.0.1.70244)" />
+        <Dependent key="54" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="179" type="61" schemaName="msdyn_/imgs/SiteMap/Project_32.png" displayName="msdyn_/imgs/SiteMap/Project_32.png" solution="ProjectService (3.5.0.40)" />
+        <Dependent key="0" type="1" schemaName="msdyn_projectteam" displayName="Project Team Member" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

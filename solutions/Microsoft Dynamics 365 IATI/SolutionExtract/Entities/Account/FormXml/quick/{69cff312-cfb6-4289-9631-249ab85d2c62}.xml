@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{69cff312-cfb6-4289-9631-249ab85d2c62}</formid>
+    <IntroducedVersion>7.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="hierarchy" verticallayout="true" id="{ee701130-9f7e-4c91-b842-ac167874416d}" IsUserDefined="0">
+          <labels>
+            <label description="Hierarchy" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="account tile" id="{7d0de66d-72fd-4e03-8a38-941bc343a644}">
+                  <labels>
+                    <label description="Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{14783db0-8a16-4ee9-9d02-c58887109913}">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="primarycontactid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="primarycontactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dbb897d-ae3b-4f49-b03c-b51042b70931}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{54e09ca5-6c59-560b-b2ba-a0d82e6ae516}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Open Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="openrevenue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="openrevenue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c7004ec-51b9-32d8-4608-82eb65755796}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Open Deals" languagecode="1033" />
+                        </labels>
+                        <control id="opendeals" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="opendeals" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Account Hierarchy Tile Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This is the account hierarchy definition." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
