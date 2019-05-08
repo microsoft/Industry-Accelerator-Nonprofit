@@ -1,16 +1,16 @@
-# Nonprofit Accelerators
+# Nonprofit Accelerator
 Hello ISVs, SIs, Partners and Customers - Your success is our goal.
-This Repository helps you to Connect, Extend, Build and Contribute. 
+This Repository helps you to Connect, Extend, Build and Contribute to Microsoft Industry Nonprofit accelerator.
 
 # Table of Contents
 
 * [Nonprofit Accelerator](#nonprofit-accelerator)
+
   * [Introduction](#Microsoft-Dynamics-365-Announces-Industry-Accelerators)
   * [Overview](#Overview-of-the-Industry-Nonprofit-Accelerator)
   * [Releases](#Releases)
   * [Other Industry Accelerator](#Get-to-know-about-other-Industry-Accelerators)
-  * [Contribution](#contribution)
-  * [Samples](#samples)
+  * [Contributing](#Contributing)
   
   
 ## Microsoft Dynamics 365 Announces Industry Accelerators
@@ -31,6 +31,11 @@ Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Pow
 
 The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Learn more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
+## Releases
+
+Click "release" tab on the top or click this [link](https://github.com/microsoft/Industry-Accelerator-Nonprofit/releases) to navigate to latest release details and download the latest release assets.
+
+
 ## Get to know about other Industry Accelerators
 
 | Industry Accelerators | Description |
@@ -40,6 +45,10 @@ The Microsoft Common Data Model for Nonprofits is the first of its kind to provi
 | [Higher Education Accelerator](https://github.com/Microsoft/Industry-Accelerator-Education) |  Rapidly build solutions for Higher Education using entities such as student, course, and test scores.  Get more details from [Dynamics 365 ISV Success community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
 
 ## Contributing
+
+* [CLA](#Contributor-License-Agreement-(CLA))
+
+## Contributor License Agreement (CLA)
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
