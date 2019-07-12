@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2668b696-e25f-4a60-85d0-1de3bfca3eb5}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_disbursement" id="msnfp_disbursementid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_disbursement">
+          <attribute name="msnfp_disbursementid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.10</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Disbursement Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -10,8 +10,12 @@
     <layoutxml>
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_recipientregionid">
+          <cell name="msiati_regionid" width="100" />
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_percentage" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,16 +23,22 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_recipientregion">
-          <attribute name="msiati_recipientregionid" />
           <attribute name="msiati_name" />
           <attribute name="createdon" />
-          <order attribute="msiati_name" descending="false" />
+          <order attribute="msiati_regionid" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
           <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_regionid" operator="like" value="{0}" />
             <condition attribute="msiati_name" operator="like" value="{0}" />
+            <condition attribute="msiati_deliveryframeworkid" operator="like" value="{0}" />
           </filter>
+          <attribute name="msiati_regionid" />
+          <attribute name="msiati_percentage" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="msiati_recipientregionid" />
         </entity>
       </fetch>
     </fetchxml>

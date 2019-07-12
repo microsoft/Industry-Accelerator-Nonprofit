@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="msnfp.msnfp_designation.AddConnection.CustomAction" Location="Mscrm.Form.msnfp_designation.MainTab.Save.Controls._children" Sequence="43">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:msnfp.msnfp_designation.AddConnection.Alt" Command="Mscrm.AddConnectionForm" Id="msnfp.msnfp_designation.AddConnection" Image32by32="/_imgs/ribbon/AddConnection_32.png" Image16by16="/_imgs/ribbon/AddConnection_16.png" LabelText="$LocLabels:msnfp.msnfp_designation.AddConnection.LabelText" Sequence="43" TemplateAlias="o1" ToolTipTitle="$LocLabels:msnfp.msnfp_designation.AddConnection.ToolTipTitle" ToolTipDescription="$LocLabels:msnfp.msnfp_designation.AddConnection.ToolTipDescription" ModernImage="Connect" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="msnfp.msnfp_designation.AddConnection.Alt">
+      <Titles>
+        <Title description="Connect" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="msnfp.msnfp_designation.AddConnection.LabelText">
+      <Titles>
+        <Title description="Connect" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="msnfp.msnfp_designation.AddConnection.ToolTipDescription">
+      <Titles>
+        <Title description="Select a connection role to indicate how this record is related to you or another record&lt;br&gt;" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="msnfp.msnfp_designation.AddConnection.ToolTipTitle">
+      <Titles>
+        <Title description="Connect" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

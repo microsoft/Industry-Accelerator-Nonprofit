@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f1d8abd6-dc44-e911-a838-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="name">
+        <row id="accountid" name="result">
+          <cell name="name" width="150" />
+          <cell name="msnfp_accounttype" width="100" />
+          <cell name="primarycontactid" width="100" />
+          <cell name="parentaccountid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="true">
+        <entity name="account">
+          <attribute name="name" />
+          <order descending="false" attribute="name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <link-entity name="msnfp_employmenthistory" alias="aa" to="accountid" from="msnfp_employerid">
+            <filter type="and">
+              <condition value="0" attribute="statecode" operator="eq" />
+            </filter>
+          </link-entity>
+          <attribute name="msnfp_accounttype" />
+          <attribute name="primarycontactid" />
+          <attribute name="parentaccountid" />
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Accounts: Employment History Report" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Accounts with Employer (Employment History)" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

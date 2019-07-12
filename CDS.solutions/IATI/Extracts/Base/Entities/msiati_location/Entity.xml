@@ -458,6 +458,42 @@
             <Description description="A more refined coded classification of the type of feature referred to by this location." languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="msiati_latitude">
+          <Type>decimal</Type>
+          <Name>msiati_latitude</Name>
+          <LogicalName>msiati_latitude</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <MinValue>-90</MinValue>
+          <MaxValue>90</MaxValue>
+          <Accuracy>8</Accuracy>
+          <displaynames>
+            <displayname description="Latitude" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Latitude coordinate" languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="msiati_level">
           <Type>int</Type>
           <Name>msiati_level</Name>
@@ -561,11 +597,47 @@
             <Description description="Unique identifier for entity instances" languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="msiati_longitude">
+          <Type>decimal</Type>
+          <Name>msiati_longitude</Name>
+          <LogicalName>msiati_longitude</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <MinValue>-180</MinValue>
+          <MaxValue>180</MaxValue>
+          <Accuracy>8</Accuracy>
+          <displaynames>
+            <displayname description="Longitude" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Longitude coordinate" languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="msiati_name">
           <Type>nvarchar</Type>
           <Name>msiati_name</Name>
           <LogicalName>msiati_name</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -701,6 +773,42 @@
           </displaynames>
           <Descriptions>
             <Description description="Geographic scope of the activity" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="msiati_reference">
+          <Type>nvarchar</Type>
+          <Name>msiati_reference</Name>
+          <LogicalName>msiati_reference</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <Format>text</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
+          <displaynames>
+            <displayname description="Reference" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="An internal reference that describes the location in the reporting organisation’s own system." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="msiati_type">
@@ -1186,7 +1294,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{821f3dc5-47e4-4c30-889e-c748eae14a03}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{da18f896-8ebc-4492-9696-87a339763c1b}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>

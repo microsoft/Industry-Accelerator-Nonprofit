@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cc7be69c-3947-e911-a838-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_preferenceid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_preference_customer" width="100" />
+          <cell name="msnfp_confidence" width="100" />
+          <cell name="msnfp_priority" width="100" />
+          <cell name="msnfp_value" width="100" />
+          <cell name="msnfp_weight" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_preference">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_weight" />
+          <attribute name="msnfp_value" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_priority" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_confidence" />
+          <attribute name="msnfp_preference_customer" />
+          <attribute name="msnfp_preferenceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Preferences Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

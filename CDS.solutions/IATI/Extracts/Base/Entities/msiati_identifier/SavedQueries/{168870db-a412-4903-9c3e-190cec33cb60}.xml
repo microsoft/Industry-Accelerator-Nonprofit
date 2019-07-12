@@ -11,7 +11,11 @@
       <grid name="" jump="msiati_name" select="1" icon="1" preview="0">
         <row name="msiati_identifier" id="msiati_identifierid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_reference" width="100" />
+          <cell name="msiati_typeid" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -25,6 +29,11 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <order attribute="msiati_reference" descending="false" />
+          <attribute name="msiati_typeid" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_reference" />
+          <attribute name="msiati_deliveryframeworkid" />
         </entity>
       </fetch>
     </fetchxml>

@@ -11,7 +11,10 @@
       <grid name="" jump="msiati_name" select="1" icon="1" preview="0">
         <row name="msiati_documentlanguage" id="msiati_documentlanguageid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_languageid" width="100" />
+          <cell name="msiati_documentlinkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -25,6 +28,10 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <order attribute="msiati_languageid" descending="false" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_languageid" />
+          <attribute name="msiati_documentlinkid" />
         </entity>
       </fetch>
     </fetchxml>

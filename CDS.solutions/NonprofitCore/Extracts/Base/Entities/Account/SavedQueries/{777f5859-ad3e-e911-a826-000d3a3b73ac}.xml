@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{777f5859-ad3e-e911-a826-000d3a3b73ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row id="accountid" name="result">
+          <cell name="msnfp_accounttype" width="100" />
+          <cell name="name" width="150" />
+          <cell name="telephone1" width="100" />
+          <cell name="primarycontactid" width="100" />
+          <cell name="a_410707b195544cd984376608b1802904.emailaddress1" width="100" disableSorting="1" />
+          <cell name="address1_city" width="100" />
+          <cell name="address1_country" width="100" />
+          <cell name="msnfp_acquisitiondate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="account">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+            <condition value="844060001" attribute="msnfp_accounttype" operator="eq" />
+          </filter>
+          <link-entity name="contact" visible="false" link-type="outer" from="contactid" to="primarycontactid" alias="a_410707b195544cd984376608b1802904">
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <attribute name="primarycontactid" />
+          <attribute name="telephone1" />
+          <attribute name="address1_country" />
+          <attribute name="address1_city" />
+          <attribute name="msnfp_acquisitiondate" />
+          <attribute name="msnfp_accounttype" />
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Organizations Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

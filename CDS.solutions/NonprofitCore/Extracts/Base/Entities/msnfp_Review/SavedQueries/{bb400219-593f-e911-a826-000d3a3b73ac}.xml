@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bb400219-593f-e911-a826-000d3a3b73ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_reviewid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_reviewerid" width="100" />
+          <cell name="msnfp_reviewertype" width="100" />
+          <cell name="msnfp_status" width="100" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_reviewdate" width="100" />
+          <cell name="msnfp_datesubmitted" width="100" />
+          <cell name="msnfp_review_docketid" width="100" />
+          <cell name="msnfp_requestid" width="100" />
+          <cell name="msnfp_awardid" width="100" />
+          <cell name="msnfp_review_reportid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_review">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_reviewertype" />
+          <attribute name="msnfp_reviewerid" />
+          <attribute name="msnfp_reviewdate" />
+          <attribute name="msnfp_datesubmitted" />
+          <attribute name="msnfp_requestid" />
+          <attribute name="msnfp_review_reportid" />
+          <attribute name="msnfp_review_docketid" />
+          <attribute name="msnfp_awardid" />
+          <attribute name="msnfp_reviewid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Reviews Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

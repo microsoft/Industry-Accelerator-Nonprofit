@@ -70,7 +70,6 @@
   </EntityRelationship>
   <EntityRelationship Name="msnfp_budget_disbursementdistribution_BudgetId">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.10</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_disbursementdistribution</ReferencingEntityName>
@@ -100,7 +99,6 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_budget_disbursementdistribution_BudgetId</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>

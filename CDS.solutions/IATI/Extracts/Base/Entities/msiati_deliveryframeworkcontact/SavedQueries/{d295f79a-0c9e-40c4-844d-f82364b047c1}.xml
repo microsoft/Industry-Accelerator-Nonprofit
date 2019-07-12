@@ -10,10 +10,10 @@
     <layoutxml>
       <grid name="" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="msiati_deliveryframeworkcontact" id="msiati_deliveryframeworkcontactid">
-          <cell name="a_b95c5c2a2748e911a81f000d3a34e483.msnfp_name" width="200" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
-          <cell name="createdon" width="125" />
           <cell name="msiati_contactid" width="100" />
           <cell name="msiati_contacttypeid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -22,15 +22,13 @@
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_deliveryframeworkcontact">
           <attribute name="createdon" />
-          <order attribute="createdon" descending="false" />
+          <order attribute="msiati_contactid" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
           <attribute name="msiati_contacttypeid" />
           <attribute name="msiati_contactid" />
-          <link-entity alias="a_b95c5c2a2748e911a81f000d3a34e483" name="msnfp_deliveryframework" from="msnfp_deliveryframeworkid" to="msiati_deliveryframeworkid" link-type="outer" visible="false">
-            <attribute name="msnfp_name" />
-          </link-entity>
+          <attribute name="modifiedon" />
           <attribute name="msiati_deliveryframeworkcontactid" />
         </entity>
       </fetch>

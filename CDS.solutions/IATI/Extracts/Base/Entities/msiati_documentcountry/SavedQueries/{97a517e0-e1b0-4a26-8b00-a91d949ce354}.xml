@@ -10,8 +10,11 @@
     <layoutxml>
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_documentcountryid">
+          <cell name="msiati_countryid" width="100" />
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_documentlinkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,13 +22,17 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_documentcountry">
-          <attribute name="msiati_documentcountryid" />
           <attribute name="msiati_name" />
           <attribute name="createdon" />
+          <order attribute="msiati_countryid" descending="false" />
           <order attribute="msiati_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="1" />
           </filter>
+          <attribute name="modifiedon" />
+          <attribute name="msiati_documentlinkid" />
+          <attribute name="msiati_countryid" />
+          <attribute name="msiati_documentcountryid" />
         </entity>
       </fetch>
     </fetchxml>

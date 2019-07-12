@@ -1,5 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="msiati_account_account_reportingorganization">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <IsHierarchical>0</IsHierarchical>
+    <ReferencingEntityName>Account</ReferencingEntityName>
+    <ReferencedEntityName>Account</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>RemoveLink</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+    <ReferencingAttributeName>msiati_reportingorganizationid</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="The organisation issuing the report." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>msiati_reportingorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Accounts (Reporting Organization)" languagecode="1033" />
+        </CustomLabels>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <NavigationPropertyName>msiati_account_account_reportingorganization</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
   <EntityRelationship Name="msiati_account_donorcommitment_providerorganizat">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
@@ -22,10 +59,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_providerorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Donor Commitments (Provider Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -56,10 +96,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_recipientorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Donor Commitments (Recipient Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -90,10 +133,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_providerorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Expenditures (Provider Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -124,10 +170,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_recipientorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Expenditures (Recipient Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -158,10 +207,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_organizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Expenditures (Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -294,10 +346,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_recipientorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Budgets (Recipient Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -328,14 +383,54 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_accountid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Budgets (Account)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
         <NavigationPropertyName>msiati_account_msnfp_budget_account</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+  <EntityRelationship Name="msiati_account_msnfp_budget_providerorganization">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <IsHierarchical>0</IsHierarchical>
+    <ReferencingEntityName>msnfp_Budget</ReferencingEntityName>
+    <ReferencedEntityName>Account</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>RemoveLink</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+    <ReferencingAttributeName>msiati_providerorganizationid</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier for Account associated with Budget." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>msiati_providerorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Budgets (Provider Organization)" languagecode="1033" />
+        </CustomLabels>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <NavigationPropertyName>msiati_account_msnfp_budget_providerorganization</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
@@ -362,10 +457,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_providerorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Disbursements (Provider Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -396,10 +494,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_recipientorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Disbursements (Recipient Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -430,10 +531,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_provideriorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Transactions (Provider Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -464,10 +568,13 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msiati_recipientorganizationid</NavigationPropertyName>
+        <CustomLabels>
+          <CustomLabel description="Transactions (Recipient Organization)" languagecode="1033" />
+        </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
@@ -478,7 +585,6 @@
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_award_FiscalSponsor">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.7</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_award</ReferencingEntityName>
@@ -498,7 +604,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_FiscalSponsorId</NavigationPropertyName>
@@ -508,14 +614,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_award_FiscalSponsor</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_award_Recipient">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_award</ReferencingEntityName>
@@ -535,7 +639,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_Recipient_account</NavigationPropertyName>
@@ -545,14 +649,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_award_Recipient</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_deliveryframework_Account">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.8</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_deliveryframework</ReferencingEntityName>
@@ -582,14 +684,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_deliveryframework_Account</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_disbursement_RecipientAccount">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.10</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_disbursement</ReferencingEntityName>
@@ -609,24 +709,22 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_RecipientAccountId</NavigationPropertyName>
         <CustomLabels>
-          <CustomLabel description="" languagecode="1033" />
+          <CustomLabel description="Disbursements (Recipient Account)" languagecode="1033" />
         </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_disbursement_RecipientAccount</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_docket_AwardRecipient">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Docket</ReferencingEntityName>
@@ -646,7 +744,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_AwardRecipientId_account</NavigationPropertyName>
@@ -656,14 +754,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_docket_AwardRecipient</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_msnfp_docket_docket_fiscalSponsor">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Docket</ReferencingEntityName>
@@ -683,7 +779,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_docket_fiscalSponsor_account</NavigationPropertyName>
@@ -693,14 +789,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_msnfp_docket_docket_fiscalSponsor</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_msnfp_membership_Customer">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_membership</ReferencingEntityName>
@@ -727,14 +821,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_msnfp_membership_Customer</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_request_CustomerId">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_request</ReferencingEntityName>
@@ -754,7 +846,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_RecipientId_account</NavigationPropertyName>
@@ -764,14 +856,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_request_CustomerId</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_account_request_FiscalSponsor">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.7</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_request</ReferencingEntityName>
@@ -791,7 +881,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_FiscalSponsorId</NavigationPropertyName>
@@ -801,14 +891,44 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_account_request_FiscalSponsor</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+  <EntityRelationship Name="msnfp_commitment_pledgedbyaccount">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IntroducedVersion>2.1.0.0</IntroducedVersion>
+    <IsHierarchical>0</IsHierarchical>
+    <ReferencingEntityName>msnfp_DonorCommitment</ReferencingEntityName>
+    <ReferencedEntityName>Account</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>RemoveLink</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+    <ReferencingAttributeName>msnfp_pledgedbyaccountid</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier for Account associated with Donor Commitment." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>msnfp_pledgedbyaccountid</NavigationPropertyName>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_commitment_pledgedOnAccount">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_DonorCommitment</ReferencingEntityName>
@@ -828,24 +948,22 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_PledgedOnAccountId</NavigationPropertyName>
         <CustomLabels>
-          <CustomLabel description="" languagecode="1033" />
+          <CustomLabel description="Donor Commitments (Pledged on Account)" languagecode="1033" />
         </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_commitment_pledgedOnAccount</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_objective_account">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Objective</ReferencingEntityName>
@@ -874,14 +992,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_objective_account</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_plannedgiving_account">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.2</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_PlannedGiving</ReferencingEntityName>
@@ -911,14 +1027,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_plannedgiving_account</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_plannedgiving_fund">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.2</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_PlannedGiving</ReferencingEntityName>
@@ -946,14 +1060,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_plannedgiving_fund</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_pmtMethod_account">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_PaymentMethod</ReferencingEntityName>
@@ -983,14 +1095,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_pmtMethod_account</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_txn_receiptOnAccount">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Transaction</ReferencingEntityName>
@@ -1020,7 +1130,6 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_txn_receiptOnAccount</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>

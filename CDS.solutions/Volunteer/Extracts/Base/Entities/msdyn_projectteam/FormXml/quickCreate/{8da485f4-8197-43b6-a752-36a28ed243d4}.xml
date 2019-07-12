@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{8da485f4-8197-43b6-a752-36a28ed243d4}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab id="{7ef24abc-1f68-47ca-8eb0-a398b7e2e0fc}" name="tab_1" showlabel="false" locklevel="0" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{65ee8479-dfc4-4975-acba-bd76f2c00596}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="120" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2c0b0c82-1cd5-d133-9e75-0b5db5beb31d}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="project" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_project" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_project" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{C6646673-0205-4F29-A267-FDBF47B078B4}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31d6944a-56be-6c69-e46b-860b4bed9abb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Position Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyn_name" disabled="false" uniqueid="{43c3b33e-ee24-9a55-00bc-709928036a86}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{524749a0-96a6-7d34-2bd2-474cc98da407}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Bookable Resource" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_bookableresourceid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_bookableresourceid" disabled="false" uniqueid="{0224ba88-03c7-4a65-7ac7-720886ae4301}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A8A3797B-E027-4B10-9647-E58070ACCFC4}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85d0a6d4-6191-865e-26da-c104d5c0ae5b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Role" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_resourcecategory" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_resourcecategory" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{18D4224A-05FB-4675-AA2F-26B5698263A5}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be4a8765-db88-2968-2145-b6d5a5a89b24}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Resourcing Unit" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_organizationalunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_organizationalunit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca41ee25-2096-cb66-2953-50cd081d411a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="From" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_from" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msdyn_from" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ba037813-daac-aa35-125d-a565d137b209}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="To" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_to" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msdyn_to" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4e62431-bee5-400c-d785-2e7386e6b789}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Resource Requirement" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_resourcerequirementid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_resourcerequirementid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{55D80D01-B2D8-4CC1-AEE0-6B9F8D455309}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{a93a7105-fab7-4391-916b-6d64e9efdf4b}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="120" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9cd42c1a-8451-6c7c-c2d1-227586224aa6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Allocation Method" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_allocationmethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyn_allocationmethod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5758211c-4d93-3d55-e07d-b6c373a7d6cd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Hours" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_hours" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="msdyn_hours" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{603c7738-65e9-ed9c-c456-05ab2851771e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Percentage" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_percentage" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="msdyn_percentage" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="34%">
+              <sections>
+                <section id="{79426fd6-010e-44c3-9dbb-ed1d9c5ec15e}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ccede0e-2891-3573-270d-c532bd68deed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Approver" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_projectapprover" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msdyn_projectapprover" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <formLibraries>
+        <Library name="msdyn_/Libraries/require/require.js" libraryUniqueId="{5dadd31d-a7b9-e0be-89e6-8b347e08cb23}" />
+        <Library name="msdyn_/Controls/DHTMLXSuite/dhtmlx.js" libraryUniqueId="{44e1d256-5157-a2b0-ca71-50d74488cd25}" />
+        <Library name="msdyn_/Libraries/SDK.Rest/SDK.REST.js" libraryUniqueId="{4a71b0d7-688d-416c-c193-d00a8246c898}" />
+        <Library name="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" libraryUniqueId="{11553cd8-ca99-1c65-a31a-deca19052ebc}" />
+        <Library name="msdyn_/Libraries/jQuery/jquery.js" libraryUniqueId="{194d7ca7-5bbe-9911-d13b-a04012383caa}" />
+      </formLibraries>
+      <events>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler handlerUniqueId="{e0a9c63c-92b3-ccd8-6dc4-68dd740d4964}" functionName="onTeamMemberCreationSave" libraryName="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" enabled="true" passExecutionContext="true" parameters="" />
+          </Handlers>
+        </event>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="projectTeamQuickCreateFormScript_onLoad" libraryName="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" handlerUniqueId="{86473844-e10b-da4d-e749-01acbc1703cb}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="msdyn_from">
+          <Handlers>
+            <Handler functionName="dateFromChangeEvent" libraryName="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" handlerUniqueId="{bb1cc392-ee10-6e7c-c8cb-d7e0982b471d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="msdyn_to">
+          <Handlers>
+            <Handler functionName="dateToChangeEvent" libraryName="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" handlerUniqueId="{6d066348-5cb2-a4ab-84ae-27c31a54b3cd}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="msdyn_bookableresourceid">
+          <Handlers>
+            <Handler functionName="onBookableResourceChange" libraryName="msdyn_/Project/ProjectTeam/Scripts/QuickCreateFormScript.js" handlerUniqueId="{562716b8-d83e-98ab-8a5e-7c9750354707}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="New Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

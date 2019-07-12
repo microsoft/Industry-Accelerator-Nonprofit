@@ -277,7 +277,7 @@
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
-            <displayname description="Account" languagecode="1033" />
+            <displayname description="Organization" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for Account associated with Participating Organization." languagecode="1033" />
@@ -318,11 +318,46 @@
             <Description description="CRS channel" languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="msiati_deliveryframeworkid">
+          <Type>lookup</Type>
+          <Name>msiati_deliveryframeworkid</Name>
+          <LogicalName>msiati_deliveryframeworkid</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Delivery Framework" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Unique identifier for Delivery Framework associated with Participating Organization." languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="msiati_name">
           <Type>nvarchar</Type>
           <Name>msiati_name</Name>
           <LogicalName>msiati_name</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -358,7 +393,7 @@
           <Type>multiselectpicklist</Type>
           <Name>msiati_organizationrole</Name>
           <LogicalName>msiati_organizationrole</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -498,6 +533,85 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="msiati_participatingorganizationrole">
+          <Type>picklist</Type>
+          <Name>msiati_participatingorganizationrole</Name>
+          <LogicalName>msiati_participatingorganizationrole</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <optionset Name="msiati_participatingorganization_msiati_participatingorganizationrole">
+            <OptionSetType>picklist</OptionSetType>
+            <IntroducedVersion>1.0.0.0</IntroducedVersion>
+            <IsCustomizable>1</IsCustomizable>
+            <displaynames>
+              <displayname description="Organization Role" languagecode="1033" />
+            </displaynames>
+            <Descriptions>
+              <Description description="The role of an organization within a delivery framework" languagecode="1033" />
+            </Descriptions>
+            <options>
+              <option value="453490000" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Funding" languagecode="1033" />
+                </labels>
+                <Descriptions>
+                  <Description description="The government or organisation which provides funds to the activity." languagecode="1033" />
+                </Descriptions>
+              </option>
+              <option value="453490001" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Accountable" languagecode="1033" />
+                </labels>
+                <Descriptions>
+                  <Description description="An organisation responsible for oversight of the activity and its outcomes" languagecode="1033" />
+                </Descriptions>
+              </option>
+              <option value="453490002" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Extending" languagecode="1033" />
+                </labels>
+                <Descriptions>
+                  <Description description="An organisation that manages the budget and direction of an activity on behalf of the funding organisation" languagecode="1033" />
+                </Descriptions>
+              </option>
+              <option value="453490003" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Implementing" languagecode="1033" />
+                </labels>
+                <Descriptions>
+                  <Description description="The organisation that physically carries out the activity or intervention." languagecode="1033" />
+                </Descriptions>
+              </option>
+            </options>
+          </optionset>
+          <displaynames>
+            <displayname description="Organization Role" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The role of an organization within a delivery framework" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OverriddenCreatedOn">
@@ -921,7 +1035,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{ff852926-23f6-475e-89de-af0d912c4dfa}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{3bcb3b1b-083a-4a6b-a3fd-901fc9a2ac5e}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>

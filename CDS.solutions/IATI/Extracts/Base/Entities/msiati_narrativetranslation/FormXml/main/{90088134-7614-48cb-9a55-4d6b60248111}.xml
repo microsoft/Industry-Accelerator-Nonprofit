@@ -28,7 +28,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{c1ee33e0-3ed8-51c0-415b-9d7c96269566}" showlabel="true">
+                      <cell id="{c1ee33e0-3ed8-51c0-415b-9d7c96269566}" showlabel="true" locklevel="0" visible="false">
                         <labels>
                           <label description="Entity Name" languagecode="1033" />
                         </labels>
@@ -425,7 +425,7 @@
                         <control id="msiati_languageid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_languageid" disabled="false" uniqueid="{1750d183-0a22-aae1-51b0-35068a3b2069}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{913AA25C-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -436,11 +436,82 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{0e34d1e3-ea85-111d-1a7e-2391aa216090}" showlabel="true" locklevel="0">
+                      <cell id="{0e34d1e3-ea85-111d-1a7e-2391aa216090}" showlabel="true" locklevel="0" auto="false" rowspan="5">
                         <labels>
                           <label description="Translation" languagecode="1033" />
                         </labels>
-                        <control id="msiati_translation" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_translation" disabled="false" />
+                        <control id="msiati_translation" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_translation" disabled="false" uniqueid="{759d1012-06d4-4cee-5547-da825e084eea}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_administrative" id="{c2439658-3230-24ba-7645-82b82cc1d1ec}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Administrative" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{2b686c95-e755-4566-98d3-210e4d924e50}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1dd304c9-06c1-1437-396c-a95659823e1a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{c071b059-53da-1b9a-4797-b596d8dbc5e0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{6cc3c497-4614-9ed7-dba0-8a606093843c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{2d7ceb0c-978e-d3e0-8d80-89a6231d0947}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9e2c5c54-13e6-e3e9-994d-c987c2dc058e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{776c8c7b-722c-bb08-ccd9-617da3077084}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d58b862b-ce31-a652-a67e-443d875631d7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ddb5cb55-ad12-5c6d-6ebb-8604483e7943}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                     </row>
                   </rows>

@@ -11,7 +11,9 @@
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_expenditureid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_totalexpenditure" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,10 +21,12 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_expenditure">
-          <attribute name="msiati_expenditureid" />
           <attribute name="msiati_name" />
           <attribute name="createdon" />
           <order attribute="msiati_name" descending="false" />
+          <attribute name="msiati_totalexpenditure" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_expenditureid" />
         </entity>
       </fetch>
     </fetchxml>

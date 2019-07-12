@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{87cb919b-cec1-4f93-ab56-70f8992c9fa6}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_docket" id="msnfp_docketid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_assignedtoid" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_status" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_docket">
+          <attribute name="msnfp_docketid" />
+          <attribute name="msnfp_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_assignedtoid" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Docket Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

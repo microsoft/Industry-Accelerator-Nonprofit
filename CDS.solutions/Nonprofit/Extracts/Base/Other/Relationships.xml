@@ -2,6 +2,7 @@
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EntityRelationship Name="business_unit_msnfp_award" />
   <EntityRelationship Name="business_unit_msnfp_awardversion" />
+  <EntityRelationship Name="business_unit_msnfp_benefitrecipient" />
   <EntityRelationship Name="business_unit_msnfp_budget" />
   <EntityRelationship Name="business_unit_msnfp_creditplan" />
   <EntityRelationship Name="business_unit_msnfp_creditrecipient" />
@@ -30,14 +31,18 @@
   <EntityRelationship Name="business_unit_msnfp_recommendation" />
   <EntityRelationship Name="business_unit_msnfp_report" />
   <EntityRelationship Name="business_unit_msnfp_request" />
+  <EntityRelationship Name="business_unit_msnfp_resourcecatalog" />
   <EntityRelationship Name="business_unit_msnfp_result" />
   <EntityRelationship Name="business_unit_msnfp_review" />
   <EntityRelationship Name="business_unit_msnfp_salutation" />
   <EntityRelationship Name="business_unit_msnfp_transaction" />
+  <EntityRelationship Name="Contact_CustomerAddress" />
   <EntityRelationship Name="lk_msnfp_award_createdby" />
   <EntityRelationship Name="lk_msnfp_award_modifiedby" />
   <EntityRelationship Name="lk_msnfp_awardversion_createdby" />
   <EntityRelationship Name="lk_msnfp_awardversion_modifiedby" />
+  <EntityRelationship Name="lk_msnfp_benefitrecipient_createdby" />
+  <EntityRelationship Name="lk_msnfp_benefitrecipient_modifiedby" />
   <EntityRelationship Name="lk_msnfp_budget_createdby" />
   <EntityRelationship Name="lk_msnfp_budget_modifiedby" />
   <EntityRelationship Name="lk_msnfp_creditplan_createdby" />
@@ -94,6 +99,8 @@
   <EntityRelationship Name="lk_msnfp_report_modifiedby" />
   <EntityRelationship Name="lk_msnfp_request_createdby" />
   <EntityRelationship Name="lk_msnfp_request_modifiedby" />
+  <EntityRelationship Name="lk_msnfp_resourcecatalog_createdby" />
+  <EntityRelationship Name="lk_msnfp_resourcecatalog_modifiedby" />
   <EntityRelationship Name="lk_msnfp_result_createdby" />
   <EntityRelationship Name="lk_msnfp_result_modifiedby" />
   <EntityRelationship Name="lk_msnfp_review_createdby" />
@@ -107,6 +114,7 @@
   <EntityRelationship Name="msnfp_account_deliveryframework_Account" />
   <EntityRelationship Name="msnfp_account_disbursement_RecipientAccount" />
   <EntityRelationship Name="msnfp_account_docket_AwardRecipient" />
+  <EntityRelationship Name="msnfp_account_msnfp_benefitrecipient_beneficiary" />
   <EntityRelationship Name="msnfp_account_msnfp_creditrecipient_Customer" />
   <EntityRelationship Name="msnfp_account_msnfp_docket_docket_fiscalSponsor" />
   <EntityRelationship Name="msnfp_account_msnfp_membership_Customer" />
@@ -128,6 +136,7 @@
   <EntityRelationship Name="msnfp_commitment_campaign" />
   <EntityRelationship Name="msnfp_commitment_defaultDesignation" />
   <EntityRelationship Name="msnfp_commitment_plannedGiving" />
+  <EntityRelationship Name="msnfp_commitment_pledgedbyaccount" />
   <EntityRelationship Name="msnfp_commitment_pledgedByContact" />
   <EntityRelationship Name="msnfp_commitment_pledgedOnAccount" />
   <EntityRelationship Name="msnfp_contact_assistants" />
@@ -138,6 +147,7 @@
   <EntityRelationship Name="msnfp_contact_disbursement_RecipientContactId" />
   <EntityRelationship Name="msnfp_contact_docket_AwardRecipient" />
   <EntityRelationship Name="msnfp_contact_employmenthistory_ContactId" />
+  <EntityRelationship Name="msnfp_contact_msnfp_benefitrecipient_beneficiary" />
   <EntityRelationship Name="msnfp_contact_msnfp_creditrecipient_Customer" />
   <EntityRelationship Name="msnfp_contact_msnfp_docket_docket_fiscalSponsor" />
   <EntityRelationship Name="msnfp_contact_msnfp_membership_Customer" />
@@ -177,11 +187,16 @@
   <EntityRelationship Name="msnfp_indicatorvalue_indicatorvalue_ParentIndicatorValueId" />
   <EntityRelationship Name="msnfp_lead_docket" />
   <EntityRelationship Name="msnfp_lead_request_LeadId" />
+  <EntityRelationship Name="msnfp_msnfp_benefitrecipient_msnfp_benefitrecip" />
+  <EntityRelationship Name="msnfp_msnfp_benefitrecipient_msnfp_deliveryfram" />
+  <EntityRelationship Name="msnfp_msnfp_benefitrecipient_msnfp_disbursement" />
+  <EntityRelationship Name="msnfp_msnfp_benefitrecipient_msnfp_indicatorval" />
   <EntityRelationship Name="msnfp_msnfp_designation_msnfp_designatedcredit" />
   <EntityRelationship Name="msnfp_msnfp_membership_msnfp_membershipcategory" />
   <EntityRelationship Name="msnfp_msnfp_membershipcategory_product" />
   <EntityRelationship Name="msnfp_msnfp_paymentschedule_msnfp_paymentmethod" />
   <EntityRelationship Name="msnfp_msnfp_plannedgiving_msnfp_paymentasset" />
+  <EntityRelationship Name="msnfp_msnfp_resourcecatalog_msnfp_benefitrecipi" />
   <EntityRelationship Name="msnfp_msnfp_transaction_msnfp_designatedcredit" />
   <EntityRelationship Name="msnfp_msnfp_transaction_msnfp_paymentmethod" />
   <EntityRelationship Name="msnfp_objective_account" />
@@ -230,6 +245,7 @@
   <EntityRelationship Name="msnfp_txn_receiptOnAccount" />
   <EntityRelationship Name="owner_msnfp_award" />
   <EntityRelationship Name="owner_msnfp_awardversion" />
+  <EntityRelationship Name="owner_msnfp_benefitrecipient" />
   <EntityRelationship Name="owner_msnfp_budget" />
   <EntityRelationship Name="owner_msnfp_creditplan" />
   <EntityRelationship Name="owner_msnfp_creditrecipient" />
@@ -258,12 +274,14 @@
   <EntityRelationship Name="owner_msnfp_recommendation" />
   <EntityRelationship Name="owner_msnfp_report" />
   <EntityRelationship Name="owner_msnfp_request" />
+  <EntityRelationship Name="owner_msnfp_resourcecatalog" />
   <EntityRelationship Name="owner_msnfp_result" />
   <EntityRelationship Name="owner_msnfp_review" />
   <EntityRelationship Name="owner_msnfp_salutation" />
   <EntityRelationship Name="owner_msnfp_transaction" />
   <EntityRelationship Name="team_msnfp_award" />
   <EntityRelationship Name="team_msnfp_awardversion" />
+  <EntityRelationship Name="team_msnfp_benefitrecipient" />
   <EntityRelationship Name="team_msnfp_budget" />
   <EntityRelationship Name="team_msnfp_creditplan" />
   <EntityRelationship Name="team_msnfp_creditrecipient" />
@@ -292,6 +310,7 @@
   <EntityRelationship Name="team_msnfp_recommendation" />
   <EntityRelationship Name="team_msnfp_report" />
   <EntityRelationship Name="team_msnfp_request" />
+  <EntityRelationship Name="team_msnfp_resourcecatalog" />
   <EntityRelationship Name="team_msnfp_result" />
   <EntityRelationship Name="team_msnfp_review" />
   <EntityRelationship Name="team_msnfp_salutation" />
@@ -311,6 +330,7 @@
   <EntityRelationship Name="TransactionCurrency_msnfp_Transaction" />
   <EntityRelationship Name="user_msnfp_award" />
   <EntityRelationship Name="user_msnfp_awardversion" />
+  <EntityRelationship Name="user_msnfp_benefitrecipient" />
   <EntityRelationship Name="user_msnfp_budget" />
   <EntityRelationship Name="user_msnfp_creditplan" />
   <EntityRelationship Name="user_msnfp_creditrecipient" />
@@ -339,6 +359,7 @@
   <EntityRelationship Name="user_msnfp_recommendation" />
   <EntityRelationship Name="user_msnfp_report" />
   <EntityRelationship Name="user_msnfp_request" />
+  <EntityRelationship Name="user_msnfp_resourcecatalog" />
   <EntityRelationship Name="user_msnfp_result" />
   <EntityRelationship Name="user_msnfp_review" />
   <EntityRelationship Name="user_msnfp_salutation" />

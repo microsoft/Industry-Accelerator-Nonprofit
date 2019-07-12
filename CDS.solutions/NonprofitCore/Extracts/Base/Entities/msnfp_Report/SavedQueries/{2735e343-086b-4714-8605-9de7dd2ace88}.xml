@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2735e343-086b-4714-8605-9de7dd2ace88}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_report" id="msnfp_reportid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_status" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_submitteddate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_duedate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_description" width="200" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_report">
+          <attribute name="msnfp_reportid" />
+          <attribute name="msnfp_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_submitteddate" />
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_duedate" />
+          <attribute name="msnfp_description" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Report Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

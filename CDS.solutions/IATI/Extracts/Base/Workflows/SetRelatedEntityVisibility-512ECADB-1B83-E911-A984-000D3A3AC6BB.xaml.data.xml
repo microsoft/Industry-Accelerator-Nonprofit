@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{512ecadb-1b83-e911-a984-000d3a3ac6bb}" Name="Set Related Entity Visibility" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetRelatedEntityVisibility-512ECADB-1B83-E911-A984-000D3A3AC6BB.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>2.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>msiati_aidtype</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Set Related Entity Visibility" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{0fdf7930-1c83-e911-a984-000d3a3ac6bb}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_deliveryframeworkid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{10df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{11df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_disbursementid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{12df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{13df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_donorcommitmentid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{14df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{15df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_expenditureid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{16df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{17df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>msiati_transactionid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{18df7930-1c83-e911-a984-000d3a3ac6bb}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>msiati_aidtype</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

@@ -28,6 +28,14 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{9227cbac-d180-e593-7e03-b44c70bcbed8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{4557d3de-be66-a0e0-1629-6ecde54ee9a2}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Amount" languagecode="1033" />
@@ -41,6 +49,14 @@
                           <label description="Currency" languagecode="1033" />
                         </labels>
                         <control disabled="false" id="transactioncurrencyid" datafieldname="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{45c47a3b-6030-e326-561a-e1154c3132a5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Currency Value Date" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_currencyvaluedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msiati_currencyvaluedate" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -241,83 +257,11 @@
                         </labels>
                         <control id="msiati_humanitarian" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msiati_humanitarian" disabled="false" />
                       </cell>
-                      <cell id="{45c47a3b-6030-e326-561a-e1154c3132a5}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Currency Value Date" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_currencyvaluedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msiati_currencyvaluedate" disabled="false" />
-                      </cell>
-                      <cell id="{9227cbac-d180-e593-7e03-b44c70bcbed8}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Description" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_description" disabled="false" />
-                      </cell>
-                      <cell id="{07bd19b1-8cda-d025-13d0-0c4de483bc22}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Disbursement Channel" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_disbursementchannelid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_disbursementchannelid" disabled="false" uniqueid="{d98a27d8-742b-52ea-de38-d6c216698e5d}">
-                          <parameters>
-                            <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
-                            <DisableQuickFind>false</DisableQuickFind>
-                            <DisableViewPicker>false</DisableViewPicker>
-                            <DefaultViewId>{1D8B5BFD-9646-E911-A828-000D3A3B7054}</DefaultViewId>
-                            <AvailableViewIds>{1D8B5BFD-9646-E911-A828-000D3A3B7054}</AvailableViewIds>
-                            <AllowFilterOff>false</AllowFilterOff>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{e859d1e0-175e-8933-dce2-144c847a8dae}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Recipient Organization" languagecode="1033" />
                         </labels>
                         <control id="msiati_recipientorganizationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_recipientorganizationid" disabled="false" />
-                      </cell>
-                      <cell id="{979b0238-bc92-09c9-7227-b37bc0b9718b}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Provider Activity Identifier" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_provideractivityidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_provideractivityidentifier" disabled="false" />
-                      </cell>
-                      <cell id="{e6be58ca-1415-633b-4786-b3dbb39234ce}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Recipient Activity Identifier" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_recipientactivityidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_recipientactivityidentifier" disabled="false" />
-                      </cell>
-                      <cell id="{a034760c-c7cb-1c24-8693-741308a62c96}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Provider Organization" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_provideriorganizationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_provideriorganizationid" disabled="false" uniqueid="{596ba865-d3c9-53b0-4d7e-10ec10a5e61e}" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{03ce0ae8-9d4b-b12a-247b-30d4a8bc1c78}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Recipient Country" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_recipientcountryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_recipientcountryid" disabled="false" uniqueid="{721dda23-8b7a-4416-cdbd-9d7c04d8dcbb}">
-                          <parameters>
-                            <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
-                            <DisableQuickFind>false</DisableQuickFind>
-                            <DisableViewPicker>false</DisableViewPicker>
-                            <DefaultViewId>{DCCA8166-9646-E911-A828-000D3A3B7054}</DefaultViewId>
-                            <AvailableViewIds>{DCCA8166-9646-E911-A828-000D3A3B7054}</AvailableViewIds>
-                            <AllowFilterOff>false</AllowFilterOff>
-                          </parameters>
-                        </control>
-                      </cell>
-                      <cell id="{0ec2b712-9401-9aed-8e5c-2a3eebaa209a}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Recipient Country Description" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_recipientcountrydescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_recipientcountrydescription" disabled="false" uniqueid="{500e03a7-8749-553d-99aa-b18071cbb563}" />
                       </cell>
                       <cell id="{4bbdeabb-588b-9c82-8448-72d300cc1eaa}" showlabel="true" locklevel="0">
                         <labels>
@@ -326,7 +270,7 @@
                         <control id="msiati_recipientregionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_recipientregionid" disabled="false" uniqueid="{297bb4d0-2b1a-b245-d974-72ea7b276198}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{2803A2EE-9646-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -335,14 +279,6 @@
                           </parameters>
                         </control>
                       </cell>
-                      <cell id="{d8061535-308b-84b7-308a-0be03c06d0dd}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Recipient Region Description" languagecode="1033" />
-                        </labels>
-                        <control id="msiati_recipientregiondescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_recipientregiondescription" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{7da720ea-0cb0-59ae-a57e-06beb2e17629}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Finance Type" languagecode="1033" />
@@ -350,7 +286,7 @@
                         <control id="msiati_financetypeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_financetypeid" disabled="false" uniqueid="{e3ba0588-582a-dc24-712e-3a0703879ad0}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{576F165D-9746-E911-A828-000D3A3B7054}</DefaultViewId>
@@ -359,6 +295,26 @@
                           </parameters>
                         </control>
                       </cell>
+                    </row>
+                    <row>
+                      <cell id="{5934773d-7bc6-b72a-ebb7-208d24a28d96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Reference" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_reference" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_reference" disabled="false" />
+                      </cell>
+                      <cell id="{e6be58ca-1415-633b-4786-b3dbb39234ce}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Recipient Activity Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_recipientactivityidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_recipientactivityidentifier" disabled="false" />
+                      </cell>
+                      <cell id="{d8061535-308b-84b7-308a-0be03c06d0dd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Recipient Region Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_recipientregiondescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_recipientregiondescription" disabled="false" />
+                      </cell>
                       <cell id="{e07a51d7-23dc-ec48-3311-1eda89ab48e8}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Tied Status" languagecode="1033" />
@@ -366,7 +322,7 @@
                         <control id="msiati_tiedstatusid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_tiedstatusid" disabled="false" uniqueid="{9c823052-da94-c130-391a-e2d622e74777}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{54916099-9646-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -375,6 +331,65 @@
                           </parameters>
                         </control>
                       </cell>
+                    </row>
+                    <row>
+                      <cell id="{a034760c-c7cb-1c24-8693-741308a62c96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Provider Organization" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_provideriorganizationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_provideriorganizationid" disabled="false" uniqueid="{596ba865-d3c9-53b0-4d7e-10ec10a5e61e}" />
+                      </cell>
+                      <cell id="{03ce0ae8-9d4b-b12a-247b-30d4a8bc1c78}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Recipient Country" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_recipientcountryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_recipientcountryid" disabled="false" uniqueid="{721dda23-8b7a-4416-cdbd-9d7c04d8dcbb}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{DCCA8166-9646-E911-A828-000D3A3B7054}</DefaultViewId>
+                            <AvailableViewIds>{DCCA8166-9646-E911-A828-000D3A3B7054}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{07bd19b1-8cda-d025-13d0-0c4de483bc22}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Disbursement Channel" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_disbursementchannelid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_disbursementchannelid" disabled="false" uniqueid="{d98a27d8-742b-52ea-de38-d6c216698e5d}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{1D8B5BFD-9646-E911-A828-000D3A3B7054}</DefaultViewId>
+                            <AvailableViewIds>{1D8B5BFD-9646-E911-A828-000D3A3B7054}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{82d8ed29-1a53-7b7c-22b4-4e14de9b9cba}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{979b0238-bc92-09c9-7227-b37bc0b9718b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Provider Activity Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_provideractivityidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msiati_provideractivityidentifier" disabled="false" />
+                      </cell>
+                      <cell id="{0ec2b712-9401-9aed-8e5c-2a3eebaa209a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Recipient Country Description" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_recipientcountrydescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msiati_recipientcountrydescription" disabled="false" uniqueid="{500e03a7-8749-553d-99aa-b18071cbb563}" />
+                      </cell>
                       <cell id="{046a0eae-300d-e9c0-6126-0a4d41268bd5}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Flow Type" languagecode="1033" />
@@ -382,7 +397,7 @@
                         <control id="msiati_flowtypeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_flowtypeid" disabled="false" uniqueid="{0c6e74e3-3b7c-de5e-2e23-71154cb42e41}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{E49BA7F2-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -391,7 +406,7 @@
                           </parameters>
                         </control>
                       </cell>
-                      <cell id="{2d05e7d7-3288-255b-a7a6-4551e410d435}" showlabel="false">
+                      <cell id="{3429b13a-b355-9b71-3011-9dd89272d422}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -472,7 +487,38 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_transaction_msnfp_designatedcredit" Sequence="10001" Area="Info" Id="nav_msnfp_msnfp_transaction_msnfp_designatedcredit">
+            <Titles>
+              <Title LCID="1033" Text="Designated Credits" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msiati_msnfp_transaction_msiati_narrativetransla" Sequence="10002" Area="Info" Id="nav_msiati_msnfp_transaction_msiati_narrativetransla">
+            <Titles>
+              <Title LCID="1033" Text="Narrative Translations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_transaction_msnfp_paymentmethod" Sequence="10003" Area="Info" Id="nav_msnfp_msnfp_transaction_msnfp_paymentmethod">
+            <Titles>
+              <Title LCID="1033" Text="Payment Methods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_pmtAsset_transferredOnTransaction" Sequence="10004" Area="Info" Id="nav_msnfp_pmtAsset_transferredOnTransaction">
+            <Titles>
+              <Title LCID="1033" Text="Payment Assets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msiati_msnfp_transaction_msiati_sector" Sequence="10005" Area="Info" Id="nav_msiati_msnfp_transaction_msiati_sector">
+            <Titles>
+              <Title LCID="1033" Text="Sectors" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_txn_originalTxnAdjusted" Sequence="10006" Area="Info" Id="nav_msnfp_txn_originalTxnAdjusted">
+            <Titles>
+              <Title LCID="1033" Text="Subsequent Adjustments" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -503,8 +549,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Transaction" languagecode="1033" />
     </LocalizedNames>

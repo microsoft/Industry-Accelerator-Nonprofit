@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{57a97b14-ded3-e811-a960-000d3a37870e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_donorcommitmentid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_commitmentdate" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_commitmenttype" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_commitment_defaultdesignationid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msnfp_donorcommitment">
+          <attribute name="msnfp_name" />
+          <attribute name="msnfp_commitment_defaultdesignationid" />
+          <attribute name="msnfp_commitmenttype" />
+          <attribute name="msnfp_commitmentdate" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="account" from="accountid" to="msnfp_pledgedonaccountid" alias="aa">
+            <filter type="and">
+              <condition attribute="msnfp_accounttype" operator="eq" value="844060000" />
+            </filter>
+          </link-entity>
+          <attribute name="msnfp_donorcommitmentid" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Donor Commitments Households" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

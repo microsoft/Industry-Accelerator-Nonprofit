@@ -11,7 +11,11 @@
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_humanitarianscopeid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_typeid" width="100" />
+          <cell name="msiati_codeid" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,7 +23,6 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_humanitarianscope">
-          <attribute name="msiati_humanitarianscopeid" />
           <attribute name="msiati_name" />
           <attribute name="createdon" />
           <order attribute="msiati_name" descending="false" />
@@ -27,8 +30,16 @@
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
           <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_typeid" operator="like" value="{0}" />
             <condition attribute="msiati_name" operator="like" value="{0}" />
+            <condition attribute="msiati_deliveryframeworkid" operator="like" value="{0}" />
+            <condition attribute="msiati_codeid" operator="like" value="{0}" />
           </filter>
+          <attribute name="msiati_typeid" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_codeid" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="msiati_humanitarianscopeid" />
         </entity>
       </fetch>
     </fetchxml>

@@ -104,7 +104,6 @@
   </EntityRelationship>
   <EntityRelationship Name="msnfp_commitment_pledgedByContact">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_DonorCommitment</ReferencingEntityName>
@@ -134,14 +133,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_commitment_pledgedByContact</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_assistants">
     <EntityRelationshipType>ManyToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <FirstEntityName>Contact</FirstEntityName>
@@ -173,7 +170,6 @@
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_award_InternalContactId">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.7</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_award</ReferencingEntityName>
@@ -193,24 +189,22 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_InternalContactId</NavigationPropertyName>
         <CustomLabels>
-          <CustomLabel description="" languagecode="1033" />
+          <CustomLabel description="Awards (Internal Contact)" languagecode="1033" />
         </CustomLabels>
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_award_InternalContactId</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_award_Recipient">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_award</ReferencingEntityName>
@@ -230,7 +224,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_Recipient_contact</NavigationPropertyName>
@@ -240,14 +234,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_award_Recipient</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_disbursement_RecipientContactId">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.10</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_disbursement</ReferencingEntityName>
@@ -277,14 +269,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_disbursement_RecipientContactId</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_docket_AwardRecipient">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Docket</ReferencingEntityName>
@@ -304,7 +294,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_AwardRecipientId_contact</NavigationPropertyName>
@@ -314,14 +304,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_docket_AwardRecipient</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_msnfp_docket_docket_fiscalSponsor">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Docket</ReferencingEntityName>
@@ -341,7 +329,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_docket_fiscalSponsor_contact</NavigationPropertyName>
@@ -351,14 +339,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_msnfp_docket_docket_fiscalSponsor</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_msnfp_membership_Customer">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_membership</ReferencingEntityName>
@@ -385,14 +371,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_msnfp_membership_Customer</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_msnfp_paymentmethod">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.1.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_PaymentMethod</ReferencingEntityName>
@@ -419,14 +403,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_msnfp_paymentmethod</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_reportsTo">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>Contact</ReferencingEntityName>
@@ -456,14 +438,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_reportsTo</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_request_CustomerId">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_request</ReferencingEntityName>
@@ -483,7 +463,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_RecipientId_contact</NavigationPropertyName>
@@ -493,14 +473,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_request_CustomerId</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_contact_request_SubmittedById">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.7</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_request</ReferencingEntityName>
@@ -520,7 +498,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_SubmittedById</NavigationPropertyName>
@@ -530,14 +508,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_contact_request_SubmittedById</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_docket_assignedTo">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_Docket</ReferencingEntityName>
@@ -557,7 +533,7 @@
     </RelationshipDescription>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneDisplayOption>UseLabel</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
         <NavigationPropertyName>msnfp_AssignedToId</NavigationPropertyName>
@@ -567,14 +543,12 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_docket_assignedTo</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
   <EntityRelationship Name="msnfp_plannedGiving_contact">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msnfp_PlannedGiving</ReferencingEntityName>
@@ -604,7 +578,6 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>msnfp_plannedGiving_contact</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>

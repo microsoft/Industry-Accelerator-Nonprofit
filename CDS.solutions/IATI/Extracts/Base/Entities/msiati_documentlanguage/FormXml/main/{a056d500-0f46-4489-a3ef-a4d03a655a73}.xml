@@ -20,6 +20,14 @@
                   </labels>
                   <rows>
                     <row>
+                      <cell id="{39392e6c-84ca-410c-868c-84a26087ce07}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msiati_name" datafieldname="msiati_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{c2ccb22e-0790-abcd-d52d-867b68db322d}" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{89aa5e03-c52e-0296-a01b-50c22950bd9d}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Document Link" languagecode="1033" />
@@ -35,7 +43,7 @@
                         <control disabled="false" id="msiati_languageid" datafieldname="msiati_languageid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{b2c250ac-ad47-b237-057c-48b4578a1835}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{913AA25C-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -45,12 +53,71 @@
                         </control>
                       </cell>
                     </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_administrative" id="{b963532d-1227-ccc0-9206-8d6755054237}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Administrative" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{9cabb280-73ab-99a3-84d5-e725b5c26e5b}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row>
-                      <cell id="{39392e6c-84ca-410c-868c-84a26087ce07}" showlabel="true" locklevel="0" visible="false">
+                      <cell id="{845b11db-053d-e0b3-8bb3-b189de395539}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Name" languagecode="1033" />
+                          <label description="Created By" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="msiati_name" datafieldname="msiati_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{c2ccb22e-0790-abcd-d52d-867b68db322d}" />
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{9ca1b729-b2ec-5b40-179e-443b4852c512}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{edeacd60-c11a-08d3-34bc-2aa4ee52456d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{551d899a-a5b7-215d-8d1a-ac7668eeacc4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{896c8b6e-8b3d-e362-d31b-98335241793b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{d7ec21be-403b-622e-cc2b-bd47ba74828b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8ca9836a-33bb-59a2-b8c2-b21aec74766d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{77ae84de-560b-7a80-7c42-9cd564aeddc9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                     </row>
                   </rows>

@@ -7,14 +7,14 @@
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{4ed64cee-1a3c-4fdb-9e26-a7d10e861e69}" IsUserDefined="1">
+        <tab id="{4ed64cee-1a3c-4fdb-9e26-a7d10e861e69}" verticallayout="true" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f5a74f3a-90fc-4e6f-85b2-0d5ca8c16b33}">
+                <section id="{f5a74f3a-90fc-4e6f-85b2-0d5ca8c16b33}" IsUserDefined="0" showlabel="false" showbar="false">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
@@ -32,7 +32,7 @@
                         <labels>
                           <label description="Customer" languagecode="1033" />
                         </labels>
-                        <control id="msnfp_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_customer" disabled="false" />
+                        <control disabled="false" id="msnfp_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_customer" />
                       </cell>
                     </row>
                     <row>
@@ -40,7 +40,7 @@
                         <labels>
                           <label description="Start Date" languagecode="1033" />
                         </labels>
-                        <control id="msnfp_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_startdate" disabled="false" />
+                        <control disabled="false" id="msnfp_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_startdate" />
                       </cell>
                     </row>
                     <row>
@@ -48,7 +48,7 @@
                         <labels>
                           <label description="End Date" languagecode="1033" />
                         </labels>
-                        <control id="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_enddate" disabled="false" />
+                        <control disabled="false" id="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_enddate" />
                       </cell>
                     </row>
                     <row>
@@ -56,7 +56,7 @@
                         <labels>
                           <label description="Status" languagecode="1033" />
                         </labels>
-                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                        <control disabled="false" id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
                       </cell>
                     </row>
                   </rows>
@@ -160,39 +160,37 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
-              <Title LCID="1033" Text="Common" />
+              <Title Text="Common" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Sales">
             <Titles>
-              <Title LCID="1033" Text="Sales" />
+              <Title Text="Sales" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Service">
             <Titles>
-              <Title LCID="1033" Text="Service" />
+              <Title Text="Service" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Marketing">
             <Titles>
-              <Title LCID="1033" Text="Marketing" />
+              <Title Text="Marketing" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="ProcessCenter">
             <Titles>
-              <Title LCID="1033" Text="Process Sessions" />
+              <Title Text="Process Sessions" LCID="1033" />
             </Titles>
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>

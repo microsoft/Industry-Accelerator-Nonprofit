@@ -11,6 +11,9 @@
       <grid name="resultset" jump="msiati_name" select="1" preview="1" icon="1">
         <row name="result" id="msiati_nonembeddedcodelistid">
           <cell name="msiati_name" width="150" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_description" width="100" disableSorting="1" />
+          <cell name="msiati_nonembeddedcodelistvocabularyid" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -23,6 +26,9 @@
           <filter type="and">
             <condition attribute="msiati_codelisttype" operator="eq" value="453490020" />
           </filter>
+          <attribute name="msiati_nonembeddedcodelistvocabularyid" />
+          <attribute name="msiati_description" />
+          <attribute name="msiati_code" />
           <attribute name="msiati_nonembeddedcodelistid" />
         </entity>
       </fetch>

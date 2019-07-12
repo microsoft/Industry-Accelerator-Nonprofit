@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{76b81f10-2a08-4f1a-9454-ee38bea94eb5}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{74bae98d-437d-4b1a-b61c-159b33471b78}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{3ba248ba-205c-4128-8886-bb016b10a279}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c2e58dc9-4eda-a27a-d784-ee32ba0b7a71}" showlabel="false" colspan="1" auto="false" rowspan="4">
+                        <labels>
+                          <label description="Next Activity" languagecode="1033" />
+                        </labels>
+                        <control id="AppforOutlook_Account_QV_Subgrid_1" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{42055e55-071d-571e-b8d7-57c2dccb3275}">
+                          <parameters>
+                            <ViewId>{1D145A26-FDB7-45AE-B55A-7BEFA66E184F}</ViewId>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001899},{1D145A26-FDB7-45AE-B55A-7BEFA66E184F}</ViewIds>
+                            <VisualizationId>{EDF35649-5293-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <RelationshipName>Account_ActivityPointers</RelationshipName>
+                            <TargetEntityType>activitypointer</TargetEntityType>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RecordsPerPage>1</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{706dcbc3-4c3c-5387-3ac9-9a8aadd55a30}" showlabel="false" colspan="1" auto="false" rowspan="5">
+                        <labels>
+                          <label description="Last Activity" languagecode="1033" />
+                        </labels>
+                        <control id="AppforOutlook_Accoount_QV_Subgrid_2" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{58d69bed-1560-a144-1e46-2a01ea834be1}">
+                          <parameters>
+                            <ViewId>{924E0056-EBF8-408E-90C3-D3B6BDD676E7}</ViewId>
+                            <ViewIds>{924E0056-EBF8-408E-90C3-D3B6BDD676E7},{00000000-0000-0000-00AA-000010001899}</ViewIds>
+                            <VisualizationId>{EDF35649-5293-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <RelationshipName>Account_ActivityPointers</RelationshipName>
+                            <TargetEntityType>activitypointer</TargetEntityType>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RecordsPerPage>1</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a4cd994-3a06-6839-0b82-3dbe037be222}" showlabel="false" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Opportunities (Account)" languagecode="1033" />
+                        </labels>
+                        <control id="AppforOutlook_Account_QV_Subgrid_3" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{c43b2607-8207-478a-8aa6-6e5d22187213}">
+                          <parameters>
+                            <ViewId>{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewId>
+                            <ViewIds>{00000000-0000-0000-00AA-000010003000},{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewIds>
+                            <VisualizationId>{8BC5FB18-48F2-4782-9E16-3D452FA4DDCE}</VisualizationId>
+                            <RelationshipName>opportunity_parent_account</RelationshipName>
+                            <TargetEntityType>opportunity</TargetEntityType>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RecordsPerPage>2</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c0e1c99b-e283-1491-434b-49e07b6024a7}" showlabel="false" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Cases (Account)" languagecode="1033" />
+                        </labels>
+                        <control id="AppforOutlook_Account_QV_Subgrid_4" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{44a1d4ee-7a38-468a-81aa-7e5c4e9ad11b}">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001028}</ViewId>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001028}</ViewIds>
+                            <VisualizationId>{F10375A6-4893-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <RelationshipName>incident_customer_accounts</RelationshipName>
+                            <TargetEntityType>incident</TargetEntityType>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RecordsPerPage>2</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{42055e55-071d-571e-b8d7-57c2dccb3275}">
+          <customControl formFactor="0" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{1D145A26-FDB7-45AE-B55A-7BEFA66E184F}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+              </data-set>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{1D145A26-FDB7-45AE-B55A-7BEFA66E184F}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+              </data-set>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{1D145A26-FDB7-45AE-B55A-7BEFA66E184F}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+                <FilteredViewIds />
+              </data-set>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{58d69bed-1560-a144-1e46-2a01ea834be1}">
+          <customControl formFactor="0" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{924E0056-EBF8-408E-90C3-D3B6BDD676E7}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+              </data-set>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{924E0056-EBF8-408E-90C3-D3B6BDD676E7}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+              </data-set>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{924E0056-EBF8-408E-90C3-D3B6BDD676E7}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>activitypointer</TargetEntityType>
+                <RelationshipName>Account_ActivityPointers</RelationshipName>
+                <FilteredViewIds />
+              </data-set>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{c43b2607-8207-478a-8aa6-6e5d22187213}">
+          <customControl formFactor="0" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>opportunity</TargetEntityType>
+                <RelationshipName>opportunity_parent_account</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.opportunity.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>opportunity</TargetEntityType>
+                <RelationshipName>opportunity_parent_account</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.opportunity.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{09f55f67-3964-4a94-92e3-25c9d272dc30}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>opportunity</TargetEntityType>
+                <RelationshipName>opportunity_parent_account</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.opportunity.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{44a1d4ee-7a38-468a-81aa-7e5c4e9ad11b}">
+          <customControl formFactor="0" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{00000000-0000-0000-00AA-000010001028}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>incident</TargetEntityType>
+                <RelationshipName>incident_customer_accounts</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.incident.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{00000000-0000-0000-00AA-000010001028}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>incident</TargetEntityType>
+                <RelationshipName>incident_customer_accounts</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.incident.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.MailApp.MailAppListControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{00000000-0000-0000-00AA-000010001028}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>incident</TargetEntityType>
+                <RelationshipName>incident_customer_accounts</RelationshipName>
+              </data-set>
+              <ListItemCommands type="SingleLine.Text" static="true">MailApp.SubGrid.SetRegarding.incident.Button</ListItemCommands>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <DisplayConditions Order="3">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="App for Outlook Account Quick View" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="App for Outlook Account Quick View" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

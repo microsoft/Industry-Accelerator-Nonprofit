@@ -11,7 +11,11 @@
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_policymarkerid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_codeid" width="100" />
+          <cell name="msiati_significanceid" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,10 +23,14 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_policymarker">
-          <attribute name="msiati_policymarkerid" />
           <attribute name="msiati_name" />
           <attribute name="createdon" />
           <order attribute="msiati_name" descending="false" />
+          <attribute name="msiati_significanceid" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="msiati_codeid" />
+          <attribute name="msiati_policymarkerid" />
         </entity>
       </fetch>
     </fetchxml>

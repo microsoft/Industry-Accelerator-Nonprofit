@@ -10,8 +10,11 @@
     <layoutxml>
       <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="result" id="msiati_deliveryframeworkcontactid">
-          <cell name="msiati_name" width="300" />
+          <cell name="msiati_contactid" width="100" />
+          <cell name="msiati_contacttypeid" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,13 +22,16 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_deliveryframeworkcontact">
-          <attribute name="msiati_deliveryframeworkcontactid" />
-          <attribute name="msiati_name" />
           <attribute name="createdon" />
-          <order attribute="msiati_name" descending="false" />
+          <order attribute="msiati_contactid" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="1" />
           </filter>
+          <attribute name="modifiedon" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="msiati_contacttypeid" />
+          <attribute name="msiati_contactid" />
+          <attribute name="msiati_deliveryframeworkcontactid" />
         </entity>
       </fetch>
     </fetchxml>

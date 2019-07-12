@@ -287,123 +287,6 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_4" id="{d6c20777-876e-ed17-32e8-48b0ae47b1b5}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
-          <labels>
-            <label description="Related" languagecode="1033" />
-          </labels>
-          <columns>
-            <column width="100%">
-              <sections>
-                <section name="CAMPAIGN ACTIVITIES" showlabel="false" showbar="false" locklevel="0" id="{a77dd7cd-2d3c-3195-ccbe-0cc445406e7d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{237de5a4-eb50-4771-9085-cbf0759c4b25}">
-                  <labels>
-                    <label description="CAMPAIGN ACTIVITIES" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{6e45b0b2-64bb-e546-bd06-5006c79de84d}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{cd65739c-e984-46cd-a139-b90067985303}">
-                        <labels>
-                          <label description="CAMPAIGN ACTIVITIES" languagecode="1033" />
-                        </labels>
-                        <control id="Activities" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
-                          <parameters>
-                            <ViewId>{491EEC53-C380-E211-90F7-00155D89BB01}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>Campaign_CampaignActivities</RelationshipName>
-                            <TargetEntityType>campaignactivity</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-                <section name="LEADS" showlabel="false" showbar="false" locklevel="0" id="{dd682e1d-dc2c-d863-10c9-bd8003d80d45}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{4b4f2458-83c7-415f-bd19-1d59826fc3fb}">
-                  <labels>
-                    <label description="LEADS" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{3da1ca7b-3255-a5c6-73d1-51d2a74757cd}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{9d08cce7-4f77-466c-ad48-e8ccb927564b}">
-                        <labels>
-                          <label description="LEADS" languagecode="1033" />
-                        </labels>
-                        <control id="Leads" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
-                          <parameters>
-                            <ViewId>{333B0CE1-C380-E211-90F7-00155D89BB01}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>campaign_leads</RelationshipName>
-                            <TargetEntityType>lead</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-                <section name="tab_3_section_3" showlabel="false" showbar="false" locklevel="0" id="{786e9e73-bbe9-8595-caab-58346955ce69}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
-                  <labels>
-                    <label description="Section" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{bbd1e633-7937-05c0-975a-4204500e5c87}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{63238a19-9680-42e1-86b3-19393dc4e421}">
-                        <labels>
-                          <label description="MARKETING LISTS" languagecode="1033" />
-                        </labels>
-                        <control id="Lists" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
-                          <parameters>
-                            <ViewId>{B1B7F81B-C780-E211-90F7-00155D89BB01}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>campaignlist_association</RelationshipName>
-                            <TargetEntityType>list</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
         <tab name="tab_3" id="{0d05637a-5800-d58d-0c43-08860de7e481}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Administrative" languagecode="1033" />
@@ -552,7 +435,43 @@
         </event>
       </events>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="0" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navConnections" Sequence="1" Area="Info" Id="navConnections">
+            <Titles>
+              <Title LCID="1033" Text="Connections" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignActivities" Sequence="3" Area="Info" Id="navCampaignActivities">
+            <Titles>
+              <Title LCID="1033" Text="Campaign Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignResponses" Sequence="4" Area="Info" Id="navCampaignResponses">
+            <Titles>
+              <Title LCID="1033" Text="Campaign Responses" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navTargetLists" Sequence="5" Area="Marketing" Id="navTargetLists">
+            <Titles>
+              <Title LCID="1033" Text="Target Marketing Lists" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_designationPlan_campaign" Sequence="10001" Area="Info" Id="nav_msnfp_designationPlan_campaign">
+            <Titles>
+              <Title LCID="1033" Text="Designation Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navActivities" Sequence="10002" Area="Info" Id="navActivities">
+            <Titles>
+              <Title LCID="1033" Text="Planning Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -587,8 +506,6 @@
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
       </DisplayConditions>
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Campaign Nonprofit" languagecode="1033" />
     </LocalizedNames>

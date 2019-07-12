@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ce35f7e5-e45c-4123-b2c1-c1a661deaef0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_paymentmethodid">
+          <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_payorid" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_isdefault" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_paymentmethod">
+          <attribute name="msnfp_paymentmethodid" />
+          <attribute name="msnfp_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_payorid" />
+          <attribute name="msnfp_isdefault" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Payment Methods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

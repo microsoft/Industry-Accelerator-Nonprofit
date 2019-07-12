@@ -28,14 +28,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3b957882-890d-dcde-e9c7-e803ce2bd327}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Baseline Value" languagecode="1033" />
-                        </labels>
-                        <control id="msnfp_baselinevalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_baselinevalue" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{4d4d6863-7a28-66db-e2b5-d83dd32bca78}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Value Type" languagecode="1033" />
@@ -92,6 +84,14 @@
                           <label description="End Date" languagecode="1033" />
                         </labels>
                         <control id="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6ec6854-e015-3bd9-c529-e1150a06950d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Year" languagecode="1033" />
+                        </labels>
+                        <control id="msiati_year" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msiati_year" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -220,7 +220,28 @@
         </rows>
       </header>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msiati_msnfp_indicatorvalue_msiati_dimension" Sequence="10000" Area="Info" Id="nav_msiati_msnfp_indicatorvalue_msiati_dimension">
+            <Titles>
+              <Title LCID="1033" Text="Dimensions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_indicatorvalue_indicatorvalue_ParentIndicatorValueId" Sequence="10001" Area="Info" Id="nav_msnfp_indicatorvalue_indicatorvalue_ParentIndicatorValueId">
+            <Titles>
+              <Title LCID="1033" Text="Indicator Values" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msiati_msnfp_indicatorvalue_msiati_indicatorvalu" Sequence="10002" Area="Info" Id="nav_msiati_msnfp_indicatorvalue_msiati_indicatorvalu">
+            <Titles>
+              <Title LCID="1033" Text="Indicator Value Locations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msiati_msnfp_indicatorvalue_msiati_narrativetran" Sequence="10003" Area="Info" Id="nav_msiati_msnfp_indicatorvalue_msiati_narrativetran">
+            <Titles>
+              <Title LCID="1033" Text="Narrative Translations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -251,8 +272,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>
