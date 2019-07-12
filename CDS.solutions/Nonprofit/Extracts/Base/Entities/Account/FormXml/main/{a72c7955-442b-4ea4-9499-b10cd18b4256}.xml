@@ -455,184 +455,6 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_related" id="{5c6ee3ae-99e4-c637-8857-032c27087929}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-          <labels>
-            <label description="Related" languagecode="1033" />
-          </labels>
-          <columns>
-            <column width="34%">
-              <sections>
-                <section name="tab_3_section_1" showlabel="true" showbar="false" locklevel="0" id="{9a584062-4185-b705-5a6c-784e2086a194}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
-                  <labels>
-                    <label description="ACCOUNT CONTACTS" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{333307f3-422a-445a-80ed-c065402e8c8e}" showlabel="true" colspan="1" auto="false" rowspan="7">
-                        <labels>
-                          <label description="CONTACTS" languagecode="1033" />
-                        </labels>
-                        <control id="Contacts" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{519806dd-7051-1eeb-5a4d-c22027790611}">
-                          <parameters>
-                            <ViewId>{73BC2D9B-4E0E-424C-8839-ED59D6817E3A}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>contact_customer_accounts</RelationshipName>
-                            <TargetEntityType>contact</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <ViewIds>{00000000-0000-0000-00AA-000010001003}</ViewIds>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <ReferencePanelSubgridIconUrl>/_imgs/FormEditorRibbon/Contact_16.png</ReferencePanelSubgridIconUrl>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-                <section name="tab_3_section_4" showlabel="true" showbar="false" locklevel="0" id="{e6439a01-93d7-ab52-557d-358c1c6681b1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
-                  <labels>
-                    <label description="RECENT OPPORTUNITIES" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{5936ffd1-f070-4d0c-8d3d-cee9bf6ff675}" showlabel="true" rowspan="7" colspan="1" auto="false">
-                        <labels>
-                          <label description="Recent Opportunities" languagecode="1033" />
-                        </labels>
-                        <control id="accountopportunitiesgrid" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{4d07845c-04de-4722-071c-2b67e8068a59}">
-                          <parameters>
-                            <ViewId>{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewId>
-                            <RelationshipName>opportunity_customer_accounts</RelationshipName>
-                            <TargetEntityType>opportunity</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <IsUserView>false</IsUserView>
-                            <ViewIds>{00000000-0000-0000-00AA-000010003000},{09F55F67-3964-4A94-92E3-25C9D272DC30}</ViewIds>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId>{8BC5FB18-48F2-4782-9E16-3D452FA4DDCE}</VisualizationId>
-                            <IsUserChart>false</IsUserChart>
-                            <ReferencePanelSubgridIconUrl>/_imgs/FormEditorRibbon/Recent_Opportunity_16.png</ReferencePanelSubgridIconUrl>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-            <column width="33%">
-              <sections>
-                <section name="ref_pan_SUMMARY_TAB_section_6" showlabel="true" showbar="false" locklevel="0" id="{2de57b8f-b251-411d-802c-ad2c696fc51c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" rowheight="25" autoexpand="false">
-                  <labels>
-                    <label description="ENTITLEMENTS" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{72baa444-6459-4148-891f-e218a75faa1c}" showlabel="true" colspan="1" auto="false" rowspan="7">
-                        <labels>
-                          <label description="Entitlements" languagecode="1033" />
-                        </labels>
-                        <control id="subgrid_Entitlement" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}">
-                          <parameters>
-                            <ViewId>{961bf8aa-042f-4f4d-bcca-935bfc9a6994}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>account_entitlement_Customer</RelationshipName>
-                            <TargetEntityType>entitlement</TargetEntityType>
-                            <AutoExpand>Auto</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId />
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>6</RecordsPerPage>
-                            <ReferencePanelSubgridIconUrl>/_imgs/FormEditorRibbon/Entitlement_16.png</ReferencePanelSubgridIconUrl>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-            <column width="33%">
-              <sections>
-                <section name="tab_3_section_5" showlabel="true" showbar="false" locklevel="0" id="{b1a3c16a-02d8-5bee-d01a-e4d004a34138}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
-                  <labels>
-                    <label description="RECENT CASES" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{bb18ce94-226e-4d2e-a01a-0d9f397a5521}" showlabel="true" rowspan="7" colspan="1" auto="false">
-                        <labels>
-                          <label description="Recent Cases" languagecode="1033" />
-                        </labels>
-                        <control id="accountcasessgrid" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{40bad3e3-55d2-4bb3-0257-b306a1d3b7d2}">
-                          <parameters>
-                            <TargetEntityType>incident</TargetEntityType>
-                            <ViewId>{00000000-0000-0000-00AA-000010001028}</ViewId>
-                            <RelationshipName>incident_customer_accounts</RelationshipName>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <EnableContextualActions>true</EnableContextualActions>
-                            <ReferencePanelSubgridIconUrl>/_imgs/FormEditorRibbon/Case_16.png</ReferencePanelSubgridIconUrl>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                            <IsUserView>false</IsUserView>
-                            <ViewIds />
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId>{4143B74E-4A07-4D01-9FFE-2CDCAA4208FD}</VisualizationId>
-                            <IsUserChart>false</IsUserChart>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
         <tab name="tab_administrative" id="{5e97785c-e9cb-b37a-3d99-6c19e143c410}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Administrative" languagecode="1033" />
@@ -797,7 +619,7 @@
               <Title LCID="1028" Text="合約" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="invoice_customer_accounts" Id="navInvoices" TitleResourceId="Tab_Label_MoreInvoices" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="invoice_customer_accounts" Id="navInvoices" TitleResourceId="Tab_Label_MoreInvoices" Sequence="11" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -849,7 +671,7 @@
               <Title LCID="1028" Text="發票" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="order_customer_accounts" Id="navOrders" TitleResourceId="Tab_Label_MoreOrders" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="order_customer_accounts" Id="navOrders" TitleResourceId="Tab_Label_MoreOrders" Sequence="12" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -901,7 +723,7 @@
               <Title LCID="1028" Text="SalesOrder" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="quote_customer_accounts" TitleResourceId="Tab_Label_MoreQuotes" Id="navQuotes" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="quote_customer_accounts" TitleResourceId="Tab_Label_MoreQuotes" Id="navQuotes" Sequence="13" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -953,7 +775,7 @@
               <Title LCID="1028" Text="報價" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="account_customer_relationship_customer" Id="navRelationships" TitleResourceId="Left_Nav_Area_Relationships" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="account_customer_relationship_customer" Id="navRelationships" TitleResourceId="Left_Nav_Area_Relationships" Sequence="14" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -1005,7 +827,7 @@
               <Title LCID="1028" Text="CustomerRelationship" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="Account_CustomerAddress" Id="navAddresses" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="Account_CustomerAddress" Id="navAddresses" Sequence="15" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -1057,7 +879,7 @@
               <Title LCID="1028" Text="地址" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="account_parent_account" Id="navSubAccts" TitleResourceId="Label_SubAccounts" Sequence="10" Area="Info" Show="false">
+          <NavBarByRelationshipItem RelationshipName="account_parent_account" Id="navSubAccts" TitleResourceId="Label_SubAccounts" Sequence="16" Area="Info" Show="false">
             <Privileges>
               <Privilege Entity="" Privilege="ReadActivity" />
             </Privileges>
@@ -1109,7 +931,22 @@
               <Title LCID="1028" Text="客戶" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="20" Area="Marketing" Id="navCampaignsInSFA" Show="false">
+          <NavBarByRelationshipItem RelationshipName="msdyn_playbookinstance_account" Sequence="20" Area="Info" Id="navPlaybooks">
+            <Titles>
+              <Title LCID="1033" Text="Playbooks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="account_entitlement_Customer" Sequence="21" Area="Info" Id="navEntitlement">
+            <Titles>
+              <Title LCID="1033" Text="Entitlements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Account_ActivityPointers" Sequence="22" Area="Info" Id="navActivities">
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="23" Area="Marketing" Id="navCampaignsInSFA" Show="false">
             <Titles>
               <Title LCID="1033" Text="Campaigns" />
               <Title LCID="1025" Text="الحملات" />
@@ -1254,6 +1091,116 @@
               <Title LCID="2052" Text="对话会话" />
               <Title LCID="3076" Text="對話方塊工作階段" />
               <Title LCID="1028" Text="對話方塊工作階段" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_award_FiscalSponsor" Sequence="10000" Area="Info" Id="nav_msnfp_account_award_FiscalSponsor">
+            <Titles>
+              <Title LCID="1033" Text="Awards (Fiscal Sponsor)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_award_Recipient" Sequence="10001" Area="Info" Id="nav_msnfp_account_award_Recipient">
+            <Titles>
+              <Title LCID="1033" Text="Awards (Recipient)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="contact_customer_accounts" Sequence="10003" Area="Info" Id="navContacts">
+            <Titles>
+              <Title LCID="1033" Text="Contacts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_creditrecipient_Customer" Sequence="10004" Area="Info" Id="nav_msnfp_account_msnfp_creditrecipient_Customer">
+            <Titles>
+              <Title LCID="1033" Text="Credit Recipients" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_creditPlan_account" Sequence="10005" Area="Info" Id="nav_msnfp_creditPlan_account">
+            <Titles>
+              <Title LCID="1033" Text="Default Credit Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_deliveryframework_Account" Sequence="10006" Area="Info" Id="nav_msnfp_account_deliveryframework_Account">
+            <Titles>
+              <Title LCID="1033" Text="Delivery Frameworks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_disbursement_RecipientAccount" Sequence="10007" Area="Info" Id="nav_msnfp_account_disbursement_RecipientAccount">
+            <Titles>
+              <Title LCID="1033" Text="Disbursements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_docket_AwardRecipient" Sequence="10008" Area="Info" Id="nav_msnfp_account_docket_AwardRecipient">
+            <Titles>
+              <Title LCID="1033" Text="Dockets (Award Recipient)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_docket_docket_fiscalSponsor" Sequence="10009" Area="Info" Id="nav_msnfp_account_msnfp_docket_docket_fiscalSponsor">
+            <Titles>
+              <Title LCID="1033" Text="Dockets (Fiscal Sponsor)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_commitment_pledgedOnAccount" Sequence="10010" Area="Info" Id="nav_msnfp_commitment_pledgedOnAccount">
+            <Titles>
+              <Title LCID="1033" Text="Donor Commitments" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_employmentHistory_employer" Sequence="10011" Area="Info" Id="nav_msnfp_employmentHistory_employer">
+            <Titles>
+              <Title LCID="1033" Text="Employment History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_membership_Customer" Sequence="10013" Area="Info" Id="nav_msnfp_account_msnfp_membership_Customer">
+            <Titles>
+              <Title LCID="1033" Text="Memberships" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_ofacmatch_ofacMatch_customer" Sequence="10014" Area="Info" Id="nav_msnfp_account_msnfp_ofacmatch_ofacMatch_customer">
+            <Titles>
+              <Title LCID="1033" Text="OFAC Matches" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_pmtMethod_account" Sequence="10015" Area="Info" Id="nav_msnfp_pmtMethod_account">
+            <Titles>
+              <Title LCID="1033" Text="Payment Methods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_paymentschedule_DefaultHardCreditToCustomer" Sequence="10016" Area="Info" Id="nav_msnfp_account_msnfp_paymentschedule_DefaultHardCreditToCustomer">
+            <Titles>
+              <Title LCID="1033" Text="Payment Schedules (Default Hard Credit)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_pmtSched_receiptOnAccount" Sequence="10017" Area="Info" Id="nav_msnfp_pmtSched_receiptOnAccount">
+            <Titles>
+              <Title LCID="1033" Text="Payment Schedules (Receipt on Account)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_plannedgiving_account" Sequence="10018" Area="Info" Id="nav_msnfp_plannedgiving_account">
+            <Titles>
+              <Title LCID="1033" Text="Planned Giving" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_preference_preference_customer" Sequence="10020" Area="Info" Id="nav_msnfp_account_msnfp_preference_preference_customer">
+            <Titles>
+              <Title LCID="1033" Text="Preferences" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_txn_receiptOnAccount" Sequence="10021" Area="Info" Id="nav_msnfp_txn_receiptOnAccount">
+            <Titles>
+              <Title LCID="1033" Text="Receipted Transactions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_request_CustomerId" Sequence="10022" Area="Info" Id="nav_msnfp_account_request_CustomerId">
+            <Titles>
+              <Title LCID="1033" Text="Requests (Recipient)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_request_FiscalSponsor" Sequence="10023" Area="Info" Id="nav_msnfp_account_request_FiscalSponsor">
+            <Titles>
+              <Title LCID="1033" Text="Requests (Fiscal Sponsor)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_account_msnfp_salutation_salutation_customer" Sequence="10024" Area="Info" Id="nav_msnfp_account_msnfp_salutation_salutation_customer">
+            <Titles>
+              <Title LCID="1033" Text="Salutations" />
             </Titles>
           </NavBarByRelationshipItem>
         </NavBar>

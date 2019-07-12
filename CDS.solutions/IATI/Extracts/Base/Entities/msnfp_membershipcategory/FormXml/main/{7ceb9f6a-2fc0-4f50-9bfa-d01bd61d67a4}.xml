@@ -111,6 +111,29 @@
                         <control disabled="false" id="modifiedon" datafieldname="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{4746499e-ac34-57e1-4b1c-db7267e52744}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                      <cell id="{5b2ede04-7916-1941-4b1e-72e0698a8a9e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{474b3b66-8bd6-6d72-2b87-b5e8cad8ee57}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c8412126-1221-4538-c67b-b9459cc7386e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -119,7 +142,18 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_membership_msnfp_membershipcategory" Area="Info" Sequence="9601" RelationshipName="msnfp_msnfp_membership_msnfp_membershipcategory" Show="true">
+            <Titles>
+              <Title Text="Memberships" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_membershipcategory_product" Area="Info" Sequence="9602" RelationshipName="msnfp_msnfp_membershipcategory_product" Show="true">
+            <Titles>
+              <Title Text="Products" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -150,8 +184,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>

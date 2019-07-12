@@ -229,56 +229,6 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_3" id="{10d99abd-6ecb-a14c-0c3d-1429b4464365}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
-          <labels>
-            <label description="Related" languagecode="1033" />
-          </labels>
-          <columns>
-            <column width="100%">
-              <sections>
-                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{b85da551-8abd-3750-d96b-3a55849202ed}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
-                  <labels>
-                    <label description="Section" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{6743382a-87cd-0c7d-d88c-38116c1d11d0}" showlabel="true" colspan="1" auto="false" rowspan="7">
-                        <labels>
-                          <label description="Recommendations (Request)" languagecode="1033" />
-                        </labels>
-                        <control id="subgrid_recommendation" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{d584d6e8-7e85-488a-998b-4b01d99b1db1}">
-                          <parameters>
-                            <ViewId>{618271C3-88B4-4F95-926E-14167687C350}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>msnfp_request_recommendation_RequestId</RelationshipName>
-                            <TargetEntityType>msnfp_recommendation</TargetEntityType>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <ViewIds>{618271C3-88B4-4F95-926E-14167687C350}</ViewIds>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>All</ChartGridMode>
-                            <VisualizationId />
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>true</EnableChartPicker>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
         <tab name="tab_2" id="{14b9765c-ca74-aa23-44a0-43e0d8c12203}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Administrative" languagecode="1033" />
@@ -402,8 +352,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>

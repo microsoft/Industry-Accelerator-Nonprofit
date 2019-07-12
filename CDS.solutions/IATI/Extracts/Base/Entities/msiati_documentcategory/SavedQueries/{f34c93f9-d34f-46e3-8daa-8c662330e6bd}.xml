@@ -10,8 +10,9 @@
     <layoutxml>
       <grid name="" jump="msiati_name" select="1" icon="1" preview="1">
         <row name="msiati_documentcategory" id="msiati_documentcategoryid">
-          <cell name="msiati_name" width="300" />
+          <cell name="msiati_category" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -19,13 +20,14 @@
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="msiati_documentcategory">
-          <attribute name="msiati_documentcategoryid" />
-          <attribute name="msiati_name" />
           <attribute name="createdon" />
-          <order attribute="msiati_name" descending="false" />
+          <order attribute="msiati_category" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="modifiedon" />
+          <attribute name="msiati_category" />
+          <attribute name="msiati_documentcategoryid" />
         </entity>
       </fetch>
     </fetchxml>

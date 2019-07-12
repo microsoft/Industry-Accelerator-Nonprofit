@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{85987453-b429-46e4-a7a7-56ef4475e5c8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_benefitrecipientid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_description" width="100" disableSorting="1" />
+          <cell name="msnfp_benefitrecipienttype" width="100" />
+          <cell name="msnfp_beneficiary" width="100" />
+          <cell name="msnfp_resourcecatalogid" width="100" />
+          <cell name="msnfp_parentbenefitrecipientid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_benefitrecipient">
+          <attribute name="msnfp_benefitrecipientid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfp_resourcecatalogid" />
+          <attribute name="msnfp_parentbenefitrecipientid" />
+          <attribute name="msnfp_description" />
+          <attribute name="msnfp_benefitrecipienttype" />
+          <attribute name="msnfp_beneficiary" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>3.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Benefit Recipients" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

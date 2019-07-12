@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7a9ef422-fb86-e911-a960-000d3a37f702}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row name="result" id="msnfp_deliveryframeworkid">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_account" width="100" />
+          <cell name="msnfp_deliveryframeworktype" width="100" />
+          <cell name="msnfp_status" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msnfp_deliveryframework">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <order attribute="msnfp_status" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_deliveryframeworktype" />
+          <attribute name="msnfp_account" />
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_deliveryframeworkid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Delivery Frameworks by Accounts Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

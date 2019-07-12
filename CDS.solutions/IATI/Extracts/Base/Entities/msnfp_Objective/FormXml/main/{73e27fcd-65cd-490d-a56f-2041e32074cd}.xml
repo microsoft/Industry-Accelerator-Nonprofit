@@ -155,7 +155,18 @@
         </rows>
       </header>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfp_objective_parentObjective" Sequence="10001" Area="Info" Id="nav_msnfp_objective_parentObjective">
+            <Titles>
+              <Title LCID="1033" Text="Child Objectives" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_objective_deliveryframework_objectiveid" Sequence="10002" Area="Info" Id="nav_msnfp_objective_deliveryframework_objectiveid">
+            <Titles>
+              <Title LCID="1033" Text="Delivery Frameworks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -186,8 +197,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Objective" languagecode="1033" />
     </LocalizedNames>

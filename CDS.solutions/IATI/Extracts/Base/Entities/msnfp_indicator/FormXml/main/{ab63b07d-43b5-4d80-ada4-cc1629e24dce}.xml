@@ -26,34 +26,6 @@
                         </labels>
                         <control id="msnfp_name" datafieldname="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
                       </cell>
-                      <cell id="{1471c271-2ba6-5021-b995-b3595970e684}" locklevel="0" showlabel="true">
-                        <labels>
-                          <label description="Ascending" languagecode="1033" />
-                        </labels>
-                        <control disabled="false" id="msnfp_ascending" datafieldname="msnfp_ascending" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{a470a6de-9731-976a-6e7b-92b967367be6}" locklevel="0" showlabel="true">
-                        <labels>
-                          <label description="Baseline Value" languagecode="1033" />
-                        </labels>
-                        <control disabled="false" id="msnfp_baselinevalue" datafieldname="msnfp_baselinevalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
-                      </cell>
-                      <cell id="{13a7a10b-465c-8095-12ec-8b135dab64a4}" locklevel="0" showlabel="true">
-                        <labels>
-                          <label description="Aggregation Status" languagecode="1033" />
-                        </labels>
-                        <control disabled="false" id="msnfp_aggregationstatus" datafieldname="msnfp_aggregationstatus" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{7a62184e-c7a4-2324-4914-d07525c13ab7}" locklevel="0" showlabel="true">
-                        <labels>
-                          <label description="Measure" languagecode="1033" />
-                        </labels>
-                        <control disabled="false" id="msnfp_measure" datafieldname="msnfp_measure" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
-                      </cell>
                       <cell id="{88999526-4197-d9b8-113e-53c4a69c5c92}" locklevel="0" showlabel="true">
                         <labels>
                           <label description="Start Date" languagecode="1033" />
@@ -62,10 +34,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5853e903-688c-824b-ecb1-b098b2892ea7}" showlabel="false">
+                      <cell id="{1471c271-2ba6-5021-b995-b3595970e684}" locklevel="0" showlabel="true">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Ascending" languagecode="1033" />
                         </labels>
+                        <control disabled="false" id="msnfp_ascending" datafieldname="msnfp_ascending" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" />
                       </cell>
                       <cell id="{57176760-b355-b8a8-8b14-50d092d59590}" locklevel="0" showlabel="true">
                         <labels>
@@ -74,13 +47,26 @@
                         <control disabled="false" id="msnfp_enddate" datafieldname="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{13a7a10b-465c-8095-12ec-8b135dab64a4}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Aggregation Status" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_aggregationstatus" datafieldname="msnfp_aggregationstatus" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" />
+                      </cell>
+                      <cell id="{50898089-59b5-1773-bc34-52b9c2e59063}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
             </column>
           </columns>
         </tab>
-        <tab id="{e6ee8b2c-7427-81dc-4b94-c32544e18185}" name="Description" IsUserDefined="0" locklevel="0" showlabel="false" expanded="false">
+        <tab id="{e6ee8b2c-7427-81dc-4b94-c32544e18185}" name="Description" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
           <labels>
             <label description="Description" languagecode="1033" />
           </labels>
@@ -128,7 +114,7 @@
                         <control id="msiati_indicatormeasureid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msiati_indicatormeasureid" disabled="false" uniqueid="{00768644-1e7b-a944-419d-e17028d6367a}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
+                            <DisableMru>true</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
                             <DisableViewPicker>false</DisableViewPicker>
                             <DefaultViewId>{12F05C70-9746-E911-A82D-000D3A3B74CB}</DefaultViewId>
@@ -266,8 +252,6 @@
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>

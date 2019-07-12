@@ -321,19 +321,9 @@
               <Description description="" languagecode="1033" />
             </Descriptions>
             <options>
-              <option value="453490002" ExternalValue="" Color="#0000ff">
+              <option value="453490010" ExternalValue="" Color="#0000ff">
                 <labels>
-                  <label description="Department" languagecode="1033" />
-                </labels>
-              </option>
-              <option value="453490003" ExternalValue="" Color="#0000ff">
-                <labels>
-                  <label description="Full Name" languagecode="1033" />
-                </labels>
-              </option>
-              <option value="453490004" ExternalValue="" Color="#0000ff">
-                <labels>
-                  <label description="Job Title" languagecode="1033" />
+                  <label description="Activity Location Description" languagecode="1033" />
                 </labels>
               </option>
               <option value="453490005" ExternalValue="" Color="#0000ff">
@@ -351,19 +341,27 @@
                   <label description="Address 3" languagecode="1033" />
                 </labels>
               </option>
-              <option value="453490008" ExternalValue="" Color="#0000ff">
+              <option value="453490002" ExternalValue="" Color="#0000ff">
                 <labels>
-                  <label description="Recipient Region Description" languagecode="1033" />
+                  <label description="Department" languagecode="1033" />
                 </labels>
               </option>
-              <option value="453490009" ExternalValue="" Color="#0000ff">
+              <option value="453490001" ExternalValue="" Color="#0000ff">
                 <labels>
-                  <label description="Recipient Country Description" languagecode="1033" />
+                  <label description="Description" languagecode="1033" />
+                </labels>
+                <Descriptions>
+                  <Description description="Description attribute" languagecode="1033" />
+                </Descriptions>
+              </option>
+              <option value="453490003" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Full Name" languagecode="1033" />
                 </labels>
               </option>
-              <option value="453490010" ExternalValue="" Color="#0000ff">
+              <option value="453490004" ExternalValue="" Color="#0000ff">
                 <labels>
-                  <label description="Activity Location Description" languagecode="1033" />
+                  <label description="Job Title" languagecode="1033" />
                 </labels>
               </option>
               <option value="453490000" ExternalValue="" Color="#0000ff">
@@ -374,13 +372,15 @@
                   <Description description="Name attribute" languagecode="1033" />
                 </Descriptions>
               </option>
-              <option value="453490001" ExternalValue="" Color="#0000ff">
+              <option value="453490009" ExternalValue="" Color="#0000ff">
                 <labels>
-                  <label description="Description" languagecode="1033" />
+                  <label description="Recipient Country Description" languagecode="1033" />
                 </labels>
-                <Descriptions>
-                  <Description description="Description attribute" languagecode="1033" />
-                </Descriptions>
+              </option>
+              <option value="453490008" ExternalValue="" Color="#0000ff">
+                <labels>
+                  <label description="Recipient Region Description" languagecode="1033" />
+                </labels>
               </option>
             </options>
           </optionset>
@@ -1016,7 +1016,7 @@
           <Type>lookup</Type>
           <Name>msiati_languageid</Name>
           <LogicalName>msiati_languageid</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -1851,7 +1851,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{d1615358-9a81-433e-a861-04d4f384611a}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{07b10623-175f-455d-8b1d-4a43b3a47393}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>

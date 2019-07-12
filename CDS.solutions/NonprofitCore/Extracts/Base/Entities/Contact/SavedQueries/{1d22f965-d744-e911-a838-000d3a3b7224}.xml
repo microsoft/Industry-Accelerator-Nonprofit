@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1d22f965-d744-e911-a838-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="fullname">
+        <row id="contactid" name="result">
+          <cell name="fullname" width="150" />
+          <cell name="msnfp_primaryconstituenttype" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="true">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <order descending="false" attribute="fullname" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <link-entity name="msnfp_preference" alias="aa" to="contactid" from="msnfp_preference_customer">
+            <filter type="and">
+              <condition value="0" attribute="statecode" operator="eq" />
+            </filter>
+          </link-entity>
+          <attribute name="msnfp_primaryconstituenttype" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Contacts: Preferences Report" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Contacts with preferences" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

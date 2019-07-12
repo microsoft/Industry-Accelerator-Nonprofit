@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="Nonprofit" Icon="/WebResources/msnfp_NonProfit" ShowGroups="true" Title="Nonprofit">
+      <Group Id="Constituents" IsProfile="false" Title="Constituents" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="Individuals" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Individuals" Entity="contact" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Individuals" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Donors" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_donorsvg" Icon="/WebResources/msnfp_donorsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=contact&amp;viewid={cf955fa0-92d7-e811-a960-000d3a378f36}" Title="Donors" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Donors" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Households" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_accountsvg" Icon="/WebResources/msnfp_accountsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=account&amp;viewid={24e7af6c-5fdc-e811-a962-000d3a3780dd}" Title="Households" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Households" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Accounts" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Accounts" Entity="account" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Accounts" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_241b2213" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_accountsvg" Icon="/WebResources/msnfp_accountsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=account&amp;viewid={b4045ebc-cbd3-e811-a960-000d3a37870e}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Organizations" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_04237022" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_donorsvg" Icon="/WebResources/msnfp_donorsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=msnfp_benefitrecipient&amp;viewid={e244d49c-b6bf-4575-9c2e-1d17faf4acb7}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Benefit Recipients" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_728e81bd" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Dashboard" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="Fundraising" IsProfile="false" Title="Fundraising" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="DonorCommitments" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Donor Commitments" Entity="msnfp_donorcommitment" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="NewSubArea_507783c3" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_transaction" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Transactions" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="PlannedGiving" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Planned Giving" Entity="msnfp_plannedgiving" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="NewSubArea_4ff953b5" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Entity="msnfp_membership" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_f3b6a3018" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_designation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Designations" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_108fbb028" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Dashboard" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="Awards" IsProfile="false" Title="Awards" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="NewSubArea_0b103633" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_objective" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Objectives" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_2989598e8" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_deliveryframework" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Delivery Frameworks" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_4b44bb1c8" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_budget" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Budgets" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Dockets" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Dockets" Entity="msnfp_docket" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="NewSubArea_5885c668" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_recommendation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Recommendations" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Requests" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Requests" Entity="msnfp_request" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="AwardDetails" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Award Details" Entity="msnfp_award" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Awards" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_a6919c118" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_review" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Reviews" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_f2dd25d6" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_report" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Reports" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_35bf6a978" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Dashboard" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="DeliveryFramework" IsProfile="false" Title="Delivery Framework" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="NewSubArea_5fb87f54" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_objective" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Objectives" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_dad4a24d" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_deliveryframework" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Delivery Frameworks" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Programs" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_grantrequestsvg" Icon="/WebResources/msnfp_grantrequestsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=msnfp_deliveryframework&amp;viewid={E7DAEBFB-D4E1-E811-A965-000D3A37839B}" Title="Programs" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Programs" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Projects" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_grantrequestsvg" Icon="/WebResources/msnfp_grantrequestsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=msnfp_deliveryframework&amp;viewid={738FA81B-D5E1-E811-A965-000D3A37839B}" Title="Projects" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Projects" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_275b7a2a8" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_budget" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Budgets" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_de67ecec" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_result" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Results" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_9ce797d78" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_indicator" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Indicators" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_3e52fd4c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_indicatorvalue" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Indicator Values" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_fb9f324b" ResourceId="Homepage_Dashboards" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="7059ff20-a687-e911-a960-000d3a37f702" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="Dashboards_ToolTip">
+          <Titles>
+            <Title LCID="1033" Title="Dashboard" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="Administration" IsProfile="false" Title="Administration" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="Designations" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Designations" Entity="msnfp_designation" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="PaymentMethods" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Title="Payment Methods" Entity="msnfp_paymentmethod" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="NewSubArea_536bcb08" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_membershipcategory" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_88e094ba" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_resourcecatalog" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Resources Catalog" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="Workflow" IsProfile="false" Title="Workflow" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="Tasks" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Tasks" Entity="task" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="Events" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Events" Entity="appointment" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="Documents" Icon="/_imgs/imagestrips/transparent_spacer.gif" Title="Documents" Entity="sharepointdocumentlocation" AvailableOffline="false" PassParams="false" />
+      </Group>
+    </Area>
+    <Area Id="Settings" ResourceId="Area_Settings" DescriptionResourceId="Settings_Area_Description" Icon="/_imgs/settings_24x24.gif" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Group Id="Business_Setting" ResourceId="Menu_Label_Business" DescriptionResourceId="Menu_Label_Business" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_Business_ToolTip">
+        <SubArea Id="nav_businessmanagement" ResourceId="Homepage_BusinessManagement" DescriptionResourceId="BizManagement_SubArea_Description" Icon="/_imgs/ico_18_busmanagement.gif" Url="/tools/business/business.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_template" ResourceId="Homepage_Template" DescriptionResourceId="Template_SubArea_Description" Icon="/_imgs/ico_18_templates.gif" Url="/tools/templates/templates.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_productcatalog" ResourceId="Homepage_ProductCatalog" DescriptionResourceId="ProductCatalog_SubArea_Description" Icon="/WebResources/CRM/_imgs/ico_18_productcatalog.gif" Url="/tools/productcatalog/productcatalog.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false">
+          <Privilege Entity="product" Privilege="Read" />
+        </SubArea>
+        <SubArea Id="nav_externAppmanagement" ResourceId="Homepage_ExternAppManagement" DescriptionResourceId="ExternAppManagement_SubArea_Description" Icon="/_imgs/ExternalAppManagement_16.png" Url="/tools/externappmanagement/externappmanagement.aspx" IntroducedVersion="8.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_servicemanagement" ResourceId="Homepage_ServiceManagement" DescriptionResourceId="ServiceManagement_SubArea_Description" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Url="/tools/servicemanagement/servicemanagement.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_mocaoffline" ResourceId="Homepage_MobileOffline" DescriptionResourceId="MobileOffline_SubArea_Description" Icon="/_imgs/ico_18_mobileoffline.gif" Url="/tools/mobileoffline/mobileoffline.aspx" IntroducedVersion="8.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_syncerror" ResourceId="Homepage_SyncError" DescriptionResourceId="SyncError_SubArea_Description=" Icon="/_imgs/ico_18_syncerror.gif" IntroducedVersion="8.1.0.0" Entity="syncerror" AvailableOffline="false" PassParams="false" />
+      </Group>
+      <Group Id="Customizations" ResourceId="Homepage_SystemCustomization" DescriptionResourceId="Homepage_SystemCustomization" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Homepage_SystemCustomization_ToolTip">
+        <SubArea Id="nav_syscust" ResourceId="Menu_Label_Customizations" DescriptionResourceId="Customization_SubArea_Description" Icon="/_imgs/area/18_syscust.gif" Url="/tools/systemcustomization/systemcustomization.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_solution" ResourceId="Web.Tools.Solution.map_xml.aspx_1" DescriptionResourceId="Web.Tools.Solution.map_xml.aspx_2" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/tools/Solution/home_solution.aspx?etc=7100" IntroducedVersion="7.0.0.0" GetStartedPanePath="Solutions_Web_Admin_Visor.html" GetStartedPanePathAdmin="Solutions_Web_Admin_Visor.html" GetStartedPanePathAdminOutlook="Solutions_Outlook_Admin_Visor.html" GetStartedPanePathOutlook="Solutions_Outlook_Admin_Visor.html" Entity="solution" AvailableOffline="false" PassParams="false">
+          <Privilege Entity="solution" Privilege="Read" />
+        </SubArea>
+        <SubArea Id="nav_marketplace" ResourceId="Homepage_Marketplace" DescriptionResourceId="Marketplace_SubArea_Description" Icon="/_imgs/SystemCustomization/ico_18_marketplace.png" Url="/tools/SystemCustomization/SolutionsMarketplace/SolutionsMarketplace.aspx" IntroducedVersion="7.0.0.0" Client="Web" AvailableOffline="true" PassParams="false" />
+        <SubArea Id="nav_plugintrace" ResourceId="Homepage_PluginTraceLog" Icon="/_imgs/area/Plugin_TraceLog_32.png" IntroducedVersion="7.1.0.0" Entity="plugintracelog" Client="Web" AvailableOffline="true" PassParams="false">
+          <Privilege Entity="plugintracelog" Privilege="Read" />
+        </SubArea>
+        <SubArea Id="NewSubArea_0b440e2e" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Entity="msdyn_solutionhistory" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="System_Setting" ResourceId="Menu_Label_System" DescriptionResourceId="Menu_Label_System" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_System_ToolTip">
+        <SubArea Id="nav_administration" ResourceId="Homepage_Administration" DescriptionResourceId="Administration_SubArea_Description" Icon="/_imgs/ico_18_administration.gif" Url="/tools/Admin/admin.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_security" ResourceId="AdminSecurity_SubArea_Title" DescriptionResourceId="AdminSecurity_SubArea_Description" Icon="/_imgs/area/Security_32.png" Url="/tools/AdminSecurity/adminsecurity_area.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_datamanagement" ResourceId="Homepage_DataManagement" DescriptionResourceId="DataManagement_SubArea_Description" Icon="/_imgs/ico_18_datamanagement.gif" Url="/tools/DataManagement/datamanagement.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_systemjobs" ResourceId="Homepage_SystemJobs" DescriptionResourceId="SystemJobs_SubArea_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/tools/business/home_asyncoperation.aspx" IntroducedVersion="7.0.0.0" Entity="asyncoperation" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_documentmanagement" ResourceId="DocumentManagement.SettingsArea.Heading" DescriptionResourceId="DocumentManagement.SettingsArea.Description" Icon="/_imgs/DocumentManagement_16.png" Url="/tools/documentmanagement/documentmanagement.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false">
+          <Privilege Entity="sharepointsite" Privilege="Read" />
+          <Privilege Entity="sharepointdocumentlocation" Privilege="Read" />
+        </SubArea>
+        <SubArea Id="nav_audit" ResourceId="Audit_SubArea_Title" DescriptionResourceId="Audit_SubArea_Description" Icon="/_imgs/area/16_audit.png" Url="/tools/audit/audit_area.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_social" ResourceId="Social_SubArea_Title" DescriptionResourceId="Social_SubArea_Description" Icon="/_imgs/area/16_social.png" Url="/tools/social/social_area.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="msdyn_postconfig" ResourceId="Activity_Feed_Configuration" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" IntroducedVersion="7.0.0.0" Entity="msdyn_postconfig" AvailableOffline="true" PassParams="false" />
+        <SubArea Id="msdyn_postruleconfig" ResourceId="Activity_Feed_Rules_Configuration" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" IntroducedVersion="7.0.0.0" Entity="msdyn_postruleconfig" AvailableOffline="true" PassParams="false" />
+        <SubArea Id="crmapp_outlook" ResourceId="MailApp_SubArea_Title" DescriptionResourceId="MailApp_SubArea_Description" Icon="/_imgs/area/crm_apps_16x16.png" Url="/tools/appsforcrm/AppForOutlookAdminSettings.aspx" IntroducedVersion="8.0.0.0" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_relationshipIntelligence" ResourceId="RelationshipIntelligence_SubArea_Title" DescriptionResourceId="RelationshipIntelligence_SubArea_Description" Icon="/_imgs/area/Relationship_Intelligence_16.png" Url="/_static/tools/RelationshipIntelligenceConfig/UnifiedConfig.html" IntroducedVersion="9.0.0.0" AvailableOffline="false" PassParams="false" />
+      </Group>
+      <Group Id="ProcessCenter" ResourceId="Menu_Label_ProcessCenter" DescriptionResourceId="Menu_Label_ProcessCenter" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_ProcessCenter_ToolTip">
+        <SubArea Id="nav_workflow" DescriptionResourceId="Workflow_SubArea_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" GetStartedPanePath="Workflows_Web_User_Visor.html" GetStartedPanePathAdmin="Workflows_Web_Admin_Visor.html" GetStartedPanePathAdminOutlook="Workflows_Outlook_Admin_Visor.html" GetStartedPanePathOutlook="Workflows_Outlook_User_Visor.html" Entity="workflow" AvailableOffline="false" PassParams="false" />
+        <SubArea Id="nav_manageflow" ResourceId="ManageFlow_Menu_Button" DescriptionResourceId="ManageFlow_SubArea_Description" Icon="/_imgs/NavBar/ActionImgs/MicrosoftFlow_32.png" Url="/tools/MicrosoftFlow/ManageFlowsPage.aspx" IntroducedVersion="9.0.0.0" AvailableOffline="false" PassParams="false" />
+      </Group>
+      <Group Id="Application" ResourceId="Menu_Label_Application" DescriptionResourceId="Menu_Label_Application" IntroducedVersion="8.1.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_Application_ToolTip">
+        <SubArea Id="nav_app_modules" ResourceId="App_Modules_SubArea_Title" DescriptionResourceId="App_Modules_SubArea_Description" Icon="/_imgs/AppModules_32x32.png" Url="$webresource:msdyn_appmanagementcontrol" IntroducedVersion="8.2.0.0" Client="Web" AvailableOffline="false" PassParams="false" />
+      </Group>
+    </Area>
+    <Area Id="HLP" ResourceId="Area_Help" DescriptionResourceId="Help_Area_Description" Icon="/_imgs/icn_help16.png" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Group Id="HLP_GRP" ResourceId="Group_Help" DescriptionResourceId="Help_Description" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Help_ToolTip">
+        <SubArea Id="Help_Resource_Center" ResourceId="Area_CustomerCenter" DescriptionResourceId="ResourceCenter_Area_Description" Icon="/WebResources/msdyn_/Images/Subarea_Default_Icon.png" Url="https://go.microsoft.com/fwlink/p/?linkid=846388" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
+      </Group>
+      <Group Id="LearningPath" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Learning Path" />
+          <Title LCID="1025" Title="مسار التعلم" />
+          <Title LCID="1026" Title="Път за обучение" />
+          <Title LCID="1027" Title="Ruta d'aprenentatge" />
+          <Title LCID="1028" Title="學習路徑" />
+          <Title LCID="1029" Title="Studijní program" />
+          <Title LCID="1030" Title="Læringssti" />
+          <Title LCID="1031" Title="Lernpfad" />
+          <Title LCID="1032" Title="Διαδρομή εκμάθησης" />
+          <Title LCID="1035" Title="Oppimispolku" />
+          <Title LCID="1036" Title="Parcours d'apprentissage" />
+          <Title LCID="1037" Title="מסלול לימוד" />
+          <Title LCID="1038" Title="képzési terv" />
+          <Title LCID="1040" Title="percorso di apprendimento" />
+          <Title LCID="1041" Title="ラーニング パス" />
+          <Title LCID="1042" Title="학습 경로" />
+          <Title LCID="1043" Title="Leertraject" />
+          <Title LCID="1044" Title="Læringsbane" />
+          <Title LCID="1045" Title="Ścieżka szkoleniowa" />
+          <Title LCID="1046" Title="Roteiro de Aprendizagem" />
+          <Title LCID="1048" Title="Cale de învățare" />
+          <Title LCID="1049" Title="схема обучения" />
+          <Title LCID="1050" Title="Vođeno učenje" />
+          <Title LCID="1051" Title="séria školení" />
+          <Title LCID="1053" Title="Utbildningsväg" />
+          <Title LCID="1054" Title="เส้นทางการเรียนรู้" />
+          <Title LCID="1055" Title="Öğrenme Yolu" />
+          <Title LCID="1057" Title="Jalur Pembelajaran" />
+          <Title LCID="1058" Title="Навчальний шлях" />
+          <Title LCID="1060" Title="Vodeno učenje" />
+          <Title LCID="1061" Title="Õppeteekond" />
+          <Title LCID="1062" Title="Mācību materiāli" />
+          <Title LCID="1063" Title="Mokomoji medžiaga" />
+          <Title LCID="1066" Title="Con đường Học tập" />
+          <Title LCID="1069" Title="Ikasketa-txokoa" />
+          <Title LCID="1081" Title="लर्निंग पाथ" />
+          <Title LCID="1086" Title="Laluan Pembelajaran" />
+          <Title LCID="1087" Title="Оқыту жолы" />
+          <Title LCID="1110" Title="Camiño de aprendizaxe" />
+          <Title LCID="2052" Title="学习路径" />
+          <Title LCID="2070" Title="Percurso de Aprendizagem" />
+          <Title LCID="2074" Title="Vođeno učenje" />
+          <Title LCID="3076" Title="學習路徑" />
+          <Title LCID="3082" Title="Ruta de aprendizaje" />
+          <Title LCID="3098" Title="Вођено учење" />
+        </Titles>
+        <SubArea Id="nav_learning_path" Icon="/WebResources/msdyn_LearningPath.png" Url="$webresource:msdyn_launchDesigner.html" IntroducedVersion="8.2.0.0" Client="Web" AvailableOffline="false" PassParams="false">
+          <Titles>
+            <Title LCID="1033" Title="Content Library" />
+            <Title LCID="1025" Title="Content Library" />
+            <Title LCID="1026" Title="Content Library" />
+            <Title LCID="1027" Title="Content Library" />
+            <Title LCID="1028" Title="Content Library" />
+            <Title LCID="1029" Title="Content Library" />
+            <Title LCID="1030" Title="Content Library" />
+            <Title LCID="1031" Title="Content Library" />
+            <Title LCID="1032" Title="Content Library" />
+            <Title LCID="1035" Title="Content Library" />
+            <Title LCID="1036" Title="Content Library" />
+            <Title LCID="1037" Title="Content Library" />
+            <Title LCID="1038" Title="Content Library" />
+            <Title LCID="1040" Title="Content Library" />
+            <Title LCID="1041" Title="Content Library" />
+            <Title LCID="1042" Title="Content Library" />
+            <Title LCID="1043" Title="Content Library" />
+            <Title LCID="1044" Title="Content Library" />
+            <Title LCID="1045" Title="Content Library" />
+            <Title LCID="1046" Title="Content Library" />
+            <Title LCID="1048" Title="Content Library" />
+            <Title LCID="1049" Title="Content Library" />
+            <Title LCID="1050" Title="Content Library" />
+            <Title LCID="1051" Title="Content Library" />
+            <Title LCID="1053" Title="Content Library" />
+            <Title LCID="1054" Title="Content Library" />
+            <Title LCID="1055" Title="Content Library" />
+            <Title LCID="1057" Title="Content Library" />
+            <Title LCID="1058" Title="Content Library" />
+            <Title LCID="1060" Title="Content Library" />
+            <Title LCID="1061" Title="Content Library" />
+            <Title LCID="1062" Title="Content Library" />
+            <Title LCID="1063" Title="Content Library" />
+            <Title LCID="1066" Title="Content Library" />
+            <Title LCID="1069" Title="Content Library" />
+            <Title LCID="1081" Title="Content Library" />
+            <Title LCID="1086" Title="Content Library" />
+            <Title LCID="1087" Title="Content Library" />
+            <Title LCID="1110" Title="Content Library" />
+            <Title LCID="2052" Title="Content Library" />
+            <Title LCID="2070" Title="Content Library" />
+            <Title LCID="2074" Title="Content Library" />
+            <Title LCID="3076" Title="Content Library" />
+            <Title LCID="3082" Title="Content Library" />
+            <Title LCID="3098" Title="Content Library" />
+          </Titles>
+          <Privilege Privilege="LearningPath" />
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+</SiteMap>

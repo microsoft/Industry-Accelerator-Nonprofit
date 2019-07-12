@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{6fd83ad2-b6f2-4bc6-9521-46be56de0fdd}</formid>
+    <IntroducedVersion>8.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{481c3578-97b0-4e2c-b607-95654a380a4c}" IsUserDefined="1" name="{481c3578-97b0-4e2c-b607-95654a380a4c}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{9c596e20-efc4-4129-ba34-f2c81b24dfd1}" name="{9c596e20-efc4-4129-ba34-f2c81b24dfd1}" columns="1" locklevel="0" labelwidth="250" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1be0dc67-fa3d-4ddf-8d87-e2b791de728a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8da6a1c2-b045-44c4-8d68-497264d15beb}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{737b4ca6-19dd-ad74-7017-abd687d40664}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26c7e605-2513-d0ee-637b-a40c8b802250}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Characteristic Type" languagecode="1033" />
+                        </labels>
+                        <control id="characteristictype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="characteristictype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a27d1677-1c1e-565b-c355-2d8db888da75}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Require Approval" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_requireapproval" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msdyn_requireapproval" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{6da88d94-70b0-46b8-9cb0-b4025529c861}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{8c9766e5-13a4-42e4-8801-d5328ae5e543}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="characteristic_bookableresourcecharacteristic_Characteristic" Sequence="10" Area="Info" Id="navResourceCharacteristics" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Bookable Resource Characteristics" />
+              <Title LCID="1025" Text="خصائص الموارد القابلة للحجز" />
+              <Title LCID="1026" Text="Характеристики на наличен ресурс" />
+              <Title LCID="1027" Text="Característiques dels recursos que es poden reservar" />
+              <Title LCID="1029" Text="Charakteristiky rezervovatelných zdrojů" />
+              <Title LCID="1030" Text="Egenskaber for reserverbare ressourcer" />
+              <Title LCID="1031" Text="Merkmale der buchbaren Ressource" />
+              <Title LCID="1032" Text="Χαρακτηριστικά του πόρου με δυνατότητα κράτησης" />
+              <Title LCID="3082" Text="Características de los recursos que se pueden reservar" />
+              <Title LCID="1061" Text="Reserveeritava ressursi tunnused" />
+              <Title LCID="1069" Text="Baliabide erreserbagarrien ezaugarriak" />
+              <Title LCID="1035" Text="Varattavissa olevan resurssin ominaisuudet" />
+              <Title LCID="1036" Text="Caractéristiques des ressources pouvant être réservées" />
+              <Title LCID="1110" Text="Características de recursos reservables" />
+              <Title LCID="1037" Text="מאפיינים של משאב הניתן להזמנה" />
+              <Title LCID="1081" Text="बुक करने योग्य संसाधन की विशेषताएँ" />
+              <Title LCID="1050" Text="Značajke kategorije resursa koji je moguće rezervirati" />
+              <Title LCID="1038" Text="Lefoglalható erőforrás jellemzői" />
+              <Title LCID="1057" Text="Karakteristik Sumber Daya yang Dapat Dipesan" />
+              <Title LCID="1040" Text="Caratteristiche di risorse prenotabili" />
+              <Title LCID="1041" Text="予約可能リソースの特性" />
+              <Title LCID="1087" Text="Тапсырыс беруге болатын ресурс сипаттамалары" />
+              <Title LCID="1042" Text="예약 가능한 리소스 특징" />
+              <Title LCID="1063" Text="Rezervuojamų išteklių charakteristikos" />
+              <Title LCID="1062" Text="Rezervējamo resursu īpašības" />
+              <Title LCID="1086" Text="Cirian Sumber Boleh Ditempah" />
+              <Title LCID="1044" Text="Kjennetegn for ressurs som kan reserveres" />
+              <Title LCID="1043" Text="Kenmerken van boekbare resources" />
+              <Title LCID="1045" Text="Charakterystyki zasobów, które można zarezerwować" />
+              <Title LCID="1046" Text="Características de Recursos Reserváveis" />
+              <Title LCID="2070" Text="Características de Recurso Reservável" />
+              <Title LCID="1048" Text="Caracteristicile resursei ce se poate rezerva" />
+              <Title LCID="1049" Text="Характеристики резервируемого ресурса" />
+              <Title LCID="1051" Text="Charakteristiky rezervovateľných zdrojov" />
+              <Title LCID="1060" Text="Lastnosti vira, ki ga je mogoče rezervirati" />
+              <Title LCID="3098" Text="Карактеристике ресурса који могу да се резервишу" />
+              <Title LCID="2074" Text="Karakteristike resursa koji mogu da se rezervišu" />
+              <Title LCID="1053" Text="Egenskaper för bokningsbara resurser" />
+              <Title LCID="1054" Text="คุณลักษณะทรัพยากรที่สามารถจองได้" />
+              <Title LCID="1055" Text="Ayrılabilir Kaynak Özellikleri" />
+              <Title LCID="1058" Text="Характеристики планованих ресурсів" />
+              <Title LCID="1066" Text="Đặc điểm Nguồn lực có thể đặt trước" />
+              <Title LCID="2052" Text="可预订资源的特征" />
+              <Title LCID="3076" Text="可預約資源特性" />
+              <Title LCID="1028" Text="可預約資源特性" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Sequence="9500" Area="ProcessCenter" Id="navAsyncOperations" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Background Processes" />
+              <Title LCID="1025" Text="عمليات الخلفية" />
+              <Title LCID="1026" Text="Фонови процеси" />
+              <Title LCID="1027" Text="Processos en segon terme" />
+              <Title LCID="1029" Text="Procesy běžící na pozadí" />
+              <Title LCID="1030" Text="Baggrundsprocesser" />
+              <Title LCID="1031" Text="Hintergrundprozesse" />
+              <Title LCID="1032" Text="Διεργασίες παρασκηνίου" />
+              <Title LCID="3082" Text="Procesos en segundo plano" />
+              <Title LCID="1061" Text="Taustaprotsessid" />
+              <Title LCID="1069" Text="Atzeko planoko prozesuak" />
+              <Title LCID="1035" Text="Taustaprosessit" />
+              <Title LCID="1036" Text="Processus en arrière-plan" />
+              <Title LCID="1110" Text="Procesos en segundo plano" />
+              <Title LCID="1037" Text="תהליכי רקע" />
+              <Title LCID="1081" Text="पृष्ठभूमि प्रक्रियाएँ" />
+              <Title LCID="1050" Text="Pozadinski procesi" />
+              <Title LCID="1038" Text="Háttérfolyamatok" />
+              <Title LCID="1057" Text="Proses Latar Belakang" />
+              <Title LCID="1040" Text="Processi in background" />
+              <Title LCID="1041" Text="バックグラウンド プロセス" />
+              <Title LCID="1087" Text="Фондық процестер" />
+              <Title LCID="1042" Text="백그라운드 프로세스" />
+              <Title LCID="1063" Text="Fono procesai" />
+              <Title LCID="1062" Text="Fona procesi" />
+              <Title LCID="1086" Text="Proses Latar Belakang" />
+              <Title LCID="1044" Text="Bakgrunnsprosesser" />
+              <Title LCID="1043" Text="Achtergrondprocessen" />
+              <Title LCID="1045" Text="Procesy w tle" />
+              <Title LCID="1046" Text="Processos em Segundo Plano" />
+              <Title LCID="2070" Text="Processos em Segundo Plano" />
+              <Title LCID="1048" Text="Procese de fundal" />
+              <Title LCID="1049" Text="Фоновые процессы" />
+              <Title LCID="1051" Text="Procesy v pozadí" />
+              <Title LCID="1060" Text="Procesi v ozadju" />
+              <Title LCID="3098" Text="Процеси у позадини" />
+              <Title LCID="2074" Text="Procesi u pozadini" />
+              <Title LCID="1053" Text="Bakgrundsprocesser" />
+              <Title LCID="1054" Text="กระบวนการแบบเบื้องหลัง" />
+              <Title LCID="1055" Text="Arka Plan İşlemleri" />
+              <Title LCID="1058" Text="Фонові процеси" />
+              <Title LCID="1066" Text="Quy trình Cơ bản" />
+              <Title LCID="2052" Text="后台处理" />
+              <Title LCID="3076" Text="背景程序" />
+              <Title LCID="1028" Text="背景程序" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="9600" Area="Info" Id="navAudit" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+              <Title LCID="1025" Text="محفوظات التدقيق" />
+              <Title LCID="1026" Text="Хронология на проверка" />
+              <Title LCID="1027" Text="Historial de l'auditoria" />
+              <Title LCID="1029" Text="Historie auditu" />
+              <Title LCID="1030" Text="Overvågningshistorik" />
+              <Title LCID="1031" Text="Überwachungsverlauf" />
+              <Title LCID="1032" Text="Ιστορικό ελέγχου" />
+              <Title LCID="3082" Text="Historial de auditoría" />
+              <Title LCID="1061" Text="Auditeerimisajalugu" />
+              <Title LCID="1069" Text="Auditoretza-historia" />
+              <Title LCID="1035" Text="Seurantahistoria" />
+              <Title LCID="1036" Text="Historique d'audit" />
+              <Title LCID="1110" Text="Historial de auditoría" />
+              <Title LCID="1037" Text="היסטוריית ביקורת" />
+              <Title LCID="1081" Text="ऑडिट इतिहास" />
+              <Title LCID="1050" Text="Povijest nadzora" />
+              <Title LCID="1038" Text="Auditnapló előzményei" />
+              <Title LCID="1057" Text="Riwayat Audit" />
+              <Title LCID="1040" Text="Cronologia controllo" />
+              <Title LCID="1041" Text="監査履歴" />
+              <Title LCID="1087" Text="Тексеру журналы" />
+              <Title LCID="1042" Text="감사 기록" />
+              <Title LCID="1063" Text="Tikrinimo retrospektyva" />
+              <Title LCID="1062" Text="Audita vēsture" />
+              <Title LCID="1086" Text="Sejarah Audit" />
+              <Title LCID="1044" Text="Logg for sporing av endringer" />
+              <Title LCID="1043" Text="Controlegeschiedenis" />
+              <Title LCID="1045" Text="Historia inspekcji" />
+              <Title LCID="1046" Text="Histórico de Auditoria" />
+              <Title LCID="2070" Text="Histórico de Auditoria" />
+              <Title LCID="1048" Text="Istoric auditare" />
+              <Title LCID="1049" Text="Журнал аудита" />
+              <Title LCID="1051" Text="História auditov" />
+              <Title LCID="1060" Text="Zgodovina spremljanja sprememb" />
+              <Title LCID="3098" Text="Историја надгледања" />
+              <Title LCID="2074" Text="Istorija nadgledanja" />
+              <Title LCID="1053" Text="Granskningshistorik" />
+              <Title LCID="1054" Text="ประวัติการตรวจสอบ" />
+              <Title LCID="1055" Text="Denetim Geçmişi" />
+              <Title LCID="1058" Text="Журнал відстеження" />
+              <Title LCID="1066" Text="Lịch sử Kiểm tra" />
+              <Title LCID="2052" Text="审核历史记录" />
+              <Title LCID="3076" Text="稽核歷程記錄" />
+              <Title LCID="1028" Text="稽核歷程記錄" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProcessSessions" Sequence="9700" Area="ProcessCenter" Id="navProcessSessions" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+              <Title LCID="1025" Text="جلسات عمل العمليات" />
+              <Title LCID="1026" Text="Сесии на процес" />
+              <Title LCID="1027" Text="Sessions del procés" />
+              <Title LCID="1029" Text="Relace procesů" />
+              <Title LCID="1030" Text="Processessioner" />
+              <Title LCID="1031" Text="Prozesssitzungen" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας διεργασίας" />
+              <Title LCID="3082" Text="Sesiones de proceso" />
+              <Title LCID="1061" Text="Protsessiseansid" />
+              <Title LCID="1069" Text="Prozesu-saioak" />
+              <Title LCID="1035" Text="Prosessin istunnot" />
+              <Title LCID="1036" Text="Sessions de traitement" />
+              <Title LCID="1110" Text="Sesións de proceso" />
+              <Title LCID="1037" Text="הפעלות תהליך" />
+              <Title LCID="1081" Text="प्रक्रिया सत्र" />
+              <Title LCID="1050" Text="Sesije procesa" />
+              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
+              <Title LCID="1057" Text="Sesi Proses" />
+              <Title LCID="1040" Text="Sessioni processo" />
+              <Title LCID="1041" Text="プロセス セッション" />
+              <Title LCID="1087" Text="Процесс сеанстары" />
+              <Title LCID="1042" Text="프로세스 세션" />
+              <Title LCID="1063" Text="Apdorojimo seansai" />
+              <Title LCID="1062" Text="Apstrādes sesijas" />
+              <Title LCID="1086" Text="Sesi Proses" />
+              <Title LCID="1044" Text="Prosessøkter" />
+              <Title LCID="1043" Text="Processessies" />
+              <Title LCID="1045" Text="Sesje procesów" />
+              <Title LCID="1046" Text="Sessões de Processo" />
+              <Title LCID="2070" Text="Processar Sessões" />
+              <Title LCID="1048" Text="Sesiuni de proces" />
+              <Title LCID="1049" Text="Сеансы процессов" />
+              <Title LCID="1051" Text="Relácie procesov" />
+              <Title LCID="1060" Text="Seje procesov" />
+              <Title LCID="3098" Text="Сесије процеса" />
+              <Title LCID="2074" Text="Sesije procesa" />
+              <Title LCID="1053" Text="Processessioner" />
+              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
+              <Title LCID="1055" Text="İşlem Oturumları" />
+              <Title LCID="1058" Text="Сеанси процесів" />
+              <Title LCID="1066" Text="Phiên Quá trình" />
+              <Title LCID="2052" Text="进程会话" />
+              <Title LCID="3076" Text="程序工作階段" />
+              <Title LCID="1028" Text="程序工作階段" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_characteristic_msdyn_characteristicreqforteammember_characteristic" Sequence="10000" Area="Info" Id="nav_msdyn_characteristic_msdyn_characteristicreqforteammember_characteristic" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Competency Requirements" />
+              <Title LCID="1025" Text="متطلبات الاختصاص" />
+              <Title LCID="1026" Text="Изисквания за компетенции" />
+              <Title LCID="1027" Text="Requisits de competència" />
+              <Title LCID="1029" Text="Požadavky na kompetence" />
+              <Title LCID="1030" Text="Kompetencekrav" />
+              <Title LCID="1031" Text="Kompetenzanforderungen" />
+              <Title LCID="1032" Text="Απαιτήσεις τεχνογνωσίας" />
+              <Title LCID="3082" Text="Requisitos de competencia" />
+              <Title LCID="1061" Text="Kompetentsinõuded" />
+              <Title LCID="1069" Text="Konpetentzia-eskakizunak" />
+              <Title LCID="1035" Text="Osaamistarpeet" />
+              <Title LCID="1036" Text="Exigences de compétences" />
+              <Title LCID="1110" Text="Requirimentos da competencia" />
+              <Title LCID="1037" Text="דרישות כשירות" />
+              <Title LCID="1081" Text="योग्यता आवश्यकताएँ" />
+              <Title LCID="1050" Text="Potrebne kompetencije" />
+              <Title LCID="1038" Text="Kompetenciakövetelmények" />
+              <Title LCID="1057" Text="Persyaratan Kompetensi" />
+              <Title LCID="1040" Text="Requisiti di competenza" />
+              <Title LCID="1041" Text="コンピテンシー要件" />
+              <Title LCID="1087" Text="Біліктілік талаптары" />
+              <Title LCID="1042" Text="역량 요구 사항" />
+              <Title LCID="1063" Text="Kompetencijos reikalavimai" />
+              <Title LCID="1062" Text="Kompetences prasības" />
+              <Title LCID="1086" Text="Keperluan Kompetensi" />
+              <Title LCID="1044" Text="Kompetansekrav" />
+              <Title LCID="1043" Text="Competentievereisten" />
+              <Title LCID="1045" Text="Wymagania kompetencji" />
+              <Title LCID="1046" Text="Requisitos da Competência" />
+              <Title LCID="2070" Text="Requisitos de Competência" />
+              <Title LCID="1048" Text="Cerințe de competență" />
+              <Title LCID="1049" Text="Требования компетентности" />
+              <Title LCID="1051" Text="Požiadavky kompetencií" />
+              <Title LCID="1060" Text="Pogoji glede usposobljenosti" />
+              <Title LCID="3098" Text="Услови компетенције" />
+              <Title LCID="2074" Text="Uslovi kompetencije" />
+              <Title LCID="1053" Text="Kompetenskrav" />
+              <Title LCID="1054" Text="ข้อกำหนดความสามารถ" />
+              <Title LCID="1055" Text="Uzmanlık Gereksinimleri" />
+              <Title LCID="1058" Text="Вимоги щодо компетенції" />
+              <Title LCID="1066" Text="Yêu cầu Năng lực" />
+              <Title LCID="2052" Text="资格要求" />
+              <Title LCID="3076" Text="專長認證需求" />
+              <Title LCID="1028" Text="專長認證需求" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_characteristic_msdyn_rolecompetencyrequirement_characteristic" Sequence="10000" Area="Info" Id="nav_msdyn_characteristic_msdyn_rolecompetencyrequirement_characteristic" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Role competency requirement" />
+              <Title LCID="1025" Text="متطلب اختصاص الدور" />
+              <Title LCID="1026" Text="Изискване за компетенции за роля" />
+              <Title LCID="1027" Text="Requisit de competència de la funció" />
+              <Title LCID="1029" Text="Požadavek na kompetenci role" />
+              <Title LCID="1030" Text="Kompetencekrav for rolle" />
+              <Title LCID="1031" Text="Rollenkompetenzanforderung" />
+              <Title LCID="1032" Text="Απαίτηση τεχνογνωσίας ρόλου" />
+              <Title LCID="3082" Text="Requisito de competencia de rol" />
+              <Title LCID="1061" Text="Rolli kompetentsinõue" />
+              <Title LCID="1069" Text="Funtzioaren konpetentzia-eskakizunak" />
+              <Title LCID="1035" Text="Roolin osaamistarve" />
+              <Title LCID="1036" Text="Besoin en compétence du rôle" />
+              <Title LCID="1110" Text="Requirimento da competencia do rol" />
+              <Title LCID="1037" Text="דרישת כשירות לתפקיד" />
+              <Title LCID="1081" Text="भूमिका योग्यता आवश्यकताएँ" />
+              <Title LCID="1050" Text="Potrebna kompetencija za ulogu" />
+              <Title LCID="1038" Text="Szerepkör kompetenciakövetelménye" />
+              <Title LCID="1057" Text="Persyaratan kompetensi peran" />
+              <Title LCID="1040" Text="Requisito di competenza ruolo" />
+              <Title LCID="1041" Text="ロールのコンピテンシー要件" />
+              <Title LCID="1087" Text="Рөл біліктілігі талабы" />
+              <Title LCID="1042" Text="역할 역량 요구 사항" />
+              <Title LCID="1063" Text="Vaidmens kompetencijos reikalavimas" />
+              <Title LCID="1062" Text="Lomas kompetences prasības" />
+              <Title LCID="1086" Text="Keperluan kompetensi peranan" />
+              <Title LCID="1044" Text="Rollekompetansekrav" />
+              <Title LCID="1043" Text="Rolcompetentievereiste" />
+              <Title LCID="1045" Text="Wymaganie kompetencji roli" />
+              <Title LCID="1046" Text="Requisito de competência da função" />
+              <Title LCID="2070" Text="Requisito de competência da função" />
+              <Title LCID="1048" Text="Cerință de competență pentru rol" />
+              <Title LCID="1049" Text="Требование компетентности роли" />
+              <Title LCID="1051" Text="Požiadavka kompetencie roly" />
+              <Title LCID="1060" Text="Pogoj glede usposobljenosti vloge" />
+              <Title LCID="3098" Text="Услов компетенције за улогу" />
+              <Title LCID="2074" Text="Uslov kompetencije za ulogu" />
+              <Title LCID="1053" Text="Rollkompetenskrav" />
+              <Title LCID="1054" Text="ข้อกำหนดความสามารถของบทบาท" />
+              <Title LCID="1055" Text="Rol uzmanlığı gereksinimi" />
+              <Title LCID="1058" Text="Вимога щодо компетенції ролі" />
+              <Title LCID="1066" Text="Yêu cầu năng lực vai trò" />
+              <Title LCID="2052" Text="角色资格要求" />
+              <Title LCID="3076" Text="角色專長認證需求" />
+              <Title LCID="1028" Text="角色專長認證需求" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1025" Text="عامة" />
+              <Title LCID="1026" Text="Общо" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Společné" />
+              <Title LCID="1030" Text="Almindelig" />
+              <Title LCID="1031" Text="Gemeinsam verwendet" />
+              <Title LCID="1032" Text="Κοινό" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Levinud" />
+              <Title LCID="1069" Text="Ohikoak" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="1036" Text="Éléments communs" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1037" Text="פריטים נפוצים" />
+              <Title LCID="1081" Text="साधारण" />
+              <Title LCID="1050" Text="Uobičajeno" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Umum" />
+              <Title LCID="1040" Text="Elementi comuni" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1087" Text="Жалпы" />
+              <Title LCID="1042" Text="일반" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Kopējs" />
+              <Title LCID="1086" Text="Umum" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общее" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Splošno" />
+              <Title LCID="10266" Text="Уобичајено" />
+              <Title LCID="9242" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Standard" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Спільне" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="通用" />
+              <Title LCID="3076" Text="一般" />
+              <Title LCID="1028" Text="一般" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1025" Text="‏‏مبيعات" />
+              <Title LCID="1026" Text="Sales" />
+              <Title LCID="1027" Text="Vendes" />
+              <Title LCID="1029" Text="Prodej" />
+              <Title LCID="1030" Text="Salg" />
+              <Title LCID="1031" Text="Vertrieb" />
+              <Title LCID="1032" Text="Πωλήσεις" />
+              <Title LCID="3082" Text="Ventas" />
+              <Title LCID="1061" Text="Müük" />
+              <Title LCID="1069" Text="Sales" />
+              <Title LCID="1035" Text="Myynti" />
+              <Title LCID="1036" Text="Ventes" />
+              <Title LCID="1110" Text="Vendas" />
+              <Title LCID="1037" Text="מכירות" />
+              <Title LCID="1081" Text="विक्रय" />
+              <Title LCID="1050" Text="Prodaja" />
+              <Title LCID="1038" Text="Értékesítés" />
+              <Title LCID="1057" Text="Penjualan" />
+              <Title LCID="1040" Text="Vendite" />
+              <Title LCID="1041" Text="営業" />
+              <Title LCID="1087" Text="Сатылым" />
+              <Title LCID="1042" Text="영업" />
+              <Title LCID="1063" Text="Pardavimas" />
+              <Title LCID="1062" Text="Pārdošana" />
+              <Title LCID="1086" Text="Jualan" />
+              <Title LCID="1044" Text="Salg" />
+              <Title LCID="1043" Text="Verkoop" />
+              <Title LCID="1045" Text="Sprzedaż" />
+              <Title LCID="1046" Text="Vendas" />
+              <Title LCID="2070" Text="Vendas" />
+              <Title LCID="1048" Text="Vânzări" />
+              <Title LCID="1049" Text="Продажи" />
+              <Title LCID="1051" Text="Predaj" />
+              <Title LCID="1060" Text="Prodaja" />
+              <Title LCID="10266" Text="Sales" />
+              <Title LCID="9242" Text="Sales" />
+              <Title LCID="1053" Text="Försäljning" />
+              <Title LCID="1054" Text="การขาย" />
+              <Title LCID="1055" Text="Satış" />
+              <Title LCID="1058" Text="Збут" />
+              <Title LCID="1066" Text="Sales" />
+              <Title LCID="2052" Text="销售" />
+              <Title LCID="3076" Text="銷售" />
+              <Title LCID="1028" Text="銷售" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1025" Text="الخدمة" />
+              <Title LCID="1026" Text="Услуга" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1030" Text="Service" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Υπηρεσία" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1037" Text="שירות" />
+              <Title LCID="1081" Text="सेवा" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1087" Text="Қызмет" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Aptarnavimas" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1086" Text="Perkhidmatan" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługa" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Serviciu" />
+              <Title LCID="1049" Text="Сервис" />
+              <Title LCID="1051" Text="Služba" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="10266" Text="Услуга" />
+              <Title LCID="9242" Text="Usluga" />
+              <Title LCID="1053" Text="Tjänst" />
+              <Title LCID="1054" Text="การบริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Обслуговування" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1025" Text="التسويق" />
+              <Title LCID="1026" Text="Маркетинг" />
+              <Title LCID="1027" Text="Màrqueting" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Μάρκετινγκ" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Turundus" />
+              <Title LCID="1069" Text="Marketina" />
+              <Title LCID="1035" Text="Markkinointi" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Márketing" />
+              <Title LCID="1037" Text="שיווק" />
+              <Title LCID="1081" Text="मार्केटिंग" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Pemasaran" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="マーケティング" />
+              <Title LCID="1087" Text="Маркетинг" />
+              <Title LCID="1042" Text="마케팅" />
+              <Title LCID="1063" Text="Rinkodara" />
+              <Title LCID="1062" Text="Mārketings" />
+              <Title LCID="1086" Text="Pemasaran" />
+              <Title LCID="1044" Text="Markedsføring" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Маркетинг" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Trženje" />
+              <Title LCID="10266" Text="Маркетинг" />
+              <Title LCID="9242" Text="Marketing" />
+              <Title LCID="1053" Text="Marknadsföring" />
+              <Title LCID="1054" Text="การตลาด" />
+              <Title LCID="1055" Text="Pazarlama" />
+              <Title LCID="1058" Text="Маркетинг" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="市场营销" />
+              <Title LCID="3076" Text="行銷" />
+              <Title LCID="1028" Text="行銷" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+              <Title LCID="1025" Text="جلسات عمل العمليات" />
+              <Title LCID="1026" Text="Сесии на процес" />
+              <Title LCID="1027" Text="Sessions del procés" />
+              <Title LCID="1029" Text="Relace procesů" />
+              <Title LCID="1030" Text="Processessioner" />
+              <Title LCID="1031" Text="Prozesssitzungen" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας διεργασίας" />
+              <Title LCID="3082" Text="Sesiones de proceso" />
+              <Title LCID="1061" Text="Protsessiseansid" />
+              <Title LCID="1069" Text="Prozesu-saioak" />
+              <Title LCID="1035" Text="Prosessin istunnot" />
+              <Title LCID="1036" Text="Sessions de traitement" />
+              <Title LCID="1110" Text="Sesións de proceso" />
+              <Title LCID="1037" Text="הפעלות תהליך" />
+              <Title LCID="1081" Text="प्रक्रिया सत्र" />
+              <Title LCID="1050" Text="Sesije procesa" />
+              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
+              <Title LCID="1057" Text="Sesi Proses" />
+              <Title LCID="1040" Text="Sessioni processo" />
+              <Title LCID="1041" Text="プロセス セッション" />
+              <Title LCID="1087" Text="Процестік сеанстар" />
+              <Title LCID="1042" Text="프로세스 세션" />
+              <Title LCID="1063" Text="Apdorojimo seansai" />
+              <Title LCID="1062" Text="Apstrādes sesijas" />
+              <Title LCID="1086" Text="Sesi Proses" />
+              <Title LCID="1044" Text="Prosessøkter" />
+              <Title LCID="1043" Text="Processessies" />
+              <Title LCID="1045" Text="Sesje procesów" />
+              <Title LCID="1046" Text="Sessões de Processo" />
+              <Title LCID="2070" Text="Sessões de Processo" />
+              <Title LCID="1048" Text="Sesiuni de proces" />
+              <Title LCID="1049" Text="Сеансы процессов" />
+              <Title LCID="1051" Text="Relácie procesov" />
+              <Title LCID="1060" Text="Seje procesa" />
+              <Title LCID="10266" Text="Сесије процеса" />
+              <Title LCID="9242" Text="Sesije procesa" />
+              <Title LCID="1053" Text="Bearbeta sessioner" />
+              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
+              <Title LCID="1055" Text="İşlem Oturumları" />
+              <Title LCID="1058" Text="Сеанси обробки" />
+              <Title LCID="1066" Text="Phiên quá trình" />
+              <Title LCID="2052" Text="流程会话" />
+              <Title LCID="3076" Text="程序工作階段" />
+              <Title LCID="1028" Text="程序工作階段" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

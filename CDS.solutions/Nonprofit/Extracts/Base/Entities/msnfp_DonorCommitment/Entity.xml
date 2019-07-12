@@ -968,6 +968,40 @@
             <Description description="Unique identifier for Opportunity associated with Donor Commitment." languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="msnfp_pledgedbyaccountid">
+          <Type>lookup</Type>
+          <Name>msnfp_pledgedbyaccountid</Name>
+          <LogicalName>msnfp_pledgedbyaccountid</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>2.1.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Pledged By Account" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Unique identifier for Account associated with Donor Commitment." languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="msnfp_PledgedByContactId">
           <Type>lookup</Type>
           <Name>msnfp_pledgedbycontactid</Name>
@@ -1610,7 +1644,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{f2c54122-c82c-4110-8c40-cb31fd37e434}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{b9046fcd-f6da-4927-a8ff-f31a32a1948b}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>

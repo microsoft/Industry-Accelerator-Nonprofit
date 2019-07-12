@@ -267,7 +267,18 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_designation_msnfp_designatedcredit" Sequence="10001" Area="Info" Id="nav_msnfp_msnfp_designation_msnfp_designatedcredit">
+            <Titles>
+              <Title LCID="1033" Text="Designated Credits" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_designationPlan_designation" Sequence="10002" Area="Info" Id="nav_msnfp_designationPlan_designation">
+            <Titles>
+              <Title LCID="1033" Text="Designation Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -297,8 +308,6 @@
         </NavBarAreas>
       </Navigation>
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Designation" languagecode="1033" />
     </LocalizedNames>

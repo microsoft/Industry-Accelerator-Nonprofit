@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b9976833-1983-e911-a984-000d3a3ac6bb}</savedqueryid>
+    <querytype>8192</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" output-format="xml-platform">
+        <entity name="msiati_aidtype">
+          <attribute name="msiati_aidtypeid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Aid Types" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Active Aid Types owned by me" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

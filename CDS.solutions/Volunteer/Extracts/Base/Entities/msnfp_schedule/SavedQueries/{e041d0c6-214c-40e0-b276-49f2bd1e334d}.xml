@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e041d0c6-214c-40e0-b276-49f2bd1e334d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_scheduleid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_bookableresourceid" width="100" />
+          <cell name="msnfp_projectteammemberid" width="100" />
+          <cell name="msnfp_effectivefrom" width="100" />
+          <cell name="msnfp_effectiveto" width="100" />
+          <cell name="msnfp_workingdays" width="100" disableSorting="1" />
+          <cell name="msnfp_totalhours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_schedule">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition value="{0}" attribute="msnfp_name" operator="like" />
+          </filter>
+          <attribute name="msnfp_workingdays" />
+          <attribute name="msnfp_totalhours" />
+          <attribute name="msnfp_projectteammemberid" />
+          <attribute name="msnfp_effectiveto" />
+          <attribute name="msnfp_effectivefrom" />
+          <attribute name="msnfp_bookableresourceid" />
+          <attribute name="msnfp_scheduleid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Schedules" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -11,7 +11,12 @@
       <grid name="" jump="msiati_name" select="1" icon="1" preview="0">
         <row name="msiati_nonembeddedcodelist" id="msiati_nonembeddedcodelistid">
           <cell name="msiati_name" width="300" />
+          <cell name="msiati_codelisttype" width="100" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_description" width="100" disableSorting="1" />
+          <cell name="msiati_nonembeddedcodelistvocabularyid" width="100" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -25,6 +30,13 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <order attribute="msiati_codelisttype" descending="false" />
+          <order attribute="msiati_name" descending="false" />
+          <attribute name="msiati_nonembeddedcodelistvocabularyid" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_codelisttype" />
+          <attribute name="msiati_code" />
+          <attribute name="msiati_description" />
         </entity>
       </fetch>
     </fetchxml>

@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{88de0f86-b850-4dad-9751-c2b8437f2625}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{fd5fc97d-f2a9-44db-8216-46903f78182a}" IsUserDefined="0">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="campaign information" showlabel="false" showbar="false" locklevel="0" id="{cd6b9269-1f11-4ad9-9954-a23b98058dc9}" IsUserDefined="0" layout="varwidth" columns="11">
+                  <labels>
+                    <label description="Campaign Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{e947fa5a-0c65-4d89-8c8a-510c77377e1f}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{a953d909-3080-4a50-b0af-cbc0c851bf09}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{69df529e-7b81-4aad-bd71-6df00a24cfa7}">
+                        <labels>
+                          <label description="Campaign Code" languagecode="1033" />
+                        </labels>
+                        <control id="codename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="codename" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{37e65083-0a4b-4d48-9adf-ed1e004ab478}">
+                        <labels>
+                          <label description="Campaign Type" languagecode="1033" />
+                        </labels>
+                        <control id="typecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="typecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46dee527-85eb-4f71-a121-fd8fa7308663}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" />
+                      </cell>
+                      <cell id="{8f441c7f-f9a6-429b-b579-a34f2f343048}" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{0ac286b2-2abd-4483-b7c0-60920b589612}">
+                        <labels>
+                          <label description="Expected Response(%)" languagecode="1033" />
+                        </labels>
+                        <control id="expectedresponse" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="expectedresponse" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{68030c30-bc5f-4275-b323-4a1f0eade4a5}">
+                        <labels>
+                          <label description="Price List" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Marketing.Campaign.Instance.priceListIdSetAdditionalParameters" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="90dc77c6-d814-4447-b8d1-5b07ff1d8ecb" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="transactioncurrencyid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="pricelistid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="pricelistid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="3" colspan="2" id="{c629e51e-66ce-4b7c-be62-9580cedb3916}">
+                        <labels>
+                          <label description="Offer" languagecode="1033" />
+                        </labels>
+                        <control id="objective" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="objective" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="dates" showlabel="true" showbar="true" locklevel="0" id="{433fd845-5337-4cdb-b3f4-bdd3ad45885c}" IsUserDefined="0" layout="varheight" columns="11">
+                  <labels>
+                    <label description="Schedule" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{7e64e2d0-9884-4c2d-be82-369d261f7512}">
+                        <labels>
+                          <label description="Proposed Start" languagecode="1033" />
+                        </labels>
+                        <control id="proposedstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="proposedstart" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{05bf8ce0-65ac-4599-aea0-f8ef4ed89d77}">
+                        <labels>
+                          <label description="Actual Start" languagecode="1033" />
+                        </labels>
+                        <control id="actualstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualstart" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{05a23a90-af94-4d64-b9dc-590c40689b52}">
+                        <labels>
+                          <label description="Proposed End" languagecode="1033" />
+                        </labels>
+                        <control id="proposedend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="proposedend" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{27211fb0-c044-4acd-93fa-7eb75436228d}">
+                        <labels>
+                          <label description="Actual End" languagecode="1033" />
+                        </labels>
+                        <control id="actualend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualend" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="description" showlabel="true" showbar="true" id="{260b8bff-825c-4ab9-931d-c1bd141be27c}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Description" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" rowspan="5" auto="true" id="{8f452f86-458e-4cac-95dd-8cc9be598385}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="details" id="{3b8731d1-2c59-4ade-8fb8-6623fb1db2a9}" IsUserDefined="0" locklevel="0">
+          <labels>
+            <label description="Financials" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="financials" showlabel="true" showbar="true" locklevel="0" id="{49cd6589-ad72-451b-ba57-bae7dd0c6f25}" IsUserDefined="0" layout="varheight" columns="11">
+                  <labels>
+                    <label description="Financials" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{385fb7ad-b1a8-4c0b-9d33-c8bc1eb7b38f}">
+                        <labels>
+                          <label description="Total Cost of Campaign Activities" languagecode="1033" />
+                        </labels>
+                        <control id="totalcampaignactivityactualcost" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalcampaignactivityactualcost" disabled="true" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{8fa5b89c-add6-4769-9779-944bf28f98df}">
+                        <labels>
+                          <label description="Budget Allocated" languagecode="1033" />
+                        </labels>
+                        <control id="budgetedcost" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="budgetedcost" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{3fe769fb-ad72-4740-b52d-b04ab82fa2cb}">
+                        <labels>
+                          <label description="Miscellaneous Costs" languagecode="1033" />
+                        </labels>
+                        <control id="othercost" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="othercost" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{0ad7255a-0a60-4401-ac3c-5e569e12c411}">
+                        <labels>
+                          <label description="Estimated Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="expectedrevenue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="expectedrevenue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{8fe2b9e0-a29d-42c8-b84e-73dcb5e7cde5}">
+                        <labels>
+                          <label description="Total Cost of Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="totalactualcost" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalactualcost" disabled="true" />
+                      </cell>
+                      <cell showlabel="true" colspan="1" id="{88a85b3a-fa8e-4e6c-9b85-edba6857c444}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="administration" id="{922ace85-7523-4eda-a126-d167fc4a86de}" IsUserDefined="0" locklevel="0">
+          <labels>
+            <label description="Administration" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="administration" showlabel="false" showbar="false" locklevel="0" id="{091bfc4c-d6ed-4f44-aef2-7604f7269dbb}" IsUserDefined="0" layout="varheight" columns="11">
+                  <labels>
+                    <label description="Administration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{31876ae4-06b4-434d-91c9-3039af1a5a86}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{25845d06-4f71-4f7c-9129-c724b103d2f5}">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{569186f1-5daf-4f6a-985b-4d7676abcb0c}">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{87107b54-2a3a-42af-aa27-481493449f53}">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="notes" id="{91411756-19E3-442b-A92A-11B6A494DD78}" IsUserDefined="0" expanded="false">
+          <labels>
+            <label description="Notes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="notes" showlabel="false" showbar="false" id="{B8AB8CF9-6957-4bdc-AC98-841156B94395}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" showlabel="false" rowspan="5" auto="true" id="{88fcb9ef-45b1-4ac2-b21a-b0f70a7a64c3}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Marketing/Campaign/Campaign_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Marketing.Campaign.Instance.formOnLoad" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="1F18229E-D7CD-4E52-AF44-A5D3DD67B4DE" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="proposedstart">
+          <InternalHandlers>
+            <Handler functionName="Marketing.Campaign.Instance.proposedStartOnChange" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="eebf4804-afec-4818-821d-baff74233a84" enabled="true">
+              <dependencies>
+                <dependency id="proposedend" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="actualstart">
+          <InternalHandlers>
+            <Handler functionName="Marketing.Campaign.Instance.actualStartOnChange" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="bab96eeb-35cc-49e6-af4b-b5d33790e1f2" enabled="true">
+              <dependencies>
+                <dependency id="actualend" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="proposedend">
+          <InternalHandlers>
+            <Handler functionName="Marketing.Campaign.Instance.proposedEndOnChange" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="c798f1d0-cd0d-4867-9691-dadcba29411d" enabled="true">
+              <dependencies>
+                <dependency id="proposedstart" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="actualend">
+          <InternalHandlers>
+            <Handler functionName="Marketing.Campaign.Instance.actualEndOnChange" libraryName="Marketing/Campaign/Campaign_main_system_library.js" handlerUniqueId="a80f682d-baa2-4095-a1ec-fdf2b3d04fe0" enabled="true">
+              <dependencies>
+                <dependency id="actualstart" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

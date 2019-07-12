@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{967939ee-c13e-e911-a826-000d3a3b73ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row id="msnfp_plannedgivingid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_stage" width="100" />
+          <cell name="msnfp_bequesttype" width="100" />
+          <cell name="msnfp_plannedgiving_pledgedbycontactid" width="100" />
+          <cell name="msnfp_pledgesonaccountid" width="100" />
+          <cell name="msnfp_fundid" width="100" />
+          <cell name="msnfp_designation" width="100" />
+          <cell name="msnfp_estimatedgivingamount" width="100" />
+          <cell name="msnfp_givingamount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfp_plannedgiving">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_stage" />
+          <attribute name="msnfp_fundid" />
+          <attribute name="msnfp_pledgesonaccountid" />
+          <attribute name="msnfp_plannedgiving_pledgedbycontactid" />
+          <attribute name="msnfp_givingamount" />
+          <attribute name="msnfp_estimatedgivingamount" />
+          <attribute name="msnfp_designation" />
+          <attribute name="msnfp_bequesttype" />
+          <attribute name="msnfp_plannedgivingid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Planned Giving Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

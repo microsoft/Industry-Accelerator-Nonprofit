@@ -10,21 +10,13 @@
     <layoutxml>
       <grid name="resultset" jump="msiati_name" select="1" preview="1" icon="1">
         <row name="result" id="msiati_nonembeddedcodelistid">
-          <cell name="msiati_name" width="150" />
-          <cell name="msiati_category" width="100" />
-          <cell name="msiati_code" width="100" />
           <cell name="msiati_codelisttype" width="100" />
-          <cell name="createdby" width="100" />
-          <cell name="createdonbehalfby" width="100" />
-          <cell name="createdon" width="100" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_name" width="150" />
           <cell name="msiati_description" width="100" disableSorting="1" />
-          <cell name="modifiedby" width="100" />
-          <cell name="modifiedonbehalfby" width="100" />
-          <cell name="modifiedon" width="100" />
-          <cell name="overriddencreatedon" width="100" />
-          <cell name="statecode" width="100" />
-          <cell name="statuscode" width="100" />
           <cell name="msiati_nonembeddedcodelistvocabularyid" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="modifiedon" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -33,21 +25,14 @@
       <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="msiati_nonembeddedcodelist">
           <attribute name="msiati_name" />
+          <order attribute="msiati_codelisttype" descending="false" />
           <order attribute="msiati_name" descending="false" />
           <attribute name="msiati_nonembeddedcodelistvocabularyid" />
-          <attribute name="statuscode" />
-          <attribute name="statecode" />
-          <attribute name="overriddencreatedon" />
           <attribute name="modifiedon" />
-          <attribute name="modifiedonbehalfby" />
-          <attribute name="modifiedby" />
           <attribute name="msiati_description" />
           <attribute name="createdon" />
-          <attribute name="createdonbehalfby" />
-          <attribute name="createdby" />
           <attribute name="msiati_codelisttype" />
           <attribute name="msiati_code" />
-          <attribute name="msiati_category" />
           <attribute name="msiati_nonembeddedcodelistid" />
         </entity>
       </fetch>

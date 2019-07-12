@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f1e04f93-3a47-e911-a838-000d3a3b7224}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_employmenthistoryid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_contactid" width="100" />
+          <cell name="msnfp_title" width="100" />
+          <cell name="msnfp_currentemployment" width="100" />
+          <cell name="msnfp_industry" width="100" />
+          <cell name="msnfp_occupation" width="100" />
+          <cell name="msnfp_employerid" width="100" />
+          <cell name="msnfp_employername" width="100" />
+          <cell name="msnfp_employmentstartdate" width="100" />
+          <cell name="msnfp_employmentenddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msnfp_employmenthistory">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_title" />
+          <attribute name="msnfp_occupation" />
+          <attribute name="msnfp_industry" />
+          <attribute name="msnfp_employmentstartdate" />
+          <attribute name="msnfp_employmentenddate" />
+          <attribute name="msnfp_employername" />
+          <attribute name="msnfp_employerid" />
+          <attribute name="msnfp_currentemployment" />
+          <attribute name="msnfp_contactid" />
+          <attribute name="msnfp_employmenthistoryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Employment History Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

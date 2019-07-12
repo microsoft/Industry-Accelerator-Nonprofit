@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{28022f62-5b3f-e911-a826-000d3a3b73ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row id="msnfp_recommendationid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_recommendercontactid" width="100" />
+          <cell name="msnfp_communicationchannel" width="100" />
+          <cell name="msnfp_date" width="100" />
+          <cell name="msnfp_status" width="100" />
+          <cell name="msnfp_description" width="100" disableSorting="1" />
+          <cell name="msnfp_requestid" width="100" />
+          <cell name="msnfp_recommenderaccountid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfp_recommendation">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_recommendercontactid" />
+          <attribute name="msnfp_recommenderaccountid" />
+          <attribute name="msnfp_description" />
+          <attribute name="msnfp_communicationchannel" />
+          <attribute name="msnfp_date" />
+          <attribute name="msnfp_requestid" />
+          <attribute name="msnfp_recommendationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Recommendations Report" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

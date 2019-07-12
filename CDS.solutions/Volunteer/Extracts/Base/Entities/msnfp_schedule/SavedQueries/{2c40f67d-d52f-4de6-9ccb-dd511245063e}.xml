@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2c40f67d-d52f-4de6-9ccb-dd511245063e}</savedqueryid>
+    <layoutxml>
+      <grid name="" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_scheduleid" name="msnfp_schedule">
+          <cell name="msnfp_name" width="300" />
+          <cell name="statecode" width="100" />
+          <cell name="msnfp_effectivefrom" width="100" />
+          <cell name="msnfp_effectiveto" width="100" />
+          <cell name="msnfp_workingdays" width="100" disableSorting="1" />
+          <cell name="msnfp_totalhours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_schedule">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_workingdays" />
+          <attribute name="msnfp_totalhours" />
+          <attribute name="statecode" />
+          <attribute name="msnfp_effectiveto" />
+          <attribute name="msnfp_effectivefrom" />
+          <attribute name="msnfp_scheduleid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Schedule Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

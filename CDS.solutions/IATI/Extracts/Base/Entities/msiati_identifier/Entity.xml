@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Identifier" OriginalName="Identifier">msiati_identifier</Name>
+  <Name LocalizedName="Other Identifier" OriginalName="Other Identifier">msiati_identifier</Name>
   <EntityInfo>
     <entity Name="msiati_identifier">
       <LocalizedNames>
-        <LocalizedName description="Identifier" languagecode="1033" />
+        <LocalizedName description="Other Identifier" languagecode="1033" />
       </LocalizedNames>
       <LocalizedCollectionNames>
-        <LocalizedCollectionName description="Identifiers" languagecode="1033" />
+        <LocalizedCollectionName description="Other Identifiers" languagecode="1033" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="An IATI's globally unique identifier for the delivery framework" languagecode="1033" />
@@ -252,7 +252,7 @@
           <Type>lookup</Type>
           <Name>msiati_deliveryframeworkid</Name>
           <LogicalName>msiati_deliveryframeworkid</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -309,7 +309,7 @@
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
           <displaynames>
-            <displayname description="Identifier" languagecode="1033" />
+            <displayname description="Other Identifier" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
@@ -319,7 +319,7 @@
           <Type>nvarchar</Type>
           <Name>msiati_name</Name>
           <LogicalName>msiati_name</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -661,7 +661,7 @@
               <displayname description="Status" languagecode="1033" />
             </displaynames>
             <Descriptions>
-              <Description description="Status of the Identifier" languagecode="1033" />
+              <Description description="Status of the Other Identifier" languagecode="1033" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
@@ -717,7 +717,7 @@
               <displayname description="Status Reason" languagecode="1033" />
             </displaynames>
             <Descriptions>
-              <Description description="Reason for the status of the Identifier" languagecode="1033" />
+              <Description description="Reason for the status of the Other Identifier" languagecode="1033" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
@@ -878,7 +878,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{d085dcc7-0a99-4c42-b555-562b2ef9d178}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{43f74357-c492-44ce-9d80-2d045d9b0661}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>
