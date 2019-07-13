@@ -20,14 +20,12 @@ Dynamics 365 announced the Microsoft Power Platform, a connected app platform th
 With the Power Platform providing a unified approach to building data driven solutions, the team is taking it one step further by introducing Industry Solution Accelerators. Accelerators are industry focused foundational components that enable ISVs and other solution providers, a way to build solutions that are based on industry standards supported and driven by Microsoft. Along with our Health Accelerator that was released during Inspire 2018, which you can read about here, we are focused on delivering accelerators for the following industries (but not limited too):
 
 ## Overview of the Industry Nonprofit Accelerator
-The Microsoft Common Data Model for Nonprofits came from sitting with, observing, learning from 100's of nonprofits about their unmet technology challenges and the frustration of managing data across many systems of record.  The approach includes:
-Microsoft partnering with leading thought leaders in the nonprofit technology space as well as a Customer Steering Team made up of a diverse group of global nonprofit organizations and foundations to create a nonprofit common data model that reflects the common nonprofit scenarios.
 
-Learning from data model challenges of the past and design a streamlined, open foundation for vendors, partners and nonprofits to rapidly build applications and connectors.
+Central to our approach to serving nonprofits is our commitment to building a Common Data Model, publishing that openly and working across platforms. This enables powerful interoperability to fuel greater insights and efficacy, while also providing true data transparency.  We have incorporated all the best practices the CDM represents into the Dynamics 365 Nonprofit Accelerator which is a set of capabilities and standards to help drive greater impact.  We are committed to helping nonprofits around the world implement these best practices consistently and efficiently and by incorporating the CDM into the Accelerator, what once required customization is standard today.   
 
-Incorporating data standards into the model against widely adopted international data standards like IATI.
+Learning from data model challenges of the past and design a streamlined, open foundation for vendors, partners and nonprofits to rapidly build applications and connectors. 
 
-Harnessing the power of the Microsoft technology stack -  Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions.
+Harnessing the power of the Microsoft technology stack - Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions
 
 The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Learn more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
