@@ -8,7 +8,7 @@
     <isdefault>0</isdefault>
     <savedqueryid>{f3bf947b-4640-e911-a826-000d3a3b7b7b}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" icon="1" preview="1" select="1" jump="name">
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
         <row id="connectionid" name="result">
           <cell name="name" width="150" />
           <cell name="record1objecttypecode" width="100" />
@@ -27,7 +27,7 @@
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
-      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
         <entity name="connection">
           <attribute name="name" />
           <attribute name="record2objecttypecode" />
@@ -38,13 +38,12 @@
           <attribute name="createdon" />
           <attribute name="record2id" />
           <attribute name="record1id" />
-          <order descending="false" attribute="name" />
+          <order attribute="name" descending="false" />
           <filter type="and">
-            <condition attribute="record2roleid" operator="eq" uiname="Designation to Delivery Framework" uitype="connectionrole" value="{A1D37D6D-473C-E911-A830-000D3A3B7224}" />
-            <condition attribute="statecode" operator="eq" value="0" />
-            <condition attribute="record1objecttypecode" operator="eq" value="10058" />
+            <condition value="{A1D37D6D-473C-E911-A830-000D3A3B7224}" attribute="record2roleid" uitype="connectionrole" uiname="Designation to Delivery Framework" operator="eq" />
+            <condition value="0" attribute="statecode" operator="eq" />
           </filter>
-          <link-entity name="msnfp_designation" from="msnfp_designationid" to="record1id" visible="false" link-type="outer" alias="a_e42009676981e911a95a000d3a37f245">
+          <link-entity name="msnfp_designation" alias="a_e42009676981e911a95a000d3a37f245" to="record1id" from="msnfp_designationid">
             <attribute name="msnfp_startdate" />
             <attribute name="msnfp_enddate" />
             <attribute name="msnfp_totaldisbursed" />

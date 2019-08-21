@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.5626" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.6827" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>NonprofitCore</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Microsoft Dynamics 365 Nonprofit Core" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2.1.0.0</Version>
+    <Version>2.1.3.0</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>microsoftdynamics365nonprofitaccelerator</UniqueName>
@@ -255,12 +255,20 @@
       <RootComponent type="61" schemaName="msnfp_/images/salutation_16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_/images/salutation_32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_accountsvg" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_administration16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_administrationsvg" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_awards16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_awardssgv" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_benchmark16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_benchmark32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_benchmarksvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_budget16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_budget32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_budgetsvg" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_constituents16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_constituentssvg" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_deliveryframework16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_deliveryframeworksvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_designationsvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_destination16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_DisbursementDistribution16" behavior="0" />
@@ -274,6 +282,8 @@
       <RootComponent type="61" schemaName="msnfp_donorcommitmentssvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_donorsvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_estination32" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_fundraising16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_fundraisingsvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_grantaward16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_grantaward32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_grantawardsvg" behavior="0" />
@@ -286,9 +296,14 @@
       <RootComponent type="61" schemaName="msnfp_IndicatorValue16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_IndicatorValue32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_IndicatorValueSVG" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_membershippng16" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_membershippng32" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_membershipsvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_NonProfit" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_nonprofit16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_NonProfitAppLogo" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_nonprofithubwelcomepage" behavior="0" />
+      <RootComponent type="61" schemaName="msnfp_nonprofitsvg" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_objectives16" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_objectives32" behavior="0" />
       <RootComponent type="61" schemaName="msnfp_objectivessvg" behavior="0" />
@@ -324,11 +339,11 @@
       <RootComponent type="61" schemaName="msnfp_transactionssvg" behavior="0" />
       <RootComponent type="62" schemaName="msnfp_NonprofitAccelerator" behavior="0" />
       <RootComponent type="62" schemaName="new_Administration" behavior="0" />
+      <RootComponent type="62" behavior="0" />
       <RootComponent type="62" schemaName="new_Awards" behavior="0" />
       <RootComponent type="62" schemaName="new_DeliveryFramework" behavior="0" />
       <RootComponent type="62" schemaName="new_Donation" behavior="0" />
       <RootComponent type="62" schemaName="new_Fundraising" behavior="0" />
-      <RootComponent type="62" behavior="0" />
       <RootComponent type="63" id="{2788efc7-473c-e911-a830-000d3a3b7224}" behavior="0" />
       <RootComponent type="63" id="{2d87bb7b-483c-e911-a830-000d3a3b7224}" behavior="0" />
       <RootComponent type="63" id="{5f1f4b46-483c-e911-a830-000d3a3b7224}" behavior="0" />
@@ -346,84 +361,60 @@
         <Dependent key="1" type="62" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
-        <Dependent key="3" type="60" displayName="Organization" parentDisplayName="Account" id="{49d84d70-1cdc-4eee-abe9-be1b62b7d1be}" />
+        <Required key="2" type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Dependent key="2" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
-        <Dependent key="4" type="60" displayName="Account Nonprofit" parentDisplayName="Account" id="{8d696b7a-87cd-4882-91d8-829c04f580a4}" />
+        <Required key="3" type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+        <Dependent key="3" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
-        <Dependent key="5" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Required key="4" type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent key="4" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
-        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Required key="5" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="4" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
-        <Dependent key="7" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+        <Required key="5" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="6" type="60" displayName="Account Nonprofit" parentDisplayName="Account" id="{8d696b7a-87cd-4882-91d8-829c04f580a4}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="5" type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
-        <Dependent key="5" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Required key="5" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="7" type="60" displayName="Organization" parentDisplayName="Account" id="{49d84d70-1cdc-4eee-abe9-be1b62b7d1be}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="CustomControlsCore (9.1.0000.5626)" />
-        <Dependent key="5" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="CustomControlsCore (9.1.0000.6827)" />
+        <Dependent key="4" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="10" type="80" schemaName="new_Donation" displayName="Constituents" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="11" type="80" schemaName="new_DeliveryFramework" displayName="Delivery Framework" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="12" type="80" schemaName="new_Awards" displayName="Awards" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="13" type="80" schemaName="msnfp_NonprofitAccelerator" displayName="Nonprofit Hub" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="14" type="80" schemaName="new_Administration" displayName="Administration" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="15" type="80" schemaName="new_Fundraising" displayName="Fundraising" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="17" type="60" displayName="Household" parentDisplayName="Account" id="{0b37b3c5-0736-4c2b-a338-0bd142c3f9ad}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="5" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="3" type="60" displayName="Organization" parentDisplayName="Account" id="{49d84d70-1cdc-4eee-abe9-be1b62b7d1be}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="18" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
+        <Required key="9" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
         <Dependent key="1" type="62" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="19" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="20" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+        <Required key="10" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="3" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="19" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent key="7" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+        <Required key="10" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="4" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="6" type="60" displayName="Account Nonprofit" parentDisplayName="Account" id="{8d696b7a-87cd-4882-91d8-829c04f580a4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="7" type="60" displayName="Organization" parentDisplayName="Account" id="{49d84d70-1cdc-4eee-abe9-be1b62b7d1be}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="2" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

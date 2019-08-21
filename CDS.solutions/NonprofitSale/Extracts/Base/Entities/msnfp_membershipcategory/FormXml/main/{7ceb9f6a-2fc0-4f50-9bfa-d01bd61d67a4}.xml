@@ -7,14 +7,14 @@
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab id="{2fb79c31-1a5d-4f01-9dc7-15551500f17d}" IsUserDefined="1" verticallayout="true">
+        <tab verticallayout="true" id="{2fb79c31-1a5d-4f01-9dc7-15551500f17d}" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section id="{80796bf0-8c08-433f-91b9-4d4131a76d36}" IsUserDefined="0" showbar="false" showlabel="false">
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{80796bf0-8c08-433f-91b9-4d4131a76d36}">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
@@ -24,37 +24,29 @@
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
-                        <control id="msnfp_name" datafieldname="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
                       </cell>
                     </row>
                   </rows>
                 </section>
-                <section id="{ca1b939c-5835-44d2-b0b2-3744d36d3773}" name="{2fb79c31-1a5d-4f01-9dc7-15551500f17d}_section_2" IsUserDefined="0" columns="1" showbar="false" showlabel="false" celllabelposition="Left" celllabelalignment="Left" labelwidth="115" layout="varwidth" locklevel="0">
+                <section name="{2fb79c31-1a5d-4f01-9dc7-15551500f17d}_section_2" showlabel="false" showbar="false" locklevel="0" id="{ca1b939c-5835-44d2-b0b2-3744d36d3773}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Related" languagecode="1033" />
                   </labels>
-                  <rows>
-                    <row>
-                      <cell id="{bc0124e9-c96e-9bd0-9bd1-c66935d9e7a6}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                  </rows>
+                  <rows></rows>
                 </section>
               </sections>
             </column>
           </columns>
         </tab>
-        <tab id="{3c0dcde8-5797-4a60-c347-4210a6a42c24}" name="tab_2" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+        <tab name="tab_2" id="{3c0dcde8-5797-4a60-c347-4210a6a42c24}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Administrative" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section id="{05d2556e-267c-381d-907b-da3e25a425e3}" name="tab_2_section_1" IsUserDefined="0" columns="1111" showbar="false" showlabel="false" celllabelposition="Left" celllabelalignment="Left" labelwidth="115" layout="varwidth" locklevel="0">
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{05d2556e-267c-381d-907b-da3e25a425e3}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Section" languagecode="1033" />
                   </labels>
@@ -64,25 +56,25 @@
                         <labels>
                           <label description="Created By" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="createdby" datafieldname="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                       </cell>
                       <cell id="{aa75e4ab-e5ee-0123-30d4-0e7459e18c4d}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Created On" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="createdon" datafieldname="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
                       </cell>
                       <cell id="{99175790-b519-803a-cb3e-63052469e6ad}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Modified By" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="modifiedby" datafieldname="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
                       </cell>
                       <cell id="{c6207090-38c8-9a5d-8968-36027b92eb42}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Modified On" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="modifiedon" datafieldname="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -90,7 +82,7 @@
                         <labels>
                           <label description="Owner" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
                       </cell>
                       <cell id="{5b2ede04-7916-1941-4b1e-72e0698a8a9e}" showlabel="false">
                         <labels>
@@ -117,49 +109,47 @@
       </tabs>
       <Navigation>
         <NavBar>
-          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_membership_msnfp_membershipcategory" Area="Info" Sequence="9601" RelationshipName="msnfp_msnfp_membership_msnfp_membershipcategory" Show="true">
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_membership_msnfp_membershipcategory" Id="nav_msnfp_msnfp_membership_msnfp_membershipcategory" Show="true" Sequence="9601" Area="Info">
             <Titles>
-              <Title Text="Memberships" LCID="1033" />
+              <Title LCID="1033" Text="Memberships" />
             </Titles>
           </NavBarByRelationshipItem>
           <NavBarByRelationshipItem Id="nav_msnfp_msnfp_membershipcategory_product" Area="Info" Sequence="9602" RelationshipName="msnfp_msnfp_membershipcategory_product" Show="true">
             <Titles>
-              <Title Text="Products" LCID="1033" />
+              <Title LCID="1033" Text="Products" />
             </Titles>
           </NavBarByRelationshipItem>
         </NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
-              <Title Text="Common" LCID="1033" />
+              <Title LCID="1033" Text="Common" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Sales">
             <Titles>
-              <Title Text="Sales" LCID="1033" />
+              <Title LCID="1033" Text="Sales" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Service">
             <Titles>
-              <Title Text="Service" LCID="1033" />
+              <Title LCID="1033" Text="Service" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Marketing">
             <Titles>
-              <Title Text="Marketing" LCID="1033" />
+              <Title LCID="1033" Text="Marketing" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="ProcessCenter">
             <Titles>
-              <Title Text="Process Sessions" LCID="1033" />
+              <Title LCID="1033" Text="Process Sessions" />
             </Titles>
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
     </form>
-    <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
     </LocalizedNames>

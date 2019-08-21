@@ -553,11 +553,6 @@
               <Title LCID="1033" Text="Activities" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="22" Area="Marketing" Id="navCampaignsInSFA">
-            <Titles>
-              <Title LCID="1033" Text="Campaigns" />
-            </Titles>
-          </NavBarByRelationshipItem>
           <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Sequence="9500" Area="ProcessCenter" Id="navAsyncOperations" Show="false">
             <Titles>
               <Title LCID="1033" Text="Workflows" />
@@ -731,9 +726,19 @@
               <Title LCID="1033" Text="OFAC Matches" />
             </Titles>
           </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_contact_msnfp_salutation_salutation_customer" Sequence="10020" Area="Info" Id="nav_msnfp_contact_msnfp_salutation_salutation_customer">
+            <Titles>
+              <Title LCID="1033" Text="Salutations" />
+            </Titles>
+          </NavBarByRelationshipItem>
           <NavBarByRelationshipItem RelationshipName="msnfp_contact_msnfp_paymentmethod" Sequence="10021" Area="Info" Id="nav_msnfp_contact_msnfp_paymentmethod">
             <Titles>
               <Title LCID="1033" Text="Payment Methods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_contact_reportsTo" Sequence="10022" Area="Marketing" Id="nav_msnfp_contact_reportsTo">
+            <Titles>
+              <Title LCID="1033" Text="Direct Reports" />
             </Titles>
           </NavBarByRelationshipItem>
           <NavBarByRelationshipItem RelationshipName="msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer" Sequence="10019" Area="Info" Id="nav_msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer">
@@ -766,14 +771,9 @@
               <Title LCID="1033" Text="Assistants" />
             </Titles>
           </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="msnfp_contact_msnfp_salutation_salutation_customer" Sequence="10020" Area="Info" Id="nav_msnfp_contact_msnfp_salutation_salutation_customer">
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="22" Area="Marketing" Id="navCampaignsInSFA">
             <Titles>
-              <Title LCID="1033" Text="Salutations" />
-            </Titles>
-          </NavBarByRelationshipItem>
-          <NavBarByRelationshipItem RelationshipName="msnfp_contact_reportsTo" Sequence="10022" Area="Marketing" Id="nav_msnfp_contact_reportsTo">
-            <Titles>
-              <Title LCID="1033" Text="Direct Reports" />
+              <Title LCID="1033" Text="Campaigns" />
             </Titles>
           </NavBarByRelationshipItem>
           <NavBarByRelationshipItem RelationshipName="msiati_contact_msiati_deliveryframeworkcontact" Sequence="10009" Area="Info" Id="nav_msiati_contact_msiati_deliveryframeworkcontact">
@@ -1041,13 +1041,13 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
-      <formLibraries>
-        <Library name="msdyn_talkingpointsloader.js" libraryUniqueId="{30d6d0a4-d097-b9be-cc6e-5722727be490}" />
-      </formLibraries>
       <DisplayConditions FallbackForm="true" Order="1">
         <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
       </DisplayConditions>
+      <formLibraries>
+        <Library name="msdyn_talkingpointsloader.js" libraryUniqueId="{30d6d0a4-d097-b9be-cc6e-5722727be490}" />
+      </formLibraries>
     </form>
     <LocalizedNames>
       <LocalizedName description="Donor" languagecode="1033" />

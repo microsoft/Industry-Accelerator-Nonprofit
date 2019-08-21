@@ -12,10 +12,12 @@
         <row name="msnfp_preference" id="msnfp_preferenceid">
           <cell name="msnfp_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
           <cell name="msnfp_preference_customer" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_key" width="100" />
+          <cell name="msnfp_weight" width="100" />
           <cell name="msnfp_confidence" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
-          <cell name="msnfp_value" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
-          <cell name="msnfp_enddate" width="100" />
+          <cell name="statecode" width="100" />
           <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -27,12 +29,14 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
-          <attribute name="msnfp_value" />
           <attribute name="msnfp_confidence" />
           <attribute name="msnfp_preference_customer" />
           <order attribute="msnfp_name" descending="false" />
           <attribute name="msnfp_startdate" />
           <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_weight" />
+          <attribute name="statecode" />
+          <attribute name="msnfp_key" />
           <attribute name="msnfp_preferenceid" />
         </entity>
       </fetch>
