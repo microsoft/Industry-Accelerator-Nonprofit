@@ -1,6 +1,6 @@
 # Nonprofit Accelerator
-Hello ISVs, SIs, Partners and Customers - Your success is our goal.
-This Repository helps you to Connect, Extend, Build and Contribute to Microsoft Industry Nonprofit accelerator.
+Hello ISVs, SIs, Partners and Nonprofits - Your success is our goal. 
+This repository helps you to [connect](https://assetsprod.microsoft.com/en-us/isv-getting-started-connect.pdf), [extend](https://assetsprod.microsoft.com/en-us/isv-getting-started-extend.pdf), [build](https://assetsprod.microsoft.com/en-us/isv-getting-started-guide.pdf) and contribute to the Microsoft Nonprofit Accelerator.
 
 # Table of Contents
 
@@ -21,13 +21,8 @@ With the Power Platform providing a unified approach to building data driven sol
 
 ## Overview of the Industry Nonprofit Accelerator
 
-Central to our approach to serving nonprofits is our commitment to building a Common Data Model, publishing that openly and working across platforms. This enables powerful interoperability to fuel greater insights and efficacy, while also providing true data transparency.  We have incorporated all the best practices the CDM represents into the Dynamics 365 Nonprofit Accelerator which is a set of capabilities and standards to help drive greater impact.  We are committed to helping nonprofits around the world implement these best practices consistently and efficiently and by incorporating the CDM into the Accelerator, what once required customization is standard today.   
+The Dynamics 365 Nonprofit Accelerator enables ISVs, SIs and other partners to develop purpose build solutions for nonprofit scenarios on top of our Business Applications and Intelligence Platforms. The Nonprofit Accelerator is built on a nonprofit data schema on top of the Common Data Model (CDM), designed as a streamlined open foundation for vendors, partners and nonprofits to rapidly build applications and connectors. The CDM reflects industry best-practices and insight across program delivery, grant and award management, constituent management, fundraising, and donation management to enable powerful interoperability to fuel greater insight and efficacy, while also providing true data transparency. [Learn more](https://community.dynamics.com/365/b/dynamics365isvsuccess/posts/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
-Learning from data model challenges of the past and design a streamlined, open foundation for vendors, partners and nonprofits to rapidly build applications and connectors. 
-
-Harnessing the power of the Microsoft technology stack - Azure, Office 365, Power Platform, Dynamics 365, Power BI - alongside the interoperability is the nonprofit CDM will save nonprofits time and money better spent in their missions
-
-The Microsoft Common Data Model for Nonprofits is the first of its kind to provide a model that reflects industry best-practices and insight across program delivery, grant/award management, constituent management, fundraising, and donation management. [Learn more](https://community.dynamics.com/365/b/dynamics365isvsuccess/archive/2018/11/07/a-first-look-at-the-dynamics-365-nonprofit-accelerator)
 
 ## Releases
 
