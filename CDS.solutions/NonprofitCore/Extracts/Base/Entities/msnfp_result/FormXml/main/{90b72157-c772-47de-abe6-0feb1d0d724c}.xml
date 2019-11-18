@@ -165,11 +165,6 @@
       <header id="{d4b7041e-d5f1-4a69-bc6a-80c06090dcd0}" columns="111">
         <rows>
           <row>
-            <cell id="{c5487e08-9927-4922-bd9b-dd05016eb6ee}" showlabel="false">
-              <labels>
-                <label description="" languagecode="1033" />
-              </labels>
-            </cell>
             <cell id="{91ea4e38-76c9-2c56-45b9-25935139e5c2}" locklevel="0" showlabel="true">
               <labels>
                 <label description="Delivery Framework" languagecode="1033" />
@@ -181,6 +176,12 @@
                 <label description="Result Type" languagecode="1033" />
               </labels>
               <control disabled="false" id="header_msnfp_resulttype" datafieldname="msnfp_resulttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+            </cell>
+            <cell id="{58074677-a5ae-2474-28d9-9165420629e0}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Parent Result" languagecode="1033" />
+              </labels>
+              <control id="header_msnfp_parentresultid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_parentresultid" disabled="false" />
             </cell>
           </row>
         </rows>

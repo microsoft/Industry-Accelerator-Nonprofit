@@ -116,6 +116,7 @@
   <EntityRelationship Name="msnfp_account_docket_AwardRecipient" />
   <EntityRelationship Name="msnfp_account_msnfp_benefitrecipient_beneficiary" />
   <EntityRelationship Name="msnfp_account_msnfp_creditrecipient_Customer" />
+  <EntityRelationship Name="msnfp_account_msnfp_deliveryframework_Donor" />
   <EntityRelationship Name="msnfp_account_msnfp_docket_docket_fiscalSponsor" />
   <EntityRelationship Name="msnfp_account_msnfp_membership_Customer" />
   <EntityRelationship Name="msnfp_account_msnfp_ofacmatch_ofacMatch_customer" />
@@ -154,6 +155,7 @@
   <EntityRelationship Name="msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer" />
   <EntityRelationship Name="msnfp_contact_msnfp_preference_preference_customer" />
   <EntityRelationship Name="msnfp_contact_msnfp_salutation_salutation_customer" />
+  <EntityRelationship Name="msnfp_contact_msnfp_transaction" />
   <EntityRelationship Name="msnfp_contact_reportsTo" />
   <EntityRelationship Name="msnfp_contact_request_CustomerId" />
   <EntityRelationship Name="msnfp_contact_request_SubmittedById" />
@@ -215,10 +217,12 @@
   <EntityRelationship Name="msnfp_request_report_RequestId" />
   <EntityRelationship Name="msnfp_request_review_RequestId" />
   <EntityRelationship Name="msnfp_result_indicator_ResultId" />
+  <EntityRelationship Name="msnfp_result_parentresultid_msnfp_result" />
   <EntityRelationship Name="msnfp_review_docket" />
   <EntityRelationship Name="msnfp_review_report" />
   <EntityRelationship Name="msnfp_review_reports" />
   <EntityRelationship Name="msnfp_review_reviewer" />
+  <EntityRelationship Name="msnfp_systemuser_msnfp_deliveryframework_Reviewer" />
   <EntityRelationship Name="msnfp_txn_originalTxnAdjusted" />
   <EntityRelationship Name="msnfp_txn_paymentMethod" />
   <EntityRelationship Name="msnfp_txn_paymentSchedule" />

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c2238593-57e5-e911-a97a-000d3a59746e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row id="msnfp_measurementitemusageid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_deliveryframeworkid" width="100" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_account" width="100" disableSorting="1" />
+          <cell name="a_827ab85831e1e911a985000d3a597152.createdby" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_country" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_deliveryframeworktype" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_description" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_enddate" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_goal" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_logframestatus" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_name" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_parentdeliveryframeworkid" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_plannedenddate" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_plannedstartdate" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.overriddencreatedon" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_region" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_reviewer" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_scope" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_startdate" width="100" disableSorting="1" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.msnfp_status" width="100" disableSorting="1" />
+          <cell name="msnfp_measurementitemid" width="100" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="a_97a40f0131e1e911a985000d3a597152.createdby" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msnfp_measurementitemusage">
+          <attribute name="msnfp_name" />
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_measurementitemid" />
+          <attribute name="msnfp_deliveryframeworkid" />
+          <order attribute="msnfp_deliveryframeworkid" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <link-entity name="msnfp_measurementitem" from="msnfp_measurementitemid" to="msnfp_measurementitemid" alias="a_827ab85831e1e911a985000d3a597152" link-type="outer" visible="false">
+            <attribute name="createdby" />
+          </link-entity>
+          <link-entity name="msnfp_deliveryframework" from="msnfp_deliveryframeworkid" to="msnfp_deliveryframeworkid" alias="a_97a40f0131e1e911a985000d3a597152">
+            <attribute name="msnfp_status" />
+            <attribute name="msnfp_startdate" />
+            <attribute name="msnfp_scope" />
+            <attribute name="msnfp_reviewer" />
+            <attribute name="msnfp_region" />
+            <attribute name="overriddencreatedon" />
+            <attribute name="msnfp_plannedstartdate" />
+            <attribute name="msnfp_plannedenddate" />
+            <attribute name="msnfp_parentdeliveryframeworkid" />
+            <attribute name="msnfp_name" />
+            <attribute name="msnfp_logframestatus" />
+            <attribute name="msnfp_goal" />
+            <attribute name="msnfp_enddate" />
+            <attribute name="msnfp_description" />
+            <attribute name="msnfp_deliveryframeworktype" />
+            <attribute name="msnfp_country" />
+            <attribute name="msnfp_account" />
+            <filter type="and">
+              <condition value="0" attribute="statecode" operator="eq" />
+            </filter>
+            <attribute name="createdby" />
+          </link-entity>
+          <attribute name="msnfp_measurementitemusageid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Logframes" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Logframes view for in MEL app" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

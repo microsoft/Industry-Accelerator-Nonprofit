@@ -330,20 +330,6 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{2f4ffee8-4252-4343-8657-76ad64a3c0a0}">
-                        <labels>
-                          <label description="Territory" languagecode="1033" />
-                        </labels>
-                        <control id="territoryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="territoryid" />
-                      </cell>
-                      <cell id="{75231669-b6e4-42c1-98fa-ed1fd2d4091b}">
-                        <labels>
-                          <label description="Relationship Type" languagecode="1033" />
-                        </labels>
-                        <control id="customertypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="customertypecode" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{e869b293-84be-4743-a71a-fe6eca532aad}">
                         <labels>
                           <label description="Category" languagecode="1033" />
@@ -389,25 +375,6 @@
                           <label description="Credit Hold" languagecode="1033" />
                         </labels>
                         <control id="creditonhold" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="creditonhold" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{1eefa848-c48d-47c9-8ff4-796403c5a51a}">
-                        <labels>
-                          <label description="Price List" languagecode="1033" />
-                        </labels>
-                        <control id="defaultpricelevelid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="defaultpricelevelid">
-                          <parameters>
-                            <FilterRelationshipName>transactioncurrency_pricelevel</FilterRelationshipName>
-                            <DependentAttributeName>account.transactioncurrencyid</DependentAttributeName>
-                            <DependentAttributeType>transactioncurrency</DependentAttributeType>
-                          </parameters>
-                        </control>
-                      </cell>
-                      <cell id="{133a02b4-a1f8-4848-9267-4e22b62f4f9c}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
                       </cell>
                     </row>
                   </rows>
