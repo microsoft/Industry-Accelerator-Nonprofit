@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8479a6ed-1218-43d6-80e0-f7bc539a09c4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_measurementitemusageid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_measurementitemid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_deliveryframeworkid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_resultid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_indicatorid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_measurementitemusage">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfp_resultid" />
+          <attribute name="msnfp_measurementitemid" />
+          <attribute name="msnfp_indicatorid" />
+          <attribute name="msnfp_deliveryframeworkid" />
+          <attribute name="msnfp_measurementitemusageid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Measurement Item Usages" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -294,6 +294,7 @@
   <EntityRelationship Name="msnfp_account_deliveryframework_Account" />
   <EntityRelationship Name="msnfp_account_disbursement_RecipientAccount" />
   <EntityRelationship Name="msnfp_account_docket_AwardRecipient" />
+  <EntityRelationship Name="msnfp_account_msnfp_deliveryframework_Donor" />
   <EntityRelationship Name="msnfp_account_msnfp_docket_docket_fiscalSponsor" />
   <EntityRelationship Name="msnfp_account_msnfp_membership_Customer" />
   <EntityRelationship Name="msnfp_account_request_CustomerId" />
@@ -316,6 +317,7 @@
   <EntityRelationship Name="msnfp_contact_msnfp_docket_docket_fiscalSponsor" />
   <EntityRelationship Name="msnfp_contact_msnfp_membership_Customer" />
   <EntityRelationship Name="msnfp_contact_msnfp_paymentmethod" />
+  <EntityRelationship Name="msnfp_contact_msnfp_transaction" />
   <EntityRelationship Name="msnfp_contact_reportsTo" />
   <EntityRelationship Name="msnfp_contact_request_CustomerId" />
   <EntityRelationship Name="msnfp_contact_request_SubmittedById" />
@@ -355,6 +357,8 @@
   <EntityRelationship Name="msnfp_pmtSched_donorCommitment" />
   <EntityRelationship Name="msnfp_request_award_RequestId" />
   <EntityRelationship Name="msnfp_result_indicator_ResultId" />
+  <EntityRelationship Name="msnfp_result_parentresultid_msnfp_result" />
+  <EntityRelationship Name="msnfp_systemuser_msnfp_deliveryframework_Reviewer" />
   <EntityRelationship Name="msnfp_txn_effectiveCampaign" />
   <EntityRelationship Name="msnfp_txn_originalTxnAdjusted" />
   <EntityRelationship Name="msnfp_txn_originatingCampaign" />
