@@ -40,6 +40,14 @@ Click "release" tab on the top or click this [link](https://github.com/microsoft
 | [Manufacturing Accelerator](https://github.com/Microsoft/Industry-Accelerator-Manufacturing) |  Rapidly develop solutions that  empower customers and users to qualify new suppliers, onboard suppliers for API data integration, and manage the ongoing supplier relationships. Get more details from [Dynamics 365 ISV Success community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
 | [Media and Communications Accelerator](https://github.com/Microsoft/Industry-Accelerator-Media) |  Rapidly develop solutions around event and venue management, sports management, ticketing and advertising sales, media sponsorships, and various guest interactions such as event registrations and the tracking of loyalty programs. Get more details from [Dynamics 365 ISV Success community](https://community.dynamics.com/365/b/dynamics365isvsuccess)|
 
+## Engage
+
+Connect with experts and peers, read blog articles, and find local events within the Industry Accelerator Community. 
+
+Join the [Industry Accelerator conversation](https://community.dynamics.com/365/industry-accelerators/).
+
+Join the [Nonprofit conversation](https://community.dynamics.com/365/industry-accelerators/f/nonprofit-accelerator-forum).
+
 ## Contributing
 
 * [CLA](#Contributor-License-Agreement-(CLA))
