@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{74cf0d65-6771-46e7-a8cd-3b8cac8d18a5}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_needs" preview="0" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_needid" name="msnfp_need">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_needtype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_severitytype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_beneficiaryid" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_need">
+          <attribute name="msnfp_needid" />
+          <attribute name="msnfp_name" />
+          <filter type="and">
+            <condition value="0" operator="eq" attribute="statecode" />
+          </filter>
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_severitytype" />
+          <attribute name="msnfp_beneficiaryid" />
+          <attribute name="msnfp_needtype" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Need Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

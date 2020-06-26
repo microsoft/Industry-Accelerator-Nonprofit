@@ -171,6 +171,28 @@
             </column>
             <column width="25%">
               <sections>
+                <section name="TalkingPoints_section" showlabel="false" showbar="false" locklevel="0" id="{493e163e-b936-e24d-83e0-e52dcecc5da9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" visible="false">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{06cb0652-a8d8-bdae-eb58-b6a05bd93224}" showlabel="true" locklevel="0" rowspan="8">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="TalkingPoints" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{5ca8c570-a541-4cf4-9209-99406ba7cbdf}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
                 <section name="Summary_section_6" showlabel="false" showbar="false" locklevel="0" id="{ea3bb0a6-b9dc-1b0e-5e7d-74a380ee79a3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{b980f0b2-f19f-41f1-8458-edb20a655b3e}">
                   <labels>
                     <label description="Assistant" languagecode="1033" />
@@ -262,19 +284,6 @@
                         </control>
                       </cell>
                     </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
                     <row />
                     <row />
                     <row />
@@ -551,6 +560,9 @@
           <InternalHandlers>
             <Handler functionName="AppCommon.Contact.Instance.form_onload" libraryName="AppCommon/Contact/Contact_main_system_library.js" handlerUniqueId="4ea24ebd-795d-434e-af94-6812c3867b54" enabled="true" />
           </InternalHandlers>
+          <Handlers>
+            <Handler functionName="loadTalkingPoints" libraryName="msdyn_talkingpointsloader.js" handlerUniqueId="{8617d83c-834b-e323-b8a4-41194808dbb1}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
         </event>
       </events>
       <Navigation>
@@ -970,246 +982,256 @@
           <NavBarArea Id="Info">
             <Titles>
               <Title LCID="1033" Text="Common" />
-              <Title LCID="1025" Text="عام" />
-              <Title LCID="1026" Text="Общо" />
-              <Title LCID="1027" Text="Comú" />
-              <Title LCID="1029" Text="Společné" />
-              <Title LCID="1030" Text="Fælles" />
-              <Title LCID="1031" Text="Gemeinsam verwendet" />
-              <Title LCID="1032" Text="Κοινά" />
-              <Title LCID="3082" Text="Común" />
-              <Title LCID="1061" Text="Ühised" />
-              <Title LCID="1069" Text="Ohikoa" />
-              <Title LCID="1035" Text="Yhteiset" />
-              <Title LCID="1036" Text="Éléments communs" />
-              <Title LCID="1110" Text="Común" />
-              <Title LCID="1037" Text="פריטים נפוצים‬" />
-              <Title LCID="1081" Text="सामान्य" />
-              <Title LCID="1050" Text="Uobičajeno" />
-              <Title LCID="1038" Text="Általános" />
-              <Title LCID="1057" Text="Umum" />
-              <Title LCID="1040" Text="Elementi comuni" />
-              <Title LCID="1041" Text="共通" />
-              <Title LCID="1087" Text="Жалпы" />
-              <Title LCID="1042" Text="일반" />
-              <Title LCID="1063" Text="Bendra" />
-              <Title LCID="1062" Text="Kopējā informācija" />
-              <Title LCID="1086" Text="Biasa" />
-              <Title LCID="1044" Text="Felles" />
-              <Title LCID="1043" Text="Algemeen" />
-              <Title LCID="1045" Text="Wspólne" />
-              <Title LCID="1046" Text="Comum" />
-              <Title LCID="2070" Text="Comum" />
-              <Title LCID="1048" Text="Comun" />
-              <Title LCID="1049" Text="Общие" />
-              <Title LCID="1051" Text="Spoločné" />
-              <Title LCID="1060" Text="Splošno" />
-              <Title LCID="10266" Text="Уобичајено" />
-              <Title LCID="9242" Text="Uobičajeno" />
-              <Title LCID="1053" Text="Standard" />
-              <Title LCID="1054" Text="ทั่วไป" />
-              <Title LCID="1055" Text="Ortak" />
-              <Title LCID="1058" Text="Спільні" />
-              <Title LCID="1066" Text="Thông thường" />
-              <Title LCID="2052" Text="公共" />
-              <Title LCID="3076" Text="一般" />
-              <Title LCID="1028" Text="一般" />
+              <Title LCID="1025" Text="Common" />
+              <Title LCID="1026" Text="Common" />
+              <Title LCID="1027" Text="Common" />
+              <Title LCID="1029" Text="Common" />
+              <Title LCID="1030" Text="Common" />
+              <Title LCID="1031" Text="Common" />
+              <Title LCID="1032" Text="Common" />
+              <Title LCID="3082" Text="Common" />
+              <Title LCID="1061" Text="Common" />
+              <Title LCID="1069" Text="Common" />
+              <Title LCID="1035" Text="Common" />
+              <Title LCID="1036" Text="Common" />
+              <Title LCID="1110" Text="Common" />
+              <Title LCID="1037" Text="Common" />
+              <Title LCID="1081" Text="Common" />
+              <Title LCID="1050" Text="Common" />
+              <Title LCID="1038" Text="Common" />
+              <Title LCID="1057" Text="Common" />
+              <Title LCID="1040" Text="Common" />
+              <Title LCID="1041" Text="Common" />
+              <Title LCID="1087" Text="Common" />
+              <Title LCID="1042" Text="Common" />
+              <Title LCID="1063" Text="Common" />
+              <Title LCID="1062" Text="Common" />
+              <Title LCID="1086" Text="Common" />
+              <Title LCID="1044" Text="Common" />
+              <Title LCID="1043" Text="Common" />
+              <Title LCID="1045" Text="Common" />
+              <Title LCID="1046" Text="Common" />
+              <Title LCID="2070" Text="Common" />
+              <Title LCID="1048" Text="Common" />
+              <Title LCID="1049" Text="Common" />
+              <Title LCID="1051" Text="Common" />
+              <Title LCID="1060" Text="Common" />
+              <Title LCID="10266" Text="Common" />
+              <Title LCID="9242" Text="Common" />
+              <Title LCID="1053" Text="Common" />
+              <Title LCID="1054" Text="Common" />
+              <Title LCID="1055" Text="Common" />
+              <Title LCID="1058" Text="Common" />
+              <Title LCID="1066" Text="Common" />
+              <Title LCID="2052" Text="Common" />
+              <Title LCID="3076" Text="Common" />
+              <Title LCID="1028" Text="Common" />
+              <Title LCID="3098" Text="Common" />
+              <Title LCID="2074" Text="Common" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Sales">
             <Titles>
               <Title LCID="1033" Text="Sales" />
-              <Title LCID="1025" Text="المبيعات" />
-              <Title LCID="1026" Text="Продажби" />
-              <Title LCID="1027" Text="Vendes" />
-              <Title LCID="1029" Text="Prodej" />
-              <Title LCID="1030" Text="Salg" />
-              <Title LCID="1031" Text="Vertrieb" />
-              <Title LCID="1032" Text="Πωλήσεις" />
-              <Title LCID="3082" Text="Ventas" />
-              <Title LCID="1061" Text="Müük" />
-              <Title LCID="1069" Text="Salmentak" />
-              <Title LCID="1035" Text="Myynti" />
-              <Title LCID="1036" Text="Ventes" />
-              <Title LCID="1110" Text="Vendas" />
-              <Title LCID="1037" Text="מכירות" />
-              <Title LCID="1081" Text="विक्रय" />
-              <Title LCID="1050" Text="Prodaja" />
-              <Title LCID="1038" Text="Értékesítés" />
-              <Title LCID="1057" Text="Penjualan" />
-              <Title LCID="1040" Text="Vendite" />
-              <Title LCID="1041" Text="営業" />
-              <Title LCID="1087" Text="Сатылым" />
-              <Title LCID="1042" Text="영업​" />
-              <Title LCID="1063" Text="Pardavimas" />
-              <Title LCID="1062" Text="Pārdošana" />
-              <Title LCID="1086" Text="Jualan" />
-              <Title LCID="1044" Text="Salg" />
-              <Title LCID="1043" Text="Verkoop" />
-              <Title LCID="1045" Text="Sprzedaż" />
-              <Title LCID="1046" Text="Vendas" />
-              <Title LCID="2070" Text="Vendas" />
-              <Title LCID="1048" Text="Vânzări" />
-              <Title LCID="1049" Text="Продажи" />
-              <Title LCID="1051" Text="Predaj" />
-              <Title LCID="1060" Text="Prodaja" />
-              <Title LCID="10266" Text="Продаја" />
-              <Title LCID="9242" Text="Prodaja" />
-              <Title LCID="1053" Text="Försäljning" />
-              <Title LCID="1054" Text="การขาย" />
-              <Title LCID="1055" Text="Satış" />
-              <Title LCID="1058" Text="Збут" />
-              <Title LCID="1066" Text="Bán hàng" />
-              <Title LCID="2052" Text="销售​" />
-              <Title LCID="3076" Text="銷售" />
-              <Title LCID="1028" Text="銷售" />
+              <Title LCID="1025" Text="Sales" />
+              <Title LCID="1026" Text="Sales" />
+              <Title LCID="1027" Text="Sales" />
+              <Title LCID="1029" Text="Sales" />
+              <Title LCID="1030" Text="Sales" />
+              <Title LCID="1031" Text="Sales" />
+              <Title LCID="1032" Text="Sales" />
+              <Title LCID="3082" Text="Sales" />
+              <Title LCID="1061" Text="Sales" />
+              <Title LCID="1069" Text="Sales" />
+              <Title LCID="1035" Text="Sales" />
+              <Title LCID="1036" Text="Sales" />
+              <Title LCID="1110" Text="Sales" />
+              <Title LCID="1037" Text="Sales" />
+              <Title LCID="1081" Text="Sales" />
+              <Title LCID="1050" Text="Sales" />
+              <Title LCID="1038" Text="Sales" />
+              <Title LCID="1057" Text="Sales" />
+              <Title LCID="1040" Text="Sales" />
+              <Title LCID="1041" Text="Sales" />
+              <Title LCID="1087" Text="Sales" />
+              <Title LCID="1042" Text="Sales" />
+              <Title LCID="1063" Text="Sales" />
+              <Title LCID="1062" Text="Sales" />
+              <Title LCID="1086" Text="Sales" />
+              <Title LCID="1044" Text="Sales" />
+              <Title LCID="1043" Text="Sales" />
+              <Title LCID="1045" Text="Sales" />
+              <Title LCID="1046" Text="Sales" />
+              <Title LCID="2070" Text="Sales" />
+              <Title LCID="1048" Text="Sales" />
+              <Title LCID="1049" Text="Sales" />
+              <Title LCID="1051" Text="Sales" />
+              <Title LCID="1060" Text="Sales" />
+              <Title LCID="10266" Text="Sales" />
+              <Title LCID="9242" Text="Sales" />
+              <Title LCID="1053" Text="Sales" />
+              <Title LCID="1054" Text="Sales" />
+              <Title LCID="1055" Text="Sales" />
+              <Title LCID="1058" Text="Sales" />
+              <Title LCID="1066" Text="Sales" />
+              <Title LCID="2052" Text="Sales" />
+              <Title LCID="3076" Text="Sales" />
+              <Title LCID="1028" Text="Sales" />
+              <Title LCID="3098" Text="Sales" />
+              <Title LCID="2074" Text="Sales" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Service">
             <Titles>
               <Title LCID="1033" Text="Service" />
-              <Title LCID="1025" Text="الخدمة" />
-              <Title LCID="1026" Text="Услуга" />
-              <Title LCID="1027" Text="Servei" />
-              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1025" Text="Service" />
+              <Title LCID="1026" Text="Service" />
+              <Title LCID="1027" Text="Service" />
+              <Title LCID="1029" Text="Service" />
               <Title LCID="1030" Text="Service" />
               <Title LCID="1031" Text="Service" />
-              <Title LCID="1032" Text="Υπηρεσία" />
-              <Title LCID="3082" Text="Servicio" />
-              <Title LCID="1061" Text="Teenindus" />
-              <Title LCID="1069" Text="Zerbitzua" />
-              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="1032" Text="Service" />
+              <Title LCID="3082" Text="Service" />
+              <Title LCID="1061" Text="Service" />
+              <Title LCID="1069" Text="Service" />
+              <Title LCID="1035" Text="Service" />
               <Title LCID="1036" Text="Service" />
-              <Title LCID="1110" Text="Servizo" />
-              <Title LCID="1037" Text="שירות" />
-              <Title LCID="1081" Text="सेवा" />
-              <Title LCID="1050" Text="Usluga" />
-              <Title LCID="1038" Text="Szolgáltatás" />
-              <Title LCID="1057" Text="Layanan" />
-              <Title LCID="1040" Text="Servizio" />
-              <Title LCID="1041" Text="サービス" />
-              <Title LCID="1087" Text="Қызмет" />
-              <Title LCID="1042" Text="서비스" />
-              <Title LCID="1063" Text="Aptarnavimas" />
-              <Title LCID="1062" Text="Serviss" />
-              <Title LCID="1086" Text="Perkhidmatan" />
+              <Title LCID="1110" Text="Service" />
+              <Title LCID="1037" Text="Service" />
+              <Title LCID="1081" Text="Service" />
+              <Title LCID="1050" Text="Service" />
+              <Title LCID="1038" Text="Service" />
+              <Title LCID="1057" Text="Service" />
+              <Title LCID="1040" Text="Service" />
+              <Title LCID="1041" Text="Service" />
+              <Title LCID="1087" Text="Service" />
+              <Title LCID="1042" Text="Service" />
+              <Title LCID="1063" Text="Service" />
+              <Title LCID="1062" Text="Service" />
+              <Title LCID="1086" Text="Service" />
               <Title LCID="1044" Text="Service" />
               <Title LCID="1043" Text="Service" />
-              <Title LCID="1045" Text="Usługa" />
-              <Title LCID="1046" Text="Serviço" />
-              <Title LCID="2070" Text="Serviço" />
-              <Title LCID="1048" Text="Serviciu" />
-              <Title LCID="1049" Text="Сервис" />
-              <Title LCID="1051" Text="Služba" />
-              <Title LCID="1060" Text="Storitev" />
-              <Title LCID="10266" Text="Услуге" />
-              <Title LCID="9242" Text="Usluge" />
+              <Title LCID="1045" Text="Service" />
+              <Title LCID="1046" Text="Service" />
+              <Title LCID="2070" Text="Service" />
+              <Title LCID="1048" Text="Service" />
+              <Title LCID="1049" Text="Service" />
+              <Title LCID="1051" Text="Service" />
+              <Title LCID="1060" Text="Service" />
+              <Title LCID="10266" Text="Service" />
+              <Title LCID="9242" Text="Service" />
               <Title LCID="1053" Text="Service" />
-              <Title LCID="1054" Text="การบริการ" />
-              <Title LCID="1055" Text="Servis" />
-              <Title LCID="1058" Text="Обслуговування" />
-              <Title LCID="1066" Text="Dịch vụ" />
-              <Title LCID="2052" Text="服务" />
-              <Title LCID="3076" Text="服務" />
-              <Title LCID="1028" Text="服務" />
+              <Title LCID="1054" Text="Service" />
+              <Title LCID="1055" Text="Service" />
+              <Title LCID="1058" Text="Service" />
+              <Title LCID="1066" Text="Service" />
+              <Title LCID="2052" Text="Service" />
+              <Title LCID="3076" Text="Service" />
+              <Title LCID="1028" Text="Service" />
+              <Title LCID="3098" Text="Service" />
+              <Title LCID="2074" Text="Service" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Marketing">
             <Titles>
               <Title LCID="1033" Text="Marketing" />
-              <Title LCID="1025" Text="التسويق‬" />
-              <Title LCID="1026" Text="Маркетинг" />
-              <Title LCID="1027" Text="Màrqueting" />
+              <Title LCID="1025" Text="Marketing" />
+              <Title LCID="1026" Text="Marketing" />
+              <Title LCID="1027" Text="Marketing" />
               <Title LCID="1029" Text="Marketing" />
               <Title LCID="1030" Text="Marketing" />
               <Title LCID="1031" Text="Marketing" />
-              <Title LCID="1032" Text="Μάρκετινγκ" />
+              <Title LCID="1032" Text="Marketing" />
               <Title LCID="3082" Text="Marketing" />
-              <Title LCID="1061" Text="Turundus" />
-              <Title LCID="1069" Text="Marketina" />
-              <Title LCID="1035" Text="Markkinointi" />
+              <Title LCID="1061" Text="Marketing" />
+              <Title LCID="1069" Text="Marketing" />
+              <Title LCID="1035" Text="Marketing" />
               <Title LCID="1036" Text="Marketing" />
-              <Title LCID="1110" Text="Márketing" />
-              <Title LCID="1037" Text="שיווק" />
-              <Title LCID="1081" Text="मार्केटिंग" />
+              <Title LCID="1110" Text="Marketing" />
+              <Title LCID="1037" Text="Marketing" />
+              <Title LCID="1081" Text="Marketing" />
               <Title LCID="1050" Text="Marketing" />
               <Title LCID="1038" Text="Marketing" />
-              <Title LCID="1057" Text="Pemasaran" />
+              <Title LCID="1057" Text="Marketing" />
               <Title LCID="1040" Text="Marketing" />
-              <Title LCID="1041" Text="マーケティング" />
-              <Title LCID="1087" Text="Маркетинг" />
-              <Title LCID="1042" Text="마케팅​" />
-              <Title LCID="1063" Text="Rinkodara" />
-              <Title LCID="1062" Text="Mārketings" />
-              <Title LCID="1086" Text="Pemasaran" />
-              <Title LCID="1044" Text="Markedsføring" />
+              <Title LCID="1041" Text="Marketing" />
+              <Title LCID="1087" Text="Marketing" />
+              <Title LCID="1042" Text="Marketing" />
+              <Title LCID="1063" Text="Marketing" />
+              <Title LCID="1062" Text="Marketing" />
+              <Title LCID="1086" Text="Marketing" />
+              <Title LCID="1044" Text="Marketing" />
               <Title LCID="1043" Text="Marketing" />
               <Title LCID="1045" Text="Marketing" />
               <Title LCID="1046" Text="Marketing" />
               <Title LCID="2070" Text="Marketing" />
               <Title LCID="1048" Text="Marketing" />
-              <Title LCID="1049" Text="Маркетинг" />
+              <Title LCID="1049" Text="Marketing" />
               <Title LCID="1051" Text="Marketing" />
-              <Title LCID="1060" Text="Trženje" />
-              <Title LCID="10266" Text="Маркетинг" />
+              <Title LCID="1060" Text="Marketing" />
+              <Title LCID="10266" Text="Marketing" />
               <Title LCID="9242" Text="Marketing" />
-              <Title LCID="1053" Text="Marknadsföring" />
-              <Title LCID="1054" Text="การตลาด" />
-              <Title LCID="1055" Text="Pazarlama" />
-              <Title LCID="1058" Text="Маркетинг" />
-              <Title LCID="1066" Text="Tiếp thị" />
-              <Title LCID="2052" Text="市场营销​​" />
-              <Title LCID="3076" Text="行銷" />
-              <Title LCID="1028" Text="行銷" />
+              <Title LCID="1053" Text="Marketing" />
+              <Title LCID="1054" Text="Marketing" />
+              <Title LCID="1055" Text="Marketing" />
+              <Title LCID="1058" Text="Marketing" />
+              <Title LCID="1066" Text="Marketing" />
+              <Title LCID="2052" Text="Marketing" />
+              <Title LCID="3076" Text="Marketing" />
+              <Title LCID="1028" Text="Marketing" />
+              <Title LCID="3098" Text="Marketing" />
+              <Title LCID="2074" Text="Marketing" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="ProcessCenter">
             <Titles>
               <Title LCID="1033" Text="Process Sessions" />
-              <Title LCID="1025" Text="جلسات عمل العمليات" />
-              <Title LCID="1026" Text="Сесии на процес" />
-              <Title LCID="1027" Text="Sessions del procés" />
-              <Title LCID="1029" Text="Relace procesů" />
-              <Title LCID="1030" Text="Processessioner" />
-              <Title LCID="1031" Text="Prozesssitzungen" />
-              <Title LCID="1032" Text="Περίοδοι λειτουργίας διαδικασίας" />
-              <Title LCID="3082" Text="Sesiones de proceso" />
-              <Title LCID="1061" Text="Protsessiseansid" />
-              <Title LCID="1069" Text="Prozesu-saioak" />
-              <Title LCID="1035" Text="Prosessin istunnot" />
-              <Title LCID="1036" Text="Sessions de traitement" />
-              <Title LCID="1110" Text="Sesións de proceso" />
-              <Title LCID="1037" Text="הפעלות תהליך" />
-              <Title LCID="1081" Text="प्रक्रिया सत्र" />
-              <Title LCID="1050" Text="Sesije procesa" />
-              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
-              <Title LCID="1057" Text="Sesi Proses" />
-              <Title LCID="1040" Text="Sessioni di processo" />
-              <Title LCID="1041" Text="プロセス セッション" />
-              <Title LCID="1087" Text="Процестік сеанстар" />
-              <Title LCID="1042" Text="프로세스 세션" />
-              <Title LCID="1063" Text="Apdorojimo seansai" />
-              <Title LCID="1062" Text="Apstrādes sesijas" />
-              <Title LCID="1086" Text="Sesi Proses" />
-              <Title LCID="1044" Text="Prosessøkter" />
-              <Title LCID="1043" Text="Sessies voor proces" />
-              <Title LCID="1045" Text="Sesje procesów" />
-              <Title LCID="1046" Text="Sessões de Processo" />
-              <Title LCID="2070" Text="Sessões de Processamento" />
-              <Title LCID="1048" Text="Sesiuni de proces" />
-              <Title LCID="1049" Text="Сеансы процесса" />
-              <Title LCID="1051" Text="Relácie procesov" />
-              <Title LCID="1060" Text="Seje procesa" />
-              <Title LCID="10266" Text="Сесије процеса" />
-              <Title LCID="9242" Text="Sesije procesa" />
-              <Title LCID="1053" Text="Processessioner" />
-              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
-              <Title LCID="1055" Text="İşlem Oturumları" />
-              <Title LCID="1058" Text="Сеанси обробки" />
-              <Title LCID="1066" Text="Phiên Quá trình" />
-              <Title LCID="2052" Text="进程会话" />
-              <Title LCID="3076" Text="程序工作階段" />
-              <Title LCID="1028" Text="程序工作階段" />
+              <Title LCID="1025" Text="Process Sessions" />
+              <Title LCID="1026" Text="Process Sessions" />
+              <Title LCID="1027" Text="Process Sessions" />
+              <Title LCID="1029" Text="Process Sessions" />
+              <Title LCID="1030" Text="Process Sessions" />
+              <Title LCID="1031" Text="Process Sessions" />
+              <Title LCID="1032" Text="Process Sessions" />
+              <Title LCID="3082" Text="Process Sessions" />
+              <Title LCID="1061" Text="Process Sessions" />
+              <Title LCID="1069" Text="Process Sessions" />
+              <Title LCID="1035" Text="Process Sessions" />
+              <Title LCID="1036" Text="Process Sessions" />
+              <Title LCID="1110" Text="Process Sessions" />
+              <Title LCID="1037" Text="Process Sessions" />
+              <Title LCID="1081" Text="Process Sessions" />
+              <Title LCID="1050" Text="Process Sessions" />
+              <Title LCID="1038" Text="Process Sessions" />
+              <Title LCID="1057" Text="Process Sessions" />
+              <Title LCID="1040" Text="Process Sessions" />
+              <Title LCID="1041" Text="Process Sessions" />
+              <Title LCID="1087" Text="Process Sessions" />
+              <Title LCID="1042" Text="Process Sessions" />
+              <Title LCID="1063" Text="Process Sessions" />
+              <Title LCID="1062" Text="Process Sessions" />
+              <Title LCID="1086" Text="Process Sessions" />
+              <Title LCID="1044" Text="Process Sessions" />
+              <Title LCID="1043" Text="Process Sessions" />
+              <Title LCID="1045" Text="Process Sessions" />
+              <Title LCID="1046" Text="Process Sessions" />
+              <Title LCID="2070" Text="Process Sessions" />
+              <Title LCID="1048" Text="Process Sessions" />
+              <Title LCID="1049" Text="Process Sessions" />
+              <Title LCID="1051" Text="Process Sessions" />
+              <Title LCID="1060" Text="Process Sessions" />
+              <Title LCID="10266" Text="Process Sessions" />
+              <Title LCID="9242" Text="Process Sessions" />
+              <Title LCID="1053" Text="Process Sessions" />
+              <Title LCID="1054" Text="Process Sessions" />
+              <Title LCID="1055" Text="Process Sessions" />
+              <Title LCID="1058" Text="Process Sessions" />
+              <Title LCID="1066" Text="Process Sessions" />
+              <Title LCID="2052" Text="Process Sessions" />
+              <Title LCID="3076" Text="Process Sessions" />
+              <Title LCID="1028" Text="Process Sessions" />
+              <Title LCID="3098" Text="Process Sessions" />
+              <Title LCID="2074" Text="Process Sessions" />
             </Titles>
           </NavBarArea>
         </NavBarAreas>
@@ -1259,13 +1281,33 @@
             </parameters>
           </customControl>
         </controlDescription>
+        <controlDescription forControl="{5ca8c570-a541-4cf4-9209-99406ba7cbdf}">
+          <customControl formFactor="0" name="MscrmControls.TalkingPointsControl.TalkingPoints">
+            <parameters>
+              <fullname>fullname</fullname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.TalkingPointsControl.TalkingPoints">
+            <parameters>
+              <fullname>fullname</fullname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.TalkingPointsControl.TalkingPoints">
+            <parameters>
+              <fullname>fullname</fullname>
+            </parameters>
+          </customControl>
+        </controlDescription>
       </controlDescriptions>
       <DisplayConditions FallbackForm="true" Order="3">
         <Everyone />
       </DisplayConditions>
+      <formLibraries>
+        <Library name="msdyn_talkingpointsloader.js" libraryUniqueId="{30d6d0a4-d097-b9be-cc6e-5722727be490}" />
+      </formLibraries>
     </form>
     <LocalizedNames>
-      <LocalizedName description="Sales Insights" languagecode="1033" />
+      <LocalizedName description="AI for Sales" languagecode="1033" />
     </LocalizedNames>
     <Descriptions>
       <Description description="Updated default Contact form." languagecode="1033" />

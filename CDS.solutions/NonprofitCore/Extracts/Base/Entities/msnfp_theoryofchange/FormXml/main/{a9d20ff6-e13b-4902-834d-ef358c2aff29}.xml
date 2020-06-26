@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a9d20ff6-e13b-4902-834d-ef358c2aff29}</formid>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{8f99cb7d-a515-4694-bb62-08ea941f89fa}" name="{8f99cb7d-a515-4694-bb62-08ea941f89fa}" IsUserDefined="1" verticallayout="true" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{525f7a6e-3550-4b0a-81c2-585594e5cb94}" name="{525f7a6e-3550-4b0a-81c2-585594e5cb94}" IsUserDefined="0" showlabel="false" locklevel="0" celllabelposition="Left" celllabelalignment="Left" labelwidth="130" showbar="false" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e2ad37ca-1bbb-4cca-b301-261afde78f4e}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" datafieldname="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{13c55652-e38c-a7ab-455b-dbea5a9bc411}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Theory of Change" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_parenttheoryofchangeid" datafieldname="msnfp_parenttheoryofchangeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b09c82e4-02d7-9042-ac29-1a8c60a5dd52}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="statuscode" datafieldname="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" />
+                      </cell>
+                      <cell id="{9bbe5116-3850-c297-c87b-ca62198d4ad6}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_description" datafieldname="msnfp_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" uniqueid="{b6309ec3-b92b-bc25-4403-e0dba8bc00c1}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4834a68-4e16-9779-a152-cc82c04e632b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_type" datafieldname="msnfp_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{24083c7e-3cd5-453d-b848-e86f1e908e8c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section id="{b6ab650b-2a3e-1247-1180-c5463b82bb55}" name="tab_7_section_1" IsUserDefined="0" showlabel="true" locklevel="0" celllabelposition="Left" celllabelalignment="Left" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Program Items" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{01142d30-2777-e257-dcb6-7bd9b6c30a63}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Program Items (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="ProgramItems" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{4a495391-3033-3157-9584-7aca46923880}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{3811EDB1-EE5E-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_programitem_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_programitem</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{74D00855-9AE1-41E9-97E5-27B433AA28F6},{3811EDB1-EE5E-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{c0850c4a-4c2c-ae1c-26ac-c964b89c2b4b}" name="tab_objectives" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Objectives" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{712b563c-3186-570a-621a-79cd271c93b8}" name="tab_2_section_1" IsUserDefined="0" showlabel="false" locklevel="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{70a33e1e-d144-808d-9a0b-d9be4808a1c6}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Theory of Change Relationships (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="Objectives" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{CC27E5D7-6C59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_theoryofchangerelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{67A6278B-285F-418F-8AC3-39E16F8910BE},{CC27E5D7-6C59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{971664a2-e4b2-4d75-e301-40d96d0016bc}" name="tab_budgets" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Budgets" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{284a0201-8a96-839e-2248-74e892201340}" name="tab_3_section_1" IsUserDefined="0" showlabel="false" locklevel="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{35e33e95-d2d5-806d-c289-450744b9305b}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Theory of Change Relationships (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="Budgets" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{BD19C58C-7459-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_theoryofchangerelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{67A6278B-285F-418F-8AC3-39E16F8910BE},{BD19C58C-7459-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{1c63c57b-9640-5288-d9b1-810304dbaee1}" name="tab_deliveryframeworks" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Delivery Frameworks" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{3964e7d9-8069-0018-66de-a24c8abbcd50}" name="tab_4_section_1" IsUserDefined="0" showlabel="false" locklevel="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ab0b96e2-a373-c941-71cc-23d5451e5167}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Theory of Change Relationships (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="DeliveryFrameworks" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{EA68DF6E-7659-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_theoryofchangerelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{67A6278B-285F-418F-8AC3-39E16F8910BE},{EA68DF6E-7659-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{65ec1046-33d3-5e68-9113-13d42ea17e6a}" name="tab_results" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Results" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{0a566d85-9798-16d9-961a-d4559ad5ce56}" name="tab_5_section_1" IsUserDefined="0" showlabel="false" locklevel="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{455012e7-2dc2-e2b9-01c5-07548b1590d2}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Theory of Change Relationships (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="Results" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{926336A4-7759-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_theoryofchangerelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{67A6278B-285F-418F-8AC3-39E16F8910BE},{926336A4-7759-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{9e66585d-c20b-83a3-c554-be92a32836e5}" name="tab_indicators" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Indicators" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{89ec98ba-5559-08ea-19ec-cdadc55463b7}" name="tab_6_section_1" IsUserDefined="0" showlabel="false" locklevel="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{80d09be2-b539-ca51-2cd4-79d31293502c}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Theory of Change Relationships (Theory of Change)" languagecode="1033" />
+                        </labels>
+                        <control id="Indicators" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{4DC47045-7959-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid</RelationshipName>
+                            <TargetEntityType>msnfp_theoryofchangerelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{67A6278B-285F-418F-8AC3-39E16F8910BE},{4DC47045-7959-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_theoryofchange_msnfp_theoryofchange_parenttheoryofchangeid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_theoryofchange_msnfp_theoryofchange_parenttheoryofchangeid" Show="false">
+            <Titles>
+              <Title Text="Theories of Change" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_theoryofchange_msnfp_theoryofchangerelationship_theoryofchangeid" Show="false">
+            <Titles>
+              <Title Text="Theory of Change Relationships" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_theoryofchange_msnfp_programitem_theoryofchangeid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_theoryofchange_msnfp_programitem_theoryofchangeid" Show="false">
+            <Titles>
+              <Title Text="Program Items" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

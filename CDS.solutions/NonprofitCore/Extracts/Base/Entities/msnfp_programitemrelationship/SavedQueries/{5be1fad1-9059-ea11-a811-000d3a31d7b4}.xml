@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{5be1fad1-9059-ea11-a811-000d3a31d7b4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msnfp_name">
+        <row id="msnfp_programitemrelationshipid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_type" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_relatedfromprogramitemid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_a1ab67e4d758ea11a811000d3a31d7b4.statuscode" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" disableSorting="1" />
+          <cell name="a_f922bc6e5adb4f0ebf553360167e693f.msnfp_ratingtype" width="100" />
+          <cell name="a_f922bc6e5adb4f0ebf553360167e693f.msnfp_type" width="100" />
+          <cell name="a_f922bc6e5adb4f0ebf553360167e693f.msnfp_subtype" width="100" />
+          <cell name="a_f922bc6e5adb4f0ebf553360167e693f.msnfp_obligationtype" width="100" />
+          <cell name="a_f922bc6e5adb4f0ebf553360167e693f.msnfp_observationtype" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" output-format="xml-platform">
+        <entity name="msnfp_programitemrelationship">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_type" />
+          <link-entity to="msnfp_relatedtoprogramitemid" name="msnfp_programitem" visible="false" alias="a_a1ab67e4d758ea11a811000d3a31d7b4" from="msnfp_programitemid" link-type="outer">
+            <attribute name="statuscode" />
+          </link-entity>
+          <attribute name="msnfp_relatedfromprogramitemid" />
+          <attribute name="msnfp_programitemrelationshipid" />
+          <link-entity to="msnfp_relatedfromprogramitemid" name="msnfp_programitem" visible="false" alias="a_f922bc6e5adb4f0ebf553360167e693f" from="msnfp_programitemid" link-type="outer">
+            <attribute name="msnfp_ratingtype" />
+            <attribute name="msnfp_type" />
+            <attribute name="msnfp_obligationtype" />
+            <attribute name="msnfp_observationtype" />
+            <attribute name="msnfp_subtype" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Program Item to Program Item Relationships" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This view shows the program item relationships that are relate program items to other program items. " languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

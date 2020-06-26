@@ -18,6 +18,8 @@
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>msnfp_Budget</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Clear Recipient Organization" />
@@ -25,38 +27,4 @@
   <Descriptions>
     <Description languagecode="1033" description="Clear recipient organization when is equal to the account" />
   </Descriptions>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{efd9b451-4c47-e911-a826-000d3a3b7b7b}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_accountid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{f0d9b451-4c47-e911-a826-000d3a3b7b7b}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{f1d9b451-4c47-e911-a826-000d3a3b7b7b}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_recipientorganizationid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{f2d9b451-4c47-e911-a826-000d3a3b7b7b}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
 </Workflow>

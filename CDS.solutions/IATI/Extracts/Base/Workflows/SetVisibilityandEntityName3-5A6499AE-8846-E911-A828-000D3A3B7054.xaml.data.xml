@@ -18,6 +18,8 @@
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>msiati_narrativetranslation</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set Visibility and Entity Name 3" />
@@ -25,70 +27,4 @@
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
   </Descriptions>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{aaf6af69-8c46-e911-a828-000d3a3b7054}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_resultid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{abf6af69-8c46-e911-a828-000d3a3b7054}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{acf6af69-8c46-e911-a828-000d3a3b7054}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_sectorid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{adf6af69-8c46-e911-a828-000d3a3b7054}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{aef6af69-8c46-e911-a828-000d3a3b7054}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_tagid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{aff6af69-8c46-e911-a828-000d3a3b7054}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{b0f6af69-8c46-e911-a828-000d3a3b7054}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_transactionid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{b1f6af69-8c46-e911-a828-000d3a3b7054}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_narrativetranslation</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
 </Workflow>

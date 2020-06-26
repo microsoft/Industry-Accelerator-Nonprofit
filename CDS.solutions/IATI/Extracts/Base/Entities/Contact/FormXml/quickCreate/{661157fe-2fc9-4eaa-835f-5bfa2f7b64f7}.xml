@@ -20,6 +20,14 @@
                   </labels>
                   <rows>
                     <row>
+                      <cell id="{cc42934a-7770-eace-a535-ca3c4d3e4ca5}" showlabel="false" visible="false" locklevel="0">
+                        <labels>
+                          <label description="Business Card" languagecode="1033" />
+                        </labels>
+                        <control id="businesscard" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="businesscard" disabled="false" uniqueid="{0758709b-abec-8c87-786a-56116be5a5de}" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{a2528d42-720c-9931-81ca-784c1881b8c2}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="First Name" languagecode="1033" />
@@ -147,12 +155,103 @@
       <DisplayConditions FallbackForm="true" Order="2">
         <Everyone />
       </DisplayConditions>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Sales.Contact.Instance.Quick_Form_onload" libraryName="Sales/Contact/Contact_main_system_library.js" handlerUniqueId="ba2ec2ae-0dd2-48b1-a22a-3c639a02a3ae" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="businesscard">
+          <InternalHandlers>
+            <Handler functionName="Sales.Contact.Instance.BusinessCard_OnChange" libraryName="Sales/Contact/Contact_main_system_library.js" handlerUniqueId="60d3d793-cff2-4a34-951e-d4d6f7ef4609" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Sales/Contact/Contact_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <controlDescriptions>
+        <controlDescription forControl="{0758709b-abec-8c87-786a-56116be5a5de}">
+          <customControl id="{E0DECE4B-6FC8-4a8f-A065-082708572369}">
+            <parameters>
+              <datafieldname>businesscard</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
     </form>
     <LocalizedNames>
       <LocalizedName description="Contact Quick Create" languagecode="1033" />
     </LocalizedNames>
     <Descriptions>
-      <Description description="Default quick create form for Contact" languagecode="1033" />
+      <Description description="Updated quick create form for Contact" languagecode="1033" />
     </Descriptions>
   </systemform>
 </forms>

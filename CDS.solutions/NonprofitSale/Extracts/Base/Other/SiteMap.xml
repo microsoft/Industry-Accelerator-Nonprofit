@@ -322,7 +322,7 @@
         </SubArea>
       </Group>
     </Area>
-    <Area IntroducedVersion="7.0.0.0" ShowGroups="true" Icon="/_imgs/settings_24x24.gif" Id="Settings" ResourceId="Area_Settings" DescriptionResourceId="Settings_Area_Description">
+    <Area Id="Settings" ResourceId="Area_Settings" DescriptionResourceId="Settings_Area_Description" Icon="/_imgs/settings_24x24.gif" ShowGroups="true" IntroducedVersion="7.0.0.0">
       <Group Id="Business_Setting" ResourceId="Menu_Label_Business" DescriptionResourceId="Menu_Label_Business" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_Business_ToolTip">
         <SubArea Id="nav_businessmanagement" ResourceId="Homepage_BusinessManagement" DescriptionResourceId="BizManagement_SubArea_Description" Icon="/_imgs/ico_18_busmanagement.gif" Url="/tools/business/business.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
         <SubArea Id="nav_template" ResourceId="Homepage_Template" DescriptionResourceId="Template_SubArea_Description" Icon="/_imgs/ico_18_templates.gif" Url="/tools/templates/templates.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />
@@ -343,7 +343,7 @@
         <SubArea Id="nav_plugintrace" ResourceId="Homepage_PluginTraceLog" Icon="/_imgs/area/Plugin_TraceLog_32.png" IntroducedVersion="7.1.0.0" Entity="plugintracelog" Client="Web" AvailableOffline="true" PassParams="false">
           <Privilege Entity="plugintracelog" Privilege="Read" />
         </SubArea>
-        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_0b440e2e" PassParams="false" AvailableOffline="true" Entity="msdyn_solutionhistory" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" />
+        <SubArea Id="NewSubArea_0b440e2e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_solutionhistory" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
       </Group>
       <Group Id="System_Setting" ResourceId="Menu_Label_System" DescriptionResourceId="Menu_Label_System" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Menu_Label_System_ToolTip">
         <SubArea Id="nav_administration" ResourceId="Homepage_Administration" DescriptionResourceId="Administration_SubArea_Description" Icon="/_imgs/ico_18_administration.gif" Url="/tools/Admin/admin.aspx" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" />

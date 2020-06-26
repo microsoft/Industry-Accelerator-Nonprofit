@@ -1,48 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <systemform>
+  <systemform unmodified="1">
     <formid>{b053a39a-041a-4356-acef-ddf00182762b}</formid>
     <IntroducedVersion>5.0.0.0</IntroducedVersion>
     <FormPresentation>0</FormPresentation>
-    <FormActivationState>0</FormActivationState>
+    <FormActivationState>1</FormActivationState>
     <form showImage="true">
       <hiddencontrols>
         <data id="address1_addressid" datafieldname="address1_addressid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
         <data id="address2_addressid" datafieldname="address2_addressid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
       </hiddencontrols>
       <tabs>
-        <tab name="tab_recordwall" id="{e94e6ac4-12db-bc8c-ec81-8b20c5987655}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{9f60e940-8bcf-442c-ad67-48fabf9144ca}">
-          <labels>
-            <label description="What's New" languagecode="1033" />
-          </labels>
-          <columns>
-            <column width="100%">
-              <sections>
-                <section name="tab_recordwall_section_1" showlabel="false" showbar="false" locklevel="0" id="{ac0addcc-a626-6c98-40ee-b11edac36204}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{47b03f0e-b92c-4ee9-9017-1113dd58114d}">
-                  <labels>
-                    <label description="Section" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
         <tab name="general" verticallayout="true" id="{13b0fbf2-e596-4dc5-919b-7a0aea72598b}" IsUserDefined="0">
           <labels>
             <label description="General" languagecode="1033" />
@@ -324,7 +292,7 @@
                     </row>
                   </rows>
                 </section>
-                <section name="description_2" id="{22c54202-b263-46e5-9676-47112c3be47d}">
+                <section name="description_2" showlabel="false" showbar="true" id="{22c54202-b263-46e5-9676-47112c3be47d}" IsUserDefined="0">
                   <labels>
                     <label description="Description" languagecode="1033" />
                   </labels>
@@ -336,7 +304,20 @@
                         </labels>
                         <control id="accountcategorycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="accountcategorycode" />
                       </cell>
-                      <cell id="{9d152d46-34f8-4d0f-babe-3a94efe18703}">
+                      <cell id="{29760e45-5a38-4b2a-b8d0-fd99fb62f6d1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75231669-b6e4-42c1-98fa-ed1fd2d4091b}">
+                        <labels>
+                          <label description="Relationship Type" languagecode="1033" />
+                        </labels>
+                        <control id="customertypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="customertypecode" />
+                      </cell>
+                      <cell id="{ec4adef9-3060-4354-a75b-4059d8799e26}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -344,7 +325,7 @@
                     </row>
                   </rows>
                 </section>
-                <section name="billing information" id="{0243b19c-f88a-410c-9d90-0862142c56e2}">
+                <section name="billing information" showlabel="true" showbar="true" id="{0243b19c-f88a-410c-9d90-0862142c56e2}" IsUserDefined="0">
                   <labels>
                     <label description="Billing Information" languagecode="1033" />
                   </labels>
@@ -370,11 +351,23 @@
                         </labels>
                         <control id="creditlimit" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="creditlimit" />
                       </cell>
+                      <cell id="{811dc54d-f71e-4364-93f4-71e00074d317}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{88b1eb8d-6cb7-4172-a2e9-68d7f702a941}">
                         <labels>
                           <label description="Credit Hold" languagecode="1033" />
                         </labels>
                         <control id="creditonhold" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="creditonhold" />
+                      </cell>
+                      <cell id="{3f244fad-0d54-4032-994d-c326ceb33b8f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                     </row>
                   </rows>
@@ -529,106 +522,69 @@
                         </labels>
                         <control id="preferredcontactmethodcode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="preferredcontactmethodcode" />
                       </cell>
-                      <cell id="{555ac5ba-3a26-428d-bcc2-2186f3e99b55}">
-                        <labels>
-                          <label description="Bulk Email" languagecode="1033" />
-                        </labels>
-                        <control id="donotbulkemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotbulkemail" />
-                      </cell>
-                      <cell id="{7978684f-a8c5-48b2-9b11-4d34215f3e74}">
-                        <labels>
-                          <label description="Email" languagecode="1033" />
-                        </labels>
-                        <control id="donotemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotemail" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{360d95eb-8ba4-41be-b8ad-5e9feed28f0c}">
                         <labels>
                           <label description="Follow Email" languagecode="1033" />
                         </labels>
                         <control id="followemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="followemail" />
                       </cell>
-                      <cell id="{4a9ae9d0-f4ca-45f0-886c-bcfc00f98003}">
+                      <cell id="{555ac5ba-3a26-428d-bcc2-2186f3e99b55}">
                         <labels>
-                          <label description="Mail" languagecode="1033" />
+                          <label description="Bulk Email" languagecode="1033" />
                         </labels>
-                        <control id="donotpostalmail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotpostalmail" />
-                      </cell>
-                      <cell id="{18193a06-a1fa-41c7-86b6-7bd88696c495}">
-                        <labels>
-                          <label description="Phone" languagecode="1033" />
-                        </labels>
-                        <control id="donotphone" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotphone" />
+                        <control id="donotbulkemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotbulkemail" />
                       </cell>
                     </row>
                     <row>
+                      <cell id="{7978684f-a8c5-48b2-9b11-4d34215f3e74}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="donotemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotemail" />
+                      </cell>
                       <cell id="{0a5eeb02-68b5-4cec-93d5-fa27bd56e89b}">
                         <labels>
                           <label description="Fax" languagecode="1033" />
                         </labels>
                         <control id="donotfax" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotfax" />
                       </cell>
+                      <cell id="{232f0c03-c2d0-48a6-b75b-795157780ef9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{18193a06-a1fa-41c7-86b6-7bd88696c495}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="donotphone" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotphone" />
+                      </cell>
                       <cell id="{4c7e3528-1a05-47d8-99c4-383e8ae36f62}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
+                      </cell>
+                      <cell id="{1694fc56-56a3-4caa-84da-1275abcdf747}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a9ae9d0-f4ca-45f0-886c-bcfc00f98003}">
+                        <labels>
+                          <label description="Mail" languagecode="1033" />
+                        </labels>
+                        <control id="donotpostalmail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotpostalmail" />
                       </cell>
                       <cell id="{7efb5294-1d1c-4f78-9918-03dd80563cfb}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                    </row>
-                  </rows>
-                </section>
-                <section name="marketing information" showlabel="true" showbar="true" locklevel="0" id="{7f86a255-fe14-4b3a-89ba-e1265712c006}" IsUserDefined="0" layout="varheight" columns="11">
-                  <labels>
-                    <label description="Marketing Information" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{edbbf74d-9d9b-4646-9972-e104503c87e8}">
-                        <labels>
-                          <label description="Send Marketing Materials" languagecode="1033" />
-                        </labels>
-                        <control id="donotsendmm" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotsendmm" disabled="false" />
-                      </cell>
-                      <cell id="{e8eb9a12-1e10-492b-bc93-384f7c166ec5}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                  </rows>
-                </section>
-                <section name="service preferences" showlabel="true" showbar="true" id="{DFF21ED1-106A-46FA-9C23-739C909FC16C}" IsUserDefined="0">
-                  <labels>
-                    <label description="Service Preferences" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{ad68a13b-fc81-48a0-ae32-b73c15f44c2d}">
-                        <labels>
-                          <label description="Preferred Day" languagecode="1033" />
-                        </labels>
-                        <control id="preferredappointmentdaycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="preferredappointmentdaycode" />
-                      </cell>
-                      <cell id="{8143f220-03cc-4174-95e1-6ddda80316fc}">
-                        <labels>
-                          <label description="Preferred Time" languagecode="1033" />
-                        </labels>
-                        <control id="preferredappointmenttimecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="preferredappointmenttimecode" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{c0894e23-3db1-4bcb-b0f9-450ed1584b0c}">
-                        <labels>
-                          <label description="Preferred User" languagecode="1033" />
-                        </labels>
-                        <control id="preferredsystemuserid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="preferredsystemuserid" />
-                      </cell>
-                      <cell id="{2007a51d-f1c5-4750-989c-4dda02c448d6}">
+                      <cell id="{56df3ac9-dc06-48dd-88d4-7e1bc68c54ee}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -708,7 +664,7 @@
           <NavBarByRelationshipItem RelationshipName="account_customer_relationship_customer" Id="navRelationships" TitleResourceId="Left_Nav_Area_Relationships" />
         </NavBar>
       </Navigation>
-      <DisplayConditions FallbackForm="true" Order="4">
+      <DisplayConditions FallbackForm="true" Order="3">
         <Everyone />
       </DisplayConditions>
     </form>
