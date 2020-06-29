@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1d705d29-5a59-ea11-a811-000d3a31d7b4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" preview="1" icon="1">
+        <row id="msnfp_programitemrelationshipid" name="result">
+          <cell name="msnfp_name" width="150" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_objectiveid" width="200" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="a_8e5e86d6d458ea11a811000d3a31d7b4.msnfp_objectivetype" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" disableSorting="1" />
+          <cell name="a_8e5e86d6d458ea11a811000d3a31d7b4.msnfp_parentobjectiveid" width="150" imageproviderwebresource="$webresource:" imageproviderfunctionname="" disableSorting="1" />
+          <cell name="a_8e5e86d6d458ea11a811000d3a31d7b4.msnfp_startdate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" disableSorting="1" />
+          <cell name="a_8e5e86d6d458ea11a811000d3a31d7b4.msnfp_enddate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" disableSorting="1" />
+          <cell name="a_8e5e86d6d458ea11a811000d3a31d7b4.msnfp_description" width="300" imageproviderwebresource="$webresource:" imageproviderfunctionname="" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfp_programitemrelationship">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+            <condition attribute="msnfp_objectiveid" operator="not-null" />
+          </filter>
+          <attribute name="msnfp_objectiveid" />
+          <link-entity name="msnfp_objective" visible="false" link-type="outer" from="msnfp_objectiveid" to="msnfp_objectiveid" alias="a_8e5e86d6d458ea11a811000d3a31d7b4">
+            <attribute name="msnfp_startdate" />
+            <attribute name="msnfp_parentobjectiveid" />
+            <attribute name="msnfp_objectivetype" />
+            <attribute name="msnfp_enddate" />
+            <attribute name="msnfp_description" />
+          </link-entity>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_programitemrelationshipid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Objective Program Item Relationships" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This view shows program item relationships related to objective" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

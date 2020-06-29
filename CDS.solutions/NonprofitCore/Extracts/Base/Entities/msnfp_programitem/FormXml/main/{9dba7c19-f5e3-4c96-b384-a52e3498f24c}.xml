@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9dba7c19-f5e3-4c96-b384-a52e3498f24c}</formid>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{437942b2-ee86-46ec-b030-ccfcd4bd3eeb}" name="{437942b2-ee86-46ec-b030-ccfcd4bd3eeb}" expanded="true" locklevel="0" showlabel="true" verticallayout="true" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{3f3bc5cf-e0f4-4359-b2cf-44df8f5cc10e}" name="{3f3bc5cf-e0f4-4359-b2cf-44df8f5cc10e}" locklevel="0" showlabel="false" IsUserDefined="0" celllabelposition="Left" celllabelalignment="Left" labelwidth="130" showbar="false" columns="111">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{511a5073-0421-4184-9075-1787c4d6647e}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                      <cell id="{edea17d9-b0d4-36b3-caaa-9e8d50434075}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_type" />
+                      </cell>
+                      <cell id="{9d463a03-4d58-9ae9-55ae-8d009ee58b77}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_duedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_duedate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3338461e-36da-a8c2-c412-71bd36419281}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" />
+                      </cell>
+                      <cell id="{70a6c923-a43d-e923-e945-6eab19392513}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="SubType" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_subtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_subtype" />
+                      </cell>
+                      <cell id="{933ec404-2d8b-b492-650b-63abdb460d8b}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date Fulfilled" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_datefulfilled" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_datefulfilled" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b94e278-0887-5538-dbd6-b2b625bac5d6}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Rating" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_ratingtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_ratingtype" />
+                      </cell>
+                      <cell id="{e7176262-83e6-7881-12c0-ed4633ae71ec}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Obligation Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_obligationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_obligationtype" />
+                      </cell>
+                      <cell id="{40e1ce6c-1587-d965-83d2-017ad02a81c3}" locklevel="0" showlabel="true" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfp_description" uniqueid="{68de380a-5995-3ac1-44de-e252229e5b5e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{511e5ca7-179a-8a19-4440-817d44c9a303}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_startdate" />
+                      </cell>
+                      <cell id="{8b13c008-4a4b-8ab2-3981-1a9cbc6a2c7a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Observation Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_observationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_observationtype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40142359-b922-1073-2a36-7d626422c58a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_enddate" />
+                      </cell>
+                      <cell id="{aa484557-e6b1-9c02-3c8a-95be11b1cd78}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e594c64f-fdd7-4eda-a319-8dc6192b84e4}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{13e1c0a2-17a7-a4b0-126b-9c8b301d658d}" />
+                      </cell>
+                      <cell id="{5d1644db-48b2-1658-68bc-4eabbedcbd12}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section id="{6165195c-5791-105b-aa12-b6e7c99029ca}" name="tab_8_section_2" locklevel="0" showlabel="true" IsUserDefined="0" celllabelposition="Left" celllabelalignment="Left" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Stakeholders" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{87eb37cd-5c62-0c3a-d4dc-313b34387781}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Stakeholders (Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="Stakeholers" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{804e1c0e-2ab4-d808-70dc-87bb969d85e9}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{47D21512-F05E-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_stakeholder_programitemid</RelationshipName>
+                            <TargetEntityType>msnfp_stakeholder</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{8ED1DAA1-6031-48BD-AE5A-F3A9CBE5630B},{47D21512-F05E-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{199d21d9-068e-09c7-b436-62960a8754e3}" name="tab_programitems" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Program Items" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{3e299e2b-c319-424e-4367-ec2a47d362c4}" name="tab_4_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{213d3585-ee12-7d9a-5b94-0c513691854e}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="ProgramItems" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{A8E00D59-5E59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{A8E00D59-5E59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{57b20673-e255-6ca4-9627-7418728aded7}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related To Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="ProgramItemsTo" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{00a7ed53-086a-7a2e-e4ce-76ee19ec610e}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{5BE1FAD1-9059-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedtoprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{A8E00D59-5E59-EA11-A811-000D3A31D7B4},{5BE1FAD1-9059-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{cbe71b92-5237-80e4-4227-05d273199e31}" name="tab_objectives" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Objectives" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{8931a1b8-2258-4562-1c71-1478cbbbcd22}" name="tab_5_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae0b17b2-dca8-478c-7c15-984e0ed3543e}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="Objectives" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{1D705D29-5A59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{1D705D29-5A59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{5d4bbe8b-dcc8-2e70-e6b8-b68b1683b921}" name="tab_Budgets" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Budgets" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{db51b1a8-527c-683e-5a13-4a105a50e629}" name="tab_6_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3513ad51-81c8-dd04-1736-07de959d2c0d}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="Budgets" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{FCEF8951-5A59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{FCEF8951-5A59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{dcdb54a4-6403-b586-a53e-66b76ae687ee}" name="tab_deliveryframeworks" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Delivery Frameworks" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{062362d5-031a-b9a0-cea5-4e69d639bdd6}" name="tab_7_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{666723d4-8c0d-81b8-da04-7a73e50137a2}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="DeliveryFrameworks" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{AC55FDA1-5C59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{AC55FDA1-5C59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{2d978462-4d38-033a-3be5-0790640dc8d0}" name="tab_results" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Results" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{bb8275d6-578a-46a0-deb4-24736ab2cc50}" name="tab_8_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4be6d5c1-8dad-a6c8-5a14-4749107eed58}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="Results" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{D6CE11EE-5C59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{D6CE11EE-5C59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{bb885ddc-7490-d135-4b5d-c66a9d75a219}" name="tab_indicators" expanded="true" locklevel="0" showlabel="true" IsUserDefined="0">
+          <labels>
+            <label description="Indicators" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{2d12aabc-357a-25cb-e16b-0c00820611aa}" name="tab_9_section_1" locklevel="0" showlabel="false" IsUserDefined="0" labelwidth="115" showbar="false" columns="1" layout="varwidth">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ec45785-60ed-abdc-0a61-a71bd5095abc}" showlabel="false" rowspan="6" colspan="1" auto="false">
+                        <labels>
+                          <label description="Program Item Relationships (Related From Program Item)" languagecode="1033" />
+                        </labels>
+                        <control id="Indicators" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{6533DC7D-5D59-EA11-A811-000D3A31D7B4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid</RelationshipName>
+                            <TargetEntityType>msnfp_programitemrelationship</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D0CAD1CE-DE50-4D79-AC17-01050841BFFE},{6533DC7D-5D59-EA11-A811-000D3A31D7B4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{e081c1ca-dd73-4c05-9920-67aaa7b17156}" columns="111">
+        <rows>
+          <row>
+            <cell id="{bd0b671f-1f52-4b34-9ea3-0fbfb4451174}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e6271302-4538-488d-a7f1-29eed1eca6a6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{22ab843d-adb4-58bb-6680-898d25374bd9}" locklevel="0" showlabel="true">
+              <labels>
+                <label description="Theory of Change" languagecode="1033" />
+              </labels>
+              <control disabled="false" id="header_msnfp_theoryofchangeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_theoryofchangeid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_programitem_msnfp_stakeholder_programitemid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_programitem_msnfp_stakeholder_programitemid" Show="false">
+            <Titles>
+              <Title Text="Stakeholders" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedfromprogramitemid" Show="false">
+            <Titles>
+              <Title Text="Program Item Relationships" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedtoprogramitemid" Area="Info" Sequence="10000" RelationshipName="msnfp_msnfp_programitem_msnfp_programitemrelationship_relatedtoprogramitemid" Show="false">
+            <Titles>
+              <Title Text="Program Item Relationships" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

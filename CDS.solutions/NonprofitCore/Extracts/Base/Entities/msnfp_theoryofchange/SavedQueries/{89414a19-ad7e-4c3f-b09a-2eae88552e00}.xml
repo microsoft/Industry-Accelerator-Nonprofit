@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{89414a19-ad7e-4c3f-b09a-2eae88552e00}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_theoryofchangeid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="statuscode" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="ownerid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_parenttheoryofchangeid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_description" width="300" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_theoryofchange">
+          <attribute name="msnfp_name" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition value="{0}" attribute="msnfp_name" operator="like" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_parenttheoryofchangeid" />
+          <attribute name="msnfp_description" />
+          <attribute name="ownerid" />
+          <attribute name="msnfp_theoryofchangeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Theories of Change" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1d03ccc4-23ff-49a0-9f35-d2e77fb8e723}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_workitemactionid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfp_workitemactionduedate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_workitemactiontype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_workitemaction">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msnfp_name" />
+          <attribute name="msnfp_workitemactiontype" />
+          <attribute name="msnfp_workitemactionduedate" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_workitemactionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Work Item Action Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

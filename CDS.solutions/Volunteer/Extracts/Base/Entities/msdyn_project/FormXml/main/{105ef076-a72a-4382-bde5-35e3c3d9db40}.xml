@@ -396,7 +396,8 @@
                     </row>
                     <row />
                     <row />
-                    <row height="auto" />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
@@ -1526,7 +1527,7 @@
               <Title LCID="1081" Text="बुक करने योग्य संसाधन की बुकिंग के शीर्ष लेख" />
               <Title LCID="1050" Text="Zaglavlja rezervacije resursa koji je moguće rezervirati" />
               <Title LCID="1038" Text="Lefoglalható erőforrás foglalási fejlécei" />
-              <Title LCID="1057" Text="Header Pemesanan Sumber Daya yang Dapat Dipesan" />
+              <Title LCID="1057" Text="Header Pemesanan Sumber Daya Dapat Dipesan" />
               <Title LCID="1040" Text="Intestazioni prenotazioni risorse prenotabili" />
               <Title LCID="1041" Text="予約可能リソースの予約ヘッダー" />
               <Title LCID="1087" Text="Тапсырыс беруге болатын ресурс тапсырысының үстіңгі деректемелері" />
@@ -1545,7 +1546,7 @@
               <Title LCID="1060" Text="Glave rezervacij virov, ki jih je mogoče rezervirati" />
               <Title LCID="3098" Text="Заглавља резервација ресурса који могу да се резервишу" />
               <Title LCID="2074" Text="Zaglavlja rezervacija resursa koji mogu da se rezervišu" />
-              <Title LCID="1053" Text="Bokningsrubriker för bokningsbara resurser" />
+              <Title LCID="1053" Text="Bokningshuvuden för bokningsbara resurser" />
               <Title LCID="1054" Text="ส่วนหัวของการจองทรัพยากรที่สามารถจองได้" />
               <Title LCID="1055" Text="Ayrılabilir Kaynak Ayırma Üst Bilgileri" />
               <Title LCID="1058" Text="Заголовки резервувань планованих ресурсів" />
@@ -1616,7 +1617,7 @@
               <Title LCID="1032" Text="Χρονοδιάγραμμα τιμών γραμμής σύμβασης" />
               <Title LCID="3082" Text="Programación de los valores de línea de contrato" />
               <Title LCID="1061" Text="Lepingurea väärtuste ajakava" />
-              <Title LCID="1069" Text="Kontratuaren lerroko mugarria" />
+              <Title LCID="1069" Text="Kontratuaren lerroko mugarriak" />
               <Title LCID="1035" Text="Sopimusrivin arvojen aikataulu" />
               <Title LCID="1036" Text="Planification de valeurs de la ligne de contrat" />
               <Title LCID="1110" Text="Programación da liña de contrato dos valores" />
@@ -1624,14 +1625,14 @@
               <Title LCID="1081" Text="अनुबंध पंक्ति माइलस्टोन" />
               <Title LCID="1050" Text="Raspored vrijednosti retka ugovora" />
               <Title LCID="1038" Text="Szerződéssor értékütemezése" />
-              <Title LCID="1057" Text="Tahap Baris Kontrak" />
+              <Title LCID="1057" Text="Jadwal Baris Kontrak Nilai" />
               <Title LCID="1040" Text="Pianificazione voce di contratto di valori" />
               <Title LCID="1041" Text="契約品目の契約マイルストーンの状態" />
               <Title LCID="1087" Text="Мәндердің келісім-шарт жолы кестесі" />
               <Title LCID="1042" Text="계약 내용 이정표" />
               <Title LCID="1063" Text="Sutarties eilutės reikšmių grafikas" />
               <Title LCID="1062" Text="Līguma rindas vērtību grafiks" />
-              <Title LCID="1086" Text="Status Pencapaian Kontrak Baris Kontrak" />
+              <Title LCID="1086" Text="Nilai Jadual Baris Kontrak" />
               <Title LCID="1044" Text="Verdiplan for kontraktlinje" />
               <Title LCID="1043" Text="Waardenschema voor contractregels" />
               <Title LCID="1045" Text="Kosztorys pozycji kontraktu" />
@@ -2381,6 +2382,11 @@
         <event name="onchange" application="false" active="false" attribute="msdyn_contractorganizationalunitid">
           <Handlers>
             <Handler functionName="setCurrencyFromOrgUnit" libraryName="msdyn_/Project/Scripts/ProjectInitialization.js" handlerUniqueId="{cca06dce-059e-acc4-eb35-79e21163425a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="msdyn.project.onSaveProject" libraryName="msdyn_/Project/Scripts/ProjectInitialization.js" handlerUniqueId="{8f1b175f-af45-495c-95ec-3b27a971ee0e}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
       </events>

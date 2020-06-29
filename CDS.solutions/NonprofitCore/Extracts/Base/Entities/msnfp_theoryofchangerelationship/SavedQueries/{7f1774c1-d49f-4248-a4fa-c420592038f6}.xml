@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7f1774c1-d49f-4248-a4fa-c420592038f6}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_theoryofchangerelationships" preview="0" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_theoryofchangerelationshipid" name="msnfp_theoryofchangerelationship">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_theoryofchangeid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_theoryofchangerelationship">
+          <attribute name="msnfp_theoryofchangerelationshipid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition value="0" operator="eq" attribute="statecode" />
+          </filter>
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_theoryofchangeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Theory of Change Relationship Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

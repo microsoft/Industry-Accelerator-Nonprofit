@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c69d9999-b32d-4433-b3f4-1d5e595ee7d3}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{e303983b-2fc3-479e-97e6-f90abe7298ac}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{0bd4f6d0-17f0-4809-b630-43d5de7f00ce}" name="tab_1_column_1_section_1" showlabel="false" IsUserDefined="0" showbar="false" columns="1">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ab715b70-336e-0a8a-9865-981bc637cc02}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Work Item Action Title" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79ae1e4d-7e87-235a-e898-6e7005505875}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Work Item Action Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_workitemactiontype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_workitemactiontype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96e7085b-c06c-ca9d-051c-311c31d0ea4d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Work Item Action Due Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_workitemactionduedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_workitemactionduedate" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{9ece4515-8da4-4dfd-99f4-4c172fbd1a20}" name="tab_1_column_2_section_1" showlabel="false" IsUserDefined="0" showbar="false" columns="1">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{403d3381-7865-a589-d184-1570e2e10c4e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85725653-c454-ac55-5ca8-208504c09c31}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Beneficiary" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_beneficiaryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_beneficiaryid" uniqueid="{ae60e445-16cc-34b6-2371-36807c4ee512}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9617178b-5356-b533-b8a9-938076a2344e}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Work Item" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_workitemid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_workitemid" uniqueid="{0234d171-ce64-294d-a083-eb90243adb15}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{DC69A402-680A-4A7A-BD6F-298AE8B55BB7}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb119097-8576-5c24-0a63-8788ade94d49}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Need" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_needid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_needid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{7cf5c878-0555-41d8-9dd9-fdcfa3d93860}" name="tab_1_column_3_section_1" showlabel="true" IsUserDefined="0" showbar="false" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Contigent Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{07428024-bd64-53e6-4454-8a3b53da57cb}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfp_description" uniqueid="{57b5c626-2ec6-ba85-4147-235d9c0c7861}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{bd202c32-1b63-3a21-2789-7e5a2a8541bd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral To" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_referraltoid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_referraltoid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d6a9763-7b22-e920-a33d-2c657eb393c8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

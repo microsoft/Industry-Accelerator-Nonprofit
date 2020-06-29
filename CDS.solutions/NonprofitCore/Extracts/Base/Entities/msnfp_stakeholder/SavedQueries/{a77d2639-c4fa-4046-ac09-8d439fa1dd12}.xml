@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a77d2639-c4fa-4046-ac09-8d439fa1dd12}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_stakeholders" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_stakeholderid" name="msnfp_stakeholder">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="statuscode" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_programitemid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_stakeholdernameid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_startdate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_enddate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_stakeholder">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msnfp_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_stakeholdernameid" />
+          <attribute name="msnfp_programitemid" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_stakeholderid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Stakeholder Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

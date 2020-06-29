@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{47d21512-f05e-ea11-a811-000d3a31d7b4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row id="msnfp_stakeholderid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="statuscode" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_stakeholdernameid" width="200" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_startdate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_enddate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="createdon" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_stakeholder">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_stakeholdernameid" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_stakeholderid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Related Active Stakeholders" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -18,6 +18,8 @@
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>msiati_expenditure</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Clear Provider Organization and Recipient Organization Values " />
@@ -25,38 +27,4 @@
   <Descriptions>
     <Description languagecode="1033" description="Clear provider organization and recipient organization values if  the recipient organization is the same as the main organization." />
   </Descriptions>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{ad2ec633-3947-e911-a826-000d3a3b7b7b}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_recipientorganizationid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{ae2ec633-3947-e911-a826-000d3a3b7b7b}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{af2ec633-3947-e911-a826-000d3a3b7b7b}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_organizationid</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{b02ec633-3947-e911-a826-000d3a3b7b7b}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msiati_expenditure</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
 </Workflow>

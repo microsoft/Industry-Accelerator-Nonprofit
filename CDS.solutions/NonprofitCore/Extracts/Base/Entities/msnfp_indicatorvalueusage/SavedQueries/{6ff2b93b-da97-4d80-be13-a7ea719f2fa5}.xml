@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6ff2b93b-da97-4d80-be13-a7ea719f2fa5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msnfp_name">
+        <row id="msnfp_indicatorvalueusageid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_usagetype" width="100" />
+          <cell name="msnfp_indicatorvalueid" width="100" />
+          <cell name="msnfp_needid" width="100" />
+          <cell name="msnfp_workitemid" width="100" />
+          <cell name="msnfp_workitemactionid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msnfp_indicatorvalueusage">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msnfp_name" />
+          <attribute name="msnfp_workitemactionid" />
+          <attribute name="msnfp_workitemid" />
+          <attribute name="msnfp_usagetype" />
+          <attribute name="msnfp_needid" />
+          <attribute name="msnfp_indicatorvalueid" />
+          <attribute name="msnfp_indicatorvalueusageid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Indicator Value Usage Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

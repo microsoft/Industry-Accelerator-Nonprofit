@@ -18,26 +18,10 @@
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>msnfp_Budget</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set visibility and requirement on Delivery Framework or Account" />
   </LocalizedNames>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{35e18d37-fc44-e911-a826-000d3a3b7b7b}">
-      <controltype>1</controltype>
-      <scope>1</scope>
-      <controlname>msiati_relatedto</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{36e18d37-fc44-e911-a826-000d3a3b7b7b}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>msnfp_Budget</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
 </Workflow>

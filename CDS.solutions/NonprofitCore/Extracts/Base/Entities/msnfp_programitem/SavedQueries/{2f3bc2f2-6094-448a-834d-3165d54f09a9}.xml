@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2f3bc2f2-6094-448a-834d-3165d54f09a9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row id="msnfp_programitemid" name="result">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_theoryofchangeid" width="200" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_ratingtype" width="100" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_subtype" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_obligationtype" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_datefulfilled" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_observationtype" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_duedate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="statuscode" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_startdate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+          <cell name="msnfp_enddate" width="125" imageproviderwebresource="$webresource:" imageproviderfunctionname="" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_programitem">
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition value="1" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_subtype" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_ratingtype" />
+          <attribute name="msnfp_observationtype" />
+          <attribute name="msnfp_obligationtype" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_duedate" />
+          <attribute name="msnfp_datefulfilled" />
+          <attribute name="msnfp_theoryofchangeid" />
+          <attribute name="msnfp_programitemid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.2.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Program Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
