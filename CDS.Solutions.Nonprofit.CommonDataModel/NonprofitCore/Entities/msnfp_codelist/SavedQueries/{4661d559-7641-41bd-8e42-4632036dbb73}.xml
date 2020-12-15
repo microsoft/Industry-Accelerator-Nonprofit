@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4661d559-7641-41bd-8e42-4632036dbb73}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_codelists" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_codelist" id="msnfp_codelistid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_codelisttype" width="116" />
+          <cell name="msnfp_code" width="100" />
+          <cell name="msnfp_specificationid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_codelist">
+          <attribute name="msnfp_codelistid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_specificationid" />
+          <attribute name="msnfp_codelisttype" />
+          <attribute name="msnfp_code" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Codelist Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

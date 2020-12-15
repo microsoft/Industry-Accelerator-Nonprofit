@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c3da35fc-8cfd-43a6-84be-5d7dc13e25bc}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_indicatorreferenceid">
+          <cell name="msiati_indicatorid" width="100" />
+          <cell name="msiati_indicatorcodeid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_indicatorreference">
+          <attribute name="msiati_indicatorreferenceid" />
+          <attribute name="createdon" />
+          <attribute name="msiati_indicatorid" />
+          <attribute name="msiati_indicatorcodeid" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Indicator Reference Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f9698897-8808-4fe7-868f-335d2756bdb3}</savedqueryid>
+    <layoutxml>
+      <grid name="msiati_identifiers" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="msiati_identifier" id="msiati_identifierid">
+          <cell name="msiati_reference" width="100" />
+          <cell name="msiati_typeid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_identifier">
+          <attribute name="msiati_identifierid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msiati_typeid" />
+          <attribute name="msiati_reference" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Identifier Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

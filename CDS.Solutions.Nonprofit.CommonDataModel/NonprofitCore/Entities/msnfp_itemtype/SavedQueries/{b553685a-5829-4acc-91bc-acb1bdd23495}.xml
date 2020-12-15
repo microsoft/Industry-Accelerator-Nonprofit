@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b553685a-5829-4acc-91bc-acb1bdd23495}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_itemname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_itemtypeid">
+          <cell name="msnfp_itemname" width="300" />
+          <cell name="msnfp_itemtypecode" width="126" />
+          <cell name="msnfp_itemclassification" width="145" />
+          <cell name="msnfp_estimatedcost" width="128" />
+          <cell name="msnfp_singleitem" width="110" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_itemtype">
+          <attribute name="msnfp_itemtypeid" />
+          <attribute name="msnfp_itemname" />
+          <order attribute="msnfp_itemname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfp_itemname" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msnfp_itemtypecode" />
+          <attribute name="msnfp_itemclassification" />
+          <attribute name="msnfp_estimatedcost" />
+          <attribute name="msnfp_singleitem" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Item Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9b64205c-caa4-477c-892a-0b772a6cf1dd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_observedvariableid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_relatedtoobservationid" width="100" />
+          <cell name="msnfp_relatedtovariableid" width="100" />
+          <cell name="msnfp_value" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_observedvariable">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfp_name" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msnfp_value" />
+          <attribute name="msnfp_relatedtovariableid" />
+          <attribute name="msnfp_relatedtoobservationid" />
+          <attribute name="msnfp_observedvariableid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Observed Variables" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,591 @@
+<Activity x:Class="XrmWorkflowf146c556d3cdea11a812000d3a11f015" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mcwc="clr-namespace:Microsoft.Crm.Workflow.ClientActivities;assembly=Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsq="clr-namespace:Microsoft.Xrm.Sdk.Query;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+  </x:Members>
+  <this:XrmWorkflowf146c556d3cdea11a812000d3a11f015.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowf146c556d3cdea11a812000d3a11f015.InputEntities>
+  <this:XrmWorkflowf146c556d3cdea11a812000d3a11f015.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowf146c556d3cdea11a812000d3a11f015.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionSequence, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionStep1">
+      <mxswa:ActivityReference.Arguments>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="Wait">False</InArgument>
+      </mxswa:ActivityReference.Arguments>
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables">
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep2_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep2_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep2_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep3_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep3_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep3_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep4_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep4_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep4_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep5_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep5_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep5_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep6_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep6_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep6_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep7_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep7_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep7_2" />
+        </sco:Collection>
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep2_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490000", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep2_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep2_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep2_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep2_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep2">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep2_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep2">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep2: Delivery Framwork-Yes">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep3: Delivery Framework - Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep3" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep4: Transaction-No">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep5: Transaction- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep5" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep6: Disbursement-No">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep7: Disbursement- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep7" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep8: Donor Commitment-No">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep9: Donor Commitment-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep9" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep10: Award - No">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep11: Award-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep11" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep12: Expenditure-No">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep13: Expenditure-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep13" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Delivery Framework?</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep3_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490002", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep3_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep3_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep3_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep3_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep3">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep3_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep3">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep14: Transaction - Yes">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep15: Transaction-Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep15" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="Required" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep16: Delivery Framwork-No">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep17: Delivery Framework Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep17" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep18: Donor Commitment - No">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep19: Donor Commitment - Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep19" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep20: Disbursement-No">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep21: Disbursement Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep21" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep22: Awards-No">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep23: Award-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep23" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep24: Expenditure-No">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep25: Expenditure-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep25" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Transaction?</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep4_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490003", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep4_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep4_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep4_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep4_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep4">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep4_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep4">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep27: Donor Commitment-Yes">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep28: Donor Commitment-Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep28" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep29: Delivery Framework-No">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep31: Delivery Framework Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep31" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="Required" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep30: Transaction-No">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep32: Transaction- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep32" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep33: Disbursement-No">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep34: Disbursement-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep34" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep35: Award-No">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep36: Award-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep36" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep37: Expenditure-No">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep38: Expenditure- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep38" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Donor Commitment?</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep5_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490005", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep5_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep5_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep5_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep5_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep5">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep5_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep5">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep40: Disbursement-Yes">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep41: Disbursement-Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep41" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep42: Delivery Framework-No">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep43: Delivery Framework-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep43" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep44: Transaction-No">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep45: Transaction-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep45" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep46: Donor Commitment-No">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep47: Donor Commitment-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep47" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep48: Award-No">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep49: Award-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep49" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep50: Expenditure-No">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep51: Expenditure Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep51" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Disbursement?</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep6_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490004", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep6_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep6_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep6_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep6_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep6">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep6_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep6">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep53: Awards-Yes">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep54: Award- Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep54" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="Required" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep55: Trasaction-No">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep56: Transaction-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep56" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep57: Delivery Framework-No">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep58: Delivery Framework- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep58" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep59: Donor Commitment- No">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep60: Donor Commitment-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep60" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep61: Disbursement">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep62: Disbursement-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep62" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep63: Expenditure-No">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep64: Expenditure-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep64" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Award</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="msiati_relatedto" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" Value="[ConditionBranchStep7_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "453490001", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep7_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep7_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep7_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep7_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep7">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep7_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep7">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep66: Expenditure">
+                      <mcwc:SetVisibility ControlId="msiati_expenditureid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep67: Expenditure-Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_expenditureid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep67" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="Required" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep68: Transaction-No">
+                      <mcwc:SetVisibility ControlId="msiati_transactionid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep69: Transaction-Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_transactionid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep69" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep70: Delivery Framework">
+                      <mcwc:SetVisibility ControlId="msiati_deliveryframeworkid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep71: Delivery Framework - Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_deliveryframeworkid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep71" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep72: Donor Commitment - No">
+                      <mcwc:SetVisibility ControlId="msiati_donorcommitmentid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep73: Donor Commitment - Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_donorcommitmentid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep73" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep74: Disbursement-No">
+                      <mcwc:SetVisibility ControlId="msiati_disbursementid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep75: Disbursement- Not Business Required">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_disbursementid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep75" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep76: Award">
+                      <mcwc:SetVisibility ControlId="msiati_awardid" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetFieldRequiredLevelStep77: Award-Not Business Require">
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;msiati_sector&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mcwc:SetFieldRequiredLevel ControlId="msiati_awardid" ControlType="standard" DisplayName="SetFieldRequiredLevelStep77" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="msiati_sector" RequiredLevel="None" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+              <x:String x:Key="Description">Related to Expenditure?</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+        <x:Boolean x:Key="ContainsElseBranch">False</x:Boolean>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+  </mxswa:Workflow>
+</Activity>

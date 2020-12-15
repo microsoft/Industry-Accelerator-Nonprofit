@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1c688dd1-8dc4-45d1-b8d8-c4290116fd21}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_itemrequestname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_itemrequestid">
+          <cell name="msnfp_itemrequestname" width="300" />
+          <cell name="msnfp_requeststatus" width="117" />
+          <cell name="msnfp_requestbydate" width="128" />
+          <cell name="msnfp_totalestimatedcost" width="155" />
+          <cell name="msnfp_assessmentid" width="164" />
+          <cell name="msnfp_deliveryframeworkid" width="224" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_itemrequest">
+          <attribute name="msnfp_itemrequestid" />
+          <attribute name="msnfp_itemrequestname" />
+          <order attribute="msnfp_itemrequestname" descending="false" />
+          <attribute name="msnfp_requeststatus" />
+          <attribute name="msnfp_requestbydate" />
+          <attribute name="msnfp_totalestimatedcost" />
+          <attribute name="msnfp_assessmentid" />
+          <attribute name="msnfp_deliveryframeworkid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Item Request Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

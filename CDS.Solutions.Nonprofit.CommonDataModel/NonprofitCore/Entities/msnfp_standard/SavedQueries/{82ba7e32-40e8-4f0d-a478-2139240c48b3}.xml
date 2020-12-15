@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{82ba7e32-40e8-4f0d-a478-2139240c48b3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_standardid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_standardtype" width="100" />
+          <cell name="msnfp_standardcode" width="100" />
+          <cell name="msnfp_link" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_standard">
+          <attribute name="msnfp_standardid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_standardtype" />
+          <attribute name="msnfp_standardcode" />
+          <attribute name="msnfp_link" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Standard Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

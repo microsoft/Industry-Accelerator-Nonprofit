@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{281bbc57-8deb-45af-a4be-38f561068c39}</formid>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{765cd187-17fa-4d7b-a8f0-02e54ee33b97}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1259e1e0-55ef-4817-b9e8-d19dab369080}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{65fd12fd-3b0e-4e17-add7-a5f9aeece6c0}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9e7032d1-01cd-1460-9525-ad0a51920e67}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Variable" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_variable" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_variable" disabled="false" uniqueid="{c22d0a66-4348-69c4-81a2-2527caeb0760}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d9e5875-32a0-19e3-b0ad-0e3370680037}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Aggregable" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_aggregable" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msnfp_aggregable" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aac939e5-375e-57ba-0cad-0b213c063946}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Codelist" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_codelistid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_codelistid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6679833e-267d-de31-1077-4040c3144193}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Unit of Measure" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_unitofmeasureid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_unitofmeasureid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{43ed0e60-443c-4de1-6127-ea0d02376a56}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Range" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_rangeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_rangeid" disabled="false" uniqueid="{463c5e10-2318-e3a5-dd1d-4c19b9b4e2b3}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69212bd6-975b-2a15-ddee-23d779bda084}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfp_description" disabled="false" uniqueid="{03c28410-4bb0-9be7-e465-d78641802992}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{9f031671-f42f-41c0-a1f4-e60d1a4c02dc}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{4965766e-3908-a134-c608-471a74a27801}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{b222058c-85d3-a43a-e284-c2608e1ae366}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Observed Variables" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{2a195a86-3619-9749-18e3-3a786671c4b9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{44b295e3-05dc-063c-ea0b-e6a1d130483d}" showlabel="false" colspan="1" auto="false" rowspan="12">
+                        <labels>
+                          <label description="Observed Variables (Related To Variable)" languagecode="1033" />
+                        </labels>
+                        <control id="ObservedVariables" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{782a161b-c1db-ca93-a043-9422c9a6ba7c}">
+                          <parameters>
+                            <ViewId>{ED17F758-ADAB-4A2D-AA52-7480D599FB18}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_variable_msnfp_observedvariable_relatedToVariableId</RelationshipName>
+                            <TargetEntityType>msnfp_observedvariable</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{ED17F758-ADAB-4A2D-AA52-7480D599FB18}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <header id="{54e016b2-dee3-478f-b40a-0144ebe9e447}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{62653890-ade1-451c-ae65-a81c627ec8a8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eb4bc597-6001-4605-b5d8-ae98a1e6338d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d2e7d20-7d60-49b7-bec1-04713db1ec80}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{3a0e76ce-5317-4bdc-b5d0-2ec6cf6a2548}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a536bb03-ab43-4cff-9701-b5464d562161}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2eb915b4-4336-4388-bb64-84b9a288c872}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{601a16bc-1539-401a-bee3-131348582005}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

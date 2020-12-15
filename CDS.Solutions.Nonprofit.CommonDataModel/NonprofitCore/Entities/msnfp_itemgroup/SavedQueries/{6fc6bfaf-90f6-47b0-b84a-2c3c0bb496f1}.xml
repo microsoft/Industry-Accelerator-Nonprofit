@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6fc6bfaf-90f6-47b0-b84a-2c3c0bb496f1}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_itemgroups" jump="msnfp_groupname" select="1" icon="1" preview="0">
+        <row name="msnfp_itemgroup" id="msnfp_itemgroupid">
+          <cell name="msnfp_groupname" width="300" />
+          <cell name="msnfp_grouptypecode" width="137" />
+          <cell name="msnfp_itemtypeid" width="100" />
+          <cell name="msnfp_estimatedcost" width="133" />
+          <cell name="msnfp_supplierid" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_itemgroup">
+          <attribute name="msnfp_itemgroupid" />
+          <attribute name="msnfp_groupname" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_grouptypecode" />
+          <attribute name="msnfp_itemtypeid" />
+          <attribute name="msnfp_estimatedcost" />
+          <attribute name="msnfp_supplierid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Item Group Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

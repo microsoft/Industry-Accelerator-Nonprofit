@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{70556326-cc14-4065-9a24-05dc7d0c15bc}</savedqueryid>
+    <layoutxml>
+      <grid name="msiati_nonembeddedcodelistvocabularies" jump="msiati_name" select="1" icon="1" preview="0">
+        <row name="msiati_nonembeddedcodelistvocabulary" id="msiati_nonembeddedcodelistvocabularyid">
+          <cell name="msiati_name" width="300" />
+          <cell name="msiati_codelisttype" width="100" />
+          <cell name="msiati_code" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_nonembeddedcodelistvocabulary">
+          <attribute name="msiati_nonembeddedcodelistvocabularyid" />
+          <attribute name="msiati_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msiati_codelisttype" />
+          <attribute name="msiati_code" />
+          <order attribute="msiati_codelisttype" descending="false" />
+          <order attribute="msiati_code" descending="false" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Non Embedded Codelist Vocabulary Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

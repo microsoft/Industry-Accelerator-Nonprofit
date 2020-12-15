@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f1821cb4-0582-424e-bf71-67061796b88b}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_assessments" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="msnfp_assessment" id="msnfp_assessmentid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_operationid" width="100" />
+          <cell name="msnfp_reportid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_assessment">
+          <attribute name="msnfp_assessmentid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_operationid" />
+          <attribute name="msnfp_reportid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Assessment Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

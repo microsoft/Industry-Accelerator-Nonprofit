@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{32475f17-60d8-4788-98a9-85910305911f}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_operations" jump="msnfp_name" select="1" icon="1" preview="0">
+        <row name="msnfp_operation" id="msnfp_operationid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_accountid" width="100" />
+          <cell name="msnfp_operationtype" width="144" />
+          <cell name="msnfp_operationstatus" width="135" />
+          <cell name="msnfp_sectortype" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_operation">
+          <attribute name="msnfp_operationid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_sectortype" />
+          <attribute name="msnfp_operationtype" />
+          <attribute name="msnfp_operationstatus" />
+          <attribute name="msnfp_accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Operation Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

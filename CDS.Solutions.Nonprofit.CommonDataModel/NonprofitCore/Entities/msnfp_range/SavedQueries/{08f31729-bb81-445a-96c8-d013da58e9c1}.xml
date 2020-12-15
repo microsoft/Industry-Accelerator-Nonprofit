@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{08f31729-bb81-445a-96c8-d013da58e9c1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_rangeid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_rangetype" width="100" />
+          <cell name="msnfp_rangetarget" width="100" />
+          <cell name="msnfp_rangeminimum" width="100" />
+          <cell name="msnfp_rangemaximum" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_range">
+          <attribute name="msnfp_rangeid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <attribute name="msnfp_rangetype" />
+          <attribute name="msnfp_rangetarget" />
+          <attribute name="msnfp_rangeminimum" />
+          <attribute name="msnfp_rangemaximum" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Range Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

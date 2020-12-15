@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b6ef50bd-ece2-4fc1-8205-e98753019633}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_engagementopportunityparticipantquatitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_engagementopportunityparticipantqualid">
+          <cell name="msnfp_engagementopportunityparticipantquatitle" width="300" />
+          <cell name="msnfp_engagementopportunityid" width="100" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_qualificationtypeid" width="100" />
+          <cell name="msnfp_number" width="100" />
+          <cell name="msnfp_proficiency" width="100" />
+          <cell name="msnfp_isrequired" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_engagementopportunityparticipantqual">
+          <attribute name="msnfp_engagementopportunityparticipantquatitle" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_engagementopportunityparticipantquatitle" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfp_engagementopportunityparticipantquatitle" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_qualificationtypeid" />
+          <attribute name="msnfp_proficiency" />
+          <attribute name="msnfp_number" />
+          <attribute name="msnfp_engagementopportunityid" />
+          <attribute name="msnfp_engagementopportunityparticipantqualid" />
+          <attribute name="msnfp_isrequired" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Engagement Opportunity Participant Qualifications" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

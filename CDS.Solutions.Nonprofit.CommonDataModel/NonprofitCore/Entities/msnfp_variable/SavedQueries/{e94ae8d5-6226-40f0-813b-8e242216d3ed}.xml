@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e94ae8d5-6226-40f0-813b-8e242216d3ed}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_variableid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_variable" width="100" />
+          <cell name="msnfp_aggregable" width="100" />
+          <cell name="msnfp_codelistid" width="100" />
+          <cell name="msnfp_unitofmeasureid" width="138" />
+          <cell name="msnfp_rangeid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_variable">
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_variable" />
+          <attribute name="msnfp_unitofmeasureid" />
+          <attribute name="msnfp_rangeid" />
+          <attribute name="msnfp_codelistid" />
+          <attribute name="msnfp_aggregable" />
+          <attribute name="msnfp_variableid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Variables" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

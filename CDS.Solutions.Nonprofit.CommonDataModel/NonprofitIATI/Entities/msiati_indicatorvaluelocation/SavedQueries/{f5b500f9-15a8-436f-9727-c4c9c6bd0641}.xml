@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f5b500f9-15a8-436f-9727-c4c9c6bd0641}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_indicatorvaluelocationid">
+          <cell name="msiati_locationid" width="100" />
+          <cell name="msiati_indicatorvalueid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_indicatorvaluelocation">
+          <attribute name="msiati_indicatorvaluelocationid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msiati_locationid" />
+          <attribute name="msiati_indicatorvalueid" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Indicator Value Location" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

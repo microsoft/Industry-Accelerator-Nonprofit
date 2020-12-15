@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cff962c4-6492-4a7f-b35c-7b3d11c96080}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_itemtypes" jump="msnfp_itemname" select="1" icon="1" preview="0">
+        <row name="msnfp_itemtype" id="msnfp_itemtypeid">
+          <cell name="msnfp_itemname" width="300" />
+          <cell name="msnfp_itemtypecode" width="124" />
+          <cell name="msnfp_itemclassification" width="143" />
+          <cell name="msnfp_estimatedcost" width="125" />
+          <cell name="msnfp_singleitem" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_itemtype">
+          <attribute name="msnfp_itemtypeid" />
+          <attribute name="msnfp_itemname" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_itemtypecode" />
+          <attribute name="msnfp_itemclassification" />
+          <attribute name="msnfp_estimatedcost" />
+          <attribute name="msnfp_singleitem" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Item Type Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

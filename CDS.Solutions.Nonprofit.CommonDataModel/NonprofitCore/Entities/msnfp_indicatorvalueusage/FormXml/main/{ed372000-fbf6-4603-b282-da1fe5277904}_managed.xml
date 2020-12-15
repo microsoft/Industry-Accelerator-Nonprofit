@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ed372000-fbf6-4603-b282-da1fe5277904}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{bbfb43d7-cf2c-4427-97c0-d0e0828128c1}" name="{bbfb43d7-cf2c-4427-97c0-d0e0828128c1}" IsUserDefined="1" verticallayout="true" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section id="{5834d201-4962-4504-8dd7-9c9b06280f78}" IsUserDefined="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cc804e1a-deb7-4503-b018-c681012947c3}">
+                        <labels>
+                          <label description="Usage Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" datafieldname="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80962596-6926-0b9e-b5ba-6a577aa10d3d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Usage Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_usagetype" datafieldname="msnfp_usagetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{081e2c2a-1bad-6a95-4c3d-41e400a2d24d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Indicator Value" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_indicatorvalueid" datafieldname="msnfp_indicatorvalueid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be79d0b2-d8ea-479d-bc62-5557150f0ea5}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{983c7381-a9e8-2717-3dc2-9d16268a417a}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section id="{1143bd5d-ce74-8523-8905-7559423b00da}" name="{bbfb43d7-cf2c-4427-97c0-d0e0828128c1}_section_2" IsUserDefined="0" columns="1" showbar="false" showlabel="false" locklevel="0" layout="varwidth" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aa87414d-e302-e312-8dd0-2387097ab6d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Work Item" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_workitemid" datafieldname="msnfp_workitemid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b1275a4-07a6-1cca-4bec-a5e92e0abd11}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Work Item Action" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_workitemactionid" datafieldname="msnfp_workitemactionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4d741811-3551-6dab-1907-4351c3386641}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Need" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msnfp_needid" datafieldname="msnfp_needid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
