@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{02accd8b-c4ea-41bd-9547-189bbb983b25}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_planname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_compensationplanid">
+          <cell name="msnfpe_planname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_compensationplan">
+          <attribute name="msnfpe_compensationplanid" />
+          <attribute name="msnfpe_planname" />
+          <attribute name="createdon" />
+          <order attribute="msnfpe_planname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Compensation Plans" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

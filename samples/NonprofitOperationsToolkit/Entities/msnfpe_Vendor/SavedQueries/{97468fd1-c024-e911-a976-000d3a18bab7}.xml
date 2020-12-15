@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{97468fd1-c024-e911-a976-000d3a18bab7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_vendorname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_vendorname">
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_vendorname" width="164" />
+          <cell name="msnfpe_vendornumber" width="100" />
+          <cell name="msnfpe_vendortype" width="100" />
+          <cell name="msnfpe_taxregistrationnumber" width="100" />
+          <cell name="msnfpe_payment_country" width="100" />
+          <cell name="msnfpe_parentvendorid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_vendor">
+          <attribute name="msnfpe_vendorname" />
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_vendortype" />
+          <attribute name="msnfpe_taxregistrationnumber" />
+          <attribute name="msnfpe_parentvendorid" />
+          <attribute name="msnfpe_vendornumber" />
+          <attribute name="msnfpe_vendorid" />
+          <attribute name="msnfpe_payment_country" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Vendors" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

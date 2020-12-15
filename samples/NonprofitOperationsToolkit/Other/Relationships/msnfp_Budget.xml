@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="msnfpe_msnfp_Budget_msnfp_ApprovedDraft">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.2.4</IntroducedVersion>
+    <IsHierarchical>1</IsHierarchical>
+    <ReferencingEntityName>msnfp_Budget</ReferencingEntityName>
+    <ReferencedEntityName>msnfp_Budget</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+    <ReferencingAttributeName>msnfpe_ApprovedDraftBudgetId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="This relationship is intended to hold a reference to the originally approved budget." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>msnfpe_ApprovedDraftBudgetId</NavigationPropertyName>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <NavigationPropertyName>msnfpe_msnfp_Budget_msnfp_ApprovedDraft</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+  <EntityRelationship Name="msnfpe_ProjectBudgetLine_msnfp_ProjectBudget">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.2.4</IntroducedVersion>
+    <IsHierarchical>0</IsHierarchical>
+    <ReferencingEntityName>msnfpe_ProjectBudgetLine</ReferencingEntityName>
+    <ReferencedEntityName>msnfp_Budget</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
+    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+    <ReferencingAttributeName>msnfpe_msnfp_ProjectBudgetId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Refers to the Project Budget this budget line belongs to." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>msnfpe_msnfp_ProjectBudgetId</NavigationPropertyName>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <NavigationPropertyName>msnfpe_ProjectBudgetLine_msnfp_ProjectBudget</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+</EntityRelationships>

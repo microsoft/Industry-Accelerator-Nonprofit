@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4cd07ae3-a896-e911-a82a-000d3a1d501d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_activityname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_activityname">
+          <cell name="msnfpe_activityname" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_projectactivity">
+          <attribute name="msnfpe_activityname" />
+          <attribute name="msnfpe_projectactivityid" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="in">
+              <value>1</value>
+              <value>796500000</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Activities Eligible for Budgeting" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Applies a filter to show Activities that can be used during budget development." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

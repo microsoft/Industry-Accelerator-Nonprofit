@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery unmodified="1">
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cfbcd7af-aee5-4e45-8ecc-c040d4020581}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="accountid">
+          <cell name="name" width="300" />
+          <cell name="lastusedincampaign" width="150" />
+          <cell name="telephone1" width="100" />
+          <cell name="address1_city" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="account">
+          <attribute name="accountid" />
+          <attribute name="name" />
+          <attribute name="lastusedincampaign" />
+          <attribute name="telephone1" />
+          <attribute name="address1_city" />
+          <order attribute="name" descending="false" />
+          <filter type="or">
+            <condition attribute="lastusedincampaign" operator="olderthan-x-months" value="3" />
+            <condition attribute="lastusedincampaign" operator="null" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Accounts: No Campaign Activities in Last 3 Months" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

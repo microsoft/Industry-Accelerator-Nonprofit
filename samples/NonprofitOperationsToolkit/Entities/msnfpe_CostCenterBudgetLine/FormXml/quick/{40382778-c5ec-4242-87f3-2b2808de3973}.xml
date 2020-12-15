@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{40382778-c5ec-4242-87f3-2b2808de3973}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{d4cb0fa2-42e9-49bc-9e76-8b3ab4c1068a}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{715a3e4d-fa0b-4c43-8d58-f97743340fc2}" name="{715a3e4d-fa0b-4c43-8d58-f97743340fc2}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Cost Center Budget Line information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fa6f1466-dc48-4bd2-947b-70ac698340e3}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_cc_budgetlinedesc" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_cc_budgetlinedesc" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25761e2b-c4ed-9427-c1a4-a3b8b07083b3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GL Account" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_glaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_glaccountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b9e1c93-83b7-c95c-455e-3d874cb21318}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Line Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetline_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ea213c53-36c9-5bc8-0238-847e056d4bc5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Planned Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_plannedamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_plannedamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{baac5c41-4f29-4ea0-8e7a-590b37e4508d}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{5d29a49d-3921-b0a1-a8c2-0076c37c30d4}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

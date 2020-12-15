@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}</formid>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab id="{6492f615-2e19-454f-83de-c27db7d11056}" name="{6492f615-2e19-454f-83de-c27db7d11056}" verticallayout="true" IsUserDefined="1" locklevel="0" expanded="true" showlabel="true" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section id="{716ae554-c6e5-4910-be9d-f2da47c7025f}" name="{716ae554-c6e5-4910-be9d-f2da47c7025f}" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{203810da-a040-4a4b-b4b2-fa7b9c6aebec}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Budget Name" languagecode="1033" solutionaction="Modified" />
+                        </labels>
+                      </cell>
+                      <cell id="{ab38a133-691d-1adb-98d9-5651d615e826}" locklevel="0" showlabel="true" ordinalvalue="20001" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{655b22c6-7c0d-9784-1e48-c52ba48634e2}" locklevel="0" showlabel="true" ordinalvalue="10002" solutionaction="Removed" />
+                      <cell id="{19ce1942-6898-8342-66aa-31a0a4220019}" locklevel="0" showlabel="true" ordinalvalue="10012" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{b99ec552-0597-7192-b42a-56db4a4d1682}" locklevel="0" showlabel="true" ordinalvalue="10004" solutionaction="Removed" />
+                      <cell id="{a664c7aa-11e9-1761-8927-a5de0ce17de2}" locklevel="0" showlabel="true" ordinalvalue="10002" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{67382326-3855-7174-b95e-54d0e59be5a3}" locklevel="0" showlabel="true" ordinalvalue="10006" solutionaction="Removed" />
+                      <cell id="{7ed1edac-c994-786c-a397-b8d7380d4abb}" locklevel="0" showlabel="true" ordinalvalue="10004" solutionaction="Modified">
+                        <control disabled="false" id="msnfp_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfp_enddate" uniqueid="{c33586c8-6830-b08c-a61c-ec9be1a5b35d}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{179aeb35-d980-9e11-a50c-e17dd89e1bb0}" locklevel="0" showlabel="true" ordinalvalue="10010" solutionaction="Modified" />
+                      <cell id="{278ba53b-504c-c64a-e90b-197de1d10e32}" showlabel="false" ordinalvalue="20009" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{3a5d3013-28b9-3b60-63dd-07750ed32919}" showlabel="false" colspan="1" auto="false" ordinalvalue="20001" solutionaction="Added">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                        </labels>
+                        <control id="quickview_project" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="msnfpe_projectid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="msnfpe_project"&gt;2cd72a5a-f6dd-452a-a515-a4987aedaed6&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{320ddb99-5201-865a-46c4-d9274d27702b}" showlabel="false" ordinalvalue="20003" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8745875e-c34d-ae68-8a73-86b5a032448e}" showlabel="false" ordinalvalue="20005" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ba33ecc8-2039-e683-9e25-486517966dee}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Added">
+                        <labels>
+                          <label description="Starting Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_startingperiodid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_startingperiodid" disabled="false" />
+                      </cell>
+                      <cell id="{3780c8bd-c63a-9a5c-0453-97891411d324}" showlabel="false" ordinalvalue="20007" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a3d67d96-1e8e-bcd6-906a-44b60d1863ee}" showlabel="true" locklevel="0" ordinalvalue="10008" solutionaction="Added">
+                        <labels>
+                          <label description="Ending Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_endingperiodid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_endingperiodid" disabled="false" />
+                      </cell>
+                      <cell id="{60ba034d-4a0b-e7ee-be8a-6444c1188314}" showlabel="false" ordinalvalue="20009" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca739005-cd98-5685-2695-64b5a4214675}" showlabel="false" ordinalvalue="20011" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0a1a0e16-15dc-bda2-d93b-857da4acd813}" showlabel="false" ordinalvalue="20013" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7cce292-1603-03bc-2d5a-b7822e75e9ed}" showlabel="true" locklevel="0" ordinalvalue="10014" solutionaction="Added">
+                        <labels>
+                          <label description="Total Amount (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_totalamount_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_totalamount_base" disabled="false" />
+                      </cell>
+                      <cell id="{0324be2b-526b-b74a-9189-b50172425015}" showlabel="false" ordinalvalue="20015" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05592511-8fd9-4b14-8930-7518a008a940}" showlabel="true" locklevel="1" visible="false" ordinalvalue="10016" solutionaction="Added">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{1b183841-8ad1-7200-a9a6-0400d0991c31}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{ba6a86b8-aaa9-39c0-a742-21c1199967a0}" showlabel="false" ordinalvalue="20017" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{6492f615-2e19-454f-83de-c27db7d11056}_section_2" showlabel="false" showbar="false" locklevel="0" id="{3b2dab43-d052-70a3-8272-15c3d505d67b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto" ordinalvalue="1" solutionaction="Added">
+                  <labels>
+                    <label description="Project Budget Lines" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7846ac88-7762-434a-4677-8ed09943235a}" showlabel="true" colspan="1" auto="true" rowspan="5" ordinalvalue="10000">
+                        <labels>
+                          <label description="Budget Lines" languagecode="1033" />
+                        </labels>
+                        <control id="grid_budget_budgetlines" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{03199B9E-A9B0-E911-A9A0-000D3A1362E3}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfpe_ProjectBudgetLine_msnfp_ProjectBudget</RelationshipName>
+                            <TargetEntityType>msnfpe_projectbudgetline</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{3D617A3E-F281-4345-91D0-978C5E72D475},{03199B9E-A9B0-E911-A9A0-000D3A1362E3}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>50</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{11c2e922-ad96-4459-cb69-015e1569b6d4}" name="tab_3" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true" ordinalvalue="1" solutionaction="Removed" />
+      </tabs>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navConnections" Sequence="8500" Area="Info" Id="navConnections" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Connections" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_budget_msnfp_programitemrelationship_budget" Sequence="10000" Area="Info" Id="nav_msnfp_msnfp_budget_msnfp_programitemrelationship_budget" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Program Item Relationships" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_msnfp_budget_msnfp_theoryofchangerelationship_budgetid" Sequence="10000" Area="Info" Id="nav_msnfp_msnfp_budget_msnfp_theoryofchangerelationship_budgetid" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Theory of Change Relationships" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfp_budget_disbursementdistribution_BudgetId" Sequence="10000" Area="Info" Id="nav_msnfp_budget_disbursementdistribution_BudgetId" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Disbursement Distributions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_msnfp_Budget_msnfp_ApprovedDraft" Sequence="10000" Area="Info" Id="nav_msnfpe_msnfp_Budget_msnfp_ApprovedDraft" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Project Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_ProjectBudgetLine_msnfp_ProjectBudget" Sequence="10000" Area="Info" Id="nav_msnfpe_ProjectBudgetLine_msnfp_ProjectBudget" Show="false" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Project Budget Lines" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+      </Navigation>
+      <header id="{347bd62c-ca36-43da-9b85-f53c04f94009}" columns="111" solutionaction="Added">
+        <rows>
+          <row>
+            <cell id="{373b0a4a-3967-9cc2-ca52-d76482db310b}" showlabel="false" ordinalvalue="10000">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ce11c9ab-20e4-d6c4-e39d-62dc2343d822}" showlabel="true" locklevel="0" ordinalvalue="20001">
+              <labels>
+                <label description="Total Amount" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_totalamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_totalamount" disabled="false" />
+            </cell>
+            <cell id="{bea914d6-4d23-499a-6598-1bab37b5e7a1}" showlabel="true" locklevel="0" ordinalvalue="30002">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{d99cd6a8-8d98-42ee-81a1-5d1d4368ef1f}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" solutionaction="Added">
+        <rows>
+          <row>
+            <cell id="{21130ec0-8ae8-0cea-570b-5eae0e84be51}" showlabel="true" locklevel="0" ordinalvalue="10000">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{165a8b20-8ee9-7bad-729a-3329689c01d8}" showlabel="true" locklevel="0" ordinalvalue="20001">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

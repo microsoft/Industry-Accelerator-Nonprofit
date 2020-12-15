@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4ac51c8c-3990-4e07-8e8e-fe2c9dd045f0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_entryname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_timeentryid">
+          <cell name="msnfpe_entryname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_timeentry">
+          <attribute name="msnfpe_timeentryid" />
+          <attribute name="msnfpe_entryname" />
+          <attribute name="createdon" />
+          <order attribute="msnfpe_entryname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Time Entries" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

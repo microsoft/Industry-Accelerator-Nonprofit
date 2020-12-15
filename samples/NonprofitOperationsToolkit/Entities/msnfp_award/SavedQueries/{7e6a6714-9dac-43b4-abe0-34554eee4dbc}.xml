@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7e6a6714-9dac-43b4-abe0-34554eee4dbc}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="msnfp_award" id="msnfp_awardid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfp_fiscalsponsorid" width="100" />
+          <cell name="msnfpe_startdate" width="100" />
+          <cell name="msnfpe_enddate" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_totalobligationamount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_award">
+          <attribute name="msnfp_awardid" />
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfp_fiscalsponsorid" />
+          <attribute name="msnfpe_startdate" />
+          <attribute name="msnfpe_enddate" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_totalobligationamount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Award Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

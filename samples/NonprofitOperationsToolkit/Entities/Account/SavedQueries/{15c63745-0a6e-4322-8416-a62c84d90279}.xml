@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery unmodified="1">
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{15c63745-0a6e-4322-8416-a62c84d90279}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="accountid">
+          <cell name="name" width="300" />
+          <cell name="telephone1" width="100" />
+          <cell name="address1_city" width="100" />
+          <cell name="primarycontactid" width="150" />
+          <cell name="accountprimarycontactidcontactcontactid.emailaddress1" width="150" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="account">
+          <attribute name="name" />
+          <attribute name="address1_city" />
+          <order attribute="name" descending="false" />
+          <attribute name="primarycontactid" />
+          <attribute name="telephone1" />
+          <link-entity alias="accountprimarycontactidcontactcontactid" name="contact" from="contactid" to="primarycontactid" link-type="outer" visible="false">
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <link-entity name="connection" from="record2id" to="accountid" alias="DealInfluencer"></link-entity>
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Accounts: Influenced Deals That We Won" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Key accounts that influenced deals that have been won in the last 12 months." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

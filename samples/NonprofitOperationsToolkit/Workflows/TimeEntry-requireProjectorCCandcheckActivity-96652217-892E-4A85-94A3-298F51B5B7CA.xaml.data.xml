@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{96652217-892e-4a85-94a3-298f51b5b7ca}" Name="Time Entry - require Project or CC and check Activity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TimeEntry-requireProjectorCCandcheckActivity-96652217-892E-4A85-94A3-298F51B5B7CA.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_timetype,msnfpe_projectactivityid,msnfpe_projectid,msnfpe_costcenterid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_TimeEntry</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Time Entry - require Project or CC and check Activity" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{0353f0ae-dffe-45a3-9c18-7f0233a4366c}">
+      <label languagecode="1033" description="A Project or Cost Center is required when time type is Work" />
+    </steplabels>
+    <steplabels id="{a974a868-79d3-4ea9-b51d-634967f7d28d}">
+      <label languagecode="1033" description="The selected Activity must belong to the selected Project" />
+    </steplabels>
+  </labels>
+</Workflow>

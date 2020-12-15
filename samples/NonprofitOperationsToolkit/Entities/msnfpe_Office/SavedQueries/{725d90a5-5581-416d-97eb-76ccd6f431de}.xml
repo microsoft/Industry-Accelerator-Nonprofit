@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{725d90a5-5581-416d-97eb-76ccd6f431de}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_officename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_officeid">
+          <cell name="msnfpe_officename" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_office">
+          <attribute name="msnfpe_officeid" />
+          <attribute name="msnfpe_officename" />
+          <attribute name="createdon" />
+          <order attribute="msnfpe_officename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfpe_officename" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Offices" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

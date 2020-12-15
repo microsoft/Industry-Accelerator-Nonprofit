@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{45e3355e-68d6-e911-a822-000d3a3b1bf4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_projectbudgetlinename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectbudgetlineid">
+          <cell name="msnfpe_projectbudgetlinename" width="156" />
+          <cell name="msnfpe_msnfp_projectbudgetid" width="281" />
+          <cell name="msnfpe_budgetcategory" width="100" />
+          <cell name="msnfpe_glaccountid" width="100" />
+          <cell name="msnfpe_budgetline_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_projectbudgetline">
+          <attribute name="msnfpe_projectbudgetlinename" />
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <attribute name="msnfpe_msnfp_projectbudgetid" />
+          <attribute name="msnfpe_budgetline_amount" />
+          <link-entity name="msnfpe_project" alias="aa" link-type="inner" from="msnfpe_projectid" to="msnfpe_projectid">
+            <filter type="and">
+              <condition attribute="statuscode" operator="in">
+                <value>1</value>
+                <value>796500000</value>
+                <value>2</value>
+              </condition>
+            </filter>
+          </link-entity>
+          <order attribute="msnfpe_msnfp_projectbudgetid" descending="false" />
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_budgetcategory" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.4.9</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Project Budget Lines fund related" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows Project Budget Lines related to this fund from project budgets where the Project is in Draft, In-Progress or Paused status." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

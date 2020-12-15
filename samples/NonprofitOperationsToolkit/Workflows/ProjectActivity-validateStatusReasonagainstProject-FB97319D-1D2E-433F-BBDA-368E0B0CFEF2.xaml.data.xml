@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{fb97319d-1d2e-433f-bbda-368e0b0cfef2}" Name="Project Activity - validate Status Reason against Project" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProjectActivity-validateStatusReasonagainstProject-FB97319D-1D2E-433F-BBDA-368E0B0CFEF2.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>statuscode,statecode</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.6</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_ProjectActivity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Project Activity - validate Status Reason against Project" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{33fd10d4-f6e9-4b3f-9c99-0634f48af4e6}">
+      <label languagecode="1033" description="Draft or Disregarded are the only valid Status Reasons while the parent Project is in Draft" />
+    </steplabels>
+  </labels>
+</Workflow>

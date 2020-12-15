@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{44e06a91-a6aa-4906-a679-649302f48841}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_workername" select="1" icon="1" preview="0">
+        <row name="msnfpe_worker" id="msnfpe_workerid">
+          <cell name="msnfpe_workername" width="300" />
+          <cell name="msnfpe_workingtitle" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_worker">
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_workername" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfpe_workername" descending="false" />
+          <attribute name="msnfpe_workingtitle" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Worker Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

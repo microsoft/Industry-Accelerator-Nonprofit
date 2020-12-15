@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{770bf77f-1be2-e911-a862-000d3a10be6f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_description" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_expenseid">
+          <cell name="msnfpe_description" width="200" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_expense_projectid" width="100" />
+          <cell name="msnfpe_expense_projectactivityid" width="100" />
+          <cell name="a_aa9de8ad0438428eb51372a400aea332.msnfpe_activitymanagerid" width="100" />
+          <cell name="msnfpe_expensetype" width="100" />
+          <cell name="msnfpe_date" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_expense">
+          <attribute name="msnfpe_description" />
+          <attribute name="msnfpe_expenseid" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="eq" value="796500000" />
+            <condition attribute="msnfpe_expense_projectid" operator="not-null" />
+          </filter>
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_expense_projectid" />
+          <attribute name="msnfpe_expense_projectactivityid" />
+          <link-entity alias="a_aa9de8ad0438428eb51372a400aea332" name="msnfpe_projectactivity" to="msnfpe_expense_projectactivityid" from="msnfpe_projectactivityid" link-type="outer" visible="false">
+            <attribute name="msnfpe_activitymanagerid" />
+          </link-entity>
+          <attribute name="msnfpe_expensetype" />
+          <attribute name="msnfpe_date" />
+          <attribute name="msnfpe_amount" />
+          <order attribute="msnfpe_expense_projectid" descending="false" />
+          <order attribute="msnfpe_expense_projectactivityid" descending="false" />
+          <order attribute="msnfpe_date" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.4.16</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Submitted Project Expenses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3d617a3e-f281-4345-91d0-978c5e72d475}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_projectbudgetlinename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectbudgetlineid">
+          <cell name="msnfpe_projectbudgetlinename" width="300" />
+          <cell name="msnfpe_glaccountid" width="100" />
+          <cell name="msnfpe_projectactivityid" width="100" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_budgetline_amount" width="100" />
+          <cell name="msnfpe_planneddifference" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_projectbudgetline">
+          <attribute name="msnfpe_projectbudgetlinename" />
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_budgetline_amount" />
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="eq" value="1" />
+          </filter>
+          <order attribute="msnfpe_projectactivityid" descending="false" />
+          <attribute name="msnfpe_planneddifference" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Budget Lines" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

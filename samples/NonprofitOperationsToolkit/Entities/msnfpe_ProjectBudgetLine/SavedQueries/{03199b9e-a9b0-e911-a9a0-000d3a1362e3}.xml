@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{03199b9e-a9b0-e911-a9a0-000d3a1362e3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_projectbudgetlinename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectbudgetlineid">
+          <cell name="msnfpe_projectbudgetlinename" width="119" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_awardcostcategoryid" width="100" />
+          <cell name="msnfpe_projectactivityid" width="100" />
+          <cell name="msnfpe_glaccountid" width="100" />
+          <cell name="msnfpe_budgetline_amount" width="100" />
+          <cell name="msnfpe_planneddifference" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_projectbudgetline">
+          <attribute name="msnfpe_projectbudgetlinename" />
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_budgetline_amount" />
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <attribute name="statuscode" />
+          <order attribute="statuscode" descending="false" />
+          <order attribute="msnfpe_projectactivityid" descending="false" />
+          <attribute name="msnfpe_planneddifference" />
+          <attribute name="msnfpe_awardcostcategoryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Project Budget Lines budget related" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

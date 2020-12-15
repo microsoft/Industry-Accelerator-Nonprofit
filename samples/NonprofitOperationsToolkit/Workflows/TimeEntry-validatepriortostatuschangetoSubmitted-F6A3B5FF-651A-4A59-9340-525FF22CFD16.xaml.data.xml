@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{f6a3b5ff-651a-4a59-9340-525ff22cfd16}" Name="Time Entry - validate prior to status change to Submitted" Description="Validates time entry record completeness and that the worker has a manager specified prior to updating status to Submitted." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TimeEntry-validatepriortostatuschangetoSubmitted-F6A3B5FF-651A-4A59-9340-525FF22CFD16.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>statuscode</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.9.4.16</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_TimeEntry</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Time Entry - validate prior to status change to Submitted" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Validates time entry record completeness and that the worker has a manager specified prior to updating status to Submitted." />
+  </Descriptions>
+  <labels>
+    <steplabels id="{392ad08b-a967-41ba-b443-a719ba95e622}">
+      <label languagecode="1033" description="A Time Type is required to submit this time entry" />
+    </steplabels>
+    <steplabels id="{28d24601-076a-4c77-b69d-678e99188746}">
+      <label languagecode="1033" description="Hours are required to submit time." />
+    </steplabels>
+  </labels>
+</Workflow>

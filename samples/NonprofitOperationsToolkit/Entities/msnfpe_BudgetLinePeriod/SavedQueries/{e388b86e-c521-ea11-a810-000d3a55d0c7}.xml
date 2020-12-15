@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e388b86e-c521-ea11-a810-000d3a55d0c7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_periodname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_budgetlineperiodid">
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_msnfp_projectbudgetid" width="208" />
+          <cell name="msnfpe_projectbudgetlineid" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_projectid" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_projectactivityid" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_glaccountid" width="167" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_budgetline_amount" width="125" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_budgetline_amount_base" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_msnfp_awardid" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_awardcostcategoryid" width="100" />
+          <cell name="a_f2cf9b7ca0584dcbbecad2f27996630f.msnfpe_msnfp_fundid" width="100" />
+          <cell name="msnfpe_planningperiodid" width="175" />
+          <cell name="msnfpe_amount" width="100" />
+          <cell name="msnfpe_amount_base" width="137" />
+          <cell name="transactioncurrencyid" width="150" />
+          <cell name="exchangerate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_budgetlineperiod">
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <attribute name="msnfpe_amount_base" />
+          <attribute name="msnfpe_amount" />
+          <attribute name="msnfpe_budgetlineperiodid" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="exchangerate" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="msnfpe_projectbudgetlineid" operator="not-null" />
+          </filter>
+          <link-entity alias="a_f2cf9b7ca0584dcbbecad2f27996630f" name="msnfpe_projectbudgetline" to="msnfpe_projectbudgetlineid" from="msnfpe_projectbudgetlineid" link-type="outer" visible="false">
+            <attribute name="msnfpe_msnfp_projectbudgetid" />
+            <attribute name="msnfpe_msnfp_awardid" />
+            <attribute name="msnfpe_awardcostcategoryid" />
+            <attribute name="msnfpe_msnfp_fundid" />
+            <attribute name="msnfpe_projectid" />
+            <attribute name="msnfpe_projectactivityid" />
+            <attribute name="msnfpe_budgetline_amount" />
+            <attribute name="msnfpe_glaccountid" />
+            <attribute name="msnfpe_budgetline_amount_base" />
+          </link-entity>
+          <order attribute="msnfpe_projectbudgetlineid" descending="false" />
+          <order attribute="msnfpe_planningperiodid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Budget Line Periods with Detail" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A view used to drive document templates for budget review." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

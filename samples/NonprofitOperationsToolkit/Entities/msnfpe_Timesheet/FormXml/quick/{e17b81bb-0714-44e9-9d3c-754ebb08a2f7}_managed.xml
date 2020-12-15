@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e17b81bb-0714-44e9-9d3c-754ebb08a2f7}</formid>
+    <IntroducedVersion>1.0.3.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0979b8ec-d18b-46e6-ad87-2206770611c5}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{46ad7c00-a799-461c-b887-d11ed11a150d}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6a908935-601e-4b0e-97f4-d036786e7fa3}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_timesheetname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_timesheetname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b375d9b-e995-3ecd-7b08-d8971d369155}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Planning Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_planningperiodid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_planningperiodid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22ac1bd0-e5d7-3c0c-698a-4b0a843205eb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fd74400d-ccae-417d-abc6-0b53010f9620}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{a8e19498-9954-c557-8978-487d7a26d64d}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

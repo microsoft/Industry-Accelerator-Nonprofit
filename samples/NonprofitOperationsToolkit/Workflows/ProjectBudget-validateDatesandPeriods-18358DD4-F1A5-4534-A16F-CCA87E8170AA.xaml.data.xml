@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{18358dd4-f1a5-4534-a16f-cca87e8170aa}" Name="Project Budget - validate Dates and Periods" Description="If enabled, this optional data quality rule validates that the provided start and end dates fall within the specified starting and ending period." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProjectBudget-validateDatesandPeriods-18358DD4-F1A5-4534-A16F-CCA87E8170AA.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_startingperiodid,msnfp_startdate,msnfpe_endingperiodid,msnfp_enddate</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfp_Budget</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Project Budget - validate Dates and Periods" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="If enabled, this optional data quality rule validates that the provided start and end dates fall within the specified starting and ending period." />
+  </Descriptions>
+  <labels>
+    <steplabels id="{8c3a5005-af2b-4303-9cbd-89a6bb39fc10}">
+      <label languagecode="1033" description="The Start Date must fall within the selected Starting Period." />
+    </steplabels>
+    <steplabels id="{7ab98f5a-4525-4efe-9211-35b270b7a2d0}">
+      <label languagecode="1033" description="The End Date must fall within the selected Ending Period." />
+    </steplabels>
+  </labels>
+</Workflow>

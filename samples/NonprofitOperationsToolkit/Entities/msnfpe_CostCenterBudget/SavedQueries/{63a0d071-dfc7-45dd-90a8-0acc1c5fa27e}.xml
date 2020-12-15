@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{63a0d071-dfc7-45dd-90a8-0acc1c5fa27e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_cc_budgetname" select="1" icon="1" preview="0">
+        <row name="msnfpe_costcenterbudget" id="msnfpe_costcenterbudgetid">
+          <cell name="msnfpe_cc_budgetname" width="300" />
+          <cell name="msnfpe_costcenterid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_costcenterbudget">
+          <attribute name="msnfpe_costcenterbudgetid" />
+          <attribute name="msnfpe_cc_budgetname" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_costcenterid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Cost Center Budget Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

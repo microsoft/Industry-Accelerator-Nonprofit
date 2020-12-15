@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5b591070-aab0-e911-a99a-000d3a137063}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_timesheetname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_timesheetname">
+          <cell name="msnfpe_timesheetname" width="200" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_planningperiodid" width="100" />
+          <cell name="msnfpe_totalworkhours" width="100" />
+          <cell name="msnfpe_totalpaidleavehours" width="100" />
+          <cell name="msnfpe_totalunpaidleavehours" width="100" />
+          <cell name="msnfpe_totalholidayhours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_timesheet">
+          <attribute name="msnfpe_timesheetname" />
+          <attribute name="msnfpe_timesheetid" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="msnfpe_totalworkhours" />
+          <attribute name="msnfpe_totalpaidleavehours" />
+          <attribute name="msnfpe_totalunpaidleavehours" />
+          <attribute name="msnfpe_totalholidayhours" />
+          <order attribute="msnfpe_planningperiodid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Timesheets" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows Timesheets owned by the currently logged in user." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

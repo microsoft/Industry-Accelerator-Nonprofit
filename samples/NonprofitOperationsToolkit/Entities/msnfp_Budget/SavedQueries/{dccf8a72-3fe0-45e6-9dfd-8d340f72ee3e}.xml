@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dccf8a72-3fe0-45e6-9dfd-8d340f72ee3e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="msnfp_budget" id="msnfp_budgetid">
+          <cell name="msnfp_name" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+          <cell name="msnfpe_totalamount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_budget">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_budgetid" />
+          <attribute name="statuscode" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfpe_totalamount" />
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_startdate" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Project Budget Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

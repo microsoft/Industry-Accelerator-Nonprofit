@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{c17ef7fb-b3cb-4bbf-9315-7beab4e3c25b}" Name="Agreement - ensure Activity belongs to Project" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Agreement-ensureActivitybelongstoProject-C17EF7FB-B3CB-4BBF-9315-7BEAB4E3C25B.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_projectactivityid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_Agreement</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Agreement - ensure Activity belongs to Project" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{aff8596d-766e-4c4f-8b30-226e54395189}">
+      <label languagecode="1033" description="The selected Activity must belong to the selected Project" />
+    </steplabels>
+  </labels>
+</Workflow>

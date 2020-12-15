@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{31b68fcd-2423-4865-8660-728612f9bcb9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_budgetid">
+          <cell name="msnfp_name" width="100" />
+          <cell name="msnfpe_projectid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_budget">
+          <attribute name="msnfp_budgetid" />
+          <attribute name="msnfpe_projectid" />
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Project Budget Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

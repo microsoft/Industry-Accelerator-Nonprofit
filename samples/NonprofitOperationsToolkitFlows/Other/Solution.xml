@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.24949" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>NonprofitOperationsToolkitFlows</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Nonprofit Operations Toolkit Flows" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Power Automate Flows that support the Nonprofit Operations Toolkit." languagecode="1033" />
+    </Descriptions>
+    <Version>1.1.3.5</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>MicrosoftTechForSocialImpact</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Tech for Social Impact" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>msnfpe</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>79650</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="29" id="{022be2c9-9e97-e911-a82f-000d3a1d5203}" behavior="0" />
+      <RootComponent type="29" id="{2071e916-d199-e911-a828-000d3a1d5a0b}" behavior="0" />
+      <RootComponent type="29" id="{56b2eded-3995-e911-a82a-000d3a1d501d}" behavior="0" />
+      <RootComponent type="29" id="{6e6199c7-33db-e911-a822-000d3a3b1bf4}" behavior="0" />
+      <RootComponent type="29" id="{c13ee13e-a5b0-e911-a991-000d3a1378f6}" behavior="0" />
+      <RootComponent type="29" id="{ca5b28a2-c958-ea11-a811-000d3a579c97}" behavior="0" />
+      <RootComponent type="29" id="{cc7fa712-2199-e911-a828-000d3a1d5a0b}" behavior="0" />
+      <RootComponent type="29" id="{f1d01369-b0b0-e911-a98e-000d3a137a43}" behavior="0" />
+      <RootComponent type="29" id="{f2fab0e8-d899-e911-a828-000d3a1d5a0b}" behavior="0" />
+      <RootComponent type="29" id="{f7b3461b-f599-e911-a828-000d3a1d5a0b}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msnfp_budget" displayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="29" displayName="Project Budget Line - create Budget Periods for new line" id="{56b2eded-3995-e911-a82a-000d3a1d501d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfpe_planningperiod" displayName="Planning Period" solution="Active" />
+        <Dependent key="1" type="29" displayName="Project Budget Line - create Budget Periods for new line" id="{56b2eded-3995-e911-a82a-000d3a1d501d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msnfpe_projectbudgetline" displayName="Project Budget Line" solution="Active" />
+        <Dependent key="1" type="29" displayName="Project Budget Line - create Budget Periods for new line" id="{56b2eded-3995-e911-a82a-000d3a1d501d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="msnfpe_budgetlineperiod" displayName="Budget Line Period" solution="Active" />
+        <Dependent key="1" type="29" displayName="Project Budget Line - create Budget Periods for new line" id="{56b2eded-3995-e911-a82a-000d3a1d501d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="1" schemaName="msnfpe_project" displayName="Project" solution="Active" />
+        <Dependent key="6" type="29" displayName="Delivery Framework - update relevant record values" id="{6e6199c7-33db-e911-a822-000d3a3b1bf4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="1" schemaName="msnfpe_projectactivity" displayName="Project Activity" solution="Active" />
+        <Dependent key="6" type="29" displayName="Delivery Framework - update relevant record values" id="{6e6199c7-33db-e911-a822-000d3a3b1bf4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="6" type="29" displayName="Delivery Framework - update relevant record values" id="{6e6199c7-33db-e911-a822-000d3a3b1bf4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="1" schemaName="msnfpe_timesheet" displayName="Timesheet" solution="Active" />
+        <Dependent key="10" type="29" displayName="Timesheet - create Time Entries for new Timesheet" id="{f1d01369-b0b0-e911-a98e-000d3a137a43}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfpe_planningperiod" displayName="Planning Period" solution="Active" />
+        <Dependent key="10" type="29" displayName="Timesheet - create Time Entries for new Timesheet" id="{f1d01369-b0b0-e911-a98e-000d3a137a43}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="1" schemaName="msnfpe_timeentry" displayName="Time Entry" solution="Active" />
+        <Dependent key="10" type="29" displayName="Timesheet - create Time Entries for new Timesheet" id="{f1d01369-b0b0-e911-a98e-000d3a137a43}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="1" schemaName="msnfpe_projectactivity" displayName="Project Activity" solution="Active" />
+        <Dependent key="12" type="29" displayName="Project - update Activities with Status Reason change" id="{f2fab0e8-d899-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="1" schemaName="msnfpe_project" displayName="Project" solution="Active" />
+        <Dependent key="12" type="29" displayName="Project - update Activities with Status Reason change" id="{f2fab0e8-d899-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfpe_project" parentDisplayName="Project" solution="Active" />
+        <Dependent key="12" type="29" displayName="Project - update Activities with Status Reason change" id="{f2fab0e8-d899-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfpe_planningperiod" displayName="Planning Period" solution="Active" />
+        <Dependent key="14" type="29" displayName="Worker Cost Schedules - refresh values for Active Workers" id="{ca5b28a2-c958-ea11-a811-000d3a579c97}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="1" schemaName="msnfpe_workercostschedule" displayName="Worker Cost Schedule" solution="Active" />
+        <Dependent key="14" type="29" displayName="Worker Cost Schedules - refresh values for Active Workers" id="{ca5b28a2-c958-ea11-a811-000d3a579c97}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="1" schemaName="msnfpe_worker" displayName="Worker" solution="Active" />
+        <Dependent key="14" type="29" displayName="Worker Cost Schedules - refresh values for Active Workers" id="{ca5b28a2-c958-ea11-a811-000d3a579c97}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msnfp_budget" displayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="17" type="29" displayName="Project Budget - warn of budget line planned differences" id="{022be2c9-9e97-e911-a82f-000d3a1d5203}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="1" schemaName="msnfpe_costcenterbudget" displayName="Cost Center Budget" solution="Active" />
+        <Dependent key="19" type="29" displayName="Cost Center Budget Line - create Budget Periods for new line" id="{f7b3461b-f599-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="1" schemaName="msnfpe_costcenterbudgetline" displayName="Cost Center Budget Line" solution="Active" />
+        <Dependent key="19" type="29" displayName="Cost Center Budget Line - create Budget Periods for new line" id="{f7b3461b-f599-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="msnfpe_budgetlineperiod" displayName="Budget Line Period" solution="Active" />
+        <Dependent key="19" type="29" displayName="Cost Center Budget Line - create Budget Periods for new line" id="{f7b3461b-f599-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfpe_planningperiod" displayName="Planning Period" solution="Active" />
+        <Dependent key="19" type="29" displayName="Cost Center Budget Line - create Budget Periods for new line" id="{f7b3461b-f599-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfpe_planningperiod" displayName="Planning Period" solution="Active" />
+        <Dependent key="21" type="29" displayName="Planning Period - calculate Weekdays" id="{2071e916-d199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="2" schemaName="msnfpe_period_startdate" displayName="Start Date" parentSchemaName="msnfpe_planningperiod" parentDisplayName="Planning Period" solution="Active" />
+        <Dependent key="21" type="29" displayName="Planning Period - calculate Weekdays" id="{2071e916-d199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="2" schemaName="msnfpe_period_enddate" displayName="End Date" parentSchemaName="msnfpe_planningperiod" parentDisplayName="Planning Period" solution="Active" />
+        <Dependent key="21" type="29" displayName="Planning Period - calculate Weekdays" id="{2071e916-d199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="connectionreference" displayName="new_sharedcommondataserviceforapps_ea70f" solution="Active" id.connectionreferencelogicalname="new_sharedcommondataserviceforapps_ea70f" />
+        <Dependent key="21" type="29" displayName="Planning Period - calculate Weekdays" id="{2071e916-d199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msnfp_budget" displayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="25" type="29" displayName="Project Budget - update Budget Lines when Status Reason changes" id="{cc7fa712-2199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msnfpe_projectbudgetline" displayName="Project Budget Line" solution="Active" />
+        <Dependent key="25" type="29" displayName="Project Budget - update Budget Lines when Status Reason changes" id="{cc7fa712-2199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="25" type="29" displayName="Project Budget - update Budget Lines when Status Reason changes" id="{cc7fa712-2199-e911-a828-000d3a1d5a0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="1" schemaName="msnfpe_costcenterbudget" displayName="Cost Center Budget" solution="Active" />
+        <Dependent key="27" type="29" displayName="Cost Center Budget - update Budget Lines when Status Reason changes" id="{c13ee13e-a5b0-e911-a991-000d3a1378f6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="1" schemaName="msnfpe_costcenterbudgetline" displayName="Cost Center Budget Line" solution="Active" />
+        <Dependent key="27" type="29" displayName="Cost Center Budget - update Budget Lines when Status Reason changes" id="{c13ee13e-a5b0-e911-a991-000d3a1378f6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfpe_costcenterbudget" parentDisplayName="Cost Center Budget" solution="Active" />
+        <Dependent key="27" type="29" displayName="Cost Center Budget - update Budget Lines when Status Reason changes" id="{c13ee13e-a5b0-e911-a991-000d3a1378f6}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

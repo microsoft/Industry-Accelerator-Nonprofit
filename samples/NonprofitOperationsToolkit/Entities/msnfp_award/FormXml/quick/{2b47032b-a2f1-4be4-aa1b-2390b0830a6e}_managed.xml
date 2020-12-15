@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}</formid>
+    <IntroducedVersion>1.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{d627a483-aaab-456d-909c-8ba5b0d419f1}" IsUserDefined="1" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{a5975875-c0fe-4ceb-90c4-f4f82c183a4d}" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{aac4bcd8-6320-4256-908f-fa2a57b80254}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Award Name" languagecode="1033" solutionaction="Modified" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2c890522-32ac-402b-9a1d-0d52a3275ca6}" showlabel="true" locklevel="1" visible="false" ordinalvalue="10007" solutionaction="Modified">
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{1b34461b-71c6-630b-6203-3e8461dabb96}" disabled="false" solutionaction="Modified">
+                          <parameters solutionaction="Added">
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0b029293-1347-290d-69a2-48b513d5bc99}" showlabel="true" locklevel="0" ordinalvalue="10001" solutionaction="Added">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7c659b5-7739-770b-e565-3d51a002649b}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4456ead-0e07-a563-54e6-4169b3460ce0}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e24a82b-15d9-6318-b40c-d908e72d4e71}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Added">
+                        <labels>
+                          <label description="Total Obligation" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_totalobligationamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_totalobligationamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75b5a5d2-9dc6-43b7-64a3-b297c1b64233}" showlabel="true" locklevel="0" ordinalvalue="10005" solutionaction="Added">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94ed80ad-4d1e-3e6c-d4d6-0073aa03e330}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Added">
+                        <labels>
+                          <label description="Funder" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_fiscalsponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_fiscalsponsorid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

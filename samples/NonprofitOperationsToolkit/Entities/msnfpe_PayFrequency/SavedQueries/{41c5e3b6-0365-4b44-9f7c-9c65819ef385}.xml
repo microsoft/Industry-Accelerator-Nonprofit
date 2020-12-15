@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{41c5e3b6-0365-4b44-9f7c-9c65819ef385}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_frequencyname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_payfrequencyid">
+          <cell name="msnfpe_frequencyname" width="300" />
+          <cell name="msnfpe_periodtype" width="100" />
+          <cell name="msnfpe_annual" width="100" />
+          <cell name="msnfpe_monthly12" width="100" />
+          <cell name="msnfpe_weekly" width="100" />
+          <cell name="msnfpe_hourly" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_payfrequency">
+          <attribute name="msnfpe_payfrequencyid" />
+          <attribute name="msnfpe_frequencyname" />
+          <order attribute="msnfpe_frequencyname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfpe_periodtype" />
+          <attribute name="msnfpe_annual" />
+          <attribute name="msnfpe_monthly12" />
+          <attribute name="msnfpe_weekly" />
+          <attribute name="msnfpe_hourly" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Pay Frequencies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

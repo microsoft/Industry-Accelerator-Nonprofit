@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f97907f5-4cd9-44e5-9fb1-af23fedb63cd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_periodname" select="1" icon="1" preview="1">
+        <row name="msnfpe_planningperiod" id="msnfpe_planningperiodid">
+          <cell name="msnfpe_periodname" width="77" />
+          <cell name="msnfpe_planningperiod_type" width="100" />
+          <cell name="msnfpe_period_startdate" width="100" />
+          <cell name="msnfpe_period_enddate" width="100" />
+          <cell name="msnfpe_weekdaysinperiod" width="100" />
+          <cell name="msnfpe_parentperiodid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_planningperiod">
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="msnfpe_periodname" />
+          <order attribute="msnfpe_periodname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_planningperiod_type" />
+          <attribute name="msnfpe_period_startdate" />
+          <attribute name="msnfpe_period_enddate" />
+          <attribute name="msnfpe_weekdaysinperiod" />
+          <attribute name="msnfpe_parentperiodid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Planning Period Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

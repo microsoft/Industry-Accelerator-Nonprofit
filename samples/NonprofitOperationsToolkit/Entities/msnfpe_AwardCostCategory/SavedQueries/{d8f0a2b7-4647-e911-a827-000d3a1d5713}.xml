@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d8f0a2b7-4647-e911-a827-000d3a1d5713}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_costcategoryname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_costcategoryname">
+          <cell name="msnfpe_costcategoryname" width="200" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_awardcostcategory">
+          <attribute name="msnfpe_costcategoryname" />
+          <attribute name="msnfpe_awardcostcategoryid" />
+          <attribute name="statuscode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Cost Categories Award related" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

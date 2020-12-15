@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{047a1e1c-2e3c-4997-bb31-ab47834e2dbe}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_costcentername" select="1" icon="1" preview="1">
+        <row name="msnfpe_costcenter" id="msnfpe_costcenterid">
+          <cell name="msnfpe_costcentername" width="300" />
+          <cell name="msnfpe_businessunitid" width="100" />
+          <cell name="msnfpe_costcentercode" width="100" />
+          <cell name="msnfpe_manager_workerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_costcenter">
+          <attribute name="msnfpe_costcenterid" />
+          <attribute name="msnfpe_costcentername" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_costcentercode" />
+          <attribute name="msnfpe_manager_workerid" />
+          <attribute name="msnfpe_businessunitid" />
+          <order attribute="msnfpe_businessunitid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Cost Center Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

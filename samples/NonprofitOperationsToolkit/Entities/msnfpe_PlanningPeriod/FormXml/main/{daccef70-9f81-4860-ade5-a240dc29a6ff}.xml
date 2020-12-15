@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{daccef70-9f81-4860-ade5-a240dc29a6ff}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{63525bc8-2a99-4be2-bd0c-31a5d0292bab}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{56e43315-38aa-4ba0-8dcb-9ec263cd2b2b}" name="{56e43315-38aa-4ba0-8dcb-9ec263cd2b2b}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{524de240-19c1-491d-9e83-a544cea49d3e}">
+                        <labels>
+                          <label description="Period Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_periodname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_periodname" />
+                      </cell>
+                      <cell id="{709a6202-a73d-7d64-80a9-9a61e8cd2356}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_nextperiodid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_nextperiodid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae208d84-928b-35e8-e343-0b9434423342}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_planningperiod_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_planningperiod_type" disabled="false" />
+                      </cell>
+                      <cell id="{3479a58c-49e9-943e-76b4-d969486907c9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_parentperiodid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_parentperiodid" disabled="false" uniqueid="{83b6c6ae-6e9d-4c4c-40b0-068043c48c97}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{DC77B43A-058F-E911-A82A-000D3A1D5713}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74c98034-dbb4-1571-5916-2499bcb3bc15}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Month" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_period_month" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_period_month" disabled="false" />
+                      </cell>
+                      <cell id="{2cb16517-7723-e319-001e-84eb8202950a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72d36e9b-85d5-ee94-c940-4d119aa94e70}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Year" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_period_year" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_period_year" disabled="false" />
+                      </cell>
+                      <cell id="{36e7d217-113d-a225-c25d-a62b912e6438}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81298113-8998-bdb9-0a4e-991d5605814b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_period_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_period_startdate" disabled="false" />
+                      </cell>
+                      <cell id="{40a4eb7a-e303-6da8-84da-6ea0ace90cbb}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41c3a230-b8b5-a2c1-2b96-94ea666b2a89}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_period_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_period_enddate" disabled="false" />
+                      </cell>
+                      <cell id="{471399cd-35e0-b848-78e0-9cc305d14811}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c1087f5-2645-4cc0-8cfd-cdc2c3da7d99}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{7d2a581d-5012-c14e-beb1-6b7521e7591c}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{415006c2-895d-006c-ecb9-7ab0e98e868d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{7b6dc175-aa8d-475d-8c57-74ccbb2a1b22}" columns="111">
+        <rows>
+          <row>
+            <cell id="{25dd948a-b5c9-b704-0906-78a71a48d762}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2ad8bc59-9289-cdbd-e515-3ea0c17ec912}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Weekdays in Period" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_weekdaysinperiod" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msnfpe_weekdaysinperiod" disabled="true" uniqueid="{ad68514c-d7ce-84ca-eb2a-b3b318ba76da}" />
+            </cell>
+            <cell id="{d915b555-001e-50a8-1315-e4589c490601}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{64acfbfb-f7c1-4281-9df0-a99947b104f1}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{7a313560-2525-5ec0-c6e4-a0c4ad52d742}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{2c6ebc6e-70a8-eb9a-07ae-c60ed19953a1}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_CostCenterBudget_msnfpe_EndingPeriod" Sequence="10000" Area="Info" Id="nav_msnfpe_CostCenterBudget_msnfpe_EndingPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Cost Center Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_CostCenterBudget_msnfpe_StartingPeriod" Sequence="10001" Area="Info" Id="nav_msnfpe_CostCenterBudget_msnfpe_StartingPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Cost Center Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_TimeEntry_msnfpe_PlanningPeriod" Sequence="10002" Area="Info" Id="nav_msnfpe_TimeEntry_msnfpe_PlanningPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Time Entries" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_WorkerCostSchedule_msnfpe_PlanningPeriod" Sequence="10003" Area="Info" Id="nav_msnfpe_WorkerCostSchedule_msnfpe_PlanningPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Worker Cost Schedules" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_PlanningPeriod_msnfpe_ParentPeriod" Sequence="10004" Area="Info" Id="nav_msnfpe_PlanningPeriod_msnfpe_ParentPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Planning Periods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_Timesheet_msnfpe_PlanningPeriod" Sequence="10005" Area="Info" Id="nav_msnfpe_Timesheet_msnfpe_PlanningPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Timesheets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_GLTransaction_msnfpe_PlanningPeriodId_zc" Sequence="10006" Area="Info" Id="nav_msnfpe_GLTransaction_msnfpe_PlanningPeriodId_zc" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="GL Transactions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_ProjectBudget_msnfpe_StartingPeriod" Sequence="10007" Area="Info" Id="nav_msnfpe_ProjectBudget_msnfpe_StartingPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Project Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_ProjectBudget_msnfpe_EndingPeriod" Sequence="10008" Area="Info" Id="nav_msnfpe_ProjectBudget_msnfpe_EndingPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Project Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_EffortPlan_msnfpe_PlanningPeriod" Sequence="10009" Area="Info" Id="nav_msnfpe_EffortPlan_msnfpe_PlanningPeriod" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Effort Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="10010" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

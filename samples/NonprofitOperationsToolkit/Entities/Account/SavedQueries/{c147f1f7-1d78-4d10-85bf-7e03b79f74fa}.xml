@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery unmodified="1">
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c147f1f7-1d78-4d10-85bf-7e03b79f74fa}</savedqueryid>
+    <queryapi>List.RetrieveAccountsNotPlacedOrders</queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="accountid">
+          <cell name="name" width="300" />
+          <cell name="primarycontactid" width="150" />
+          <cell name="telephone1" width="100" />
+          <cell name="address1_city" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset version="3.0">
+        <column>accountid</column>
+        <column>name</column>
+        <column>primarycontactid</column>
+        <column>telephone1</column>
+        <column>address1_city</column>
+        <ascend>name</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>0</querytype>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Accounts: No Orders in Last 6 Months" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

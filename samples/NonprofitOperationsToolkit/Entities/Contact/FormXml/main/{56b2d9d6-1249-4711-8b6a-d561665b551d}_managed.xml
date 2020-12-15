@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{56b2d9d6-1249-4711-8b6a-d561665b551d}</formid>
+    <IntroducedVersion>1.0.3</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" shownavigationbar="true" maxWidth="1920">
+      <tabs>
+        <tab name="tab_administrative" id="{70ec3c46-22b7-26bb-e98d-69243483e0c0}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" ordinalvalue="2" solutionaction="Modified" />
+        <tab name="tab_related" id="{c298b9bc-121a-56cb-cae3-a47124914ee7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" ordinalvalue="1" solutionaction="Added">
+          <labels>
+            <label description="Related" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="tab_related_section_2" showlabel="false" showbar="false" locklevel="0" id="{7c5b6ac8-078e-1367-9018-1225a2b1ddb0}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="0">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{54580b6e-9d10-5404-72a9-7e00c1d3189b}" showlabel="true" colspan="1" auto="false" rowspan="7" ordinalvalue="10000">
+                        <labels>
+                          <label description="Salutations" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_salutation" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{4BE858F0-5F82-4B79-A925-50C4C6B454F4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_contact_msnfp_salutation_salutation_customer</RelationshipName>
+                            <TargetEntityType>msnfp_salutation</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{4BE858F0-5F82-4B79-A925-50C4C6B454F4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_related_section_3" showlabel="false" showbar="false" locklevel="0" id="{9a1556b9-7367-7d65-31b7-215eded3690b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="1">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{069b8331-17ae-56cc-c1d3-02aa1606cd48}" showlabel="true" colspan="1" auto="false" rowspan="7" ordinalvalue="10000">
+                        <labels>
+                          <label description="Preferences (Account or Contact)" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_preference" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{8c94b17d-5355-8003-4d47-16384bcd63a4}">
+                          <parameters>
+                            <ViewId>{39E7E428-FC67-480F-811F-B3141DBDD676}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_contact_msnfp_preference_preference_customer</RelationshipName>
+                            <TargetEntityType>msnfp_preference</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{39E7E428-FC67-480F-811F-B3141DBDD676}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar />
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Volunteer" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

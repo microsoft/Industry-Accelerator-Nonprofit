@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{e9460285-1dad-4b0b-b966-eb97f615d999}" Name="Project Activity - check if safe to Delete record" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProjectActivity-checkifsafetoDeleterecord-E9460285-1DAD-4B0B-B966-EB97F615D999.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>1</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <DeleteStage>20</DeleteStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_ProjectActivity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Project Activity - check if safe to Delete record" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{52736fcb-7569-4fa6-b3ef-d823568fbb92}">
+      <label languagecode="1033" description="The Project or one of its Activities is no longer in Draft or Disregarded status and cannot be safely deleted.  Consider Deactivating this record to minimize its use and visibility." />
+    </steplabels>
+  </labels>
+</Workflow>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visualization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedqueryvisualizationid>{00D20760-2FDB-E911-A822-000D3A3B1BF4}</savedqueryvisualizationid>
+  <datadescription>
+    <datadefinition>
+      <fetchcollection>
+        <fetch mapping="logical" aggregate="true">
+          <entity name="account">
+            <attribute name="name" alias="FunderName" groupby="true" />
+            <filter>
+              <condition entityname="msnfp_award" attribute="statecode" operator="eq" value="0" />
+            </filter>
+            <link-entity name="msnfp_award" from="msnfp_fiscalsponsorid" to="accountid">
+              <attribute name="msnfpe_totalobligationamount_base" alias="TotalObligationAmount" aggregate="sum" />
+            </link-entity>
+          </entity>
+        </fetch>
+      </fetchcollection>
+      <categorycollection>
+        <category>
+          <measurecollection>
+            <measure alias="TotalObligationAmount" />
+          </measurecollection>
+        </category>
+      </categorycollection>
+    </datadefinition>
+  </datadescription>
+  <presentationdescription>
+    <Chart>
+      <Series>
+        <Series ChartType="Bar" IsValueShownAsLabel="True" Color="91, 151, 213" BackSecondaryColor="112, 142, 50" Font="{0}, 9.5px" LabelForeColor="59, 59, 59" CustomProperties="PointWidth=0.75, MaxPixelPointWidth=40">
+          <SmartLabelStyle Enabled="True" />
+        </Series>
+      </Series>
+      <ChartAreas>
+        <ChartArea BorderColor="White" BorderDashStyle="Solid">
+          <AxisY LabelAutoFitMinFontSize="8" TitleForeColor="59, 59, 59" TitleFont="{0}, 10.5px" LineColor="165, 172, 181" IsReversed="False">
+            <MajorGrid LineColor="239, 242, 246" />
+            <LabelStyle Font="{0}, 10.5px" ForeColor="59, 59, 59" />
+          </AxisY>
+          <AxisX LabelAutoFitMinFontSize="8" TitleForeColor="59, 59, 59" TitleFont="{0}, 10.5px" LineColor="165, 172, 181" IsReversed="False">
+            <MajorGrid Enabled="False" />
+            <MajorTickMark Enabled="False" />
+            <LabelStyle Font="{0}, 10.5px" ForeColor="59, 59, 59" />
+          </AxisX>
+        </ChartArea>
+      </ChartAreas>
+      <Titles>
+        <Title Name="Chart Title" DockingOffset="-3" Font="{0}, 13px" ForeColor="59, 59, 59" Alignment="TopLeft"></Title>
+      </Titles>
+    </Chart>
+  </presentationdescription>
+  <isdefault>0</isdefault>
+  <LocalizedNames>
+    <LocalizedName description="Active Funders and Obligations" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Shows active Funders with active Award Obligations" languagecode="1033" />
+  </Descriptions>
+  <IsCustomizable>1</IsCustomizable>
+  <IntroducedVersion>0.9.4.12</IntroducedVersion>
+  <CanBeDeleted>1</CanBeDeleted>
+</visualization>

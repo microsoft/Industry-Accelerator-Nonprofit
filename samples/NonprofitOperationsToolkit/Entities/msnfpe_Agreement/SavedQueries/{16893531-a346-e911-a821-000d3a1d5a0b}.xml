@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{16893531-a346-e911-a821-000d3a1d5a0b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_agreementtitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_agreementtitle">
+          <cell name="msnfpe_agreementtitle" width="200" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_agreementtype" width="100" />
+          <cell name="msnfpe_funder_accountid" width="100" />
+          <cell name="msnfpe_msnfp_awardid" width="100" />
+          <cell name="msnfpe_startdate" width="100" />
+          <cell name="msnfpe_enddate" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_agreement">
+          <attribute name="msnfpe_agreementtitle" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_agreementtype" />
+          <attribute name="msnfpe_funder_accountid" />
+          <attribute name="msnfpe_startdate" />
+          <attribute name="msnfpe_enddate" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_amount" />
+          <attribute name="msnfpe_agreementid" />
+          <attribute name="msnfpe_msnfp_awardid" />
+          <order attribute="msnfpe_funder_accountid" descending="false" />
+          <order attribute="msnfpe_msnfp_awardid" descending="false" />
+          <order attribute="msnfpe_enddate" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Funder Agreements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

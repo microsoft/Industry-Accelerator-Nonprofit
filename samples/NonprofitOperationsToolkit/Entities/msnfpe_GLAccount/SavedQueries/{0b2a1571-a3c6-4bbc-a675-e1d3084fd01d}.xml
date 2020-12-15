@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0b2a1571-a3c6-4bbc-a675-e1d3084fd01d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_glaccountname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_glaccountid">
+          <cell name="msnfpe_glaccountname" width="300" />
+          <cell name="msnfpe_glaccountnumber" width="100" />
+          <cell name="msnfpe_description" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_glaccount">
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_glaccountname" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfpe_glaccountnumber" />
+          <attribute name="msnfpe_description" />
+          <order attribute="msnfpe_glaccountnumber" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive GL Accounts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

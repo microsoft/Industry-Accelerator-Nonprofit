@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{984a4c7f-da43-4255-bed3-21f859651aec}" Name="Project Activity - stop change of Project relationship" Description="This covers the potential for a user to change the Project this Activity is associated with." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProjectActivity-stopchangeofProjectrelationship-984A4C7F-DA43-4255-BED3-21F859651AEC.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_projectid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_ProjectActivity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Project Activity - stop change of Project relationship" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="This covers the potential for a user to change the Project this Activity is associated with." />
+  </Descriptions>
+  <labels>
+    <steplabels id="{ebdae3fe-0d4b-4658-986a-56b5d450cd57}">
+      <label languagecode="1033" description="A Project Activity's parent Project cannot be changed" />
+    </steplabels>
+  </labels>
+</Workflow>

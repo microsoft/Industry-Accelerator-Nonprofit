@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{fccfd283-e90f-4239-8a54-5544e0fe157a}" Name="Cost Center Budget Line - restrictions during sensitive budget status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CostCenterBudgetLine-restrictionsduringsensitivebu-FCCFD283-E90F-4239-8A54-5544E0FE157A.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_budgetline_amount,transactioncurrencyid,msnfpe_costcenterbudgetid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.9.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_CostCenterBudgetLine</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Cost Center Budget Line - restrictions during sensitive budget status" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{006ae879-911b-4af2-b27e-9fcc6c980ab3}">
+      <label languagecode="1033" description="Modifying certain fields is restricted while in Live status." />
+    </steplabels>
+  </labels>
+</Workflow>

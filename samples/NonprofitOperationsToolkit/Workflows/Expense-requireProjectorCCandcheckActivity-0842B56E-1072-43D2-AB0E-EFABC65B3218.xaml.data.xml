@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{0842b56e-1072-43d2-ab0e-efabc65b3218}" Name="Expense - require Project or CC and check Activity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Expense-requireProjectorCCandcheckActivity-0842B56E-1072-43D2-AB0E-EFABC65B3218.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_expense_projectactivityid,msnfpe_expense_projectid,msnfpe_expense_costcenterid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.3.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfpe_Expense</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Expense - require Project or CC and check Activity" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{74221179-dfe9-4185-b725-941a4d42432c}">
+      <label languagecode="1033" description="A Project or Cost Center is required" />
+    </steplabels>
+    <steplabels id="{e094092a-41c2-4c45-918b-9f977a10893c}">
+      <label languagecode="1033" description="The selected Activity must belong to the selected Project" />
+    </steplabels>
+  </labels>
+</Workflow>

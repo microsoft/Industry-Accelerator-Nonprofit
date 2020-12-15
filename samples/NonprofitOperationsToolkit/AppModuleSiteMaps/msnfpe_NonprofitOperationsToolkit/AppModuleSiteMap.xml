@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>msnfpe_NonprofitOperationsToolkit</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="Time_Expense" ResourceId="SitemapDesigner.NewArea" ShowGroups="false">
+      <Titles>
+        <Title LCID="1033" Title="Time &amp; Expense" />
+      </Titles>
+      <Group Id="Time_Expense" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="nav_timesheets" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/FiscalYear_HighContrast.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfpe_timesheet" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_expenses" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/QuotetoCash_HighContrast.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfpe_expense" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="Budgets_Efforts" ResourceId="SitemapDesigner.NewArea" ShowGroups="false">
+      <Titles>
+        <Title LCID="1033" Title="Budgets &amp; Effort Plans" />
+      </Titles>
+      <Group Id="Budgets_Efforts" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="nav_projectbudgets" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/ImportData_HighContrast.svg" Entity="msnfp_budget" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_costcenterbudgets" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/ImportData_HighContrast.svg" Entity="msnfpe_costcenterbudget" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_effortplans" VectorIcon="/WebResources/msnfpe_icon_plan_effortplan" Icon="/WebResources/msnfpe_icon_plan_effortplan" Entity="msnfpe_effortplan" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_workercostschedules" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/FiscalYear_HighContrast.svg" Entity="msnfpe_workercostschedule" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="Master_Records" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" ShowGroups="false" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Master Records" />
+      </Titles>
+      <Group Id="Master_Records" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <SubArea Id="nav_projectsactivities" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/BPF_HighContrast.svg" Entity="msnfpe_project" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Projects &amp; Activities" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="nav_awards" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/QuotetoCash_HighContrast.svg" Entity="msnfp_award" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_agreements" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/Views_HighContrast.svg" Entity="msnfpe_agreement" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_funders" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_vendors" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/LeadsNContacts_HighContrast.svg" Entity="msnfpe_vendor" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_workers" VectorIcon="/WebResources/msnfpe_icon_master_worker" Icon="/WebResources/msnfpe_icon_master_worker" Entity="msnfpe_worker" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_contacts" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="contact" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="Administration" ResourceId="SitemapDesigner.NewArea" ShowGroups="false">
+      <Titles>
+        <Title LCID="1033" Title="Administration" />
+      </Titles>
+      <Group Id="Finance" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Finance" />
+        </Titles>
+        <SubArea Id="nav_planningperiods" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/FiscalYear_HighContrast.svg" Entity="msnfpe_planningperiod" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_benefitrates" Entity="msnfpe_benefitrate" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_payfrequencies" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/FiscalYear_HighContrast.svg" Entity="msnfpe_payfrequency" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_glaccounts" Entity="msnfpe_glaccount" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_gltransactions" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/ProductCatalog_HighContrast.svg" Entity="msnfpe_gltransaction" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="Company" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Company" />
+        </Titles>
+        <SubArea Id="nav_funds" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/QuotetoCash_HighContrast.svg" Entity="msnfp_designation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_costcenters" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/BPF_HighContrast.svg" Entity="msnfpe_costcenter" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_offices" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/BrandingNTheme_HighContrast.svg" Entity="msnfpe_office" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_currencies" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="transactioncurrency" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_businessunits" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="businessunit" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="System" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="System" />
+        </Titles>
+        <SubArea Id="nav_users" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="systemuser" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_reports" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="report" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="nav_documentlocations" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/DocumentStorage_HighContrast.svg" Icon="/WebResources/AppCommon/ControlWS/SummaryPageImages/DocumentStorage_HighContrast.svg" Entity="sharepointdocumentlocation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Nonprofit Operations Toolkit" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>
