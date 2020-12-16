@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0f063bd0-4713-442d-8ffb-df59fa96caf7}</formid>
+    <IntroducedVersion>0.9.4.11</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{59a5c01b-e9bd-4a7f-b031-1059af24cf73}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{0c3205d4-80bf-4250-a7a1-77c6ee12431c}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e3636431-273a-501b-dd57-8b833e2a7e96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Plan Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_planname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_planname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4c422a7-d071-2e10-b8c6-88e66ee28585}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pay Frequency" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_payfrequencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_payfrequencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e25c0d3c-aa7c-0769-8980-44d9903ed6ba}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Overtime Eligible" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_overtimeeligible" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msnfpe_overtimeeligible" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a308a2b2-b214-1822-1a64-b8890bbc302a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Effective Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_effectivedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_effectivedate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55be7da6-ae4c-34e8-176c-2b8d01737d53}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pay Rate" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_payrate" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_payrate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{29e1619e-2558-6bc4-4c3e-1e7b17e970ea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Benefit Rate" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_benefitrateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_benefitrateid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{9ce2cb41-e979-4866-b584-0ce3396a9e88}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b06cdc48-97d9-4154-b43f-af75d936ada8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{461264bc-6132-4461-9ef4-cb22cc16eaeb}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{95c4e81c-9c54-42dd-bd7f-996403600bc0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

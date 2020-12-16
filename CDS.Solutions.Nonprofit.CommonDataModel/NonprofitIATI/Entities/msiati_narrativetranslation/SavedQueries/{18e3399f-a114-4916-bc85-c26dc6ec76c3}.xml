@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{18e3399f-a114-4916-bc85-c26dc6ec76c3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_narrativetranslationid">
+          <cell name="msiati_attribute" width="100" />
+          <cell name="msiati_languageid" width="100" />
+          <cell name="msiati_translation" width="100" />
+          <cell name="msiati_entityname" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_narrativetranslation">
+          <attribute name="msiati_narrativetranslationid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msiati_attribute" />
+          <attribute name="msiati_languageid" />
+          <attribute name="msiati_translation" />
+          <attribute name="msiati_entityname" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Narrative Translations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

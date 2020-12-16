@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e0d5edf2-dfcc-ea11-a812-000d3a11f015}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_nonembeddedcodelistid">
+          <cell name="msiati_name" width="200" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_description" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msiati_nonembeddedcodelist">
+          <attribute name="msiati_name" />
+          <attribute name="msiati_code" />
+          <attribute name="msiati_description" />
+          <order attribute="msiati_name" descending="false" />
+          <attribute name="msiati_nonembeddedcodelistid" />
+          <filter type="and">
+            <condition attribute="msiati_codelisttype" operator="eq" value="453490032" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.3</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Tied Status" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View for IATI's Tied Status code list" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

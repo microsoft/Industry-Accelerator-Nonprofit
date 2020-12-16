@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bfea75b9-571b-4079-b84d-afffe18d361a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_fssforecastid">
+          <cell name="msiati_year" width="100" />
+          <cell name="msiati_amount" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_fssforecast">
+          <attribute name="msiati_fssforecastid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_deliveryframeworkid" operator="like" value="{0}" />
+            <condition attribute="msiati_year" operator="eq" value="{1}" />
+          </filter>
+          <attribute name="msiati_year" />
+          <attribute name="msiati_amount" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="modifiedon" />
+          <order attribute="msiati_year" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active FSS Forecasts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

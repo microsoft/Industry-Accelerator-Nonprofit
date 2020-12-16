@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{41531810-ae77-436e-a548-4220f0c976b6}" Name="Project Budget - restrictions during sensitive status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProjectBudget-restrictionsduringsensitivestatus-41531810-AE77-436E-A548-4220F0C976B6.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>msnfpe_startingperiodid,msnfp_startdate,msnfpe_projectid,msnfpe_endingperiodid,msnfp_enddate,transactioncurrencyid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>msnfp_Budget</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Project Budget - restrictions during sensitive status" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{9e9a017e-f9f6-4b21-a38d-37ad2eb852e8}">
+      <label languagecode="1033" description="Modifying certain fields is restricted while in Submitted or Live status." />
+    </steplabels>
+  </labels>
+</Workflow>

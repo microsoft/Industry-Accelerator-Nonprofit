@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fe0d1867-20ae-4afd-9329-f4c70761aaf1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_resultreferenceid">
+          <cell name="msiati_resultcodeid" width="100" />
+          <cell name="msiati_resultid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_resultreference">
+          <attribute name="msiati_resultreferenceid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_resultcodeid" operator="like" value="{0}" />
+            <condition attribute="msiati_resultid" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msiati_resultcodeid" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_resultid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Result References" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

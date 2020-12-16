@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1a5254ed-e2b9-4bdd-b630-757ee74f7021}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_periodname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_planningperiodid">
+          <cell name="msnfpe_periodname" width="165" />
+          <cell name="msnfpe_planningperiod_type" width="100" />
+          <cell name="msnfpe_period_startdate" width="100" />
+          <cell name="msnfpe_period_enddate" width="100" />
+          <cell name="msnfpe_weekdaysinperiod" width="100" />
+          <cell name="msnfpe_parentperiodid" width="100" />
+          <cell name="msnfpe_nextperiodid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_planningperiod">
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="msnfpe_periodname" />
+          <order attribute="msnfpe_periodname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfpe_planningperiod_type" />
+          <attribute name="msnfpe_period_startdate" />
+          <attribute name="msnfpe_period_enddate" />
+          <attribute name="msnfpe_weekdaysinperiod" />
+          <attribute name="msnfpe_parentperiodid" />
+          <attribute name="msnfpe_nextperiodid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Planning Periods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{029284df-2736-457a-b9a0-c01f275ff879}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_agreementtitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_agreementid">
+          <cell name="msnfpe_agreementtitle" width="300" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_agreementtype" width="100" />
+          <cell name="msnfpe_funder_accountid" width="100" />
+          <cell name="msnfpe_vendorid" width="100" />
+          <cell name="msnfpe_startdate" width="100" />
+          <cell name="msnfpe_enddate" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_agreement">
+          <attribute name="msnfpe_agreementid" />
+          <attribute name="msnfpe_agreementtitle" />
+          <order attribute="msnfpe_agreementtitle" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_funder_accountid" />
+          <attribute name="msnfpe_vendorid" />
+          <attribute name="msnfpe_startdate" />
+          <attribute name="msnfpe_enddate" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_amount" />
+          <attribute name="msnfpe_agreementtype" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Agreements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

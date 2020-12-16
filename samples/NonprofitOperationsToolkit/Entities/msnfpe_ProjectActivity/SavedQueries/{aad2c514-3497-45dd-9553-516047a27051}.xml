@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{aad2c514-3497-45dd-9553-516047a27051}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_activityname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectactivityid">
+          <cell name="msnfpe_projectid" width="100" />
+          <cell name="msnfpe_activityname" width="300" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_activitymanagerid" width="100" />
+          <cell name="msnfpe_startdate" width="100" />
+          <cell name="msnfpe_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_projectactivity">
+          <attribute name="msnfpe_activityname" />
+          <order attribute="msnfpe_projectid" descending="false" />
+          <order attribute="msnfpe_activityname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfpe_activityname" operator="like" value="{0}" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_startdate" />
+          <attribute name="msnfpe_projectid" />
+          <attribute name="msnfpe_enddate" />
+          <attribute name="msnfpe_activitymanagerid" />
+          <attribute name="msnfpe_projectactivityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Project Activities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

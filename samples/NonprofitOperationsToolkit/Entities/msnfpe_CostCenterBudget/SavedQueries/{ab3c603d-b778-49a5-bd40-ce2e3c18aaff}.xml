@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ab3c603d-b778-49a5-bd40-ce2e3c18aaff}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_cc_budgetname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_costcenterbudgetid">
+          <cell name="msnfpe_cc_budgetname" width="300" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_costcenterid" width="100" />
+          <cell name="msnfpe_budgetmanagerid" width="100" />
+          <cell name="msnfpe_startingperiodid" width="100" />
+          <cell name="msnfpe_endingperiodid" width="100" />
+          <cell name="msnfpe_totalamount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_costcenterbudget">
+          <attribute name="msnfpe_cc_budgetname" />
+          <order attribute="msnfpe_costcenterid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfpe_cc_budgetname" operator="like" value="{0}" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="msnfpe_startingperiodid" />
+          <attribute name="msnfpe_endingperiodid" />
+          <attribute name="msnfpe_costcenterid" />
+          <attribute name="msnfpe_budgetmanagerid" />
+          <attribute name="msnfpe_costcenterbudgetid" />
+          <attribute name="msnfpe_totalamount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Cost Center Budgets" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

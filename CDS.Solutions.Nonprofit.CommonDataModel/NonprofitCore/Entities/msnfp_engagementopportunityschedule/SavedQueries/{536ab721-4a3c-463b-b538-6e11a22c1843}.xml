@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{536ab721-4a3c-463b-b538-6e11a22c1843}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_engagementopportunityschedules" jump="msnfp_engagementopportunityschedule" select="1" icon="1" preview="0">
+        <row name="msnfp_engagementopportunityschedule" id="msnfp_engagementopportunityscheduleid">
+          <cell name="msnfp_engagementopportunityschedule" width="300" />
+          <cell name="msnfp_engagementopportunity" width="100" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_totalhours" width="100" />
+          <cell name="msnfp_hoursperday" width="100" />
+          <cell name="msnfp_startperiod" width="100" />
+          <cell name="msnfp_endperiod" width="100" />
+          <cell name="msnfp_effectivefrom" width="100" />
+          <cell name="msnfp_effectiveto" width="100" />
+          <cell name="msnfp_workingdays" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_engagementopportunityschedule">
+          <attribute name="msnfp_engagementopportunityscheduleid" />
+          <attribute name="msnfp_engagementopportunityschedule" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfp_engagementopportunityschedule" descending="false" />
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_totalhours" />
+          <attribute name="msnfp_startperiod" />
+          <attribute name="msnfp_hoursperday" />
+          <attribute name="msnfp_engagementopportunity" />
+          <attribute name="msnfp_endperiod" />
+          <attribute name="msnfp_effectiveto" />
+          <attribute name="msnfp_effectivefrom" />
+          <attribute name="msnfp_workingdays" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Engagement Opportunity Schedule Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

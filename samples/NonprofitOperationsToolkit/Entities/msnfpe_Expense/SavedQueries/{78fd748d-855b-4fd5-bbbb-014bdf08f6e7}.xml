@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{78fd748d-855b-4fd5-bbbb-014bdf08f6e7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_description" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_expenseid">
+          <cell name="msnfpe_description" width="265" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_expensetype" width="100" />
+          <cell name="msnfpe_date" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_expense">
+          <attribute name="msnfpe_expenseid" />
+          <attribute name="msnfpe_description" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_expensetype" />
+          <attribute name="msnfpe_date" />
+          <order attribute="msnfpe_workerid" descending="false" />
+          <order attribute="msnfpe_date" descending="false" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_amount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Expenses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

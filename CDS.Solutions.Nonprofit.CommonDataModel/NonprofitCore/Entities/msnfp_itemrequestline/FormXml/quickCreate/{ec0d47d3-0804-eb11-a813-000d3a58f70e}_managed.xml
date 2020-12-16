@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ec0d47d3-0804-eb11-a813-000d3a58f70e}</formid>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{1e33ef09-c6c2-4791-a682-5759bff3149f}">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{c9156692-7bc4-4634-b900-df7953ed666a}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5d0ca04d-3558-4a7a-8b8b-4f2f85a40a2a}" locklevel="0" labelid="{fc10dfd2-3a4f-4960-812e-65c963d1ed80}">
+                        <labels>
+                          <label description="Item Request" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_itemrequestid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_itemrequestid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9212a1fd-3e45-4a03-b6dc-9e86514aa139}" locklevel="0" labelid="{cc694d38-b639-4cc0-bf72-c4d0f31cff20}">
+                        <labels>
+                          <label description="Item Line Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_itemlinename" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msnfp_itemlinename" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{625adda4-3775-4508-9ade-c98db2fbc9b5}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e68d0867-b7a2-467e-9017-50a9bc47b48c}" locklevel="0" labelid="{94d6182f-6651-4a20-a752-de026f4f21fe}">
+                        <labels>
+                          <label description="Item Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_itemtypeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_itemtypeid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f251f9d8-39d9-41ea-be39-93f2fe87e324}" locklevel="0" labelid="{8ca62ac7-8290-47a9-acc9-29ecc954e781}">
+                        <labels>
+                          <label description="Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_quantity" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="msnfp_quantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{06c0c6b2-3e0a-4799-9dfc-b38d582992ba}" locklevel="0" labelid="{144d020a-8d76-4ac9-a14a-3a8e3c372053}">
+                        <labels>
+                          <label description="Estimated Line Total" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_estimatedlinetotal" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfp_estimatedlinetotal" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{17985dac-3658-4023-b802-6fde0e97da16}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{d73d93d2-2e98-4c2e-b963-b5de045f2b1f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description=" quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

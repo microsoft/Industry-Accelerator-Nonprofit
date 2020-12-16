@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{27a083a4-cdc7-4512-b982-f086faaa1618}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{8362133a-f23a-4dda-9cc2-751af3da17ed}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{35836438-f09f-4d2f-ace0-c301f587769a}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{686ce91e-781a-47c2-ba90-b2fd18aa1d1b}">
+                        <labels>
+                          <label description="Worker Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_workername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_workername" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bb3a7b7-acb2-d7cc-b408-099d98bd83b8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Working Title" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_workingtitle" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_workingtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{57c4d0fb-11d8-42cf-9094-eafa1fa650f1}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{d94400b9-15d1-e2d0-51e2-9ca9daa65124}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

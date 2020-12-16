@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{32efb483-98ee-46c7-ac6a-d76690060979}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_itemlinename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_itemrequestlineid">
+          <cell name="msnfp_itemlinename" width="300" />
+          <cell name="msnfp_itemtypeid" width="207" />
+          <cell name="msnfp_quantity" width="100" />
+          <cell name="msnfp_estimatedlinetotal" width="152" />
+          <cell name="msnfp_itemrequestid" width="173" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_itemrequestline">
+          <attribute name="msnfp_itemrequestlineid" />
+          <attribute name="msnfp_itemlinename" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_itemlinename" descending="false" />
+          <attribute name="msnfp_itemtypeid" />
+          <attribute name="msnfp_quantity" />
+          <attribute name="msnfp_estimatedlinetotal" />
+          <attribute name="msnfp_itemrequestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Item Request Line Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

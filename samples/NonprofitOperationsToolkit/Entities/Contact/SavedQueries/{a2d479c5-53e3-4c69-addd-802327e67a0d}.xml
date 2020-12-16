@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a2d479c5-53e3-4c69-addd-802327e67a0d}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="fullname" select="1" preview="0" icon="1">
+        <row name="result" id="contactid">
+          <cell name="fullname" width="300" />
+          <cell name="parentcustomerid" width="150" />
+          <cell name="fax" ishidden="1" width="100" />
+          <cell name="address1_name" ishidden="1" width="100" />
+          <cell name="address1_fax" ishidden="1" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <attribute name="parentcustomerid" />
+          <attribute name="contactid" />
+          <attribute name="fax" />
+          <attribute name="address1_name" />
+          <attribute name="address1_fax" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="fullname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Contacts Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

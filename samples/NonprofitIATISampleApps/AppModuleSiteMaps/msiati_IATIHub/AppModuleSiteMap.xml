@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>msiati_IATIHub</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="Area_IATI" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="IATI" />
+      </Titles>
+      <Group Id="Group_Constituents" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Constituents" />
+        </Titles>
+        <SubArea Id="SubArea_Individuals" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="contact" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Individuals" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_Donors" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_donorsvg" Icon="/WebResources/msnfp_donorsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=contact&amp;viewid={cf955fa0-92d7-e811-a960-000d3a378f36}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Donors" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_Households" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_accountsvg" Icon="/WebResources/msnfp_accountsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=account&amp;viewid={24e7af6c-5fdc-e811-a962-000d3a3780dd}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Households" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_Accounts" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="SubArea_Organizations" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_accountsvg" Icon="/WebResources/msnfp_accountsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=account&amp;viewid={b4045ebc-cbd3-e811-a960-000d3a37870e}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Organizations" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_ca75e208" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_benefitrecipient" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Benefit Recipients" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="Group_d088e9e28Fundraising" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Fundraising" />
+        </Titles>
+        <SubArea Id="SubArea_DonorCommitments" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_donorcommitment" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_7eb01559" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_transaction" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Transactions" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="NewGroup_acceb004" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Awards" />
+        </Titles>
+        <SubArea Id="NewSubArea_e09c2914" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_award" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Awards" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_d4dc66c7" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_disbursement" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="Group_DeliveryFramework" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Delivery Framework" />
+        </Titles>
+        <SubArea Id="NewSubArea_21e63268" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_objective" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_76306732" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_deliveryframework" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="SubArea_Programs" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_grantrequestsvg" Icon="/WebResources/msnfp_grantrequestsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=msnfp_deliveryframework&amp;viewid={E7DAEBFB-D4E1-E811-A965-000D3A37839B}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Programs" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_Project" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msnfp_grantrequestsvg" Icon="/WebResources/msnfp_grantrequestsvg" Url="/main.aspx?pagetype=entitylist&amp;etn=msnfp_deliveryframework&amp;viewid={738FA81B-D5E1-E811-A965-000D3A37839B}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Projects" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_31984f41" VectorIcon="/WebResources/msnfp_grantrequestsvg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_budget" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Budgets" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_7a1cabcc" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_result" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_5c3927ee" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_indicator" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_4213f03e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_indicatorvalue" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="Group_Administration" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Administration" />
+        </Titles>
+        <SubArea Id="SubArea_Campaigns" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msnfp_designation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="Group_IATI" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="IATI" />
+        </Titles>
+        <SubArea Id="NewSubArea_8ef73ba4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msiati_documentlink" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="SubArea_NonEmbeddedCodelists" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msiati_nonembeddedcodelist" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Codelists (Non-Embedded)" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_NonEmbeddedCodelistVocabularies" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msiati_nonembeddedcodelistvocabulary" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Vocabularies (Non-Embedded Codelists)" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="SubArea_FileGeneration" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msiati_iatifilegeneration" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="File Generation" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="IATI Hub" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

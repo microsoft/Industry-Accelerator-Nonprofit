@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4d92f642-4e42-4c12-8381-d97e7a3e182d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_workername" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_workerid">
+          <cell name="msnfpe_workername" width="300" />
+          <cell name="msnfpe_primaryemail" width="100" />
+          <cell name="msnfpe_primaryphone" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_worker">
+          <attribute name="msnfpe_workername" />
+          <order attribute="msnfpe_workername" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfpe_workername" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msnfpe_primaryphone" />
+          <attribute name="msnfpe_primaryemail" />
+          <attribute name="msnfpe_workerid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Workers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

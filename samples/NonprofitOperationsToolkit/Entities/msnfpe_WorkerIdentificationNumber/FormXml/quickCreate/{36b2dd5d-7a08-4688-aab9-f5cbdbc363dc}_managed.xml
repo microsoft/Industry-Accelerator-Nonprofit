@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{36b2dd5d-7a08-4688-aab9-f5cbdbc363dc}</formid>
+    <IntroducedVersion>0.9.4.11</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{e2965c5e-8c6f-4baa-aa74-14a2b184b692}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{fa937b65-fe60-448e-a76a-b57610cf53dc}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6ab7d1a1-4021-2666-b731-2c17ed193a72}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Identification Number" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_identificationnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_identificationnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14e7328d-4a3d-0e14-19e2-aa031b2e4e55}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Identification Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_identificationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_identificationtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41a30ca4-16a4-d282-5ea6-d61d6e5cd605}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country of Issue" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_countryofissue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_countryofissue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36744364-00cd-de39-6828-eeb3387b20da}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Issue Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_issuedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_issuedate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a926eb85-9a1d-c5da-0ba6-385eae1ac6c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Expiration Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_expirationdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_expirationdate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{0b06acd3-8eb7-4e95-90d8-4175d5a1a390}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6e455ebc-85a2-41ba-bab2-eb114878a938}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{78ed1b89-49c0-4e78-8bb5-53597a99c11c}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d49ff65d-3bb3-4931-9c3a-0a2a4eaab602}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4d8ae0fa-4a94-e911-a82a-000d3a1d501d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_periodname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_periodname">
+          <cell name="msnfpe_projectbudgetlineid" width="153" />
+          <cell name="msnfpe_planningperiodid" width="122" />
+          <cell name="msnfpe_amount" width="100" />
+          <cell name="msnfpe_amount_base" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_budgetlineperiod">
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <attribute name="msnfpe_planningperiodid" />
+          <filter type="and">
+            <condition attribute="msnfpe_projectbudgetlineid" operator="not-null" />
+          </filter>
+          <order attribute="msnfpe_projectbudgetlineid" descending="false" />
+          <order attribute="msnfpe_planningperiodid" descending="false" />
+          <attribute name="msnfpe_amount_base" />
+          <attribute name="msnfpe_amount" />
+          <attribute name="msnfpe_periodname" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Budget Line Periods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

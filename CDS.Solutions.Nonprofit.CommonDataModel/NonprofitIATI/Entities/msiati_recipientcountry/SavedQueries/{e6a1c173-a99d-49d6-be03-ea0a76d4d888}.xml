@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e6a1c173-a99d-49d6-be03-ea0a76d4d888}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_recipientcountryid">
+          <cell name="msiati_countryid" width="100" />
+          <cell name="msiati_name" width="300" />
+          <cell name="msiati_percentage" width="100" />
+          <cell name="msiati_deliveryframeworkid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_recipientcountry">
+          <attribute name="msiati_recipientcountryid" />
+          <attribute name="msiati_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_name" operator="like" value="{0}" />
+            <condition attribute="msiati_deliveryframeworkid" operator="like" value="{0}" />
+            <condition attribute="msiati_countryid" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msiati_countryid" />
+          <attribute name="msiati_percentage" />
+          <attribute name="msiati_deliveryframeworkid" />
+          <attribute name="modifiedon" />
+          <order attribute="msiati_countryid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Recipient Countries" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

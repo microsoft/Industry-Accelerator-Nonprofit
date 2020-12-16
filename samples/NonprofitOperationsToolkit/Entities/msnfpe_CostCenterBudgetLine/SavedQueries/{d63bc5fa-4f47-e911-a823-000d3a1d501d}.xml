@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d63bc5fa-4f47-e911-a823-000d3a1d501d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_cc_budgetlinedesc" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_cc_budgetlinedesc">
+          <cell name="msnfpe_cc_budgetlinedesc" width="165" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_glaccountid" width="100" />
+          <cell name="msnfpe_budgetline_amount" width="100" />
+          <cell name="msnfpe_planneddifference" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_costcenterbudgetline">
+          <attribute name="msnfpe_cc_budgetlinedesc" />
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_costcenterbudgetlineid" />
+          <attribute name="msnfpe_budgetline_amount" />
+          <attribute name="statuscode" />
+          <order attribute="statuscode" descending="false" />
+          <order attribute="msnfpe_glaccountid" descending="false" />
+          <attribute name="msnfpe_planneddifference" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Budget Lines Cost Center Budget related" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

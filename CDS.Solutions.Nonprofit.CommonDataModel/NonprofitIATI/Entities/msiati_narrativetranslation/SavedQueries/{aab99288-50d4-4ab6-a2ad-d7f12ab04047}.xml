@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{aab99288-50d4-4ab6-a2ad-d7f12ab04047}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_narrativetranslationid">
+          <cell name="msiati_attribute" width="100" />
+          <cell name="msiati_languageid" width="100" />
+          <cell name="msiati_translation" width="100" />
+          <cell name="msiati_entityname" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_narrativetranslation">
+          <attribute name="msiati_narrativetranslationid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_entityname" operator="like" value="{0}" />
+            <condition attribute="msiati_languageid" operator="like" value="{0}" />
+            <condition attribute="msiati_translation" operator="like" value="{0}" />
+            <condition attribute="msiati_attribute" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msiati_attribute" />
+          <attribute name="msiati_languageid" />
+          <attribute name="msiati_translation" />
+          <attribute name="msiati_entityname" />
+          <attribute name="modifiedon" />
+          <order attribute="msiati_attribute" descending="false" />
+          <order attribute="msiati_languageid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Narrative Translations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

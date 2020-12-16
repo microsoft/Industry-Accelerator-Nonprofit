@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4fb6cf24-cd19-e911-a96f-000d3a18b041}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_planname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_planname">
+          <cell name="msnfpe_planname" width="127" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_payfrequencyid" width="100" />
+          <cell name="msnfpe_payrate" width="100" />
+          <cell name="msnfpe_benefitrateid" width="100" />
+          <cell name="msnfpe_effectivedate" width="100" />
+          <cell name="msnfpe_expirationdate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_compensationplan">
+          <attribute name="msnfpe_planname" />
+          <attribute name="msnfpe_effectivedate" />
+          <attribute name="msnfpe_expirationdate" />
+          <order attribute="msnfpe_effectivedate" descending="true" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_payfrequencyid" />
+          <attribute name="msnfpe_payrate" />
+          <attribute name="msnfpe_benefitrateid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Compensation Plans for Specified Worker" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

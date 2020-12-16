@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d94f077c-206b-465b-b52c-c912c7d13aa7}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{c3faf109-736a-4081-9240-a7a33b827b4e}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{08a8a9dc-3c9d-4190-a12f-94fbac978a1a}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2bd57344-ad77-4a32-849a-76073fb244d8}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Cost Center Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_costcentername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_costcentername" uniqueid="{6242e218-be50-3271-30ba-c8048024e95e}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d8865e2-c630-bb48-5cee-003372beb77e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Cost Center Code" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_costcentercode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_costcentercode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e6947083-48eb-016e-0c08-72ccc41300b8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Cost Center Manager" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_manager_workerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_manager_workerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99251bc5-6aa8-b0c4-238b-5ccd6b8a3d1b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_businessunitid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_businessunitid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b16b9b20-72b3-404c-9b7e-8575c1221d86}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{3469aa7d-06c4-b97e-6973-c33344a2ceea}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

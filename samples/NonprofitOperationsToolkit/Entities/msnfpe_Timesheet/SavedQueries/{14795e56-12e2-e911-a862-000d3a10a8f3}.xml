@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{14795e56-12e2-e911-a862-000d3a10a8f3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_timesheetname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_timesheetid">
+          <cell name="msnfpe_timesheetname" width="200" />
+          <cell name="statuscode" width="100" />
+          <cell name="a_74376c0a7a19468e92264e75222e7066.msnfpe_managerid" width="100" />
+          <cell name="msnfpe_totalreportedhours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_timesheet">
+          <attribute name="msnfpe_timesheetname" />
+          <attribute name="msnfpe_timesheetid" />
+          <link-entity name="msnfpe_timeentry" alias="aa" link-type="inner" from="msnfpe_timesheetid" to="msnfpe_timesheetid">
+            <filter type="and">
+              <condition attribute="statuscode" operator="eq" value="796500000" />
+            </filter>
+          </link-entity>
+          <attribute name="statuscode" />
+          <link-entity alias="a_74376c0a7a19468e92264e75222e7066" name="msnfpe_worker" to="msnfpe_workerid" from="msnfpe_workerid" link-type="outer" visible="false">
+            <attribute name="msnfpe_managerid" />
+          </link-entity>
+          <order attribute="msnfpe_timesheetname" descending="false" />
+          <attribute name="msnfpe_totalreportedhours" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.4.16</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Submitted Time" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows Timesheets with Time Entries in a Submitted status." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.24949" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>NonprofitOperationsToolkit</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Nonprofit Operations Toolkit" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Nonprofit Operations Toolkit helps small nonprofits implement effective project and awards management processes that reduce costs and build trust with funders." languagecode="1033" />
+    </Descriptions>
+    <Version>1.1.3.5</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>MicrosoftTechForSocialImpact</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Tech for Social Impact" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>msnfpe</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>79650</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="businessunit" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="msnfpe_agreement" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_awardcostcategory" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_benefitrate" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_budgetlineperiod" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_compensationplan" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_costcenter" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_costcenterbudget" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_costcenterbudgetline" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_effortplan" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_expense" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_glaccount" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_gltransaction" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_office" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_payfrequency" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_planningperiod" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_project" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_projectactivity" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_projectbudgetline" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_timeentry" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_timesheet" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_vendor" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_worker" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_workercostschedule" behavior="0" />
+      <RootComponent type="1" schemaName="msnfpe_workeridentificationnumber" behavior="0" />
+      <RootComponent type="1" schemaName="msnfp_award" behavior="1" />
+      <RootComponent type="1" schemaName="msnfp_budget" behavior="1" />
+      <RootComponent type="1" schemaName="msnfp_deliveryframework" behavior="1" />
+      <RootComponent type="1" schemaName="msnfp_designation" behavior="1" />
+      <RootComponent type="1" schemaName="organization" behavior="2" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="1" schemaName="transactioncurrency" behavior="0" />
+      <RootComponent type="20" id="{0b3124e4-2383-e911-a82c-000d3a1d5203}" behavior="0" />
+      <RootComponent type="20" id="{30618639-fb40-e911-a81f-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="20" id="{6cd42081-ff82-e911-a82c-000d3a1d5203}" behavior="0" />
+      <RootComponent type="20" id="{bd83d3ca-0783-e911-a82c-000d3a1d5203}" behavior="0" />
+      <RootComponent type="20" id="{d9631cb7-ea41-e911-a81d-000d3a1d5a0b}" behavior="0" />
+      <RootComponent type="20" id="{deca25a1-2083-e911-a82c-000d3a1d5203}" behavior="0" />
+      <RootComponent type="29" id="{0004a9a3-8889-e911-a828-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{0842b56e-1072-43d2-ab0e-efabc65b3218}" behavior="0" />
+      <RootComponent type="29" id="{08d85eca-c68b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{0b98a14c-9442-448c-8e40-96270ed6d02e}" behavior="0" />
+      <RootComponent type="29" id="{1648823d-aa3e-e911-a81f-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{18358dd4-f1a5-4534-a16f-cca87e8170aa}" behavior="0" />
+      <RootComponent type="29" id="{188e40a0-4608-4129-93d4-909ce1b61996}" behavior="0" />
+      <RootComponent type="29" id="{1e19c843-4635-e911-a81a-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{252c0868-2c5c-4477-b62d-3f00db1d41bd}" behavior="0" />
+      <RootComponent type="29" id="{29677385-f4bf-4c3e-a2a0-bac066c163c2}" behavior="0" />
+      <RootComponent type="29" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" behavior="0" />
+      <RootComponent type="29" id="{31f1ccf2-e2d4-e911-a822-000d3a3b1bf4}" behavior="0" />
+      <RootComponent type="29" id="{33887806-1d2b-4a4b-b92e-63f46baa3cec}" behavior="0" />
+      <RootComponent type="29" id="{399cf2de-ee98-4aa3-ba58-bad7c67c74e9}" behavior="0" />
+      <RootComponent type="29" id="{41531810-ae77-436e-a548-4220f0c976b6}" behavior="0" />
+      <RootComponent type="29" id="{47d1d19e-c28b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{4df0d368-4839-e911-a81b-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{576e4a61-fd8e-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{5efbb7f5-9015-4254-993a-43f82aceaea3}" behavior="0" />
+      <RootComponent type="29" id="{64e82af8-8289-e911-a828-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{65571ad0-c38b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{73166f8c-9c8c-e911-a82a-000d3a1d5713}" behavior="0" />
+      <RootComponent type="29" id="{7a7179a3-b3f7-46e7-a8d3-4328a30257b2}" behavior="0" />
+      <RootComponent type="29" id="{7d08298d-f14f-e911-a829-000d3a1d5713}" behavior="0" />
+      <RootComponent type="29" id="{877e9724-aa56-49cf-8492-c88892e5c013}" behavior="0" />
+      <RootComponent type="29" id="{899f347b-c38b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" behavior="0" />
+      <RootComponent type="29" id="{9532836a-a0ce-e911-a995-000d3a137208}" behavior="0" />
+      <RootComponent type="29" id="{96652217-892e-4a85-94a3-298f51b5b7ca}" behavior="0" />
+      <RootComponent type="29" id="{984a4c7f-da43-4255-bed3-21f859651aec}" behavior="0" />
+      <RootComponent type="29" id="{9949ea32-e399-e911-a82c-000d3a1d5713}" behavior="0" />
+      <RootComponent type="29" id="{a06877b2-0150-e911-a829-000d3a1d5713}" behavior="0" />
+      <RootComponent type="29" id="{ae48cee8-ab3e-e911-a81f-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{b775bbb2-0d73-4499-be5e-2d1c829ae496}" behavior="0" />
+      <RootComponent type="29" id="{b8c3db8e-26af-e911-a99a-000d3a137063}" behavior="0" />
+      <RootComponent type="29" id="{c17ef7fb-b3cb-4bbf-9315-7beab4e3c25b}" behavior="0" />
+      <RootComponent type="29" id="{c1e321bf-c18b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{cc750d00-30db-43c8-a3f8-69137c1b4c03}" behavior="0" />
+      <RootComponent type="29" id="{cf77e88f-d5c7-4992-b0c3-6ed48b95d5f1}" behavior="0" />
+      <RootComponent type="29" id="{d16bf3b6-35a1-41ba-8a1e-97bc711b7ca1}" behavior="0" />
+      <RootComponent type="29" id="{d6600c6d-ab3e-e911-a81f-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{dc2fa655-e3d4-e911-a822-000d3a3b1bf4}" behavior="0" />
+      <RootComponent type="29" id="{e11fc192-073b-4259-b17f-ee5077ea65fe}" behavior="0" />
+      <RootComponent type="29" id="{e7f4fc78-bace-e911-a995-000d3a137208}" behavior="0" />
+      <RootComponent type="29" id="{e9460285-1dad-4b0b-b966-eb97f615d999}" behavior="0" />
+      <RootComponent type="29" id="{f2b942ad-df3a-e911-a81f-000d3a1d5de8}" behavior="0" />
+      <RootComponent type="29" id="{f6a3b5ff-651a-4a59-9340-525ff22cfd16}" behavior="0" />
+      <RootComponent type="29" id="{f83c7369-c68b-e911-a832-000d3a1d5dcc}" behavior="0" />
+      <RootComponent type="29" id="{f8769379-f407-4133-a190-667da936fb86}" behavior="0" />
+      <RootComponent type="29" id="{fb97319d-1d2e-433f-bbda-368e0b0cfef2}" behavior="0" />
+      <RootComponent type="29" id="{fccfd283-e90f-4239-8a54-5544e0fe157a}" behavior="0" />
+      <RootComponent type="60" id="{012ef4a4-6efe-4458-a7aa-8a712a6456c6}" behavior="0" />
+      <RootComponent type="60" id="{0f063bd0-4713-442d-8ffb-df59fa96caf7}" behavior="0" />
+      <RootComponent type="60" id="{1fc4cc2e-2996-4169-9f7f-624e321a3acb}" behavior="0" />
+      <RootComponent type="60" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" behavior="0" />
+      <RootComponent type="60" id="{228f0cd6-c6a4-404f-b848-14d1ef122891}" behavior="0" />
+      <RootComponent type="60" id="{27a083a4-cdc7-4512-b982-f086faaa1618}" behavior="0" />
+      <RootComponent type="60" id="{286ab9c9-021b-4a9f-88f0-309c9f0f4497}" behavior="0" />
+      <RootComponent type="60" id="{29abe7e9-9579-4d22-bd04-a4e0f9a583cb}" behavior="0" />
+      <RootComponent type="60" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" behavior="0" />
+      <RootComponent type="60" id="{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}" behavior="0" />
+      <RootComponent type="60" id="{2caf62a9-affa-4867-adf7-8272454b6499}" behavior="0" />
+      <RootComponent type="60" id="{2cd72a5a-f6dd-452a-a515-a4987aedaed6}" behavior="0" />
+      <RootComponent type="60" id="{36b2dd5d-7a08-4688-aab9-f5cbdbc363dc}" behavior="0" />
+      <RootComponent type="60" id="{39d9e003-1ae8-4e18-ba2c-cea6ac372619}" behavior="0" />
+      <RootComponent type="60" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" behavior="0" />
+      <RootComponent type="60" id="{40382778-c5ec-4242-87f3-2b2808de3973}" behavior="0" />
+      <RootComponent type="60" id="{415f4b84-9af9-4390-b8d3-2f41bf559687}" behavior="0" />
+      <RootComponent type="60" id="{42aa78be-bad6-437d-ba0f-cbb9b9c43abf}" behavior="0" />
+      <RootComponent type="60" id="{4c35e899-18ea-44ca-905d-9f08ec7a56d7}" behavior="0" />
+      <RootComponent type="60" id="{51f5b0ad-ca0a-41ab-ad34-ca5b3d3a9634}" behavior="0" />
+      <RootComponent type="60" id="{520ab708-49de-4433-ba18-ffec7997c88f}" behavior="0" />
+      <RootComponent type="60" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" behavior="0" />
+      <RootComponent type="60" id="{6602feb1-732b-4ade-a77a-46713e004d64}" behavior="0" />
+      <RootComponent type="60" id="{68610672-5316-4108-aada-7ddcc82dca9e}" behavior="0" />
+      <RootComponent type="60" id="{686a5dee-60a6-4cc6-80a7-50b103412e1a}" behavior="0" />
+      <RootComponent type="60" id="{6c1a0e7d-c631-47c6-bccf-27b5c48ee2ba}" behavior="0" />
+      <RootComponent type="60" id="{7c7ea5c5-2592-4353-b6d9-c7b5d23c46ff}" behavior="0" />
+      <RootComponent type="60" id="{808be167-5413-47b8-ba5d-8f6fa09dbfaa}" behavior="0" />
+      <RootComponent type="60" id="{814851d3-1dca-4e55-98fc-e1de314c9afa}" behavior="0" />
+      <RootComponent type="60" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" behavior="0" />
+      <RootComponent type="60" id="{8902b275-fc2c-4ffe-b2a0-4b70ff8dd765}" behavior="0" />
+      <RootComponent type="60" id="{920f86b5-c6ff-4df7-a91c-aaf6feabf420}" behavior="0" />
+      <RootComponent type="60" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" behavior="0" />
+      <RootComponent type="60" id="{9ee38aba-612f-4c18-b4b4-23272fa219d5}" behavior="0" />
+      <RootComponent type="60" id="{9f4c2582-00c4-4353-a93b-70247eb3efa1}" behavior="0" />
+      <RootComponent type="60" id="{a213c4ae-470f-415e-8f1c-0abbd8f914be}" behavior="0" />
+      <RootComponent type="60" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" behavior="0" />
+      <RootComponent type="60" id="{a5874058-2ded-489b-bf18-a226eba3c383}" behavior="0" />
+      <RootComponent type="60" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" behavior="0" />
+      <RootComponent type="60" id="{a7b415c0-8797-4071-8f1a-35b4f54fd5eb}" behavior="0" />
+      <RootComponent type="60" id="{ab490349-8871-4543-a242-f2951df2eef7}" behavior="0" />
+      <RootComponent type="60" id="{b56b6d35-1e69-436b-ba86-78127d36e8aa}" behavior="0" />
+      <RootComponent type="60" id="{b9318a1d-ec18-4e92-bfe9-c32d6a1d03ff}" behavior="0" />
+      <RootComponent type="60" id="{bad9236b-3c06-4ea3-a119-97df6686b54a}" behavior="0" />
+      <RootComponent type="60" id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" behavior="0" />
+      <RootComponent type="60" id="{c2d9d0a1-0ceb-4c95-8bd8-d5d273919a90}" behavior="0" />
+      <RootComponent type="60" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" behavior="0" />
+      <RootComponent type="60" id="{ca8dfced-338c-43b2-b212-83745e257c28}" behavior="0" />
+      <RootComponent type="60" id="{d350d64c-50ad-4604-8625-ff7aae4fdd36}" behavior="0" />
+      <RootComponent type="60" id="{d88e8487-1b09-4b33-8535-18642c29584a}" behavior="0" />
+      <RootComponent type="60" id="{d94f077c-206b-465b-b52c-c912c7d13aa7}" behavior="0" />
+      <RootComponent type="60" id="{d99894bb-dd41-4210-a3cb-f8c665965432}" behavior="0" />
+      <RootComponent type="60" id="{daccef70-9f81-4860-ade5-a240dc29a6ff}" behavior="0" />
+      <RootComponent type="60" id="{e17b81bb-0714-44e9-9d3c-754ebb08a2f7}" behavior="0" />
+      <RootComponent type="60" id="{ee05d35f-d012-4d89-bd80-9dc393d33dbd}" behavior="0" />
+      <RootComponent type="60" id="{f3b9f470-1463-4b39-b220-ac47d39960d9}" behavior="0" />
+      <RootComponent type="60" id="{faa93752-0747-4907-9218-400b8dec9846}" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_admin_costcenter" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_admin_gltransaction" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_admin_office" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_admin_payfrequency" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_admin_planningperiod" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_expense_expense" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_expense_timesheet" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_agreement" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_award" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_fund" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_project_activity" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_vendor" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_master_worker" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_plan_costcenterbudget" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_plan_effortplan" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_plan_projectbudget" behavior="0" />
+      <RootComponent type="61" schemaName="msnfpe_icon_plan_workercostschedule" behavior="0" />
+      <RootComponent type="62" schemaName="msnfpe_NonprofitOperationsToolkit" behavior="0" />
+      <RootComponent type="80" schemaName="msnfpe_NonprofitOperationsToolkit" behavior="0" />
+      <RootComponent type="300" schemaName="msnfpe_timeexpense_a30d3" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msnfp_preference" displayName="Preference" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msnfp_salutation" displayName="Salutation" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="msnfp_primaryconstituenttype" displayName="Primary Constituent Type" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="msnfp_deceased" displayName="Deceased?" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="10" schemaName="msnfp_contact_msnfp_preference_preference_customer" displayName="msnfp_contact_msnfp_preference_preference_customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="10" schemaName="msnfp_contact_msnfp_salutation_salutation_customer" displayName="msnfp_contact_msnfp_salutation_salutation_customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="26" schemaName="Active Salutations" displayName="Active Salutations" parentSchemaName="msnfp_salutation" parentDisplayName="Salutation" solution="NonprofitCore (2.3.3.0)" id="{4be858f0-5f82-4b79-a925-50c4c6b454f4}" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="26" schemaName="Active Preferences" displayName="Active Preferences" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="NonprofitCore (2.3.3.0)" id="{39e7e428-fc67-480f-811f-b3141dbdd676}" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="60" displayName="Account Nonprofit Quick View" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{3ecba9af-afc4-4bdf-a951-8a771a9add4a}" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="1" type="60" displayName="Volunteer" parentDisplayName="Contact" id="{56b2d9d6-1249-4711-8b6a-d561665b551d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="msnfp_primaryconstituenttype" displayName="Primary Constituent Type" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="2" schemaName="msnfp_anonymous" displayName="Anonymous?" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="msnfp_deceased" displayName="Deceased?" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="10" schemaName="msnfp_commitment_pledgedByContact" displayName="msnfp_commitment_pledgedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="10" schemaName="msnfp_contact_request_SubmittedById" displayName="msnfp_contact_request_SubmittedById" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="10" schemaName="msnfp_plannedGiving_contact" displayName="msnfp_plannedGiving_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="10" schemaName="msnfp_contact_msnfp_paymentmethod" displayName="msnfp_contact_msnfp_paymentmethod" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="10" schemaName="msnfp_contact_msnfp_creditrecipient_Customer" displayName="msnfp_contact_msnfp_creditrecipient_Customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="10" schemaName="msnfp_contact_msnfp_docket_docket_fiscalSponsor" displayName="msnfp_contact_msnfp_docket_docket_fiscalSponsor" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="10" schemaName="msnfp_contact_award_InternalContactId" displayName="msnfp_contact_award_InternalContactId" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="10" schemaName="msnfp_contact_reportsTo" displayName="msnfp_contact_reportsTo" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="10" schemaName="msnfp_contact_awardversion_SubmittedById" displayName="msnfp_contact_awardversion_SubmittedById" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="10" schemaName="msnfp_docket_assignedTo" displayName="msnfp_docket_assignedTo" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="10" schemaName="msnfp_contact_awardversion_PrimaryContactId" displayName="msnfp_contact_awardversion_PrimaryContactId" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="10" schemaName="msnfp_contact_msnfp_preference_preference_customer" displayName="msnfp_contact_msnfp_preference_preference_customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="10" schemaName="msnfp_contact_msnfp_ofacmatch_ofacMatch_customer" displayName="msnfp_contact_msnfp_ofacmatch_ofacMatch_customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="10" schemaName="msnfp_contact_employmenthistory_ContactId" displayName="msnfp_contact_employmenthistory_ContactId" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="10" schemaName="msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer" displayName="msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="10" schemaName="msnfp_contact_docket_AwardRecipient" displayName="msnfp_contact_docket_AwardRecipient" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="10" schemaName="msnfp_education_contact" displayName="msnfp_education_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="29" type="10" schemaName="msnfp_contact_award_Recipient" displayName="msnfp_contact_award_Recipient" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="10" schemaName="msnfp_contact_msnfp_membership_Customer" displayName="msnfp_contact_msnfp_membership_Customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="10" schemaName="msnfp_contact_disbursement_RecipientContactId" displayName="msnfp_contact_disbursement_RecipientContactId" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="10" schemaName="msnfp_contact_request_CustomerId" displayName="msnfp_contact_request_CustomerId" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="10" schemaName="msnfp_contact_msnfp_salutation_salutation_customer" displayName="msnfp_contact_msnfp_salutation_salutation_customer" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="10" schemaName="msnfp_contact_assistants" displayName="msnfp_contact_assistants" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="60" displayName="Account Nonprofit Quick View" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{3ecba9af-afc4-4bdf-a951-8a771a9add4a}" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="60" displayName="Donor" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="11" type="60" displayName="Donor" parentDisplayName="Contact" id="{3f695518-8b05-4ff5-a950-f7dd6868a43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="Active" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="37" type="2" schemaName="msnfp_description" displayName="Description" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="Active" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="60" displayName="Information" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+        <Dependent key="35" type="60" displayName="Information" parentDisplayName="Fund" id="{2a027e50-bb51-4bab-86b4-c5f82cb90aff}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="2" schemaName="exchangerate" displayName="Exchange Rate" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="41" type="60" displayName="Information" parentDisplayName="Project Budget" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="41" type="60" displayName="Information" parentDisplayName="Project Budget" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="43" type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="41" type="60" displayName="Information" parentDisplayName="Project Budget" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="44" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="41" type="60" displayName="Information" parentDisplayName="Project Budget" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="60" displayName="Information" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+        <Dependent key="41" type="60" displayName="Information" parentDisplayName="Project Budget" id="{95dc2ba5-631b-42ae-8c1c-b4f1f9f2e826}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="45" type="60" displayName="Information" parentDisplayName="Fund" id="{920f86b5-c6ff-4df7-a91c-aaf6feabf420}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="Active" />
+        <Dependent key="45" type="60" displayName="Information" parentDisplayName="Fund" id="{920f86b5-c6ff-4df7-a91c-aaf6feabf420}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="60" displayName="Information" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{920f86b5-c6ff-4df7-a91c-aaf6feabf420}" />
+        <Dependent key="45" type="60" displayName="Information" parentDisplayName="Fund" id="{920f86b5-c6ff-4df7-a91c-aaf6feabf420}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="46" type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="Active" />
+        <Dependent key="47" type="60" displayName="Information" parentDisplayName="Award" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="Active" />
+        <Dependent key="47" type="60" displayName="Information" parentDisplayName="Award" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="47" type="60" displayName="Information" parentDisplayName="Award" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="47" type="60" displayName="Information" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+        <Dependent key="47" type="60" displayName="Information" parentDisplayName="Award" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2010.3017)" />
+        <Dependent key="47" type="60" displayName="Information" parentDisplayName="Award" id="{a5128853-c361-4f48-b0de-440084d3aeb2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="44" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="51" type="60" displayName="Information" parentDisplayName="Project Budget" id="{faa93752-0747-4907-9218-400b8dec9846}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="60" displayName="Information" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{faa93752-0747-4907-9218-400b8dec9846}" />
+        <Dependent key="51" type="60" displayName="Information" parentDisplayName="Project Budget" id="{faa93752-0747-4907-9218-400b8dec9846}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="Active" />
+        <Dependent key="52" type="60" displayName="Information" parentDisplayName="Award" id="{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="52" type="60" displayName="Information" parentDisplayName="Award" id="{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="52" type="60" displayName="Information" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}" />
+        <Dependent key="52" type="60" displayName="Information" parentDisplayName="Award" id="{2b47032b-a2f1-4be4-aa1b-2390b0830a6e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="10" schemaName="msnfp_contact_reportsTo" displayName="msnfp_contact_reportsTo" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="53" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="10" schemaName="msnfp_contact_assistants" displayName="msnfp_contact_assistants" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="53" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="53" type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+        <Dependent key="53" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="54" type="60" displayName="Account" parentDisplayName="Funder" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="54" type="60" displayName="Account" parentDisplayName="Funder" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="54" type="60" displayName="Account" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent key="54" type="60" displayName="Account" parentDisplayName="Funder" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="56" type="60" displayName="Information" parentDisplayName="Vendor" id="{29abe7e9-9579-4d22-bd04-a4e0f9a583cb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="57" type="60" displayName="Information" parentDisplayName="Agreement" id="{1fc4cc2e-2996-4169-9f7f-624e321a3acb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="58" type="60" displayName="Account for Interactive experience" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+        <Dependent key="58" type="60" displayName="Account for Interactive experience" parentDisplayName="Funder" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="59" type="60" displayName="Account Quick Create" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+        <Dependent key="59" type="60" displayName="Account Quick Create" parentDisplayName="Funder" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2010.3017)" />
+        <Dependent key="60" type="60" displayName="Information" parentDisplayName="Cost Center Budget Line" id="{bad9236b-3c06-4ea3-a119-97df6686b54a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2010.3017)" />
+        <Dependent key="61" type="60" displayName="Information" parentDisplayName="Project Budget Line" id="{c2d9d0a1-0ceb-4c95-8bd8-d5d273919a90}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2010.3017)" />
+        <Dependent key="62" type="60" displayName="Information" parentDisplayName="Worker" id="{d88e8487-1b09-4b33-8535-18642c29584a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="63" type="1" schemaName="canvasappextendedmetadata" displayName="CanvasApp Extended Metadata" solution="CanvasAppEntityExtensionSolution (9.1.20103.201012001)" />
+        <Dependent key="64" type="1" schemaName="businessunit" displayName="Business Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="65" type="1" schemaName="msnfp_award" displayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="65" type="1" schemaName="msnfp_award" displayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="66" type="61" schemaName="msnfp_benchmark16" displayName="msnfp_benchmark16" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="65" type="1" schemaName="msnfp_award" displayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="67" type="61" schemaName="msnfp_benchmark32" displayName="msnfp_benchmark32" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="65" type="1" schemaName="msnfp_award" displayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="68" type="1" schemaName="msnfp_budget" displayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="68" type="1" schemaName="msnfp_budget" displayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="69" type="61" schemaName="msnfp_budget16" displayName="msnfp_budget16" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="68" type="1" schemaName="msnfp_budget" displayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="70" type="61" schemaName="msnfp_budget32" displayName="msnfp_budget32" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="68" type="1" schemaName="msnfp_budget" displayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="71" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="71" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="72" type="61" schemaName="msnfp_grantrequest32" displayName="msnfp_grantrequest32" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="71" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="73" type="61" schemaName="msnfp_grantrequest16" displayName="msnfp_grantrequest16" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="71" type="1" schemaName="msnfp_deliveryframework" displayName="Delivery Framework" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="74" type="1" schemaName="msnfp_designation" displayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="74" type="1" schemaName="msnfp_designation" displayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="75" type="61" schemaName="msnfp_estination32" displayName="msnfp_estination32" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="74" type="1" schemaName="msnfp_designation" displayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="76" type="61" schemaName="msnfp_destination16" displayName="msnfp_destination16" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="74" type="1" schemaName="msnfp_designation" displayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="77" type="2" schemaName="msnfp_restrictiontype" displayName="Restriction Type" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="77" type="2" schemaName="msnfp_restrictiontype" displayName="Restriction Type" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="78" type="2" schemaName="msnfp_designationcode" displayName="Reference Code" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="78" type="2" schemaName="msnfp_designationcode" displayName="Reference Code" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="79" type="2" schemaName="msnfp_endowmenttype" displayName="Endowment Type" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="79" type="2" schemaName="msnfp_endowmenttype" displayName="Endowment Type" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="80" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="80" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="81" type="2" schemaName="msnfp_parentdesignationid" displayName="Parent Fund" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="81" type="2" schemaName="msnfp_parentdesignationid" displayName="Parent Fund" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="82" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="82" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="83" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="83" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="84" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="84" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="85" type="2" schemaName="msnfp_budgetid" displayName="Project Budget" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="85" type="2" schemaName="msnfp_budgetid" displayName="Project Budget" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="86" type="2" schemaName="msnfp_name" displayName="Fund Name" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="86" type="2" schemaName="msnfp_name" displayName="Fund Name" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="87" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="87" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="88" type="2" schemaName="msnfp_budgetname" displayName="Budget Name Extended" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="88" type="2" schemaName="msnfp_budgetname" displayName="Budget Name Extended" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="89" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="89" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="90" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="90" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="91" type="2" schemaName="msnfp_name" displayName="Award Name" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="91" type="2" schemaName="msnfp_name" displayName="Award Name" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="92" type="2" schemaName="msnfp_deliveryframeworkid" displayName="Delivery Framework" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="92" type="2" schemaName="msnfp_deliveryframeworkid" displayName="Delivery Framework" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="93" type="10" schemaName="msnfp_deliveryframework_budget_deliveryframeworkid" displayName="msnfp_deliveryframework_budget_deliveryframeworkid" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="92" type="2" schemaName="msnfp_deliveryframeworkid" displayName="Delivery Framework" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="94" type="2" schemaName="msnfp_accounttype" displayName="Funder Type" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="94" type="2" schemaName="msnfp_accounttype" displayName="Funder Type" parentSchemaName="account" parentDisplayName="Funder" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="95" type="9" schemaName="msnfp_accounttype" displayName="Account Type" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="94" type="2" schemaName="msnfp_accounttype" displayName="Funder Type" parentSchemaName="account" parentDisplayName="Funder" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="96" type="2" schemaName="msnfp_description" displayName="Description" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="96" type="2" schemaName="msnfp_description" displayName="Description" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="97" type="2" schemaName="msnfp_name" displayName="Budget Name" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="97" type="2" schemaName="msnfp_name" displayName="Budget Name" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="98" type="2" schemaName="msnfp_designationid" displayName="Fund" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="98" type="2" schemaName="msnfp_designationid" displayName="Fund" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="99" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="99" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="100" type="2" schemaName="msnfp_fiscalsponsorid" displayName="Funder" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="100" type="2" schemaName="msnfp_fiscalsponsorid" displayName="Funder" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="101" type="2" schemaName="msnfp_account" displayName="Account" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="103" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="104" type="2" schemaName="msnfp_deliveryframeworktype" displayName="Delivery Framework Type" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="105" type="2" schemaName="msnfp_plannedenddate" displayName="Planned End Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="106" type="2" schemaName="msnfp_name" displayName="Name" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="107" type="2" schemaName="msnfp_plannedstartdate" displayName="Planned Start Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="108" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="109" type="2" schemaName="msnfp_deliveryframeworkid" displayName="Delivery Framework" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="102" type="29" displayName="Project - create corresponding Delivery Framework" id="{941b0a58-2cb2-4036-b8af-bb6fffe6a327}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="103" type="2" schemaName="msnfp_startdate" displayName="Start Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="104" type="2" schemaName="msnfp_deliveryframeworktype" displayName="Delivery Framework Type" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="105" type="2" schemaName="msnfp_plannedenddate" displayName="Planned End Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="112" type="2" schemaName="msnfp_description" displayName="Description" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="106" type="2" schemaName="msnfp_name" displayName="Name" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="107" type="2" schemaName="msnfp_plannedstartdate" displayName="Planned Start Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="108" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="109" type="2" schemaName="msnfp_deliveryframeworkid" displayName="Delivery Framework" parentSchemaName="msnfp_deliveryframework" parentDisplayName="Delivery Framework" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="111" type="29" displayName="Project Activity - create corresponding Delivery Framework" id="{2b6011c4-c111-434f-9c29-ee4eb9e3880f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="113" type="29" displayName="Project Budget - restrictions during sensitive status" id="{41531810-ae77-436e-a548-4220f0c976b6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="114" type="29" displayName="Award - End Date must come after Start Date" id="{9532836a-a0ce-e911-a995-000d3a137208}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="msnfp_primaryconstituenttype" displayName="Primary Constituent Type" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="115" type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="115" type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+        <Dependent key="115" type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="116" type="26" schemaName="Fund Lookup View" displayName="Fund Lookup View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{0d69fade-f4fb-4c97-8d59-08e9839563d0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="116" type="26" schemaName="Fund Lookup View" displayName="Fund Lookup View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{0d69fade-f4fb-4c97-8d59-08e9839563d0}" />
+        <Dependent key="116" type="26" schemaName="Fund Lookup View" displayName="Fund Lookup View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{0d69fade-f4fb-4c97-8d59-08e9839563d0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="117" type="26" schemaName="Fund Advanced Find View" displayName="Fund Advanced Find View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{d5c748e2-46d0-4c00-85d3-76b91a8a4726}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="117" type="26" schemaName="Fund Advanced Find View" displayName="Fund Advanced Find View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{d5c748e2-46d0-4c00-85d3-76b91a8a4726}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="117" type="26" schemaName="Fund Advanced Find View" displayName="Fund Advanced Find View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{d5c748e2-46d0-4c00-85d3-76b91a8a4726}" />
+        <Dependent key="117" type="26" schemaName="Fund Advanced Find View" displayName="Fund Advanced Find View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{d5c748e2-46d0-4c00-85d3-76b91a8a4726}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="118" type="26" schemaName="All Child Funds Fund related" displayName="All Child Funds Fund related" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{2265ed13-c8d0-e911-a99c-000d3a137063}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="118" type="26" schemaName="All Child Funds Fund related" displayName="All Child Funds Fund related" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{2265ed13-c8d0-e911-a99c-000d3a137063}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="119" type="26" schemaName="Funds Report" displayName="Funds Report" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{a4c2efee-c63e-e911-a826-000d3a3b73ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="119" type="26" schemaName="Funds Report" displayName="Funds Report" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{a4c2efee-c63e-e911-a826-000d3a3b73ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="119" type="26" schemaName="Funds Report" displayName="Funds Report" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{a4c2efee-c63e-e911-a826-000d3a3b73ac}" />
+        <Dependent key="119" type="26" schemaName="Funds Report" displayName="Funds Report" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{a4c2efee-c63e-e911-a826-000d3a3b73ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="120" type="26" schemaName="Quick Find Active Awards" displayName="Quick Find Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{05ffa9cd-62d9-4f73-867a-62bdcabee89d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="120" type="26" schemaName="Quick Find Active Awards" displayName="Quick Find Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{05ffa9cd-62d9-4f73-867a-62bdcabee89d}" />
+        <Dependent key="120" type="26" schemaName="Quick Find Active Awards" displayName="Quick Find Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{05ffa9cd-62d9-4f73-867a-62bdcabee89d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="121" type="26" schemaName="Award Associated View" displayName="Award Associated View" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{7e6a6714-9dac-43b4-abe0-34554eee4dbc}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="121" type="26" schemaName="Award Associated View" displayName="Award Associated View" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{7e6a6714-9dac-43b4-abe0-34554eee4dbc}" />
+        <Dependent key="121" type="26" schemaName="Award Associated View" displayName="Award Associated View" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{7e6a6714-9dac-43b4-abe0-34554eee4dbc}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="122" type="26" schemaName="Inactive Awards" displayName="Inactive Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{ddf7586f-4e00-4a4a-9b30-3ce861a1cb1b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="122" type="26" schemaName="Inactive Awards" displayName="Inactive Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{ddf7586f-4e00-4a4a-9b30-3ce861a1cb1b}" />
+        <Dependent key="122" type="26" schemaName="Inactive Awards" displayName="Inactive Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{ddf7586f-4e00-4a4a-9b30-3ce861a1cb1b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="123" type="26" schemaName="Active Awards" displayName="Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{a5c375cc-19a5-4360-b262-04dffe758086}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="123" type="26" schemaName="Active Awards" displayName="Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{a5c375cc-19a5-4360-b262-04dffe758086}" />
+        <Dependent key="123" type="26" schemaName="Active Awards" displayName="Active Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{a5c375cc-19a5-4360-b262-04dffe758086}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="124" type="26" schemaName="All Awards" displayName="All Awards" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{e9eb0b83-afcd-e911-a991-000d3a137a43}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="125" type="26" schemaName="Award Lookup View" displayName="Award Lookup View" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{72ee5aa4-66c1-4c8f-8e6f-42ed3a345906}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="125" type="26" schemaName="Award Lookup View" displayName="Award Lookup View" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{72ee5aa4-66c1-4c8f-8e6f-42ed3a345906}" />
+        <Dependent key="125" type="26" schemaName="Award Lookup View" displayName="Award Lookup View" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{72ee5aa4-66c1-4c8f-8e6f-42ed3a345906}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="126" type="26" schemaName="Inactive Funds" displayName="Inactive Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{18092211-fd16-4418-bb96-4c6f3cf849b1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="126" type="26" schemaName="Inactive Funds" displayName="Inactive Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{18092211-fd16-4418-bb96-4c6f3cf849b1}" />
+        <Dependent key="126" type="26" schemaName="Inactive Funds" displayName="Inactive Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{18092211-fd16-4418-bb96-4c6f3cf849b1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="2" schemaName="msnfp_enddate" displayName="End Date" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="127" type="26" schemaName="Active Funds" displayName="Active Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{f0c4cd68-ce71-46ed-8ba2-b0dcdcaf2d14}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="127" type="26" schemaName="Active Funds" displayName="Active Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{f0c4cd68-ce71-46ed-8ba2-b0dcdcaf2d14}" />
+        <Dependent key="127" type="26" schemaName="Active Funds" displayName="Active Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{f0c4cd68-ce71-46ed-8ba2-b0dcdcaf2d14}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="128" type="26" schemaName="Project Budget Advanced Find View" displayName="Project Budget Advanced Find View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{31b68fcd-2423-4865-8660-728612f9bcb9}" />
+        <Dependent key="128" type="26" schemaName="Project Budget Advanced Find View" displayName="Project Budget Advanced Find View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{31b68fcd-2423-4865-8660-728612f9bcb9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="129" type="26" schemaName="Project Budget Associated View" displayName="Project Budget Associated View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{dccf8a72-3fe0-45e6-9dfd-8d340f72ee3e}" />
+        <Dependent key="129" type="26" schemaName="Project Budget Associated View" displayName="Project Budget Associated View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{dccf8a72-3fe0-45e6-9dfd-8d340f72ee3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="130" type="26" schemaName="Project Budget Lookup View" displayName="Project Budget Lookup View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{1083532b-d8db-418a-92e7-67f2dbc78be2}" />
+        <Dependent key="130" type="26" schemaName="Project Budget Lookup View" displayName="Project Budget Lookup View" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{1083532b-d8db-418a-92e7-67f2dbc78be2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="131" type="26" schemaName="Inactive Project Budgets" displayName="Inactive Project Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{7e6404f7-9f0f-45a9-809b-956f97679872}" />
+        <Dependent key="131" type="26" schemaName="Inactive Project Budgets" displayName="Inactive Project Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{7e6404f7-9f0f-45a9-809b-956f97679872}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="132" type="26" schemaName="Fund Associated View" displayName="Fund Associated View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{5527c06a-155a-44c7-a7de-64bd15357921}" />
+        <Dependent key="132" type="26" schemaName="Fund Associated View" displayName="Fund Associated View" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{5527c06a-155a-44c7-a7de-64bd15357921}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="133" type="26" schemaName="Quick Find Active Funds" displayName="Quick Find Active Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" id="{4ecfe11b-aae7-48fa-bcb7-412b2fe39231}" />
+        <Dependent key="133" type="26" schemaName="Quick Find Active Funds" displayName="Quick Find Active Funds" parentSchemaName="msnfp_designation" parentDisplayName="Fund" id="{4ecfe11b-aae7-48fa-bcb7-412b2fe39231}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="134" type="26" schemaName="Active Project Budgets" displayName="Active Project Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{2c73afcc-25af-479c-b60d-3e5c6fd3e065}" />
+        <Dependent key="134" type="26" schemaName="Active Project Budgets" displayName="Active Project Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{2c73afcc-25af-479c-b60d-3e5c6fd3e065}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="135" type="26" schemaName="Quick Find Active Budgets" displayName="Quick Find Active Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="NonprofitCore (2.3.3.0)" id="{ece4b0ba-09e7-4006-853f-3c9258d742c5}" />
+        <Dependent key="135" type="26" schemaName="Quick Find Active Budgets" displayName="Quick Find Active Budgets" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" id="{ece4b0ba-09e7-4006-853f-3c9258d742c5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="136" type="26" schemaName="All Funders" displayName="All Funders" parentSchemaName="account" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+        <Dependent key="136" type="26" schemaName="All Funders" displayName="All Funders" parentSchemaName="account" parentDisplayName="Funder" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="137" type="26" schemaName="Active Households" displayName="Active Households" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{24e7af6c-5fdc-e811-a962-000d3a3780dd}" />
+        <Dependent key="137" type="26" schemaName="Active Households" displayName="Active Households" parentSchemaName="account" parentDisplayName="Funder" id="{24e7af6c-5fdc-e811-a962-000d3a3780dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="138" type="26" schemaName="Active Organizations" displayName="Active Organizations" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{b4045ebc-cbd3-e811-a960-000d3a37870e}" />
+        <Dependent key="138" type="26" schemaName="Active Organizations" displayName="Active Organizations" parentSchemaName="account" parentDisplayName="Funder" id="{b4045ebc-cbd3-e811-a960-000d3a37870e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="139" type="26" schemaName="Accounts: Addresses Report" displayName="Accounts: Addresses Report" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{8a4fea79-cb44-e911-a838-000d3a3b7224}" />
+        <Dependent key="139" type="26" schemaName="Accounts: Addresses Report" displayName="Accounts: Addresses Report" parentSchemaName="account" parentDisplayName="Funder" id="{8a4fea79-cb44-e911-a838-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="140" type="26" schemaName="Accounts: Employment History Report" displayName="Accounts: Employment History Report" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{f1d8abd6-dc44-e911-a838-000d3a3b7224}" />
+        <Dependent key="140" type="26" schemaName="Accounts: Employment History Report" displayName="Accounts: Employment History Report" parentSchemaName="account" parentDisplayName="Funder" id="{f1d8abd6-dc44-e911-a838-000d3a3b7224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="141" type="26" schemaName="Households Report" displayName="Households Report" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{a8ce8265-ac3e-e911-a826-000d3a3b73ac}" />
+        <Dependent key="141" type="26" schemaName="Households Report" displayName="Households Report" parentSchemaName="account" parentDisplayName="Funder" id="{a8ce8265-ac3e-e911-a826-000d3a3b73ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="142" type="26" schemaName="Organizations Report" displayName="Organizations Report" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" id="{777f5859-ad3e-e911-a826-000d3a3b73ac}" />
+        <Dependent key="142" type="26" schemaName="Organizations Report" displayName="Organizations Report" parentSchemaName="account" parentDisplayName="Funder" id="{777f5859-ad3e-e911-a826-000d3a3b73ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="143" type="26" schemaName="Award Advanced Find View" displayName="Award Advanced Find View" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" id="{70f776f1-7c2f-40c5-926b-7a9dd093eac6}" />
+        <Dependent key="143" type="26" schemaName="Award Advanced Find View" displayName="Award Advanced Find View" parentSchemaName="msnfp_award" parentDisplayName="Award" id="{70f776f1-7c2f-40c5-926b-7a9dd093eac6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" solution="Active" />
+        <Dependent key="145" type="10" schemaName="msnfpe_ProjectBudgetLine_msnfp_ProjectBudget" displayName="msnfpe_ProjectBudgetLine_msnfp_ProjectBudget" parentSchemaName="msnfp_budget" parentDisplayName="Project Budget" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="148" type="10" schemaName="msnfpe_Agreement_msnfp_Award" displayName="msnfpe_Agreement_msnfp_Award" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="151" type="10" schemaName="msnfpe_Project_msnfp_Award" displayName="msnfpe_Project_msnfp_Award" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="152" type="10" schemaName="msnfpe_ProjectBudgetLine_msnfp_Award" displayName="msnfpe_ProjectBudgetLine_msnfp_Award" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="153" type="10" schemaName="msnfpe_AwardCostCategory_msnfp_Award" displayName="msnfpe_AwardCostCategory_msnfp_Award" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="110" type="2" schemaName="msnfp_awardid" displayName="Award" parentSchemaName="msnfp_award" parentDisplayName="Award" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="154" type="10" schemaName="msnfpe_GLTransaction_msnfp_Award" displayName="msnfpe_GLTransaction_msnfp_Award" parentSchemaName="msnfp_award" parentDisplayName="Award" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="account" parentDisplayName="Funder" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="49" type="10" schemaName="msnfp_account_award_FiscalSponsor" displayName="msnfp_account_award_FiscalSponsor" parentSchemaName="account" parentDisplayName="Funder" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="155" type="10" schemaName="msnfp_designation_parentDesignation" displayName="msnfp_designation_parentDesignation" parentSchemaName="msnfp_designation" parentDisplayName="Fund" solution="NonprofitCore (2.3.3.0)" />
+        <Dependent key="155" type="10" schemaName="msnfp_designation_parentDesignation" displayName="msnfp_designation_parentDesignation" parentSchemaName="msnfp_designation" parentDisplayName="Fund" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="156" type="60" displayName="Account Reference Panel" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="158" type="60" displayName="account card" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="159" type="60" displayName="Social Profiles" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="160" type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Funder" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="161" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="157" type="80" schemaName="msnfpe_NonprofitOperationsToolkit" displayName="Nonprofit Operations Toolkit" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

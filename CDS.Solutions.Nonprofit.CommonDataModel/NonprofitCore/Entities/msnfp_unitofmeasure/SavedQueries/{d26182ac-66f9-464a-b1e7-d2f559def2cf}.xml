@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d26182ac-66f9-464a-b1e7-d2f559def2cf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_unitofmeasureid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_unitofmeasuretype" width="165" />
+          <cell name="msnfp_unitofmeasuredatatype" width="199" />
+          <cell name="msnfp_unitofmeasurevalue" width="172" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_unitofmeasure">
+          <attribute name="msnfp_unitofmeasureid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_unitofmeasuretype" />
+          <attribute name="msnfp_unitofmeasuredatatype" />
+          <attribute name="msnfp_unitofmeasurevalue" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Units of Measure" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

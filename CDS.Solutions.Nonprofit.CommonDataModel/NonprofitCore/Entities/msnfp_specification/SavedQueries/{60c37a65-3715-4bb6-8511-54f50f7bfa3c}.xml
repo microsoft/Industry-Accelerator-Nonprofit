@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{60c37a65-3715-4bb6-8511-54f50f7bfa3c}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_specifications" jump="msnfp_specificationname" select="1" icon="1" preview="0">
+        <row name="msnfp_specification" id="msnfp_specificationid">
+          <cell name="msnfp_specificationname" width="300" />
+          <cell name="msnfp_standardid" width="100" />
+          <cell name="msnfp_specificationtype" width="153" />
+          <cell name="msnfp_specificationdescription" width="179" disableSorting="1" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_specification">
+          <attribute name="msnfp_specificationid" />
+          <attribute name="msnfp_specificationname" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfp_specificationname" descending="false" />
+          <attribute name="msnfp_standardid" />
+          <attribute name="msnfp_specificationtype" />
+          <attribute name="msnfp_specificationdescription" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Specification Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{59e57080-0cc2-e211-9b83-00155d89b902}</savedqueryid>
+    <queryapi>BulkOperation.RetrieveTargetedAccountsForMiniCampaign</queryapi>
+    <layoutxml>
+      <grid name="accounts" jump="name" select="1" icon="1" preview="1">
+        <row name="account" id="accountid">
+          <cell name="name" width="300" />
+          <cell name="primarycontactid" width="150" />
+          <cell name="telephone1" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset version="3.0">
+        <column>name</column>
+        <column>telephone1</column>
+        <column>primarycontactid</column>
+        <column>accountid</column>
+        <ascend>name</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="account">
+          <order attribute="name" descending="false" />
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Funder BulkOperation View" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Display Accounts for BulkOperation View" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

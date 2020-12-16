@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b56b6d35-1e69-436b-ba86-78127d36e8aa}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{02ce48e5-7b32-444f-ba9e-5fbeded7d987}" IsUserDefined="0">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Transaction currency information" showlabel="false" showbar="false" id="{cbbe8c17-a65a-44a5-a12f-8fca6ff5d0fb}" IsUserDefined="0">
+                  <labels>
+                    <label description="Transaction Currency Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{92935705-7e71-41cb-b6e9-66b013d59532}">
+                        <labels>
+                          <label description="Currency Name" languagecode="1033" />
+                        </labels>
+                        <control id="currencyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="currencyname" />
+                      </cell>
+                      <cell id="{f4b26f19-38fc-44cb-9acf-f69d1040cf37}">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{00aeddc8-57ea-41e1-9485-7b8cac35ce9c}">
+                        <labels>
+                          <label description="Currency Code" languagecode="1033" />
+                        </labels>
+                        <control id="isocurrencycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="isocurrencycode" />
+                      </cell>
+                      <cell id="{6e623bee-ee2b-4e39-8fd3-6789e9fadc90}">
+                        <labels>
+                          <label description="Currency Precision" languagecode="1033" />
+                        </labels>
+                        <control id="currencyprecision" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="currencyprecision" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bff9eb77-5ef5-4539-835e-a229b3feb974}">
+                        <labels>
+                          <label description="Currency Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="currencysymbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="currencysymbol" />
+                      </cell>
+                      <cell id="{0c0cb2b2-46c2-3465-4d6a-137c0d782926}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.Form_onload" libraryName="TransactionCurrency_main_system_library.js" handlerUniqueId="1f5b3e5a-3da2-4726-8ed4-13334d61026e" enabled="true">
+              <dependencies>
+                <dependency id="isocurrencycode" />
+                <dependency id="currencyname" />
+                <dependency id="currencysymbol" />
+                <dependency id="exchangerate" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:TransactionCurrency_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <controlDescriptions />
+      <header id="{6c4cdace-ccd9-4df0-ae36-5024adabd719}" columns="111" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{05dede96-683d-49ab-b68f-e3b633b90a7b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1c5b41b5-3e7b-4b2a-ba8b-7f895987155c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cd1eb609-c502-db4d-3beb-88d6e9c8344d}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{eaf20693-6a1e-4167-94ed-83f3a5e60c60}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{e6d127ed-99d0-16e6-6484-8284dca37ae8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6d16d78d-3db8-ad4c-de30-7342a385aaa5}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_Worker_msnfpe_Currency" Sequence="10001" Area="Info" Id="nav_msnfpe_Worker_msnfpe_Currency">
+            <Titles>
+              <Title LCID="1033" Text="Workers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_GLTransaction_TransactionCurrency" Sequence="10002" Area="Info" Id="nav_msnfpe_GLTransaction_TransactionCurrency">
+            <Titles>
+              <Title LCID="1033" Text="GL Transactions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="10003" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

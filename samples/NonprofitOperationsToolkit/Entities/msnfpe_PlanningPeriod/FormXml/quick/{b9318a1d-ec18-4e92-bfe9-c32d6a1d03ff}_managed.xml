@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b9318a1d-ec18-4e92-bfe9-c32d6a1d03ff}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0b0458f1-15f5-465d-98f3-453e974df190}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3fe99bc2-31ee-41cd-ae15-b07c5b39a811}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de79d118-3868-4c77-8020-38ed9df82f5a}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Period Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_periodname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_periodname" uniqueid="{7e10ab85-c94e-c414-d9a4-95b863b6b40e}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{84e6004b-a233-37da-2e44-c1ed424367d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_planningperiod_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_planningperiod_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1987890e-215c-d777-ea40-7c9d25530841}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Weekdays in Period" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_weekdaysinperiod" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msnfpe_weekdaysinperiod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6681198-0c2e-4a5a-b7f0-a3d36e4425cf}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{e6a2316b-5e41-2102-716e-ac387c2b7443}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

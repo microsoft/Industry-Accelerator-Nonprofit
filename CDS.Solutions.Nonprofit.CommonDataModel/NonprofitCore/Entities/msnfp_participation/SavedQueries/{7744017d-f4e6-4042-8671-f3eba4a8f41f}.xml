@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7744017d-f4e6-4042-8671-f3eba4a8f41f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_participationtitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_participationid">
+          <cell name="msnfp_participationtitle" width="300" />
+          <cell name="msnfp_contactid" width="100" />
+          <cell name="msnfp_engagementopportunityid" width="100" />
+          <cell name="msnfp_participationtypeid" width="100" />
+          <cell name="msnfp_status" width="100" />
+          <cell name="msnfp_hours" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_participation">
+          <attribute name="msnfp_participationtitle" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_participationtitle" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_participationtypeid" />
+          <attribute name="msnfp_status" />
+          <attribute name="msnfp_hours" />
+          <attribute name="msnfp_engagementopportunityid" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_contactid" />
+          <attribute name="msnfp_participationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Participations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

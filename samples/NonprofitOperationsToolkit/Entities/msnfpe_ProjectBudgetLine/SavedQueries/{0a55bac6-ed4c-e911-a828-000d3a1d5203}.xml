@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0a55bac6-ed4c-e911-a828-000d3a1d5203}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_projectbudgetlinename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectbudgetlineid">
+          <cell name="msnfpe_msnfp_projectbudgetid" width="182" />
+          <cell name="msnfpe_projectid" width="100" />
+          <cell name="msnfpe_projectactivityid" width="100" />
+          <cell name="msnfpe_glaccountid" width="100" />
+          <cell name="msnfpe_budgetcategory" width="100" />
+          <cell name="msnfpe_projectbudgetlinename" width="300" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_units" width="100" />
+          <cell name="msnfpe_unitprice" width="100" />
+          <cell name="msnfpe_unitprice_base" width="100" />
+          <cell name="msnfpe_inflation_rate" width="100" />
+          <cell name="msnfpe_fte_rate" width="100" />
+          <cell name="msnfpe_budgetline_amount" width="100" />
+          <cell name="msnfpe_budgetline_amount_base" width="100" />
+          <cell name="msnfpe_plannedamount" width="100" />
+          <cell name="msnfpe_plannedamount_base" width="100" />
+          <cell name="msnfpe_planneddifference" width="100" />
+          <cell name="msnfpe_planneddifference_base" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="exchangerate" width="100" />
+          <cell name="msnfpe_msnfp_awardid" width="100" />
+          <cell name="msnfpe_awardcostcategoryid" width="100" />
+          <cell name="msnfpe_msnfp_fundid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_projectbudgetline">
+          <attribute name="msnfpe_projectbudgetlineid" />
+          <attribute name="msnfpe_projectbudgetlinename" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_glaccountid" />
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_budgetline_amount" />
+          <attribute name="msnfpe_budgetcategory" />
+          <attribute name="msnfpe_projectid" />
+          <attribute name="msnfpe_units" />
+          <attribute name="msnfpe_unitprice" />
+          <attribute name="msnfpe_unitprice_base" />
+          <attribute name="msnfpe_inflation_rate" />
+          <attribute name="msnfpe_fte_rate" />
+          <attribute name="msnfpe_budgetline_amount_base" />
+          <attribute name="msnfpe_plannedamount" />
+          <attribute name="msnfpe_plannedamount_base" />
+          <attribute name="msnfpe_planneddifference" />
+          <attribute name="msnfpe_planneddifference_base" />
+          <attribute name="msnfpe_msnfp_projectbudgetid" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="exchangerate" />
+          <attribute name="msnfpe_msnfp_awardid" />
+          <attribute name="msnfpe_awardcostcategoryid" />
+          <attribute name="msnfpe_msnfp_fundid" />
+          <order attribute="msnfpe_projectactivityid" descending="false" />
+          <order attribute="msnfpe_projectbudgetlinename" descending="false" />
+          <order attribute="msnfpe_glaccountid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Budget Lines Complete" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A view created to populate document templates that support budget review." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

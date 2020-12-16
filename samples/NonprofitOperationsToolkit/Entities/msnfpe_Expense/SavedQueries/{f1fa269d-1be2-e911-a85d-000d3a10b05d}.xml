@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f1fa269d-1be2-e911-a85d-000d3a10b05d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_description" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_expenseid">
+          <cell name="msnfpe_description" width="200" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_expense_costcenterid" width="100" />
+          <cell name="a_cd36c119cced4575970f43bf43194969.msnfpe_manager_workerid" width="100" />
+          <cell name="msnfpe_expensetype" width="100" />
+          <cell name="msnfpe_date" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_expense">
+          <attribute name="msnfpe_description" />
+          <attribute name="msnfpe_expenseid" />
+          <attribute name="msnfpe_workerid" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="eq" value="796500000" />
+            <condition attribute="msnfpe_expense_costcenterid" operator="not-null" />
+          </filter>
+          <attribute name="msnfpe_expensetype" />
+          <attribute name="msnfpe_date" />
+          <attribute name="msnfpe_amount" />
+          <attribute name="msnfpe_expense_costcenterid" />
+          <link-entity alias="a_cd36c119cced4575970f43bf43194969" name="msnfpe_costcenter" to="msnfpe_expense_costcenterid" from="msnfpe_costcenterid" link-type="outer" visible="false">
+            <attribute name="msnfpe_manager_workerid" />
+          </link-entity>
+          <order attribute="msnfpe_expense_costcenterid" descending="false" />
+          <order attribute="msnfpe_date" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.4.16</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Submitted Cost Center Expenses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

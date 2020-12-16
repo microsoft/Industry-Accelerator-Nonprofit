@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c7b8d49f-1c32-4b52-b03b-0b09382eb00b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_schedulename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_workercostscheduleid">
+          <cell name="msnfpe_schedulename" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_workercostschedule">
+          <attribute name="msnfpe_workercostscheduleid" />
+          <attribute name="msnfpe_schedulename" />
+          <attribute name="createdon" />
+          <order attribute="msnfpe_schedulename" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Worker Cost Schedule Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

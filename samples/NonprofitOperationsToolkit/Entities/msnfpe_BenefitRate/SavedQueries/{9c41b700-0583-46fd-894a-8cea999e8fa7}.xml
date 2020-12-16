@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9c41b700-0583-46fd-894a-8cea999e8fa7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_ratename" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_benefitrateid">
+          <cell name="msnfpe_ratename" width="172" />
+          <cell name="msnfpe_rate" width="108" />
+          <cell name="msnfpe_effectivedate" width="136" />
+          <cell name="msnfpe_expirationdate" width="128" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_benefitrate">
+          <attribute name="msnfpe_benefitrateid" />
+          <attribute name="msnfpe_ratename" />
+          <order attribute="msnfpe_ratename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_rate" />
+          <attribute name="msnfpe_expirationdate" />
+          <attribute name="msnfpe_effectivedate" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Benefit Rates" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

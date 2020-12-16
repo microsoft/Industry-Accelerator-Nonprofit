@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{a1d37d6d-473c-e911-a830-000d3a3b7224}</connectionroleid>
+      <name>Designation to Delivery Framework</name>
+      <category>5</category>
+      <description>Connection between Designation and Program Delivery records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>3.0.3.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a6d37d6d-473c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a7d37d6d-473c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_designation</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{2788efc7-473c-e911-a830-000d3a3b7224}</connectionroleid>
+      <name>Designation to Budget</name>
+      <category>5</category>
+      <description>Connection between Designation and Budget records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>3.0.3.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{2a88efc7-473c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_budget</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{2b88efc7-473c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_designation</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{5f1f4b46-483c-e911-a830-000d3a3b7224}</connectionroleid>
+      <name>Designation to Indicator Value</name>
+      <category>5</category>
+      <description>Connection between designation and Indicator Value records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>3.0.3.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{621f4b46-483c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_designation</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{631f4b46-483c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_indicatorvalue</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{2d87bb7b-483c-e911-a830-000d3a3b7224}</connectionroleid>
+      <name>Beneficiary</name>
+      <category>5</category>
+      <description>Connection between an Account/ Contact with Indicator Value or Delivery Framework records</description>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>3.0.3.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{3087bb7b-483c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>account</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{3187bb7b-483c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>contact</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bcb3c198-2647-e911-a826-000d3a3b7b7b}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_deliveryframework</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{3287bb7b-483c-e911-a830-000d3a3b7224}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msnfp_indicatorvalue</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+  <ConnectionRoleAssociations>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{a1d37d6d-473c-e911-a830-000d3a3b7224}</connectionroleid>
+      <associatedconnectionroleid>{a1d37d6d-473c-e911-a830-000d3a3b7224}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{2788efc7-473c-e911-a830-000d3a3b7224}</connectionroleid>
+      <associatedconnectionroleid>{2788efc7-473c-e911-a830-000d3a3b7224}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{5f1f4b46-483c-e911-a830-000d3a3b7224}</connectionroleid>
+      <associatedconnectionroleid>{5f1f4b46-483c-e911-a830-000d3a3b7224}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+  </ConnectionRoleAssociations>
+</ConnectionRoles>

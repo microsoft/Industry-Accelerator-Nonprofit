@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{37ff6d9f-18b6-4753-86fa-00bb287b1537}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_activityname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_projectactivityid">
+          <cell name="msnfpe_activityname" width="257" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_activitymanagerid" width="100" />
+          <cell name="msnfpe_startdate" width="100" />
+          <cell name="msnfpe_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_projectactivity">
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_activityname" />
+          <order attribute="msnfpe_activityname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_startdate" />
+          <attribute name="msnfpe_enddate" />
+          <attribute name="msnfpe_activitymanagerid" />
+          <attribute name="statuscode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Activities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

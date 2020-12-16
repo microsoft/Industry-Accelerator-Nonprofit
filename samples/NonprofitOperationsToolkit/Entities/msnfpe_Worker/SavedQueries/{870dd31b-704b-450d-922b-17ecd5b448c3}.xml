@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{870dd31b-704b-450d-922b-17ecd5b448c3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_workername" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_workerid">
+          <cell name="statecode" width="100" />
+          <cell name="msnfpe_workername" width="228" />
+          <cell name="msnfpe_workernumber" width="100" />
+          <cell name="msnfpe_workertype" width="150" />
+          <cell name="msnfpe_primaryemail" width="150" />
+          <cell name="msnfpe_primaryphone" width="150" />
+          <cell name="msnfpe_managerid" width="100" />
+          <cell name="msnfpe_workingofficeid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_worker">
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_workername" />
+          <attribute name="msnfpe_workertype" />
+          <attribute name="msnfpe_primaryemail" />
+          <attribute name="msnfpe_primaryphone" />
+          <order attribute="msnfpe_workername" descending="false" />
+          <attribute name="statecode" />
+          <attribute name="msnfpe_workernumber" />
+          <attribute name="msnfpe_workingofficeid" />
+          <attribute name="msnfpe_managerid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Workers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3d32f883-3698-4191-aeb3-9ea348e4c5c7}</formid>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{1abe2592-371e-4dd5-b8b3-c641e934b2e7}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3a6cc1ed-dcc0-464b-b8ee-6f93aa0ee3d9}" name="{3a6cc1ed-dcc0-464b-b8ee-6f93aa0ee3d9}" columns="111" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d182ab93-de97-418a-813d-274a04cbeaf7}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                      <cell id="{a202ed01-b5d5-4b02-2ed8-0c808a7a582a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_project" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_project" disabled="false" />
+                      </cell>
+                      <cell id="{7ce8914a-1e5c-4dc0-0de1-2b341941cab1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Operation" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_parentoperationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_parentoperationid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68c88849-82dc-08e7-dd6e-e2e28da49658}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sector" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_sectortype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_sectortype" disabled="false" />
+                      </cell>
+                      <cell id="{16586b2b-1488-c4a8-e935-37a7c8642ba0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Activity" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_activity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_activity" disabled="false" />
+                      </cell>
+                      <cell id="{2e846cd9-b677-698b-04b6-9b38e1595870}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_accountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dad772a1-b978-c332-4794-353835b72054}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sub-Sector" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_subsectortype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_subsectortype" disabled="false" />
+                      </cell>
+                      <cell id="{bc254519-40c6-ad8a-c136-2a03cbb7e862}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Activity Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_activitytype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_activitytype" disabled="false" />
+                      </cell>
+                      <cell id="{3b4c7b42-c163-96a2-2cc5-0de519825919}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_contactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_contactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a179112-a28f-4ac2-86ed-45e63cb96b05}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{28522cc1-b09a-3411-c811-149e360ae935}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Group" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_group" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_group" disabled="false" />
+                      </cell>
+                      <cell id="{37ac7867-0c4d-dd1e-36b7-ec49c5bbe914}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Delivery Framework" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_deliveryframeworkid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_deliveryframeworkid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a8ad2d4-3159-4b23-e633-613e2e85c8ea}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2496c7a8-ebcc-ad7b-c767-78e50d93364d}" showlabel="true" locklevel="0" rowspan="2">
+                        <labels>
+                          <label description="Type Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_typedescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfp_typedescription" disabled="false" uniqueid="{c996871a-9c04-4520-0850-6ba496ce173c}" />
+                      </cell>
+                      <cell id="{5151a299-db98-82cd-40ab-abd5db5a1da1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1e73d338-ec23-a448-9bc7-c343aa0be952}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d792646d-0749-e577-04c9-848ae40a6e1c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{3330e563-c5ad-dc4e-7e4e-01e1e5387022}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Engagement Opportunities" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{d39dad03-8324-5883-8db3-8331b0cb8455}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6cbbed77-d96e-b486-3cd7-4d0872a61007}" showlabel="false" colspan="1" auto="false" rowspan="12">
+                        <labels>
+                          <label description="Engagement Opportunities (Operation)" languagecode="1033" />
+                        </labels>
+                        <control id="EngagementOpportunities" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{306db562-2ac2-3499-3adb-9223b125de14}">
+                          <parameters>
+                            <ViewId>{E02AB9EB-FA3C-4245-A219-478BF1CF5391}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfp_msnfp_operation_msnfp_engagementopportunity_operationId</RelationshipName>
+                            <TargetEntityType>msnfp_engagementopportunity</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{E02AB9EB-FA3C-4245-A219-478BF1CF5391}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{318247d9-62fb-4fcb-b06d-8116926924c7}" columns="111">
+        <rows>
+          <row>
+            <cell id="{1c7a6cb9-9dc2-12c1-e93d-3c8540c36d19}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Operation Type" languagecode="1033" />
+              </labels>
+              <control id="header_msnfp_operationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_operationtype" disabled="false" />
+            </cell>
+            <cell id="{4a248dd7-6014-8550-58bc-5265775ec639}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Operation Status" languagecode="1033" />
+              </labels>
+              <control id="header_msnfp_operationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_operationstatus" disabled="false" />
+            </cell>
+            <cell id="{6b979559-9b9d-48e2-7dd2-b423c3e479e3}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Operation Identifier" languagecode="1033" />
+              </labels>
+              <control id="header_msnfp_operationidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_operationidentifier" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

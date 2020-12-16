@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a7b415c0-8797-4071-8f1a-35b4f54fd5eb}</formid>
+    <IntroducedVersion>0.9.4.11</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{2398f7d9-35c5-40c9-b25d-8c3e0b0f915b}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{62325ebf-e610-46d1-bc88-3bcbdc41d6a6}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{96174242-01ea-41ec-7cae-53e062ba42c7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_cc_budgetlinedesc" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_cc_budgetlinedesc" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b5a4541-1c6e-8a85-0561-9e5d29a8b90a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GL Account" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_glaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_glaccountid" disabled="false" uniqueid="{a38c58c4-c689-9e8b-23d1-117121ea3349}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{83A72A50-3F44-44AF-B48E-C4BE42565551}</DefaultViewId>
+                            <AvailableViewIds>{83A72A50-3F44-44AF-B48E-C4BE42565551}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72b30668-9088-4d44-c653-016750aa5932}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Line Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetline_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{4ae3c349-78ac-4f9f-827d-90cfc205cc97}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{befded20-b9e7-47f4-939f-94a0a965054d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{0b4cf7de-f746-4287-ac3d-93fac83498b4}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8ff173c4-a50e-4c69-894e-03336434b9af}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

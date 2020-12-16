@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5c3b0f6a-b703-4fae-9b96-daa46b520a09}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_effortplan_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_effortplanid">
+          <cell name="msnfpe_effortplan_name" width="300" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_planningperiodid" width="100" />
+          <cell name="msnfpe_projectid" width="100" />
+          <cell name="msnfpe_projectactivityid" width="100" />
+          <cell name="msnfpe_costcenterid" width="100" />
+          <cell name="msnfpe_hours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_effortplan">
+          <attribute name="msnfpe_effortplanid" />
+          <attribute name="msnfpe_effortplan_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="msnfpe_projectid" />
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_costcenterid" />
+          <order attribute="msnfpe_effortplan_name" descending="false" />
+          <order attribute="msnfpe_planningperiodid" descending="false" />
+          <attribute name="msnfpe_hours" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Effort Plans" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6e39f8a4-d433-4059-ae83-7da3cd9b4fd3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_operationid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_operationtype" width="130" />
+          <cell name="msnfp_operationstatus" width="134" />
+          <cell name="msnfp_accountid" width="100" />
+          <cell name="msnfp_contactid" width="100" />
+          <cell name="msnfp_project" width="100" />
+          <cell name="msnfp_activity" width="100" />
+          <cell name="a_287fd4cbbe6744e392e658add9e08b9d.createdon" width="110" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_operation">
+          <attribute name="msnfp_operationid" />
+          <attribute name="msnfp_name" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="msnfp_operationtype" />
+          <attribute name="msnfp_operationstatus" />
+          <attribute name="msnfp_accountid" />
+          <attribute name="msnfp_contactid" />
+          <attribute name="msnfp_project" />
+          <attribute name="msnfp_activity" />
+          <link-entity alias="a_287fd4cbbe6744e392e658add9e08b9d" name="msnfp_deliveryframework" to="msnfp_deliveryframeworkid" from="msnfp_deliveryframeworkid" link-type="outer" visible="false">
+            <attribute name="createdon" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Operations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

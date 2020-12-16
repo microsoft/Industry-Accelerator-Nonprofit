@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{920f86b5-c6ff-4df7-a91c-aaf6feabf420}</formid>
+    <IntroducedVersion>1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="Low">
+      <tabs>
+        <tab verticallayout="true" id="{4c3796f0-6fb3-4138-b91a-ab585dde5a3f}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f5295ce2-6dff-4f41-947d-806765d27a16}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{51dbe8ba-cefc-4ddc-a278-ef43f55d53d6}">
+                        <labels>
+                          <label description="Fund Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfp_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{814bace3-6524-6475-a52c-278844e57c93}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc40b034-52a6-7574-d544-a31a23a5433c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Restriction Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_restrictiontype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfp_restrictiontype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{288d711a-98d6-663c-3282-eb095884241a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Fund" languagecode="1033" />
+                        </labels>
+                        <control id="msnfp_parentdesignationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfp_parentdesignationid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74a03325-81bd-460e-9973-f10a7eb84bf8}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

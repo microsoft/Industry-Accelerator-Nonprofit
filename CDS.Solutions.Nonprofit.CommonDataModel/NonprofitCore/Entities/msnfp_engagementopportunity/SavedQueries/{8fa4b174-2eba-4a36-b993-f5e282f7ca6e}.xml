@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8fa4b174-2eba-4a36-b993-f5e282f7ca6e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_engagementopportunitytitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_engagementopportunityid">
+          <cell name="msnfp_engagementopportunitytitle" width="300" />
+          <cell name="msnfp_engagementopportunitystatus" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_number" width="100" />
+          <cell name="msnfp_deliveryframeworkid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msnfp_operationid" width="100" />
+          <cell name="msnfp_workitemid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_engagementopportunity">
+          <attribute name="msnfp_engagementopportunitytitle" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_engagementopportunitytitle" descending="false" />
+          <attribute name="msnfp_workitemid" />
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_operationid" />
+          <attribute name="msnfp_number" />
+          <attribute name="msnfp_engagementopportunitystatus" />
+          <attribute name="msnfp_deliveryframeworkid" />
+          <attribute name="msnfp_engagementopportunityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Engagement Opportunity Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

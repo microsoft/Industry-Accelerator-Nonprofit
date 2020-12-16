@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d350d64c-50ad-4604-8625-ff7aae4fdd36}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{79949b1e-2b45-4e66-b3fb-dd2762f6ed98}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{0fc72aad-f626-45b8-833b-50a268aff27a}" name="{0fc72aad-f626-45b8-833b-50a268aff27a}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Project Budget Line information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e701bcce-2667-4984-95aa-79a9062b95ba}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_projectbudgetlinename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_projectbudgetlinename" uniqueid="{6dc56822-b006-c549-b7e1-d394b02a0c85}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5b72b04-d082-b955-4190-5928894dab22}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GL Account" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_glaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_glaccountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a68111b-cdb4-7eb1-70e2-4d014c6766a5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Budget Category" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetcategory" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_budgetcategory" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e6b32bb-e6a1-8c86-8678-43b211d1374b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a13b6ee-3758-2b72-a546-c90be612c1dc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Line Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetline_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc5ae5b1-4587-aae1-3d65-7196238d346c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Line Amount (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetline_amount_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount_base" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{13e26d11-9cab-433a-4c73-4eac230c7975}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Planned Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_plannedamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_plannedamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0725b6e-279a-437b-56d9-8b22c4ea9166}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Planned Amount (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_plannedamount_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_plannedamount_base" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d870bfb4-7eb7-446e-b9e0-f45a53442da0}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{3b55aed8-bd8a-ecb5-ca0e-69ac9b4de738}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

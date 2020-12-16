@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <name>Budget Delivery Framework</name>
+  <defaultfilter>
+    <ReportFilter>
+      <ReportEntity paramname="CRM_Filteredmsnfp_deliveryframework" donotconvert="1">
+        <fetch distinct="true" mapping="logical" output-format="xml-platform" version="1.0">
+          <entity name="msnfp_deliveryframework">
+            <all-attributes />
+            <filter type="and">
+              <condition attribute="msnfp_deliveryframeworkid" operator="eq" />
+              <condition value="" attribute="msnfp_deliveryframeworktype" operator="eq" />
+              <condition value="%%" attribute="msnfp_description" operator="like" />
+            </filter>
+            <link-entity name="activitypointer" to="msnfp_deliveryframeworkid" from="regardingobjectid" alias="aa" />
+          </entity>
+        </fetch>
+      </ReportEntity>
+      <ReportEntity paramname="CRM_Filteredmsnfp_Budget" donotconvert="1">
+        <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+          <entity name="msnfp_budget">
+            <all-attributes />
+            <filter type="and">
+              <condition value="" attribute="msnfp_name" operator="eq" />
+              <condition attribute="msnfp_budgetid" operator="eq" />
+              <condition attribute="msnfp_objectiveid" operator="eq" />
+              <condition value="" attribute="statecode" operator="eq" />
+              <condition value="" attribute="statuscode" operator="eq" />
+            </filter>
+          </entity>
+        </fetch>
+      </ReportEntity>
+    </ReportFilter>
+  </defaultfilter>
+  <iscustomreport>1</iscustomreport>
+  <description></description>
+  <filename>Budget Delivery Framework.rdl</filename>
+  <languagecode>1033</languagecode>
+  <reportid>{a4de0413-7d86-e911-a960-000d3a37f702}</reportid>
+  <reporttypecode>1</reporttypecode>
+  <IntroducedVersion>3.0.3.0</IntroducedVersion>
+  <createdinmajorversion>9</createdinmajorversion>
+  <iscustomizable>1</iscustomizable>
+  <ExportedFileName>/Reports/BudgetDeliveryFrameworkrdla4de0413-7d86-e911-a960-000d3a37f702.wdl</ExportedFileName>
+  <ReportCategories />
+  <ReportVisibilities>
+    <ReportVisbility>2</ReportVisbility>
+    <ReportVisbility>3</ReportVisbility>
+    <ReportVisbility>1</ReportVisbility>
+  </ReportVisibilities>
+  <ReportEntities>
+    <ReportEntity>msnfp_deliveryframework</ReportEntity>
+  </ReportEntities>
+</Report>

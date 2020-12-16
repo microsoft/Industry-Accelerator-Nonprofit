@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3b362d7e-475b-4d24-b9e2-6ecbc56eb7f0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_vendorname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_vendorid">
+          <cell name="msnfpe_vendorname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_vendor">
+          <attribute name="msnfpe_vendorid" />
+          <attribute name="msnfpe_vendorname" />
+          <attribute name="createdon" />
+          <order attribute="msnfpe_vendorname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfpe_vendorname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Vendors" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

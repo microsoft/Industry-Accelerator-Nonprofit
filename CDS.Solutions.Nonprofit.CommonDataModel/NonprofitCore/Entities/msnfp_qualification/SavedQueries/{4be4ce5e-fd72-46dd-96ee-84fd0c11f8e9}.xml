@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4be4ce5e-fd72-46dd-96ee-84fd0c11f8e9}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_qualifications" jump="msnfp_qualificationtitle" select="1" icon="1" preview="0">
+        <row name="msnfp_qualification" id="msnfp_qualificationid">
+          <cell name="msnfp_qualificationtitle" width="300" />
+          <cell name="msnfp_contactid" width="100" />
+          <cell name="msnfp_typeid" width="100" />
+          <cell name="msnfp_startdate" width="100" />
+          <cell name="msnfp_enddate" width="100" />
+          <cell name="msnfp_proficiency" width="100" />
+          <cell name="msnfp_certificationdate" width="100" />
+          <cell name="msnfp_parentqualificationid" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_qualification">
+          <attribute name="msnfp_qualificationid" />
+          <attribute name="msnfp_qualificationtitle" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="msnfp_qualificationtitle" descending="false" />
+          <attribute name="msnfp_typeid" />
+          <attribute name="msnfp_startdate" />
+          <attribute name="msnfp_proficiency" />
+          <attribute name="msnfp_parentqualificationid" />
+          <attribute name="msnfp_enddate" />
+          <attribute name="msnfp_contactid" />
+          <attribute name="msnfp_certificationdate" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Qualification Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

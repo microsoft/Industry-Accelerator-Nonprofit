@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7eda2a63-abb0-e911-a991-000d3a1378f6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_description" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_description">
+          <cell name="msnfpe_description" width="200" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_expensetype" width="100" />
+          <cell name="msnfpe_date" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="msnfpe_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_expense">
+          <attribute name="msnfpe_description" />
+          <attribute name="msnfpe_expenseid" />
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_expensetype" />
+          <attribute name="msnfpe_date" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="msnfpe_amount" />
+          <order attribute="msnfpe_date" descending="false" />
+          <order attribute="statuscode" descending="true" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Expenses" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows Expenses owned by the currently logged in users." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

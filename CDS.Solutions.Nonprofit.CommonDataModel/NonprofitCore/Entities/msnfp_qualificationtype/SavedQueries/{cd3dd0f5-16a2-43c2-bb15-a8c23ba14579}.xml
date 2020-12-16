@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cd3dd0f5-16a2-43c2-bb15-a8c23ba14579}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_qualificationtypetitle" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_qualificationtypeid">
+          <cell name="msnfp_qualificationtypetitle" width="300" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_qualificationtype">
+          <attribute name="msnfp_qualificationtypetitle" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_qualificationtypetitle" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msnfp_qualificationtypetitle" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_qualificationtypeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Qualification Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

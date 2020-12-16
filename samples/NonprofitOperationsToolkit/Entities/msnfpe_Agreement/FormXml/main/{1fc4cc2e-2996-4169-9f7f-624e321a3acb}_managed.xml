@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1fc4cc2e-2996-4169-9f7f-624e321a3acb}</formid>
+    <IntroducedVersion>1.0.1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{3fb1c8ad-debd-4b71-bc6b-02745a4fda67}" IsUserDefined="1" name="{3fb1c8ad-debd-4b71-bc6b-02745a4fda67}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3c089cae-a6df-4b0f-bbc5-f7a4668fe987}" name="{3c089cae-a6df-4b0f-bbc5-f7a4668fe987}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{87d212e0-2229-4c60-9103-e1d106e79a5a}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_agreementtitle" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_agreementtitle" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c2d246a-614c-04c1-7a33-d91bb64cb274}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Agreement Type" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_agreementtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msnfpe_agreementtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9bd962c0-a361-23c1-4602-401a79043d4c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a835c97-51d9-e728-ec02-a95aee521c00}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c0d57124-a095-5358-0c42-c61e1d7c50a7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_vendorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_vendorid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{185a8d26-34e8-5c73-eb92-8e9cd17da80d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Funder" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_funder_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_funder_accountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36a09a59-1dee-de8c-6943-069b358ea834}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Award" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_msnfp_awardid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_msnfp_awardid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d0194b6-2432-ba38-8b58-1589b3c3c04b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_projectid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_projectid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{422e2a9d-b81c-b966-dabd-3d467b16c663}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Activity" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_projectactivityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_projectactivityid" disabled="false" uniqueid="{88ce763b-44d4-9bb5-761d-b7972eeb71c3}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{BB610B5B-3FA5-4E94-82E2-61C63AFC3669}</DefaultViewId>
+                            <FilterRelationshipName>msnfpe_ProjectActivity_msnfpe_Project</FilterRelationshipName>
+                            <DependentAttributeName>msnfpe_agreement.msnfpe_projectid</DependentAttributeName>
+                            <DependentAttributeType>msnfpe_project</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{01ebc53a-ac7a-9967-c3a5-20c8c684ac83}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Cost Center" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_costcenterid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_costcenterid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6008713-2c88-5493-0db0-b7589ed20892}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Reference Code" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_referencecode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_referencecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8bd480b2-8752-cb30-e830-866b4ac98376}" showlabel="true" locklevel="0" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfpe_description" disabled="false" uniqueid="{70330908-9e05-0a37-3ed1-da5c0db55112}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{10fcce15-bc4e-42a7-a1cb-6f26a48e187a}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{474ec590-76ae-6171-7e92-ce5273b950ee}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{3fb1c8ad-debd-4b71-bc6b-02745a4fda67}_section_2" showlabel="true" showbar="false" locklevel="0" id="{2a527059-c257-85d3-67d3-0300b3aa6714}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Financial information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{17e95946-d640-562a-8582-2cc14b942147}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Payment Office" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_paymentofficeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_paymentofficeid" disabled="false" />
+                      </cell>
+                      <cell id="{b7b5a837-76ac-c7e7-4934-44a5669ca557}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3303a5a1-0167-6564-3da4-2813bc9d5991}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false" />
+                      </cell>
+                      <cell id="{943a67d9-7711-29cd-4693-a9ad56a1d94b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{27bca367-c430-9c89-0c80-b6a4096c6040}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_amount" disabled="false" />
+                      </cell>
+                      <cell id="{52ed7d4e-1ed2-ce93-2040-6ed1a597e247}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Amount (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_amount_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_amount_base" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{3fb1c8ad-debd-4b71-bc6b-02745a4fda67}_section_3" showlabel="false" showbar="false" locklevel="0" id="{d7018e2a-c8c3-618e-4615-815c686e566e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6e3e9a67-a478-048b-1c37-aa095bb3c378}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_primarycontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_primarycontactid" disabled="false" uniqueid="{be28cea2-8875-807a-2045-896cad581041}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4b4ee95-75ab-3917-b0db-204a32d5c2b7}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="quickview_agreement_contact" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="msnfpe_primarycontactid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;29de27bc-a257-4f29-99cf-bab4a84e688f&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{514082b2-8ce2-4ce5-baa9-42703c82a796}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1ec42cd-3cc9-9e78-b38e-2c6ab012dc67}" showlabel="false" rowspan="15" auto="true" colspan="1" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{7808c690-4cb7-7a48-4b98-605957816d0d}" disabled="false">
+                          <parameters>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{9fb7ad89-5be9-4233-9335-44df69b4f8a3}" columns="111" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{246b069b-5896-7215-9131-b22ebc96672a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Amount" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_amount" disabled="true" uniqueid="{c0494478-74c4-c60a-e6bb-56c73b05d326}" />
+            </cell>
+            <cell id="{0512116a-7ca5-b16a-6402-5dba297447da}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Agreement Number" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_agreementnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_agreementnumber" disabled="true" uniqueid="{e5615606-1cbe-ea4b-b805-bb9ba686c868}" />
+            </cell>
+            <cell id="{d4e41350-d679-bb03-753d-92e1e935234b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{72b0fada-1779-4881-afda-17dd70c834eb}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{150deb70-1225-d2de-9598-d07992469508}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{932c8e13-e126-8a0a-a85c-68a34456d6d4}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_GLTransaction_msnfpe_Agreement" Sequence="60" Area="Info" Id="nav_msnfpe_GLTransaction_msnfpe_Agreement">
+            <Titles>
+              <Title LCID="1033" Text="GL Transactions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_agreement_SharePointDocuments" Sequence="61" Area="Info" Id="navSPDocuments">
+            <Titles>
+              <Title LCID="1033" Text="Documents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

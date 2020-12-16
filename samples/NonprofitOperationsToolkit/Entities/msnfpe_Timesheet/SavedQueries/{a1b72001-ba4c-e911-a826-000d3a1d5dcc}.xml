@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a1b72001-ba4c-e911-a826-000d3a1d5dcc}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_timesheetname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_timesheetname">
+          <cell name="msnfpe_timesheetname" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_planningperiodid" width="100" />
+          <cell name="msnfpe_totalreportedhours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msnfpe_timesheet">
+          <attribute name="msnfpe_workerid" />
+          <attribute name="msnfpe_planningperiodid" />
+          <attribute name="statuscode" />
+          <order attribute="msnfpe_workerid" descending="false" />
+          <order attribute="msnfpe_planningperiodid" descending="false" />
+          <attribute name="msnfpe_timesheetname" />
+          <attribute name="msnfpe_totalreportedhours" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.3.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Timesheets" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

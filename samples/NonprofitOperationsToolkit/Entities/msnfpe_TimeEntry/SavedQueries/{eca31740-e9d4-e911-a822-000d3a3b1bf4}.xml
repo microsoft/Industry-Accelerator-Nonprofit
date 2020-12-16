@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{eca31740-e9d4-e911-a822-000d3a3b1bf4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfpe_entryname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfpe_timeentryid">
+          <cell name="msnfpe_timesheetperiodid" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="msnfpe_projectactivityid" width="100" />
+          <cell name="msnfpe_workerid" width="100" />
+          <cell name="msnfpe_timetype" width="100" />
+          <cell name="msnfpe_date" width="100" />
+          <cell name="msnfpe_hours" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfpe_timeentry">
+          <attribute name="msnfpe_timeentryid" />
+          <attribute name="statuscode" />
+          <attribute name="msnfpe_timetype" />
+          <attribute name="msnfpe_date" />
+          <attribute name="msnfpe_projectactivityid" />
+          <attribute name="msnfpe_hours" />
+          <attribute name="msnfpe_timesheetperiodid" />
+          <attribute name="msnfpe_workerid" />
+          <filter type="and">
+            <condition attribute="msnfpe_hours" operator="not-null" />
+          </filter>
+          <order attribute="msnfpe_timesheetperiodid" descending="false" />
+          <order attribute="msnfpe_projectactivityid" descending="false" />
+          <order attribute="msnfpe_workerid" descending="false" />
+          <order attribute="msnfpe_date" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.9.4.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Time Entries project related" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

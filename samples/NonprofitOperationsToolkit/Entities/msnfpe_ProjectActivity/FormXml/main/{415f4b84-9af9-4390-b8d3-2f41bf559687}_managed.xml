@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{415f4b84-9af9-4390-b8d3-2f41bf559687}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{134813d9-7a65-4811-8a4a-f6a56a4affd0}" IsUserDefined="1" name="{134813d9-7a65-4811-8a4a-f6a56a4affd0}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{47a809b8-9000-4297-9b06-805597808e61}" name="{47a809b8-9000-4297-9b06-805597808e61}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0e43a1b4-994f-4172-9a13-99c194ee4bbe}">
+                        <labels>
+                          <label description="Activity Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_activityname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_activityname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a8b4bd6-70aa-4e05-13ad-ce481d0c7187}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55dd92b5-7829-bdaa-6886-65586a27de89}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msnfpe_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8557a63c-3102-851e-2416-245c1d170521}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Activity Manager" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_activitymanagerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_activitymanagerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70517c71-39e1-57c5-051c-c68549d9416b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Reference Code" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_referencecode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_referencecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a1e5307-5950-6670-0c71-53c12619d364}" showlabel="true" locklevel="0" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msnfpe_description" disabled="false" uniqueid="{61c13e56-510c-c019-26d5-2443e3a19978}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="{134813d9-7a65-4811-8a4a-f6a56a4affd0}_section_3" showlabel="false" showbar="false" locklevel="0" id="{e710a9a8-6d36-e5dd-952d-688707568395}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false" availableforphone="false">
+                  <labels>
+                    <label description="Hidden" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3f2197b3-1bd8-46db-a83d-25c3d67f0fa8}" showlabel="false" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{c3248e12-a1e8-c6a1-4ccd-b009d7c7c4e5}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{134813d9-7a65-4811-8a4a-f6a56a4affd0}_section_2" showlabel="false" showbar="false" locklevel="0" id="{c9ed171a-8a72-114d-339e-2dc1b847d2a4}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{63605576-a354-3c0c-235b-1940c25ebe80}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                        </labels>
+                        <control id="quickview_project" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="msnfpe_projectid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="msnfpe_project"&gt;2cd72a5a-f6dd-452a-a515-a4987aedaed6&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{6dd8dc4d-b316-c846-a7b7-ca9101ea3a3e}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Agreements" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{595e6bbb-4cd7-b95a-74ac-e55d1d004367}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{92054e6d-45cd-8353-1021-aecc2368e6e8}" showlabel="false" colspan="1" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Agreements (Project Activity)" languagecode="1033" />
+                        </labels>
+                        <control id="grid_activity_agreements" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{b9372d08-6a97-3587-4b2d-3b21ebe12de3}">
+                          <parameters>
+                            <ViewId>{553D1935-4447-E911-A827-000D3A1D5713}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfpe_Agreement_msnfpe_ProjectActivity</RelationshipName>
+                            <TargetEntityType>msnfpe_agreement</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{4A634925-0A7A-423E-A24A-7CA6070CF348},{553D1935-4447-E911-A827-000D3A1D5713}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>50</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Activity_Time" id="{b6128a15-e1ed-8b79-7703-930c3194c9da}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Time Entries" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{d4d67bd4-47d7-bce4-8768-919a65c54749}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9eb5e02d-3ded-9608-ae98-11b655291e81}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Time Entries" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_activity_time" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{D45C2889-EED4-E911-A822-000D3A3B1BF4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfpe_TimeEntry_msnfpe_ProjectActivity</RelationshipName>
+                            <TargetEntityType>msnfpe_timeentry</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D45C2889-EED4-E911-A822-000D3A3B1BF4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Activity_Expenses" id="{b80748cc-827a-2b92-4dda-602867a930ba}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Expenses" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{5010b0c6-c733-425c-2c25-cd3e6ba2d084}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4ba0e672-a21a-59b1-1673-bdb1e50ee3e9}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Expenses (Project Activity)" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_activity_expenses" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{2ad4a11d-20c0-9648-8dd3-10a4d42679ca}">
+                          <parameters>
+                            <ViewId>{FA9820CA-EED4-E911-A822-000D3A3B1BF4}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfpe_Expense_msnfpe_ProjectActivity</RelationshipName>
+                            <TargetEntityType>msnfpe_expense</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{FA9820CA-EED4-E911-A822-000D3A3B1BF4}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{bf6c9f87-c57c-4609-b036-5f575f02849e}" columns="111" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{d8e48382-6c48-5eb7-7898-4d2d38ab8a17}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2bd058a2-7a0d-e133-8692-091dd5d0d3a8}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Activity Number" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_activitynumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_activitynumber" disabled="true" uniqueid="{72645e42-ddcb-78c8-1a37-5274ce66aab7}" />
+            </cell>
+            <cell id="{2deb87c9-011c-ecc6-052c-abb800875e98}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{29123dae-e630-43d8-b54c-56cdbfc22c8b}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{0605d089-93e2-46c9-eb9b-8d200c893dda}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{c670520c-c39e-0398-8987-92110c1d175a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_DeliveryFramework_msnfpe_ProjectActivity" Sequence="10000" Area="Info" Id="nav_msnfpe_DeliveryFramework_msnfpe_ProjectActivity" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Delivery Frameworks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_TimeEntry_msnfpe_ProjectActivity" Sequence="10001" Area="Info" Id="nav_msnfpe_TimeEntry_msnfpe_ProjectActivity" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Time Entries" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_Agreement_msnfpe_ProjectActivity" Sequence="10002" Area="Info" Id="nav_msnfpe_Agreement_msnfpe_ProjectActivity" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Agreements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_EffortPlan_msnfpe_ProjectActivity" Sequence="10003" Area="Info" Id="nav_msnfpe_EffortPlan_msnfpe_ProjectActivity">
+            <Titles>
+              <Title LCID="1033" Text="Effort Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_Expense_msnfpe_ProjectActivity" Sequence="10004" Area="Info" Id="nav_msnfpe_Expense_msnfpe_ProjectActivity" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Expenses" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_GLTransaction_msnfpe_ProjectActivity" Sequence="10005" Area="Info" Id="nav_msnfpe_GLTransaction_msnfpe_ProjectActivity">
+            <Titles>
+              <Title LCID="1033" Text="GL Transactions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_BudgetLine_msnfpe_ProjectActivity" Sequence="10006" Area="Info" Id="nav_msnfpe_BudgetLine_msnfpe_ProjectActivity">
+            <Titles>
+              <Title LCID="1033" Text="Project Budget Lines" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="10008" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ae337b6f-3f64-46dd-bc04-3a6d11d6823e}</savedqueryid>
+    <layoutxml>
+      <grid name="msnfp_observations" jump="msnfp_name" select="1" icon="1" preview="1">
+        <row name="msnfp_observation" id="msnfp_observationid">
+          <cell name="msnfp_name" width="300" />
+          <cell name="msnfp_type" width="100" />
+          <cell name="msnfp_assessmentid" width="100" />
+          <cell name="msnfp_accountid" width="100" />
+          <cell name="msnfp_contactid" width="100" />
+          <cell name="msnfp_need" width="100" />
+          <cell name="msnfp_reached" width="100" />
+          <cell name="msnfp_targeted" width="100" />
+          <cell name="msnfp_unmetneed" width="100" />
+          <cell name="msnfp_datacollected" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_observation">
+          <attribute name="msnfp_observationid" />
+          <attribute name="msnfp_name" />
+          <attribute name="createdon" />
+          <order attribute="msnfp_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_assessmentid" />
+          <attribute name="msnfp_type" />
+          <attribute name="msnfp_accountid" />
+          <attribute name="msnfp_contactid" />
+          <attribute name="msnfp_need" />
+          <attribute name="msnfp_reached" />
+          <attribute name="msnfp_targeted" />
+          <attribute name="msnfp_unmetneed" />
+          <attribute name="msnfp_datacollected" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Observation Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0ae91313-04af-4da0-9858-fcab2ac5aca5}</savedqueryid>
+    <layoutxml>
+      <grid name="msiati_deliveryframeworkcontacts" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="msiati_deliveryframeworkcontact" id="msiati_deliveryframeworkcontactid">
+          <cell name="msiati_contactid" width="100" />
+          <cell name="msiati_contacttypeid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_deliveryframeworkcontact">
+          <attribute name="msiati_deliveryframeworkcontactid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msiati_contactid" />
+          <attribute name="msiati_contacttypeid" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Delivery Framework Contact Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

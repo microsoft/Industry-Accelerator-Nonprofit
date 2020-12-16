@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{f2b942ad-df3a-e911-a81f-000d3a1d5de8}" Name="Planning Period - apply rules based on Period Type" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/PlanningPeriod-applyrulesbasedonPeriodType-F2B942AD-DF3A-E911-A81F-000D3A1D5DE8.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
+  <PrimaryEntity>msnfpe_PlanningPeriod</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Planning Period - apply rules based on Period Type" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{6f06fd7e-62da-4d76-8ff3-3bed49c7463a}">
+      <label languagecode="1033" description="Recommended Naming" />
+    </steplabels>
+    <steplabels id="{c29fa969-534f-4ae5-b34d-eee7574e5673}">
+      <label languagecode="1033" description="Name of Sub-Monthly periods should begin with the name of the Parent Period followed by a dash and number indicating the logical order relative to other periods with the same parent (e.g. 201912-1 or 201912-2)" />
+    </steplabels>
+  </labels>
+</Workflow>

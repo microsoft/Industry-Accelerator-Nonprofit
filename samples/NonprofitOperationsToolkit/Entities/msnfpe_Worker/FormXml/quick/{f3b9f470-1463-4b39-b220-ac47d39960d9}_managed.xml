@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f3b9f470-1463-4b39-b220-ac47d39960d9}</formid>
+    <IntroducedVersion>1.1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{5fc4b636-bc31-40d6-961a-09e43e684f04}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{73039b4f-d542-444f-8904-eeb45aef5d44}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{215229c8-0ddc-a45b-3d52-c11a0cb6e061}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Worker Name" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_workername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_workername" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6112154c-50e0-e4b7-4525-09b764b9e417}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Working Title" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_workingtitle" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_workingtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69b040ee-e526-b23e-6597-ace518377274}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Working Office" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_workingofficeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_workingofficeid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d49a1d52-d098-79c9-519d-50a4b970d995}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Cost Center" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_costcenterid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_costcenterid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Worker Hierarchy Tile Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

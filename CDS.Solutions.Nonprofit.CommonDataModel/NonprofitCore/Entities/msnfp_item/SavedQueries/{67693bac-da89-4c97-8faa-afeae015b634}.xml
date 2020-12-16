@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{67693bac-da89-4c97-8faa-afeae015b634}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msnfp_itemname" select="1" icon="1" preview="1">
+        <row name="result" id="msnfp_itemid">
+          <cell name="msnfp_itemname" width="300" />
+          <cell name="msnfp_itemcode" width="152" />
+          <cell name="msnfp_itemstatus" width="100" />
+          <cell name="msnfp_itemtypeid" width="184" />
+          <cell name="msnfp_supplierid" width="288" />
+          <cell name="msnfp_description" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msnfp_item">
+          <attribute name="msnfp_itemid" />
+          <attribute name="msnfp_itemname" />
+          <order attribute="msnfp_itemname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msnfp_itemcode" />
+          <attribute name="msnfp_itemtypeid" />
+          <attribute name="msnfp_supplierid" />
+          <attribute name="msnfp_description" />
+          <attribute name="msnfp_itemstatus" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.4.2.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

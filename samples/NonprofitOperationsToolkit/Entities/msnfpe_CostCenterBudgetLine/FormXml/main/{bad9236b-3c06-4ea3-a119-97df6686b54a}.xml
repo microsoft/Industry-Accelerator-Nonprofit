@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{bad9236b-3c06-4ea3-a119-97df6686b54a}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{7fc68c10-8c7c-4413-aa9e-7d6f2165e463}" IsUserDefined="1" name="{7fc68c10-8c7c-4413-aa9e-7d6f2165e463}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3af10540-a328-46fe-996c-1101f4255851}" name="{3af10540-a328-46fe-996c-1101f4255851}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0c0e3a05-0824-46d1-8a93-dffb98c3443a}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_cc_budgetlinedesc" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msnfpe_cc_budgetlinedesc" />
+                      </cell>
+                      <cell id="{74722b55-cec3-e7d0-03a9-8028aec7da82}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Cost Center Budget information" languagecode="1033" />
+                        </labels>
+                        <control id="quickview_costcenterbudget" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="msnfpe_costcenterbudgetid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="msnfpe_costcenterbudget"&gt;686a5dee-60a6-4cc6-80a7-50b103412e1a&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc04c6a3-8897-a141-09b2-160c865834d7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GL Account" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_glaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_glaccountid" disabled="false" uniqueid="{279edcba-cd88-7546-7b67-deceb771aa17}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{83A72A50-3F44-44AF-B48E-C4BE42565551}</DefaultViewId>
+                            <AvailableViewIds>{83A72A50-3F44-44AF-B48E-C4BE42565551}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{a6bb3ea6-d7ae-3c82-5395-8de6caec8bad}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae862ec9-d9b9-7891-bd81-6c2c4279d834}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Line Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_budgetline_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount" disabled="false" />
+                      </cell>
+                      <cell id="{5c2308d3-53a6-545a-27a4-5586949580a5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{304627e3-2950-59cc-0c1d-b950726e6444}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Planned Amount" languagecode="1033" />
+                        </labels>
+                        <control id="msnfpe_plannedamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_plannedamount" disabled="false" />
+                      </cell>
+                      <cell id="{a86039ae-c737-3128-52ba-c3c54ad66848}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5becb281-59ff-44ac-b7aa-5144d725d34a}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{035392bc-25b8-3b81-eea7-7519c5d17779}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{29466b49-6585-354a-1108-3e3c34339591}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{392a2548-5c93-6eab-b99b-acd05eb40801}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                  <labels>
+                    <label description="Budget Line Periods" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8b3db83d-b999-7c81-8811-c5054c239b62}" showlabel="true" colspan="1" auto="true" rowspan="5">
+                        <labels>
+                          <label description="Budget Line Periods" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_budgetlineperiods" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{b786c1dc-7229-ca8c-0c77-ae70a847dd60}">
+                          <parameters>
+                            <ViewId>{B470EEB9-A99A-E911-A828-000D3A1D5A0B}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine</RelationshipName>
+                            <TargetEntityType>msnfpe_budgetlineperiod</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{30EA68E4-D0F8-4E22-BA9D-8C403F3E2178},{476CAF22-4B94-E911-A82C-000D3A1D5713},{B470EEB9-A99A-E911-A828-000D3A1D5A0B},{E56FAE03-F14C-E911-A826-000D3A1D5DCC}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>12</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{474f6c5a-665f-4bd4-a36c-1b691ba5ee45}" columns="111">
+        <rows>
+          <row>
+            <cell id="{449b672d-007c-4f30-afbb-072804475508}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Cost Center Budget" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_costcenterbudgetid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msnfpe_costcenterbudgetid" disabled="true" />
+            </cell>
+            <cell id="{8ee01347-3086-10ec-2908-d17585d88dc9}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Line Amount" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_budgetline_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_budgetline_amount" disabled="true" uniqueid="{72d86058-48a5-2ae5-9ad3-ab2a86daac5d}" />
+            </cell>
+            <cell id="{e017aa37-6e1c-e66a-255a-c768069b9abc}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Planned Difference" languagecode="1033" />
+              </labels>
+              <control id="header_msnfpe_planneddifference" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="msnfpe_planneddifference" disabled="false" />
+            </cell>
+            <cell id="{de88b43a-dac1-c67d-8907-bea1c1583b57}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f52e4380-233e-4e16-875d-9266a969562e}" columns="11" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{c7962647-c0d6-2417-07e8-6a2d9caa5413}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{e870c409-9c8e-a378-78ab-7a0e93576dee}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine" Id="nav_msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine" Show="false" Sequence="9601" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Budget Line Periods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="9602" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{b786c1dc-7229-ca8c-0c77-ae70a847dd60}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{B470EEB9-A99A-E911-A828-000D3A1D5A0B}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine</RelationshipName>
+              <TargetEntityType>msnfpe_budgetlineperiod</TargetEntityType>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{30EA68E4-D0F8-4E22-BA9D-8C403F3E2178},{476CAF22-4B94-E911-A82C-000D3A1D5713},{B470EEB9-A99A-E911-A828-000D3A1D5A0B},{E56FAE03-F14C-E911-A826-000D3A1D5DCC}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>12</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <ViewId>{B470EEB9-A99A-E911-A828-000D3A1D5A0B}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine</RelationshipName>
+              <TargetEntityType>msnfpe_budgetlineperiod</TargetEntityType>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{30EA68E4-D0F8-4E22-BA9D-8C403F3E2178},{476CAF22-4B94-E911-A82C-000D3A1D5713},{B470EEB9-A99A-E911-A828-000D3A1D5A0B},{E56FAE03-F14C-E911-A826-000D3A1D5DCC}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>12</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{B470EEB9-A99A-E911-A828-000D3A1D5A0B}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>msnfpe_BudgetLinePeriod_msnfpe_CCBudgetLine</RelationshipName>
+                <TargetEntityType>msnfpe_budgetlineperiod</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{30EA68E4-D0F8-4E22-BA9D-8C403F3E2178},{476CAF22-4B94-E911-A82C-000D3A1D5713},{B470EEB9-A99A-E911-A828-000D3A1D5A0B},{E56FAE03-F14C-E911-A826-000D3A1D5DCC}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">no</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <DisplayConditions Order="0" FallbackForm="true" />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

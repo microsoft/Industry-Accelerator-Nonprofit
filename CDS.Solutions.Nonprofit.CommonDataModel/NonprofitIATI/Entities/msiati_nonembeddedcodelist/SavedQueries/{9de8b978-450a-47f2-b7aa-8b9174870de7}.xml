@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9de8b978-450a-47f2-b7aa-8b9174870de7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msiati_name" select="1" icon="1" preview="1">
+        <row name="result" id="msiati_nonembeddedcodelistid">
+          <cell name="msiati_codelisttype" width="100" />
+          <cell name="msiati_code" width="100" />
+          <cell name="msiati_name" width="300" />
+          <cell name="msiati_description" width="100" />
+          <cell name="msiati_nonembeddedcodelistvocabularyid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msiati_nonembeddedcodelist">
+          <attribute name="msiati_nonembeddedcodelistid" />
+          <attribute name="msiati_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msiati_name" operator="like" value="{0}" />
+            <condition attribute="msiati_code" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msiati_code" />
+          <attribute name="msiati_description" />
+          <attribute name="modifiedon" />
+          <attribute name="msiati_nonembeddedcodelistvocabularyid" />
+          <attribute name="msiati_codelisttype" />
+          <order attribute="msiati_codelisttype" descending="false" />
+          <order attribute="msiati_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.3.3.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Non Embedded Codelists" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
