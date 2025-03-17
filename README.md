@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is no longer being actively maintained and will be removed from GitHub on December 31, 2025. Partners and customers can continue to access the Common Data Model for Nonprofits and other open-source industry solutions on the [Microsoft Nonprofits](https://github.com/microsoft/Nonprofits) repository on GitHub or as a managed solution on the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Nonprofit).
+
 # Nonprofit Accelerator
 Hello ISVs, SIs, Partners and Nonprofits - Your success is our goal. 
 This repository helps you to [connect](https://assetsprod.microsoft.com/en-us/isv-getting-started-connect.pdf), [extend](https://assetsprod.microsoft.com/en-us/isv-getting-started-extend.pdf), [build](https://assetsprod.microsoft.com/en-us/isv-getting-started-guide.pdf) and contribute to the Microsoft Nonprofit Accelerator.
